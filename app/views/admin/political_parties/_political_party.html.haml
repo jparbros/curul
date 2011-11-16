@@ -1,0 +1,4 @@
+%tr
+  %td= political_party.name
+  %td= link_to 'Editar', edit_admin_political_party_path(political_party)
+  %td= link_to 'Borrar', admin_political_party_path(political_party), :method => :delete, :confirm => '¿Esta seguro que desea eliminar la iniciativa?'

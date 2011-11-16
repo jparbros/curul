@@ -1,0 +1,39 @@
+.page-header
+  %h2 Iniciativas
+
+= link_to 'Nueva Iniciativa', new_admin_initiative_path
+
+/ .well.row
+/   %h3 Filtros
+/   = form_for @search, :url => admin_officials_path do |form|
+/     .span7
+/       = label_tag :nombre
+/       .input
+/         .input-prepend
+/           %span.add-on
+/             = image_tag 'search.png'
+/           = form.text_field :name_contains, :class => 'large'
+/     .span7
+/       = label_tag :provincia
+/       .input
+/         .input-prepend
+/           %span.add-on
+/             = image_tag 'search.png'
+/           = form.text_field :province_name_contains, :class => 'large'
+/     .clearfix
+/       = form.submit 'Buscar', :class => 'btn'
+
+%table.zebra-striped
+  %thead
+    %tr
+      %th Titulo
+      %th Presentado por
+      %th Presentado el
+      %th
+      %th
+      %th
+
+  %tbody
+    = render @initiatives
+
+/= paginate @initiatives

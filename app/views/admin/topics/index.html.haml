@@ -1,0 +1,16 @@
+.page-header
+  %h2 Temas
+
+= link_to 'Nuevo Tema', new_admin_topic_path
+
+%table.zebra-striped
+  %thead
+    %tr
+      %th Tema
+      %th
+      %th
+
+  %tbody
+    = render @topics
+
+/= paginate @topics

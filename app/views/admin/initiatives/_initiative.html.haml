@@ -1,0 +1,7 @@
+%tr
+  %td= initiative.title
+  %td= initiative.representative.try(:name)
+  %td= initiative.presented_at
+  %td= link_to 'Editar', edit_admin_initiative_path(initiative)
+  %td= (initiative.main)? 'Principal' : link_to('Principal', admin_initiative_main_path(initiative), :method => :post)
+  %td= link_to 'Borrar', admin_initiative_path(initiative), :method => :delete, :confirm => '¿Esta seguro que desea eliminar la iniciativa?'

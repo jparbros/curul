@@ -1,0 +1,9 @@
+.page-header
+  %h2 Editar Tema
+= form_for [:admin, @topic], :html => {:multipart => true} do |form|
+  = render "admin/shared/error_messages", :target => @topic
+  %fieldset
+    = render :partial => 'form', :locals => {:form => form}
+    .actions
+      = form.submit 'Editar Tema', :class => 'btn primary'
+      %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

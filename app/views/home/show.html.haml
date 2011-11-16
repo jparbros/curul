@@ -1,0 +1,70 @@
+#home-page
+  .main-banner
+    = image_tag 'front/main-banner.png'
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+  %aside
+    %h2 la propuesta mas vista
+    %p.info
+      = @iniciativa.presented_at.to_s(:month_year)
+      %br
+      Propuesta por:
+      %span
+        = @iniciativa.presented_by
+      
+    %p.description
+      = @iniciativa.description
+  
+    %ul.colores
+      %li.comenta
+        vota
+        %br
+        = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativa.id}"
+      %li.votos
+        %span
+          = @iniciativa.total_votes
+        %br
+        votos
+      %li.comentarios
+        %span
+          = @iniciativa.comments.count
+        %br
+        comentarios
+        
+    %ul.info
+      %li
+        estado de la iniciativa
+        %span= @iniciativa.state
+      %li
+        votacion oficial
+        %span 
+          a favor:
+          = "#{@iniciativa.official_percentage_up}%"
+        %span 
+          en contra:
+          = "#{@iniciativa.official_percentage_down}%"
+      %li
+        votacion 131 voces
+        %span 
+          a favor:
+          = "#{@iniciativa.percentage_votes_up}%"
+        %span 
+          en contra:
+          = "#{@iniciativa.percentage_votes_down}%"
+        
+  %article#home
+    %h2 integrantes del congreso
+    = image_tag 'front/home-peru.png'
+    = form_for @search, :url => iniciativas_path, :method => :get do |form|
+      = form.label :buscar_por_nombre
+      %br
+      = form.text_field :title_or_description_contains
+      .input
+        = form.label :entidad
+        %br
+        = form.select :representative_region_name_contains, options_for_select(Region.all.collect {|region| [region.name, region.id]}), :include_blank => true
+      .input
+        = label_tag :partido
+        %br
+        = form.select :representative_political_party_name_contains, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :include_blank => true
+      = submit_tag 'Buscar', :class => 'button'

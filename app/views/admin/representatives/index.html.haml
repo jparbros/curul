@@ -1,0 +1,16 @@
+.page-header
+  %h2 Partidos Politicos
+
+= link_to 'Nuevo Representante', new_admin_representative_path
+
+%table.zebra-striped
+  %thead
+    %tr
+      %th Nombre
+      %th
+      %th
+
+  %tbody
+    = render @representatives
+
+/= paginate @initiatives

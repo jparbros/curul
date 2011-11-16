@@ -1,0 +1,9 @@
+.page-header
+  %h2 Nuevo Partido Politico
+= form_for [:admin, @political_party], :html => {:multipart => true} do |form|
+  = render "admin/shared/error_messages", :target => @political_party
+  %fieldset
+    = render :partial => 'form', :locals => {:form => form}
+    .actions
+      = form.submit 'Crear Partido Politico', :class => 'btn primary'
+      %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

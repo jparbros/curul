@@ -1,0 +1,34 @@
+.clearfix
+  = form.label :titulo
+  .input
+    = form.text_field :title, :class => 'xxlarge'
+    
+.clearfix
+  = form.label :descripcion
+  .input
+    = form.text_area :description, :class => 'xxlarge', :rows => '5'
+
+.clearfix
+  = form.label :presentado_en
+  .input
+    = form.text_field :presented_at, :class => 'xxlarge'
+
+.clearfix
+  = form.label :presentado_por
+  .input
+    = form.text_field :presented_by_token, "data-pre" => @initiative.representative.to_json
+
+.clearfix
+  = form.label :recurso_adicional
+  .input
+    = form.text_field :additional_resources, :class => 'xxlarge'
+
+.clearfix
+  = form.label :url_recurso_adicional
+  .input
+    = form.text_field :additional_resources_url, :class => 'xxlarge'
+    
+.clearfix
+  = form.label :temas
+  .input
+    = form.text_field :topic_tokens, "data-pre" => @initiative.topics.map(&:attributes).to_json

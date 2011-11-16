@@ -1,0 +1,2 @@
+module Admin::RepresentativesHelper
+end

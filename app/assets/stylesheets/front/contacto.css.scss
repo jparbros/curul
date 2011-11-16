@@ -1,0 +1,27 @@
+// Place all the styles related to the contacto controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#contacto {
+  article {
+    @extend #content;
+    padding: 0 10px 15px 30px;
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    textarea {
+      height: 150px;
+    }
+    
+    .submit {
+      @extend .submit-button;
+      color: $white;
+      margin: 0 0 0 20px;
+    }
+  }
+  aside {
+    background: url('/assets/images/tweet-bird.png') no-repeat $white;
+  }
+}

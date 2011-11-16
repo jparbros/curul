@@ -1,0 +1,36 @@
+#contacto
+  %h1 Contacto
+
+  %aside
+    %h2
+      twitter
+    .tweet
+      
+  
+  %article
+    %h2 envianos tus comentarios
+    
+    = form_for @contacto, :url => '/contacto', :method => :post do |form|
+      %p
+        = form.text_field :nombre, :placeholder => 'nombre', :class => 'xlarge input-text'
+
+      %p
+        = form.text_field :email, :placeholder => 'email', :class => 'xlarge input-text'
+
+      %p
+        = form.text_area :comentario, :placeholder => 'comentario', :class => 'xxlarge input-text'
+
+      = hidden_field_tag :other_email
+    
+      = submit_tag 'Enviar', :class => 'submit'
+      
+<script>
+jQuery(function($){
+$(".tweet").tweet({
+username: "jparbros",
+count: 10,
+loading_text: "cargando tweets...",
+template: "{text}"
+});
+});
+</script>

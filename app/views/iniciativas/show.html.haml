@@ -1,0 +1,11 @@
+#iniciativa
+  %article#content
+    %p
+      = @iniciativa.presented_at.to_s(:month_year)
+    %p
+      Propuesta por:
+      = @iniciativa.presented_by
+    %p
+      =  @iniciativa.title
+    %p
+      = @iniciativa.description

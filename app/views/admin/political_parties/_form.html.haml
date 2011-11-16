@@ -1,0 +1,10 @@
+.clearfix
+  = form.label :nombre
+  .input
+    = form.text_field :name, :class => 'xxlarge'
+
+.clearfix
+  = form.label :logotipo
+  .input
+    = form.file_field :logo, :class => 'xxlarge'
+    = form.hidden_field :logo_cache

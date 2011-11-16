@@ -1,0 +1,66 @@
+%article.iniciativa{:class => "#{(iniciativa.main?)? 'main' :  ''}"}
+  - if iniciativa.main?
+    %h2.estrella La mas vista
+  .content
+    %p.info
+      = iniciativa.presented_at.to_s(:month_year)
+      %br
+      Propuesta por:
+      %span
+        = link_to iniciativa.representative.name, congresista_path(iniciativa.representative)
+    
+    %p.description
+      = iniciativa.description
+    
+    - temas(iniciativa)
+  
+    - estado_de_iniciativa(iniciativa)
+    
+    - votacion_oficial(iniciativa)
+    
+    - votacion_local(iniciativa)
+  
+  .aside
+    %ul
+      %li.comenta
+        vota
+        %br
+        = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{iniciativa.id}"
+      %li.votos
+        %span
+          = iniciativa.total_votes
+        %br
+        votos
+      %li.comentarios
+        %span
+          = iniciativa.comments.count
+        %br
+        comentarios
+      %li.share
+        .share-fb
+          <div class="fb-send" data-href="http://voces.herokuapp.com/"></div>
+        .share-tw
+          <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es">Tweet</a>
+    
+  - content_for(:modals) do
+    .modal.hide.fade{:id => "comment-modal-#{iniciativa.id}"}
+      = form_for iniciativa.comments.new, :url => iniciativa_comments_path(iniciativa) do |form|
+        .modal-header
+          %a.close{:href => "#"} &times;
+          %h3 comenta
+        .modal-body
+          .clearfix
+            = form.label :autor
+            .input
+              = form.text_field :author, :class => 'xlarge input-text'
+          
+          .clearfix
+            = form.label :comentario
+            .input
+              = form.text_area :comment, :class => 'xlarge input-text', :rows => 10
+        .modal-footer
+          = form.submit 'Comentar', :class =>'btn primary'
+
+  - content_for(:javascript_onload) do
+    $("#comment-modal-#{iniciativa.id}").modal(true)
+      

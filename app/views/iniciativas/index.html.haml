@@ -1,0 +1,22 @@
+#iniciativas
+  %h1 iniciativas
+  
+  %aside
+    %h2
+      buscar iniciativa
+    
+    = form_for @search, :url => iniciativas_path, :method => :get do |form|
+    
+      = form.text_field :title_or_description_contains, :placeholder => 'palabras clave', :class => 'input'
+    
+      = form.submit :buscar, :class => 'button'
+    
+    %h2
+      temas
+    %ul.ul-aside
+      - @temas.each do |tema|
+        %li= link_to tema.name, "?search[topics_name_contains]=#{tema.name}"
+  
+  %section.container
+    = render :partial => 'iniciativa', :collection => @iniciativas
+    = paginate @iniciativas, window: 2

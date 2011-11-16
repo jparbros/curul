@@ -1,0 +1,6 @@
+- if target.errors.any?
+  .alert-message.block-message.error
+    %p
+      %strong
+      - target.errors.full_messages.each do |msg|
+        %br= msg

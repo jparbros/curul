@@ -1,0 +1,33 @@
+!!! 5
+%html
+  %head
+    %title Admin :: Curul 501
+    = stylesheet_link_tag "http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css"
+    = stylesheet_link_tag 'admin'
+    = javascript_include_tag 'admin'
+    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
+    = csrf_meta_tag
+    
+
+  %body
+    %header
+      .topbar
+        .fill
+          .container
+            %h3= link_to 'Curul 501', '/admin'
+            %ul
+              %li= link_to 'Iniciativas', admin_initiatives_path
+              %li= link_to 'Temas', admin_topics_path
+              %li= link_to 'Partidos Politicos', admin_political_parties_path
+              %li= link_to 'Representantes', admin_representatives_path
+
+    .container
+      - if alert
+        .alert-message.error
+          = link_to 'x','#', :class => 'close'
+          %p= alert
+      - if notice
+        .alert-message.info
+          = link_to 'x','#', :class => 'close'
+          %p= notice
+      = yield

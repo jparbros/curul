@@ -1,0 +1,22 @@
+// Place all the styles related to the admin/initiatives controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#token-input-initiative_topic_tokens {
+  border: 0;
+  box-shadow: none;
+}
+
+ul{
+  &.token-input-list-facebook{
+    -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    color: #808080;
+    display: inline-block;
+    font-size: 13px;
+    padding: 4px;
+    width: 530px;
+  }
+}

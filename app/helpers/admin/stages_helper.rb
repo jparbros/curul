@@ -1,0 +1,2 @@
+module Admin::StagesHelper
+end

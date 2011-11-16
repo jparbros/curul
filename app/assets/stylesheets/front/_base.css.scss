@@ -1,0 +1,192 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+@import "blueprint";
+
+body > .container, .container-fluid { padding-top: 50px !important}
+
+html { background: url("/assets/front/second-bg.png") repeat-x, url("/assets/front/main-bg.png")  }
+
+body {
+  @include terminal-font(normal, $dark-grey, 14px);
+  background: url("/assets/front/footer-bk.png") repeat-x center bottom ;
+}
+
+a {
+  @include terminal-font(normal, $dark-grey, 14px);
+}
+
+#container {
+  @include column(24,true);
+  float:none;
+  display:block;
+  margin:0 auto;
+}
+
+h1 {
+  @include cuprum-font($mulberryish-gray, 36px);
+  background: url("/assets/front/top-bg.png") no-repeat;
+  margin: 20px 0 0 0;
+  padding: 5px;
+}
+
+h2 {
+  @include terminal-font(light, $dark-mulberry, 18px);
+  border-bottom: 1px solid $grey; 
+  margin: 20px 10px 10px 20px;
+  padding: 0 0 5px;
+  
+  &.estrella {
+    @include terminal-font(semi-bold, $dark-grey, 18px);
+    background: url('/assets/front/star.png') no-repeat;
+    border-bottom: 1px solid $grey;
+    padding-left: 30px;
+  }
+  
+  article & {
+    margin: 20px 10px 10px 0px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  border-bottom: 1px solid $grayish-cyan;
+  color: $grayish-cyan;
+  font-size: 14px;
+  padding: 10px 0 5px;
+  margin: 0 0 10px;
+}
+
+header {
+  @include column(24,true);
+
+  img { margin-top: 25px; }
+  nav {
+    float: right;
+    margin-top: 50px;
+    ul {
+      list-style: none;
+      li {
+        border-left: 1px solid $grey;
+        float: left;
+        padding: 0 25px 0 5px;
+        a {
+          @include cuprum-font($grey, 13px);
+        }
+      }
+    }
+  }
+}
+
+section#main-content {
+  @include column(24,true);
+}
+
+footer {
+  @include column(24,true);
+  @include terminal-font('light', $very-dark-persian-blue, 12px);
+  margin: 20px 0 20px 0;
+  ul {
+    li {
+      float: left;
+      border-left: 1px solid $very-dark-persian-blue;
+      margin: 0 10px 0 0;
+      padding: 10px;
+    }
+  }
+}
+
+.input-text {
+  @include terminal-font(normal, $dark-grey, 14px);
+  background-color: $light-yellowish-gray;
+  border: 0 none;
+  box-shadow: none;
+  height: 30px;
+  margin: 0 0 0 20px;
+  padding: 5px;
+}
+
+.submit-button {
+  @include cuprum-font($white, 14px);
+  background-color: $dark-mulberry;
+  border: 0 none;
+  box-shadow: none;
+  height: 30px;
+}
+
+aside {
+  @include column(6);
+  background-color: $nu-white;
+  padding-bottom: 10px;
+  min-height: 600px;
+  
+  .input {
+    @extend .input-text;
+    margin-bottom: 10px;
+    width: 190px;
+  }
+  
+  .button {
+    @extend .submit-button;
+    color: $white;
+    margin: 5px 0 0 20px;
+    width: 200px;
+  }
+  
+  ul {
+    &.ul-aside {
+      @include terminal-font(normal, $dark-grey, 14px);
+      margin: 0 0 0 20px;
+
+      li {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  
+  textarea { height: 100px !important; }
+}
+
+article {
+
+  &#content {
+    @include column(16, true);
+    @include push(1);
+    background-color: $nu-white;
+  }
+}
+
+.hide {display: none;}
+.show {display: block;}
+.fade {
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -ms-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  opacity: 0;
+  
+  .in{opacity: 1;}
+}
+
+.tweet {
+  @include arial-font($dark-grey, 10px, none);
+  margin: 0 0 100px 20px;
+  width: 200px;
+  
+  ul {
+    li {
+      border-bottom: 1px solid $grey-2;
+      margin: 10px 0 0 0;
+      padding: 0 0 10px 0;
+      a {
+        font-size: 10px;
+        text-transform: none;
+      }
+    }
+  }
+}

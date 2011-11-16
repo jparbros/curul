@@ -1,0 +1,55 @@
+// Place all the styles related to the congresistas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#congresistas {
+  article {
+    @extend #content;
+    padding: 0 10px 15px 30px;
+    
+    .primera-columna {
+      @include column(6,true);
+      @include append(1);
+    }
+    
+    .segunda-columna {
+      @include column(9, true);
+    }
+    
+    .comentarios {
+      @include column(16, true);
+      border-top: 1px solid $grey-2;
+      border-bottom: 1px solid $grey-2;
+      
+      p {
+        @include arial-font($dark-grey, 10px);
+        border-top: 1px solid $grey-2;
+        padding-top: 10px;
+      }
+    }
+  }
+  aside {
+    background-color: $white;
+  }
+  p {
+    margin-bottom: 10px;
+    
+    span {
+      display: block;
+      color: $grayish-cyan;
+      &.nombre { font-size: 18px; color: $dark-grey;}
+    }
+  }
+  
+  ul {
+    &.iniciativas {
+      list-style: none;
+      
+      li {
+        border-bottom: 1px solid $grey-2;
+        margin: 0 0 5px;
+        padding: 0 0 5px;
+      }
+    }
+  }
+}

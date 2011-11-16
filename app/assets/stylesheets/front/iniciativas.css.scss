@@ -1,0 +1,231 @@
+// Place all the styles related to the iniciativas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#iniciativas {
+  section {
+    &.container {
+      @include column(18, true);
+    }
+  }
+  
+  .pagination {
+    float: right;
+    .active a { background-color: $arctic-bluish-gray; }  
+    a {
+     &:hover { background-color: $light-amber; }
+    }
+  }
+}
+
+article {
+  &.iniciativa {
+    @extend #content;
+    padding: 0 10px 30px 30px;
+    
+    &.main {
+      background-color: white;
+    }
+    
+    .content {
+      @include column(13);
+      
+      ul {
+        @include column(13);
+        margin-bottom: 10px;
+
+        &.temas {
+          @include arial-font($mulberryish-gray, 10px, downcase);
+          margin-bottom: 5px;
+
+          li {
+            @include arial-font($mulberryish-gray, 10px, downcase);
+            border-left: 1px solid $mulberryish-gray;
+            float: left;
+            padding: 0 10px;
+
+            &:last-child {
+              border-right: 1px solid $grayish-cyan;
+            }
+          }
+        }
+
+        &.estado {
+          border-top: 1px solid $grey-2;
+
+          li {
+            @include terminal-font(normal, $dark-grey, 11px);
+            border: 1px solid $grey-2;
+            float: left;
+            height: 24px;
+            margin-left: 1px;
+            padding-top: 6px;
+            text-align: center;
+            width: 93px;
+
+            &:first-child {
+              @extend .first-child;
+            }
+          }
+        }
+
+        &.votacion-oficial {
+          border-top: 1px solid $grey-2;
+
+          li {
+            @include terminal-font(normal, $dark-grey, 12px);
+            float: left;
+            height: 24px;
+            padding-top: 6px;
+            text-align: center;
+
+            &.a-favor {
+              background-color: $light-cyanish-gray;
+              min-width: 57px;
+              max-width: 327px;
+            }
+
+            &.en-contra {
+              color: $grey-2;
+              min-width: 57px;
+              max-width: 327px;
+            }
+
+            &.no-votada {
+              border: 1px solid $grey-2;
+              width: 383px;
+            }
+
+            &:first-child {
+              @extend .first-child;
+            }
+          }
+        }
+
+        &.votacion-local {
+          border-top: 1px solid $grey-2;
+
+          li {
+            @include terminal-font(normal, $dark-grey, 12px);
+            float: left;
+            height: 24px;
+            padding-top: 6px;
+            text-align: center;
+            
+            a {
+              @include terminal-font(normal, $dark-grey, 12px);
+            }
+
+            &.a-favor {
+              background-color: $grey-2;
+              min-width: 57px;
+              max-width: 327px;
+            }
+
+            &.en-contra {
+              color: $grey-2;
+              min-width: 57px;
+              max-width: 327px;
+            }
+
+            &.no-votada {
+              border: 1px solid $grey-2;
+              width: 190px;
+            }
+
+            &:first-child {
+              @extend .first-child;
+            }
+          }
+
+          &:first-child {
+            @extend .first-child;
+          }
+        }
+        .first-child {
+          @include arial-font($dark-grey, 11px);
+          border: 0;
+          padding-right: 5px;
+          text-align: right;
+          width: 120px;
+        }
+      }
+    }
+    
+    .aside {
+      @include column(3, true);
+      
+      ul {
+        @include column-base;
+        text-align: right;
+        margin: 0 0 0 30px;
+        width: 85px;
+        
+        li {
+          @include terminal-font(normal, $white, 12px);
+          margin-top: 5px;
+          padding: 0 5px 0 0;
+          
+          a{
+            @include terminal-font(normal, $white, 12px);
+          }
+          
+          span {
+            @include terminal-font(semi-bold, $white, 60px);
+          }
+          
+          &.comenta {
+            background: url("/assets/front/comenta-bg.png") no-repeat scroll 3px 10px $dark-mulberry;
+            height: 35px;
+            padding-top: 5px;
+          }
+          
+          &.votos {
+            background-color: $light-amber;
+            height: 75px;
+          }
+          
+          &.comentarios {
+            background-color: $arctic-bluish-gray;
+            height: 75px;
+          }
+          
+          &.share {
+            .share-fb {
+              iframe {
+                display: block;
+              }
+            }
+            .share-tw {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+    
+    p {
+      @include arial-font($dark-grey, 11px, capitalize);
+      margin-bottom: 10px;
+      
+      &.info {
+        padding: 30px 0 0 0;
+        span a {
+          @include arial-font($dark-grey, 11px, capitalize);
+          color: $dark-mulberry;
+        }
+      }
+      
+      &.description {
+        color: $very-dark-persian-blue;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.modal {
+  textarea {
+    height: 150px;
+  }
+}

@@ -1,0 +1,27 @@
+#region
+  %h1 congresistas
+
+  %aside
+    = render :partial => 'shared/congresistas_aside'
+
+  %article
+    %h2= @region.name
+    selecciona un representante para ver su perfil e interactuar con el
+    %table.zebra-striped
+      %thead
+        %tr
+          %th partido
+          %th foto
+          %th nombre
+          %th distrito
+      %tbody
+        - @partidos_politicos.each do |partido_politico|
+          - representatives =  partido_politico.representatives.by_region(@region.id)
+          - unless representatives.empty?
+            %tr
+              %td{:rowspan => "#{representatives.size + 1}"}= image_tag partido_politico.logo.url
+            - representatives.each_with_index do |representante, index|
+              %tr
+                %td= image_tag(representante.avatar.url(:thumb))
+                %td= link_to(representante.name, congresista_path(representante))
+                %td= representante.district

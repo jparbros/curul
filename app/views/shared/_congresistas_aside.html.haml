@@ -1,0 +1,12 @@
+%h2 buscar integrantes
+
+= form_tag '' do
+  = text_field_tag 'nombre', '', :class => :input, :placeholder => 'buscar por nombre'
+  = select_tag 'partido_politico', options_from_collection_for_select(PoliticalParty.all, :id, :name), :class => :input
+  = submit_tag :buscar, :class => :button
+
+%h2 regiones
+%ul.ul-aside
+  - Region.all.each do |region|
+    = content_tag :li do 
+      - link_to region.name, regione_path(region.id)
