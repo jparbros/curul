@@ -19,6 +19,7 @@ gem 'oauth2'
 gem 'pg'
 gem 'state_machine'
 gem 'twitter_oauth'
+gem 'unicorn'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
