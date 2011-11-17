@@ -5,52 +5,53 @@
 
   %aside
     %h2 la propuesta mas vista
-    %p.info
-      = @iniciativa.presented_at.to_s(:month_year)
-      %br
-      Propuesta por:
-      %span
-        = @iniciativa.presented_by
+    - if @iniciativa    
+      %p.info
+        = @iniciativa.presented_at.to_s(:month_year)
+        %br
+        Propuesta por:
+        %span
+          = @iniciativa.presented_by
       
-    %p.description
-      = @iniciativa.description
+      %p.description
+        = @iniciativa.description
   
-    %ul.colores
-      %li.comenta
-        vota
-        %br
-        = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativa.id}"
-      %li.votos
-        %span
-          = @iniciativa.total_votes
-        %br
-        votos
-      %li.comentarios
-        %span
-          = @iniciativa.comments.count
-        %br
-        comentarios
+      %ul.colores
+        %li.comenta
+          vota
+          %br
+          = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativa.id}"
+        %li.votos
+          %span
+            = @iniciativa.total_votes
+          %br
+          votos
+        %li.comentarios
+          %span
+            = @iniciativa.comments.count
+          %br
+          comentarios
         
-    %ul.info
-      %li
-        estado de la iniciativa
-        %span= @iniciativa.state
-      %li
-        votacion oficial
-        %span 
-          a favor:
-          = "#{@iniciativa.official_percentage_up}%"
-        %span 
-          en contra:
-          = "#{@iniciativa.official_percentage_down}%"
-      %li
-        votacion 131 voces
-        %span 
-          a favor:
-          = "#{@iniciativa.percentage_votes_up}%"
-        %span 
-          en contra:
-          = "#{@iniciativa.percentage_votes_down}%"
+      %ul.info
+        %li
+          estado de la iniciativa
+          %span= @iniciativa.state
+        %li
+          votacion oficial
+          %span 
+            a favor:
+            = "#{@iniciativa.official_percentage_up}%"
+          %span 
+            en contra:
+            = "#{@iniciativa.official_percentage_down}%"
+        %li
+          votacion 131 voces
+          %span 
+            a favor:
+            = "#{@iniciativa.percentage_votes_up}%"
+          %span 
+            en contra:
+            = "#{@iniciativa.percentage_votes_down}%"
         
   %article#home
     %h2 integrantes del congreso

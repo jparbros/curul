@@ -1,0 +1,105 @@
+// Place all the styles related to the entiende controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#entiende {
+
+  .tabs {
+    padding: 0 10px;
+    width: 97%;
+  }
+  article {
+    @extend #content;
+    @include column(15 ,true);
+    padding-bottom: 15px;
+    
+    iframe {
+      margin: 10px 92px;
+    }
+    
+    .descripcion {
+      @include trebuchet-font($dark, 12px);
+      padding: 10px;
+    }
+  }
+  
+  aside {
+    @include column(8, true);
+    background-color: transparent;
+    padding: 5px 0 0 5px;
+    
+    section {
+      @include column(8, true);
+      padding: 5px;
+      margin-bottom: 10px;
+      
+      h4 {
+        @include trebuchet-font($dark, 11px);
+        border-bottom: 1px solid $dark;
+      }
+      
+      &.selected {
+        background-color: $white;
+        @include border-radius(5px);
+      }
+      
+      ul {
+        li {
+          @include trebuchet-font($dark, 11px);
+          float: left;
+                    
+          &:last-child {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#entiende-horizontal {
+  aside {
+    @include column(24, true);
+    background-color: transparent;
+    min-height: 0;
+    
+    section {
+      @include column(6, true);
+      float: left;
+      
+       ul {
+        li {
+          @include trebuchet-font($dark, 11px);
+          float: left;
+
+          &:last-child {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  article {
+    @include column(24 ,true);
+    background-color: $nu-white;
+    padding-bottom: 15px;
+    
+    iframe {
+      margin: 10px 92px;
+    }
+    
+    .descripcion {
+      @include trebuchet-font($dark, 12px);
+      padding: 10px;
+    }
+  }
+}
+
+.comisiones, .trabajo_legislativo, .poder_legislativo {
+  padding: 10px;
+}
+
+.comisiones, .trabajo_legislativo {
+  display: none;
+}

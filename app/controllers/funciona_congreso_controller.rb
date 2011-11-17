@@ -1,0 +1,2 @@
+class FuncionaCongresoController < ApplicationController
+end

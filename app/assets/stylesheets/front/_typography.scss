@@ -28,9 +28,9 @@
   text-transform: $transform;
 }
 
-@mixin abril-font($color, $size, $transform: uppercase) {
+@mixin trebuchet-font($color, $size, $transform: uppercase) {
   color: $color;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Trebuchet MS", sans-serif;
   font-size: $size;
   font-weight: normal;
   text-transform: $transform;

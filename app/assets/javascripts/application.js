@@ -8,3 +8,4 @@
 //= require jquery_ujs
 //= require jquery.tweet
 //= require bootstrap-modal
+//= require entiende

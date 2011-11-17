@@ -20,6 +20,10 @@ Congresspedia::Application.routes.draw do
   end
   resources :regiones, :only => [:show]
   resource :acerca_de, :only => [:show], :controller => :acerca_de
+  resource :entiende_tu_congreso, :only => [:show], :controller => :entiende
+  resource :proceso_legislativo, :only => [:show], :controller => :proceso_legislativo
+  resource :como_funciona_congreso, :only => [:show], :controller => :funciona_congreso
+  resource :abc_legislativo, :only => [:show], :controller => :abc_legislativo
   resource :contacto, :only => [:new, :create], :controller => :contacto
   root :to => "home#show"
 end

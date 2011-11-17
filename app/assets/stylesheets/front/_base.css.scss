@@ -26,9 +26,9 @@ a {
 
 h1 {
   @include cuprum-font($mulberryish-gray, 36px);
-  background: url("/assets/front/top-bg.png") no-repeat;
-  margin: 20px 0 0 0;
-  padding: 5px;
+  background: url("/assets/front/h1-bg.png") repeat-x;
+  margin: 40px 0 0 0;
+  padding: 20px 5px 20px 0;
 }
 
 h2 {

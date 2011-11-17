@@ -1,0 +1,2 @@
+class AbcLegislativoController < ApplicationController
+end
