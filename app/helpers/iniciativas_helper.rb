@@ -30,7 +30,7 @@ module IniciativasHelper
   
   def votacion_local(iniciativa)
     list = []
-    list << content_tag(:li, 'votacion en 131 voces')
+    list << content_tag(:li, 'votacion en curul 501')
     list << content_tag(:li, :style => "#{(iniciativa.voted?)? "width:#{iniciativa.pixel_votes_up}px" : '' }", :class => "#{(iniciativa.voted?)? 'a-favor' : 'no-votada'}") do
       if cookies["voted_#{iniciativa.id}"]
         "a favor: #{iniciativa.percentage_votes_up}%"

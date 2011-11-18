@@ -63,6 +63,7 @@ h4 {
 
 header {
   @include column(24,true);
+  margin-bottom: 15px;
 
   img { margin-top: 25px; }
   nav {

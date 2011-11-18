@@ -33,19 +33,19 @@ class Initiative < ActiveRecord::Base
     state :project
     
     event :in_presentation do
-      transition :to => :presentation, :from => :new
+      transition :to => :presentation, :from => :any
     end
     
     event :in_commission do
-      transition :to => :commission, :from => :presentation
+      transition :to => :commission, :from => :any
     end
     
     event :in_plenary do
-      transition :to => :plenary, :from => :commission
+      transition :to => :plenary, :from => :any
     end
     
     event :in_project do
-      transition :to => :project, :from => :plenary
+      transition :to => :project, :from => :any
     end
   end
   
