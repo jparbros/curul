@@ -7,6 +7,8 @@ class IniciativasController < ApplicationController
   end
   
   def show
+    @search = Initiative.search(params[:search])
     @iniciativa = Initiative.find(params[:id])
+    @temas = Topic.all
   end
 end

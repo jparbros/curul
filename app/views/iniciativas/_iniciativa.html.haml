@@ -10,7 +10,10 @@
         = link_to iniciativa.representative.name, congresista_path(iniciativa.representative)
     
     %p.description
-      = iniciativa.description
+      -if show
+        = iniciativa.description
+      -else
+        = link_to iniciativa.description, iniciativa_path(iniciativa)
     
     - temas(iniciativa)
   

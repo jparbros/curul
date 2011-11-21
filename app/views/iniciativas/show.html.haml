@@ -1,11 +1,30 @@
-#iniciativa
-  %article#content
-    %p
-      = @iniciativa.presented_at.to_s(:month_year)
-    %p
-      Propuesta por:
-      = @iniciativa.presented_by
-    %p
-      =  @iniciativa.title
-    %p
-      = @iniciativa.description
+#iniciativas
+  %h1 iniciativas
+  
+  %aside
+    %h2
+      buscar iniciativa
+    
+    = form_for @search, :url => iniciativas_path, :method => :get do |form|
+    
+      = form.text_field :title_or_description_contains, :placeholder => 'palabras clave', :class => 'input'
+    
+      = form.submit :buscar, :class => 'button'
+    
+    %h2
+      temas
+    %ul.ul-aside
+      - @temas.each do |tema|
+        %li= link_to tema.name, "?search[topics_name_contains]=#{tema.name}"
+  
+  %section.container
+    = render :partial => 'iniciativa', :locals => { :iniciativa => @iniciativa, :show => true }
+    
+    %article.iniciativa{:class => "#{(@iniciativa.main?)? 'main' :  ''}"}
+      %h2 comentarios
+      - @iniciativa.comments.each do |comment|
+        - unless comment.comment.nil?
+          %p.comment
+            %span
+              = comment.author
+            = comment.comment

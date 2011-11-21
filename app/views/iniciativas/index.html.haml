@@ -18,5 +18,5 @@
         %li= link_to tema.name, "?search[topics_name_contains]=#{tema.name}"
   
   %section.container
-    = render :partial => 'iniciativa', :collection => @iniciativas
+    = render :partial => 'iniciativa', :collection => @iniciativas, :locals => { :show => false }
     = paginate @iniciativas, window: 2
