@@ -19,7 +19,7 @@ class Comment < ActiveRecord::Base
   #
   # Callbacks
   #
-  after_create :publish, :send
+  after_create :publish, :send_email
   
   def self.create_approved(comment)
     self.create(comment.merge({:approved => true}))
@@ -30,7 +30,7 @@ class Comment < ActiveRecord::Base
     publisher.publish
   end
   
-  def send
+  def send_email
     Comentario.send_email(self.author, self.comment, self.commentable.email).deliver if self.commentable_type == 'Representative'
   end
 end
