@@ -10,7 +10,7 @@ body {
 
 body > .container, .container-fluid { padding-top: 50px !important}
 
-html { background: url("/assets/front/second-bg.png") repeat-x, url("/assets/front/main-bg.png")  }
+html { background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/assets/front/second-bg.png") repeat-x, url("/assets/front/main-bg.png")  }
 
 body {
   @include terminal-font(normal, $dark-grey, 14px);
@@ -96,7 +96,9 @@ section#main-content {
 footer {
   @include column(24,true);
   @include terminal-font('light', $very-dark-persian-blue, 12px);
-  margin: 20px 0 20px 0;
+  height: 190px;
+  margin: 20px 0 0 0;
+
   ul {
     li {
       float: left;

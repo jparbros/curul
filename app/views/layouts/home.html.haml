@@ -1,7 +1,9 @@
 !!! 5
 %html.home
   %head
-    %title Curul 501
+    %title 
+      Curul 501
+      =h yield(:title)
     = stylesheet_link_tag 'front'
     = javascript_include_tag 'application'
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
@@ -27,18 +29,3 @@
           %li ligas de interes
           %li preguntas frecuentes
           %li mapa del sitio
-      = yield :modals
-      %script{:type => 'text/javascript'}
-        $(function(){
-        = yield :javascript_onload
-        })
-        
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) {return;}
-js = d.createElement(s); js.id = id;
-js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=287374454607456";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>

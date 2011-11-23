@@ -4,259 +4,257 @@
 
 html {
   &.home {
-    background: url("/assets/front/footer-bg.png") 0 1660px repeat-x, url("/assets/front/top-home-bg.png") repeat-x, url("/assets/front/main-bg.png");
+    background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/assets/front/top-home-bg.png") repeat-x, url("/assets/front/main-bg.png");
+    
+    .input, .input-button {
+      @include column(6);
+      margin-left: 0;
+    }
   }
 }
 
-#home-page {
-  .input, .input-button {
-    @include column(6);
-    margin-left: 0;
+.entiende {
+  @include column(24, true);
+  background-color: $light-brownish-gray;
+  margin: 10px 0;
+  padding: 0 0 10px 0;
+  
+  p {
+    border-left: 1px dashed $grey-2;
   }
+  
+  section {
+    @include column(5);
+    margin-top: 25px;
+    
+    &.left { margin-left: 25px;}
+    
+    h4 {
+      @include trebuchet-font($dark, 11px);
+      border-bottom: 1px solid $dark;
+    }
+  }
+  
+  .push { margin-right: 40px;}
+}
 
-  .entiende {
+.input-button { margin: 0; }
+
+label { text-align: right;}
+
+.integrantes-content {
+  .button {
+    @include column(4);
+    background-color: $dark-mulberry;
+    border: 0;
+    color: $white;
+    font-size: 20px;
+    height: 35px;
+  }
+}
+
+.integrantes {
+  @include column(24, true);
+  background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
+  padding: 12px 0;
+  margin-top: 10px;
+  
+  .integantes-content {
     @include column(24, true);
-    background-color: $light-brownish-gray;
-    margin: 10px 0;
-    padding: 0 0 10px 0;
+    border-top: 1px solid $light-amberish-gray;
+    border-bottom: 1px solid $light-amberish-gray;
+  }
+}
+.twitter {
+  @include column(24, true);
+  background:url('/assets/front/twitter.png') no-repeat 0 center, url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
+  padding: 12px 0;
+  margin-top: 10px;
+  
+  .twitter-content {
+    @include column(24, true);
+    border-top: 1px solid $light-amberish-gray;
+    border-bottom: 1px solid $light-amberish-gray;
+  }
+  
+  .tweet {
+    @include column(22, true);
+    @include push(2);
+    ul {
+      li {
+        @include column(7);
+        border-left: 1px dashed $grey-2;
+        border-bottom: 0;
+        float: left;
+        padding-left: 8px;
+        
+        &:first-child { border: 0;}
+      }
+    }
+  }
+}
+
+.iniciativas {
+  @include column(17);
+}
+
+.buscar {
+  @include column(6);
+  @include push(1);
+}
+
+article {
+  &#home {
+    @include column(24, true);
+    background-color: $nu-white;
+    padding: 20px 0;
+    margin: 20px 0;
+    
+    h1 {
+      background: transparent;
+      border-bottom: 1px solid $grey;
+      margin: 10px;
+      padding: 0;
+    }
     
     p {
-      border-left: 1px dashed $grey-2;
+      @include trebuchet-font($grey, 18px);
+      border-bottom: 1px solid $grey;
+      margin: 10px;
+      padding: 0 0 10px 0;
     }
     
-    section {
-      @include column(5);
-      margin-top: 25px;
-      
-      &.left { margin-left: 25px;}
-      
-      h4 {
-        @include trebuchet-font($dark, 11px);
-        border-bottom: 1px solid $dark;
-      }
-    }
-    
-    .push { margin-right: 40px;}
-  }
+    .iniciativa {
+      @include column(8);
+      min-height: 350px;
 
-  .input-button { margin: 0; }
-
-  label { text-align: right;}
-
-  .integrantes-content {
-    .button {
-      @include column(4);
-      background-color: $dark-mulberry;
-      border: 0;
-      color: $white;
-      font-size: 20px;
-      height: 35px;
-    }
-  }
-
-  .integrantes {
-    @include column(24, true);
-    background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
-    padding: 12px 0;
-    margin-top: 10px;
-    
-    .integantes-content {
-      @include column(24, true);
-      border-top: 1px solid $light-amberish-gray;
-      border-bottom: 1px solid $light-amberish-gray;
-    }
-  }
-  .twitter {
-    @include column(24, true);
-    background:url('/assets/front/twitter.png') no-repeat 0 center, url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
-    padding: 12px 0;
-    margin-top: 10px;
-    
-    .twitter-content {
-      @include column(24, true);
-      border-top: 1px solid $light-amberish-gray;
-      border-bottom: 1px solid $light-amberish-gray;
-    }
-    
-    .tweet {
-      @include column(22, true);
-      @include push(2);
-      ul {
-        li {
-          @include column(7);
-          border-left: 1px dashed $grey-2;
-          border-bottom: 0;
-          float: left;
-          padding-left: 8px;
-          
-          &:first-child { border: 0;}
-        }
-      }
-    }
-  }
-  
-  .iniciativas {
-    @include column(17);
-  }
-  
-  .buscar {
-    @include column(6);
-    @include push(1);
-  }
-  
-  article {
-    &#home {
-      @include column(24, true);
-      background-color: $nu-white;
-      padding: 20px 0;
-      margin: 20px 0;
-      
-      h1 {
-        background: transparent;
-        border-bottom: 1px solid $grey;
-        margin: 10px;
-        padding: 0;
-      }
-      
       p {
-        @include trebuchet-font($grey, 18px);
-        border-bottom: 1px solid $grey;
-        margin: 10px;
-        padding: 0 0 10px 0;
-      }
-      
-      .iniciativa {
-        @include column(8);
-        min-height: 350px;
+        @include arial-font($dark-grey, 11px, capitalize);
+        margin: 0 0 10px 20px;
 
-        p {
-          @include arial-font($dark-grey, 11px, capitalize);
-          margin: 0 0 10px 20px;
-
-          &.info {
-            span {
-              color: $dark-mulberry;
-            }
+        &.info {
+          span {
+            color: $dark-mulberry;
           }
+        }
 
-          &.description {
-            color: $very-dark-persian-blue;
+        &.description {
+          color: $very-dark-persian-blue;
+          border-bottom: 1px solid $grey;
+          margin-bottom: 0 5px 5px 20px;
+          padding-bottom: 20px; 
+        }
+      }
+
+      ul {
+
+        &.info {
+          @include column-base(true);
+          font-size: 11px;
+          width: 185px;
+
+          li {
+            @include arial-font($mulberryish-gray, 11px);
             border-bottom: 1px solid $grey;
-            margin-bottom: 0 5px 5px 20px;
-            padding-bottom: 20px; 
+            padding: 10px 0;
+
+            span {
+              @include arial-font($very-dark-persian-blue, 11px);
+              display: block;
+            }
           }
         }
 
-        ul {
+        &.colores {
+          @include column-base;
+          text-align: right;
+          width: 115px;
 
-          &.info {
-            @include column-base(true);
-            font-size: 11px;
-            width: 185px;
+          li {
+            @include terminal-font(normal, $white, 12px);
+            margin-top: 5px;
+            padding: 0 5px 0 0;
 
-            li {
-              @include arial-font($mulberryish-gray, 11px);
-              border-bottom: 1px solid $grey;
-              padding: 10px 0;
-
-              span {
-                @include arial-font($very-dark-persian-blue, 11px);
-                display: block;
-              }
-            }
-          }
-
-          &.colores {
-            @include column-base;
-            text-align: right;
-            width: 115px;
-
-            li {
+            a{
               @include terminal-font(normal, $white, 12px);
-              margin-top: 5px;
-              padding: 0 5px 0 0;
+            }
 
-              a{
-                @include terminal-font(normal, $white, 12px);
-              }
+            span {
+              @include terminal-font(semi-bold, $white, 60px);
+            }
 
-              span {
-                @include terminal-font(semi-bold, $white, 60px);
-              }
+            &.comenta {
+              background: url("/assets/front/comenta-bg.png") no-repeat scroll 3px 10px $dark-mulberry;
+              height: 35px;
+              margin-left: 20px;
+              padding-top: 5px;
+            }
 
-              &.comenta {
-                background: url("/assets/front/comenta-bg.png") no-repeat scroll 3px 10px $dark-mulberry;
-                height: 35px;
-                margin-left: 20px;
-                padding-top: 5px;
-              }
+            &.votos {
+              background-color: $light-amber;
+              height: 75px;
+              margin-left: 20px;
+            }
 
-              &.votos {
-                background-color: $light-amber;
-                height: 75px;
-                margin-left: 20px;
-              }
-
-              &.comentarios {
-                background-color: $arctic-bluish-gray;
-                margin-left: 20px;
-                height: 75px;
-              }
+            &.comentarios {
+              background-color: $arctic-bluish-gray;
+              margin-left: 20px;
+              height: 75px;
             }
           }
         }
       }
+    }
+    
+    .no-margin { margin-left: 0; margin-right: 0;}
+    
+    .margin-left-30 { margin-left: 30px; }
+    
+    img {
+      @include column(7);
+      margin-top: -60px;
+    }
+    
+    form {
+      @include column(9, true);
       
-      .no-margin { margin-left: 0; margin-right: 0;}
-      
-      .margin-left-30 { margin-left: 30px; }
-      
-      img {
-        @include column(7);
-        margin-top: -60px;
+      label {
+        font-size: 18px;
+        text-align: left;
+        width: 160px;
       }
       
-      form {
-        @include column(9, true);
-        
-        label {
-          font-size: 18px;
-          text-align: left;
-          width: 160px;
-        }
-        
-        input, select {
-          background-color: $light-yellowish-gray;
-          border: 0;
-          height: 30px;
-          margin: 0 0 5px 0;
-          width: 210px;
-        }
-        
-        .button {
-          @include column(4);
-          background-color: $light-brilliant-amber;
-          border: 0;
-          color: $white;
-          font-size: 30px;
-          height: 45px;
-        }
-        
+      input, select {
+        background-color: $light-yellowish-gray;
+        border: 0;
+        height: 30px;
+        margin: 0 0 5px 0;
+        width: 210px;
       }
+      
+      .button {
+        @include column(4);
+        background-color: $light-brilliant-amber;
+        border: 0;
+        color: $white;
+        font-size: 30px;
+        height: 45px;
+      }
+      
+    }
 
-      h2 {
-        margin: 10px;
-      }
+    h2 {
+      margin: 10px;
     }
   }
+}
 
-  .main-banner {
-    @include column(24, true);
-    background-color: $white;
-    margin: 20px 0 20px 0;
+.main-banner {
+  @include column(24, true);
+  background-color: $white;
+  margin: 20px 0 20px 0;
 
-    img {
-      margin-left: 15px;
-    }
+  img {
+    margin-left: 15px;
   }
 }

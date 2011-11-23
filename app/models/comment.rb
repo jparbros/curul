@@ -19,7 +19,7 @@ class Comment < ActiveRecord::Base
   #
   # Callbacks
   #
-  after_create :publish
+  after_create :publish, :send
   
   def self.create_approved(comment)
     self.create(comment.merge({:approved => true}))
@@ -28,5 +28,9 @@ class Comment < ActiveRecord::Base
   def publish
     publisher = Publisher.new(self.comment)
     publisher.publish
+  end
+  
+  def send
+    Comentario.send_email(self.author, self.comment, self.commentable.email).deliver if self.commentable_type == 'Representative'
   end
 end
