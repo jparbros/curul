@@ -11,6 +11,12 @@ class Comment < ActiveRecord::Base
   scope :approved, where(:approved => true)
   
   #
+  # Validations
+  #
+  validates :author, :presence => true
+  validates :comment, :presence => true
+  
+  #
   # Callbacks
   #
   after_create :publish

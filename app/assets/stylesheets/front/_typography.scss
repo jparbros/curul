@@ -1,4 +1,4 @@
-@mixin terminal-font($weight, $color, $size, $transform: uppercase) {
+@mixin terminal-font($weight, $color, $size, $transform: none) {
   color: $color;
   font-family: 'Terminal Dosis', sans-serif;
   font-size: $size;
@@ -12,7 +12,7 @@
   text-transform: $transform;
 }
 
-@mixin cuprum-font($color, $size, $transform: uppercase) {
+@mixin cuprum-font($color, $size, $transform: none) {
   color: $color;
   font-family: 'Cuprum', sans-serif;
   font-size: $size;
@@ -20,7 +20,7 @@
   text-transform: $transform;
 }
 
-@mixin arial-font($color, $size, $transform: uppercase) {
+@mixin arial-font($color, $size, $transform: none) {
   color: $color;
   font-family: Arial, san-serif;
   font-size: $size;
@@ -28,7 +28,7 @@
   text-transform: $transform;
 }
 
-@mixin trebuchet-font($color, $size, $transform: uppercase) {
+@mixin trebuchet-font($color, $size, $transform: none) {
   color: $color;
   font-family: "Trebuchet MS", sans-serif;
   font-size: $size;

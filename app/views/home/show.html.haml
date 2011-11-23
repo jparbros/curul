@@ -12,55 +12,55 @@
     .iniciativas
       %h2 las propuestas mas vistas
       .iniciativa
-        - if @iniciativa    
+        - if @iniciativa_main    
           %p.info
-            = @iniciativa.presented_at.to_s(:month_year)
+            = @iniciativa_main.presented_at.to_s(:month_year)
             %br
             Propuesta por:
             %span
-              = @iniciativa.presented_by
+              = @iniciativa_main.presented_by
 
           %p.description
-            = @iniciativa.description
+            = @iniciativa_main.description
 
           %ul.colores
             %li.comenta
               vota
               %br
-              = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativa.id}"
+              = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativa_main.id}"
             %li.votos
               %span
-                = @iniciativa.total_votes
+                = @iniciativa_main.total_votes
               %br
               votos
             %li.comentarios
               %span
-                = @iniciativa.comments.count
+                = @iniciativa_main.comments.count
               %br
               comentarios
 
           %ul.info
             %li
               estado de la iniciativa
-              %span= @iniciativa.state
+              %span= @iniciativa_main.state_formated
             %li
               votacion oficial
               %span 
                 a favor:
-                = "#{@iniciativa.official_percentage_up}%"
+                = "#{@iniciativa_main.official_percentage_up}%"
               %span 
                 en contra:
-                = "#{@iniciativa.official_percentage_down}%"
+                = "#{@iniciativa_main.official_percentage_down}%"
             %li
               votacion 131 voces
               %span 
                 a favor:
-                = "#{@iniciativa.percentage_votes_up}%"
+                = "#{@iniciativa_main.percentage_votes_up}%"
               %span 
                 en contra:
-                = "#{@iniciativa.percentage_votes_down}%"
+                = "#{@iniciativa_main.percentage_votes_down}%"
 
-      .iniciativa.no-margin
+      .iniciativa.margin-left-30
         - if @iniciativa    
           %p.info
             = @iniciativa.presented_at.to_s(:month_year)
@@ -91,7 +91,7 @@
           %ul.info
             %li
               estado de la iniciativa
-              %span= @iniciativa.state
+              %span= @iniciativa.state_formated
             %li
               votacion oficial
               %span 
@@ -114,8 +114,10 @@
       %h2 buscar iniciativa
       = form_for @search, :url => iniciativas_path, :method => :get do |form|
         = form.text_field :title_or_description_contains, :placeholder => 'palabras claves'
-        = form.select :representative_region_name_contains, options_for_select(Region.all.collect {|region| [region.name, region.id]}), :include_blank => true
-        = form.select :representative_political_party_name_contains, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :include_blank => true
+        = form.select :representative_region_name_contains, options_for_select(Region.all.collect {|region| [region.name, region.id]}), :prompt => 'estado'
+        = form.select :representative_political_party_name_contains, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :prompt => 'partido politico'
+        = select_month(Date.today)
+        = select_year(Date.today)
         = submit_tag 'Buscar', :class => 'button'
         
   .integrantes

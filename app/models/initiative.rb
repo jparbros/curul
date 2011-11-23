@@ -21,6 +21,17 @@ class Initiative < ActiveRecord::Base
   # Pagination
   #
   paginates_per 5
+  
+  #
+  # States
+  #
+  STATES = {
+    :new => 'nueva',
+    :presentation => 'presentacion',
+    :commission => 'en comision',
+    :plenary => 'en pleno',
+    :project => 'proyecto'
+  }
 
   #
   # States Machine
@@ -129,5 +140,9 @@ class Initiative < ActiveRecord::Base
   
   def voted?
     votes_up > 0 || votes_down > 0
+  end
+  
+  def state_formated
+    STATES[state.to_sym]
   end
 end

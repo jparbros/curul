@@ -25,5 +25,6 @@ Congresspedia::Application.routes.draw do
   resource :como_funciona_congreso, :only => [:show], :controller => :funciona_congreso
   resource :abc_legislativo, :only => [:show], :controller => :abc_legislativo
   resource :contacto, :only => [:new, :create], :controller => :contacto
+  resource :comenta, :only => [:show, :create], :controller => :comenta
   root :to => "home#show"
 end

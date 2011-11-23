@@ -4,13 +4,18 @@
 @import "compass/css3";
 @import "blueprint";
 
+body {
+  text-align: center;
+}
+
 body > .container, .container-fluid { padding-top: 50px !important}
 
 html { background: url("/assets/front/second-bg.png") repeat-x, url("/assets/front/main-bg.png")  }
 
 body {
   @include terminal-font(normal, $dark-grey, 14px);
-  background: url("/assets/front/footer-bk.png") repeat-x center bottom ;
+  
+  .margin-left-15 {margin-left: 15px;}
 }
 
 a {
@@ -22,17 +27,18 @@ a {
   float:none;
   display:block;
   margin:0 auto;
+  text-align: left;
 }
 
 h1 {
-  @include cuprum-font($mulberryish-gray, 36px);
+  @include cuprum-font($mulberryish-gray, 36px, uppercase);
   background: url("/assets/front/h1-bg.png") repeat-x;
   margin: 40px 0 0 0;
   padding: 20px 5px 20px 0;
 }
 
 h2 {
-  @include terminal-font(light, $dark-mulberry, 18px);
+  @include terminal-font(light, $dark-mulberry, 18px, uppercase);
   border-bottom: 1px solid $grey; 
   margin: 20px 10px 10px 20px;
   padding: 0 0 5px;
@@ -76,7 +82,7 @@ header {
         float: left;
         padding: 0 25px 0 5px;
         a {
-          @include cuprum-font($grey, 13px);
+          @include cuprum-font($grey, 13px, uppercase);
         }
       }
     }
@@ -112,7 +118,7 @@ footer {
 }
 
 .submit-button {
-  @include cuprum-font($white, 14px);
+  @include cuprum-font($white, 14px, uppercase);
   background-color: $dark-mulberry;
   border: 0 none;
   box-shadow: none;

@@ -1,0 +1,133 @@
+// Place all the styles related to the comenta controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#comenta {
+
+  .comenta-content { @include column(16, true); @include push(1);}
+
+  .representative {
+    @include column(16, true);
+    background-color: $white;
+    margin: 10px 0;
+    padding: 10px 10px 20px 30px;
+    
+    .header {
+      @include arial-font($mulberryish-gray, 11px);
+      background: url('/assets/front/comentario.png') no-repeat 0 0;
+      height: 20px;
+      padding: 3px 0 0 30px;
+      
+      &.comenta { background: url('/assets/front/mensaje.png') no-repeat 0 0; }
+      
+      span {
+        &.author { font-weight: bold; text-transform: uppercase; }
+        &.representante { color: $dark-mulberry; text-transform: uppercase;}
+      }
+    }
+    
+    p { 
+      @include arial-font($dark-mulberry, 11px); 
+      border-bottom: 1px solid $dark-mulberry;
+      padding: 10px 0;
+    }
+  }
+  
+  .initiative {
+    @include column-base(true);
+    background: url("/assets/front/h1-bg.png") repeat-x 0 top, url("/assets/front/h1-bg.png") repeat-x 0 bottom;
+    background-color: transparent;
+    margin: 10px 0;
+    width: 670px;
+    
+    .content {
+      @include arial-font($mulberryish-gray, 11px);
+      border-top: 1px solid $light-amberish-gray;
+      border-bottom: 1px solid $light-amberish-gray;
+      margin: 13px 0;
+      padding: 10px 10px 10px 30px;
+      
+      .header {
+        @include arial-font($mulberryish-gray, 11px);
+        background: url('/assets/front/mensaje.png') no-repeat 0 0;
+        height: 20px;
+        padding: 4px 0 0 30px;
+
+        span {
+          &.author { font-weight: bold; text-transform: uppercase; }
+          &.representante { color: $dark-mulberry; text-transform: uppercase;}
+        }
+      }
+
+      .representante_foto { @include column(2); margin: 10px 0;}
+      .iniciativa_resumen {
+        @include column(14, true);
+        color: $grey;
+        margin: 10px 0;
+        
+        span {
+          color: $dark-mulberry;
+          display: block;
+          text-transform: uppercase;
+        }
+      }
+
+      p { 
+        @include arial-font($dark-mulberry, 11px); 
+        padding: 10px 0;
+      }
+    }
+  }
+
+  article {
+    @extend #content;
+    margin-left: 0;
+    padding: 0 10px 15px 30px;
+    
+    .form-inputs {
+      display: inline;
+      float: left;
+      width: 400px;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    textarea {
+      height: 150px;
+      margin: 10px 0 0;
+    }
+    
+    .submit {
+      @extend .submit-button;
+      color: $white;
+      font-size: 24px;
+      height: 40px;
+      margin: 80px 0 0 15px;
+    }
+  }
+  aside {
+    background: url('/assets/front/tweet-bird.png') no-repeat 181px 19px, url("/assets/front/h1-bg.png") repeat-x 0 top, url("/assets/front/h1-bg.png") repeat-x 0 bottom;
+    background-color: transparent;
+    min-height: 200px;
+    
+    h2 {margin: 20px 0 10px 0;}
+    .content {
+      border-top: 1px solid $light-amberish-gray;
+      border-bottom: 1px solid $light-amberish-gray;
+      margin: 13px 0 3px;
+    }
+    
+    .tweet {
+      margin: 0; 
+      width: 230px;
+      
+      ul {
+        li {
+          &:last-child { border: 0;}
+        }
+      }
+    }
+  }
+}

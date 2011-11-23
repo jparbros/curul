@@ -1,0 +1,15 @@
+- iniciativa = comentario.commentable
+.initiative
+  .content
+    .header
+      %span.author= comentario.author
+      comento en la propuesta:
+    .representante_foto
+      = image_tag(iniciativa.representative.avatar.url(:thumb))
+    .iniciativa_resumen
+      %span= iniciativa.representative.name
+      = iniciativa.description[0, 160] + '...'
+      = link_to 'ver mas >>', iniciativa_path(iniciativa)
+      
+    %p
+      = "\"#{comentario.comment}\""
