@@ -13,14 +13,12 @@ body > .container, .container-fluid { padding-top: 50px !important}
 html { background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/assets/front/second-bg.png") repeat-x, url("/assets/front/main-bg.png")  }
 
 body {
-  @include terminal-font(normal, $dark-grey, 14px);
+  @include trebuchet-font($dark-grey, 14px);
   
   .margin-left-15 {margin-left: 15px;}
 }
 
-a {
-  @include terminal-font(normal, $dark-grey, 14px);
-}
+a { @include trebuchet-font($dark-grey, 14px);}
 
 #container {
   @include column(24,true);
@@ -38,13 +36,13 @@ h1 {
 }
 
 h2 {
-  @include terminal-font(light, $dark-mulberry, 18px, uppercase);
+  @include trebuchet-font($dark-mulberry, 18px, uppercase);
   border-bottom: 1px solid $grey; 
   margin: 20px 10px 10px 20px;
   padding: 0 0 5px;
   
   &.estrella {
-    @include terminal-font(semi-bold, $dark-grey, 18px);
+    @include trebuchet-font($dark-grey, 18px);
     background: url('/assets/front/star.png') no-repeat;
     border-bottom: 1px solid $grey;
     padding-left: 30px;
@@ -95,11 +93,18 @@ section#main-content {
 
 footer {
   @include column(24,true);
-  @include terminal-font('light', $very-dark-persian-blue, 12px);
+  @include trebuchet-font($very-dark-persian-blue, 12px);
   height: 190px;
   margin: 20px 0 0 0;
 
   ul {
+  
+    &.logo {
+      float: right;
+      
+      li { border: 0;}
+    }
+    
     li {
       float: left;
       border-left: 1px solid $very-dark-persian-blue;
@@ -110,7 +115,7 @@ footer {
 }
 
 .input-text {
-  @include terminal-font(normal, $dark-grey, 14px);
+  @include trebuchet-font($dark-grey, 14px);
   background-color: $light-yellowish-gray;
   border: 0 none;
   box-shadow: none;
@@ -148,7 +153,7 @@ aside {
   
   ul {
     &.ul-aside {
-      @include terminal-font(normal, $dark-grey, 14px);
+      @include trebuchet-font($dark-grey, 14px);
       margin: 0 0 0 20px;
 
       li {

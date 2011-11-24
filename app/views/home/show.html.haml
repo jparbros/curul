@@ -15,13 +15,13 @@
         %p.info
           = @iniciativa_main.presented_at.to_s(:month_year)
           %br
-          Propuesta por:
-          %span
+          %span Propuesta por:
+          %span.presented_by
             = @iniciativa_main.presented_by
 
         %p.description
           = @iniciativa_main.description
-
+          = link_to 'resumen completo >>', iniciativa_path(@iniciativa_main)
         %ul.colores
           %li.comenta
             vota
@@ -35,7 +35,6 @@
           %li.comentarios
             %span
               = @iniciativa_main.comments.count
-            %br
             comentarios
 
         %ul.info
@@ -51,7 +50,7 @@
               en contra:
               = "#{@iniciativa_main.official_percentage_down}%"
           %li
-            votacion 131 voces
+            votacion en 131 voces
             %span 
               a favor:
               = "#{@iniciativa_main.percentage_votes_up}%"
@@ -64,13 +63,13 @@
         %p.info
           = @iniciativa.presented_at.to_s(:month_year)
           %br
-          Propuesta por:
-          %span
+          %span Propuesta por:
+          %span.presented_by
             = @iniciativa.presented_by
 
         %p.description
           = @iniciativa.description
-
+          = link_to 'resumen completo >>', iniciativa_path(@iniciativa)
         %ul.colores
           %li.comenta
             vota
@@ -84,7 +83,6 @@
           %li.comentarios
             %span
               = @iniciativa.comments.count
-            %br
             comentarios
 
         %ul.info
@@ -100,7 +98,7 @@
               en contra:
               = "#{@iniciativa.official_percentage_down}%"
           %li
-            votacion 131 voces
+            votacion en 131 voces
             %span 
               a favor:
               = "#{@iniciativa.percentage_votes_up}%"
@@ -110,9 +108,9 @@
 
 
   .buscar
-    %h2 buscar iniciativa
+    %h1 buscar iniciativa
     = form_for @search, :url => iniciativas_path, :method => :get do |form|
-      = form.text_field :title_or_description_contains, :placeholder => 'palabras claves'
+      = form.text_field :title_or_description_contains, :placeholder => 'escribir palabras claves'
       = form.select :representative_region_name_contains, options_for_select(Region.all.collect {|region| [region.name, region.id]}), :prompt => 'estado'
       = form.select :representative_political_party_name_contains, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :prompt => 'partido politico'
       = select_month(Date.today)
@@ -121,7 +119,7 @@
       
 .integrantes
   .integrantes-content
-    %h2 integrantes del congreso
+    %h1 integrantes del congreso
     = form_for @search, :url => iniciativas_path, :method => :get do |form|
       .input
         = form.label :buscar_por_nombre
@@ -139,7 +137,7 @@
         = submit_tag 'Buscar', :class => 'button'
 
 .entiende
-  %h2 entiende tu congreso
+  %h1 entiende tu congreso
   %p “Entiende tu Congreso” te facilita las siguientes herramientas para Lorem ipsum dolor sit amet,  consectetur adipiscing  consectetur adipiscing  consectetur adipiscing elit.Morbi varius facilisis tellus ut sollicitudin.
   %a{:href => "#{entiende_tu_congreso_path}"}
     %section.push.left
@@ -182,6 +180,8 @@
         %li
           %h4 abc legislativo
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius facilisis tellus ut sollicitudin.
+  
+%hr
           
 <script>
 jQuery(function($){

@@ -1,14 +1,29 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 html {
   &.home {
     background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/assets/front/top-home-bg.png") repeat-x, url("/assets/front/main-bg.png");
     
     .input, .input-button {
-      @include column(6);
-      margin-left: 0;
+      @include column-base;
+      margin-left: 40px;
+      width: 185px;
+    }
+    
+    h1 { 
+      background: none;
+      border-bottom: 1px solid #999999;
+      font-size: 30px;
+      margin: 10px;
+      padding: 0;
+    }
+    
+    h2 { color: #464646; }
+    
+    hr {
+     background: url('/assets/front/h1-bg.png') repeat-x;
+     float: left;
+     height: 20px;
+     margin: 20px 0 50px;
+     width: 950px;
     }
   }
 }
@@ -20,18 +35,24 @@ html {
   padding: 0 0 10px 0;
   
   p {
-    border-left: 1px dashed $grey-2;
+    @include arial-font($dark-grey, 11px);
+    border-bottom: 1px solid $grey-2;
+    margin: 10px;
+    padding: 0 0 20px 0;
   }
   
   section {
     @include column(5);
+    @include arial-font($dark-grey, 11px);
     margin-top: 25px;
     
     &.left { margin-left: 25px;}
     
     h4 {
-      @include trebuchet-font($dark, 11px);
+      @include trebuchet-font($dark, 11px, uppercase);
       border-bottom: 1px solid $dark;
+      font-weight: bold;
+      height: 25px;
     }
   }
   
@@ -40,36 +61,50 @@ html {
 
 .input-button { margin: 0; }
 
-label { text-align: right;}
-
-.integrantes-content {
-  .button {
-    @include column(4);
-    background-color: $dark-mulberry;
-    border: 0;
-    color: $white;
-    font-size: 20px;
-    height: 35px;
-  }
-}
-
 .integrantes {
   @include column(24, true);
   background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
   padding: 12px 0;
-  margin-top: 10px;
+  margin: 10px 0 20px 0;
   
-  .integantes-content {
+  .integrantes-content {
     @include column(24, true);
     border-top: 1px solid $light-amberish-gray;
     border-bottom: 1px solid $light-amberish-gray;
+    
+    h1 { margin: 20px 10px 10px 0;}
+    
+    label {
+      @include cuprum-font(#333333, 18px, uppercase);
+      text-align: left;
+      width: 160px;
+    }
+    
+    input, select {
+      @include border-radius(0);
+      margin: 10px 0 20px;
+    }
+    
+    input { height: 25px }
+    select { height: 35px }
+    
+    .button {
+      @include column(4);
+      background-color: $dark-mulberry;
+      border: 0;
+      color: $white;
+      font-size: 20px;
+      height: 35px;
+      margin-top: 28px;
+    }
   }
 }
+
 .twitter {
   @include column(24, true);
   background:url('/assets/front/twitter.png') no-repeat 0 center, url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
   padding: 12px 0;
-  margin-top: 10px;
+  margin: 20px 0 10px;
   
   .twitter-content {
     @include column(24, true);
@@ -80,6 +115,8 @@ label { text-align: right;}
   .tweet {
     @include column(22, true);
     @include push(2);
+    color: $grey;
+    
     ul {
       li {
         @include column(7);
@@ -98,43 +135,51 @@ label { text-align: right;}
   @include column(17);
 }
 
-.buscar {
-  @include column(6);
-  @include push(1);
-}
 
 article {
   &#home {
     @include column(24, true);
     background-color: $nu-white;
-    padding: 20px 0;
+    padding: 0 0 20px;
     margin: 20px 0;
     
     h1 {
       background: transparent;
-      border-bottom: 1px solid $grey;
       margin: 10px;
-      padding: 0;
     }
     
+    .buscar {
+      @include column(6);
+      @include push(1);
+      margin-bottom: 0;
+
+      h1 { margin: 10px 0 10px 0; }
+    }
+    
+    
     p {
-      @include trebuchet-font($grey, 18px);
+      @include trebuchet-font($grey, 18px, uppercase);
       border-bottom: 1px solid $grey;
       margin: 10px;
-      padding: 0 0 10px 0;
+      padding: 10px 0 20px;
     }
     
     .iniciativa {
       @include column(8);
-      min-height: 350px;
 
       p {
         @include arial-font($dark-grey, 11px, capitalize);
         margin: 0 0 10px 20px;
 
         &.info {
+          border: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          
           span {
-            color: $dark-mulberry;
+            color: $mulberryish-gray;
+            
+            &.presented_by { color: #242424;}
           }
         }
 
@@ -143,6 +188,12 @@ article {
           border-bottom: 1px solid $grey;
           margin-bottom: 0 5px 5px 20px;
           padding-bottom: 20px; 
+          
+          a {
+            @include arial-font($dark-mulberry, 11px, uppercase);
+            display: block;
+            margin: 10px 0 0;
+          }
         }
       }
 
@@ -154,12 +205,12 @@ article {
           width: 185px;
 
           li {
-            @include arial-font($mulberryish-gray, 11px);
+            @include arial-font($mulberryish-gray, 11px, uppercase);
             border-bottom: 1px solid $grey;
-            padding: 10px 0;
+            padding: 11.5px 0;
 
             span {
-              @include arial-font($very-dark-persian-blue, 11px);
+              @include arial-font(#232222, 11px, capitalize);
               display: block;
             }
           }
@@ -171,16 +222,12 @@ article {
           width: 115px;
 
           li {
-            @include terminal-font(normal, $white, 12px);
+            @include cuprum-font($white, 12px, uppercase);
             margin-top: 5px;
             padding: 0 5px 0 0;
 
             a{
-              @include terminal-font(normal, $white, 12px);
-            }
-
-            span {
-              @include terminal-font(semi-bold, $white, 60px);
+              @include cuprum-font($white, 12px, uppercase);
             }
 
             &.comenta {
@@ -194,12 +241,24 @@ article {
               background-color: $light-amber;
               height: 75px;
               margin-left: 20px;
+              
+              span {
+                @include cuprum-font($white, 60px, uppercase);
+                display: inline-block;
+                margin: 10px 0 -10px;
+              }
             }
 
             &.comentarios {
               background-color: $arctic-bluish-gray;
+              height: 20px;
               margin-left: 20px;
-              height: 75px;
+              padding: 10px 5px 0 0;
+              
+              span {
+                @include cuprum-font($white, 18px, uppercase);
+                margin: 0;
+              }
             }
           }
         }
@@ -218,33 +277,30 @@ article {
     form {
       @include column(9, true);
       
-      label {
-        font-size: 18px;
-        text-align: left;
-        width: 160px;
-      }
-      
       input, select {
+        @include trebuchet-font(#616161, 14px, uppercase);
+        @include border-radius(0);
         background-color: $light-yellowish-gray;
         border: 0;
-        height: 30px;
-        margin: 0 0 5px 0;
+        height: 35px;
+        margin: 4.5px 0;
+        padding-top: 8px;
         width: 210px;
       }
       
       .button {
-        @include column(4);
+        @include cuprum-font(#333333, 30px, uppercase);
+        @include column(4, true);
         background-color: $light-brilliant-amber;
         border: 0;
-        color: $white;
-        font-size: 30px;
-        height: 45px;
+        height: 50px;
+        padding-top: 9px;
       }
       
     }
 
     h2 {
-      margin: 10px;
+      margin: 17px 10px 10px;
     }
   }
 }

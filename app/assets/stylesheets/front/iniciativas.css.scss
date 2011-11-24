@@ -54,7 +54,7 @@ article {
           border-top: 1px solid $grey-2;
 
           li {
-            @include terminal-font(normal, $dark-grey, 11px);
+            @include trebuchet-font($dark-grey, 11px);
             border: 1px solid $grey-2;
             float: left;
             height: 24px;
@@ -73,7 +73,7 @@ article {
           border-top: 1px solid $grey-2;
 
           li {
-            @include terminal-font(normal, $dark-grey, 12px);
+            @include trebuchet-font($dark-grey, 12px);
             float: left;
             height: 24px;
             padding-top: 6px;
@@ -106,14 +106,14 @@ article {
           border-top: 1px solid $grey-2;
 
           li {
-            @include terminal-font(normal, $dark-grey, 12px);
+            @include trebuchet-font($dark-grey, 12px);
             float: left;
             height: 24px;
             padding-top: 6px;
             text-align: center;
             
             a {
-              @include terminal-font(normal, $dark-grey, 12px);
+              @include trebuchet-font($dark-grey, 12px);
             }
 
             &.a-favor {
@@ -162,16 +162,16 @@ article {
         width: 85px;
         
         li {
-          @include terminal-font(normal, $white, 12px);
+          @include trebuchet-font($white, 12px);
           margin-top: 5px;
           padding: 0 5px 0 0;
           
           a{
-            @include terminal-font(normal, $white, 12px);
+            @include trebuchet-font($white, 12px);
           }
           
           span {
-            @include terminal-font(semi-bold, $white, 60px);
+            @include trebuchet-font($white, 60px);
           }
           
           &.comenta {

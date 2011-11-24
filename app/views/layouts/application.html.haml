@@ -4,6 +4,7 @@
     %title 
       Curul 501
       =h yield(:title)
+    %link{:href => 'http://fonts.googleapis.com/css?family=Cuprum', :rel => 'stylesheet', :type => 'text/css'}
     = stylesheet_link_tag 'front'
     = javascript_include_tag 'application'
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
@@ -29,6 +30,9 @@
           %li ligas de interes
           %li preguntas frecuentes
           %li mapa del sitio
+        %ul.logo
+          %li= link_to image_tag('front/fundar-logo.png'), 'http://www.fundar.org.mx', :target => '_blank'
+          %li= link_to image_tag('front/citivox-logo.png'), 'http://www.citivox.com', :target => '_blank'
       = yield :modals
       %script{:type => 'text/javascript'}
         $(function(){
