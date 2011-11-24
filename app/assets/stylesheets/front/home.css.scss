@@ -35,7 +35,7 @@ html {
       padding: 0 0 10px 0;
 
       p {
-        @include arial-font($dark-grey, 11px);
+        @include arial-font($dark-grey, 13);
         border-bottom: 1px solid $grey-2;
         margin: 10px;
         padding: 0 0 20px 0;
@@ -43,13 +43,13 @@ html {
 
       section {
         @include column(5);
-        @include arial-font($dark-grey, 11px);
+        @include arial-font($dark-grey, 13px);
         margin-top: 25px;
 
         &.left { margin-left: 25px;}
 
         h4 {
-          @include trebuchet-font($dark, 11px, uppercase);
+          @include trebuchet-font($dark, 13px, uppercase);
           border-bottom: 1px solid $dark;
           font-weight: bold;
           height: 25px;
@@ -113,7 +113,7 @@ html {
       .tweet {
         @include column(22, true);
         @include push(2);
-        color: $grey;
+        @include arial-font($grey, 13px);
 
         ul {
           li {
@@ -166,7 +166,7 @@ html {
           @include column(8);
 
           p {
-            @include arial-font($dark-grey, 11px, capitalize);
+            @include arial-font($dark-grey, 13px, capitalize);
             margin: 0 0 10px 20px;
 
             &.info {
@@ -184,11 +184,12 @@ html {
             &.description {
               color: $very-dark-persian-blue;
               border-bottom: 1px solid $grey;
-              margin-bottom: 0 5px 5px 20px;
+              height: 65px;
+              margin: 0 5px 5px 20px;
               padding-bottom: 20px; 
 
               a {
-                @include arial-font($dark-mulberry, 11px, uppercase);
+                @include arial-font($dark-mulberry, 13px, uppercase);
                 display: block;
                 margin: 10px 0 0;
               }
@@ -203,12 +204,12 @@ html {
               width: 185px;
 
               li {
-                @include arial-font($mulberryish-gray, 11px, uppercase);
+                @include arial-font($mulberryish-gray, 13px, uppercase);
                 border-bottom: 1px solid $grey;
                 padding: 11.5px 0;
 
                 span {
-                  @include arial-font(#232222, 11px, capitalize);
+                  @include arial-font(#232222, 13px, capitalize);
                   display: block;
                 }
               }
@@ -220,12 +221,12 @@ html {
               width: 115px;
 
               li {
-                @include cuprum-font($white, 12px, uppercase);
+                @include cuprum-font($white, 13px, uppercase);
                 margin-top: 5px;
                 padding: 0 5px 0 0;
 
                 a{
-                  @include cuprum-font($white, 12px, uppercase);
+                  @include cuprum-font($white, 13px, uppercase);
                 }
 
                 &.comenta {
@@ -276,12 +277,12 @@ html {
           @include column(9, true);
 
           input, select {
-            @include trebuchet-font(#616161, 14px, uppercase);
+            @include trebuchet-font(#616161, 13px, uppercase);
             @include border-radius(0);
             background-color: $light-yellowish-gray;
             border: 0;
             height: 35px;
-            margin: 4.5px 0;
+            margin: 7px 0;
             padding-top: 8px;
             width: 210px;
           }

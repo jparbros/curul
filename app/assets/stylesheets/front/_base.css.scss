@@ -93,7 +93,7 @@ section#main-content {
 
 footer {
   @include column(24,true);
-  @include trebuchet-font($very-dark-persian-blue, 12px);
+  @include trebuchet-font($very-dark-persian-blue, 13px);
   height: 190px;
   margin: 20px 0 0 0;
 
@@ -188,7 +188,7 @@ article {
 }
 
 .tweet {
-  @include arial-font($dark-grey, 10px, none);
+  @include arial-font($dark-grey, 13px, none);
   margin: 0 0 100px 20px;
   width: 200px;
   
@@ -196,9 +196,11 @@ article {
     li {
       border-bottom: 1px solid $grey-2;
       margin: 10px 0 0 0;
+      min-height: 50px;
       padding: 0 0 10px 0;
+      
       a {
-        font-size: 10px;
+        font-size: 13px;
         text-transform: none;
       }
     }
