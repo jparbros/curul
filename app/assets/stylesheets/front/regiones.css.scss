@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html {
-  &.regiones {
+  &.regiones, &.search_representative {
     table {
       border: 1px solid #dddddd;
       color: $grayish-cyan;

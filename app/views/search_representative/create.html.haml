@@ -1,0 +1,19 @@
+%h1 congresistas
+
+%aside
+  = render :partial => 'shared/congresistas_aside'
+
+%article
+  selecciona un representante para ver su perfil e interactuar con el
+  %table.zebra-striped
+    %thead
+      %tr
+        %th foto
+        %th nombre
+        %th distrito
+    %tbody
+      - @representantes.each do |representante|
+        %tr
+          %td= image_tag(representante.avatar.url(:thumb))
+          %td= link_to(representante.name, congresista_path(representante))
+          %td= representante.district
