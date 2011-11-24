@@ -120,7 +120,7 @@
 .integrantes
   .integrantes-content
     %h1 integrantes del congreso
-    = form_tag search_representative_path, :method => :get do |form|
+    = form_tag search_representative_path, :method => :post do |form|
       .input
         = label_tag :buscar_por_nombre
         %br

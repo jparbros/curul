@@ -4,9 +4,11 @@ html {
     
     .input, .input-button {
       @include column-base;
-      margin-left: 40px;
-      width: 185px;
+      margin: 0 0 0 25px;
+      width: 220px;
     }
+    
+    .input-button { width: 150px}
     
     h1 { 
       background: none;
@@ -300,8 +302,6 @@ html {
         }
       }
     }
-    
-    .input-button { margin: 0; }
 
     .main-banner {
       @include column(24, true);
