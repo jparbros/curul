@@ -30,5 +30,8 @@ Congresspedia::Application.routes.draw do
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :post, :as => "search_initiatives"
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :get, :as => "search_initiatives"
   
+  match "busqueda/diputados", :to => "search_representative#create", :via => :post, :as => "search_representative"
+  match "busqueda/diputados", :to => "search_representative#create", :via => :get, :as => "search_representative"
+  
   root :to => "home#show"
 end
