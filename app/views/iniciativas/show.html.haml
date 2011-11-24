@@ -5,11 +5,11 @@
     %h2
       buscar iniciativa
     
-    = form_for @search, :url => iniciativas_path, :method => :get do |form|
-    
-      = form.text_field :title_or_description_contains, :placeholder => 'palabras clave', :class => 'input'
-    
-      = form.submit :buscar, :class => 'button'
+    = form_tag search_initiatives_path, :method => :post do |form|
+
+      = text_field_tag 'search[keywords]', '', :placeholder => 'palabras clave', :class => 'input'
+
+      = submit_tag :buscar, :class => 'button'
     
     %h2
       temas

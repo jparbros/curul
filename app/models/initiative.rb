@@ -145,4 +145,5 @@ class Initiative < ActiveRecord::Base
   def state_formated
     STATES[state.to_sym]
   end
+
 end

@@ -1,32 +1,31 @@
-#comenta
-  %h1 comenta
+%h1 comenta
 
-  %aside
-    .content
-      %h2
-        twitter
-      .tweet
-      
-  
-  .comenta-content
-    %article
-      %h2 deja tu comentario
+%aside
+  .content
+    %h2
+      twitter
+    .tweet
     
-      = form_for @comentario, :url => '/comenta', :method => :post do |form|
-        .form-inputs
-          = form.text_field :author, :placeholder => 'Nombre', :class => 'span3 input-text'
 
-          = form.text_field :email, :placeholder => 'Email', :class => 'span4 input-text margin-left-15'
-
-          = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
-
-        = hidden_field_tag :other_email
-    
-        = submit_tag 'comenta', :class => 'submit span4'
+.comenta-content
+  %article
+    %h2 deja tu comentario
   
-    %h2 todos los mensajes
-    - @comentarios.each do |comentario|
-      = render :partial => comentario.commentable.class.to_s.downcase, :locals => {:comentario => comentario}
+    = form_for @comentario, :url => '/comenta', :method => :post do |form|
+      .form-inputs
+        = form.text_field :author, :placeholder => 'Nombre', :class => 'span3 input-text'
+
+        = form.text_field :email, :placeholder => 'Email', :class => 'span4 input-text margin-left-15'
+
+        = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
+
+      = hidden_field_tag :other_email
+  
+      = submit_tag 'comenta', :class => 'submit span4'
+
+  %h2 todos los mensajes
+  - @comentarios.each do |comentario|
+    = render :partial => comentario.commentable.class.to_s.downcase, :locals => {:comentario => comentario}
 
 <script>
 jQuery(function($){

@@ -109,10 +109,10 @@
 
   .buscar
     %h1 buscar iniciativa
-    = form_for @search, :url => iniciativas_path, :method => :get do |form|
-      = form.text_field :title_or_description_contains, :placeholder => 'escribir palabras claves'
-      = form.select :representative_region_name_contains, options_for_select(Region.all.collect {|region| [region.name, region.id]}), :prompt => 'estado'
-      = form.select :representative_political_party_name_contains, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :prompt => 'partido politico'
+    = form_tag search_initiatives_path, :method => :post do |form|
+      = text_field_tag 'search[keywords]', '', :placeholder => 'escribir palabras claves'
+      = select_tag 'search[estado]', options_for_select(Region.all.collect {|region| [region.name, region.name]}), :prompt => 'estado'
+      = select_tag 'search[political_party]', options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :prompt => 'partido politico'
       = select_month(Date.today)
       = select_year(Date.today)
       = submit_tag 'Buscar', :class => 'button'
@@ -120,19 +120,19 @@
 .integrantes
   .integrantes-content
     %h1 integrantes del congreso
-    = form_for @search, :url => iniciativas_path, :method => :get do |form|
+    = form_tag :url => iniciativas_path, :method => :get do |form|
       .input
-        = form.label :buscar_por_nombre
+        = label_tag :buscar_por_nombre
         %br
-        = form.text_field :title_or_description_contains
+        = text_field_tag :title_or_description_contains
       .input
-        = form.label :entidad
+        = label_tag :entidad
         %br
-        = form.select :representative_region_name_contains, options_for_select(Region.all.collect {|region| [region.name, region.id]}), :include_blank => true
+        = select_tag :representative_region_name_contains, options_for_select(Region.all.collect {|region| [region.name, region.id]}), :include_blank => true
       .input
-        = form.label :partido
+        = label_tag :partido
         %br
-        = form.select :representative_political_party_name_contains, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :include_blank => true, :placeholder => 'partido politico'
+        = select_tag :representative_political_party_name_contains, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :include_blank => true, :placeholder => 'partido politico'
       .input-button
         = submit_tag 'Buscar', :class => 'button'
 

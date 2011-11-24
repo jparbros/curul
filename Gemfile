@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails', '3.1.3'
 
 gem 'bitly'
 gem 'carrierwave'
@@ -10,10 +10,7 @@ gem 'haml'
 gem 'hpricot'
 gem 'kaminari'
 gem 'koala'
-gem "squeel"
-gem "meta_search"
 gem 'mini_magick'
-gem 'mysql2'
 gem "oauth"
 gem 'oauth2'
 gem 'pg'

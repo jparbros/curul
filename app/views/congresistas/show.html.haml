@@ -1,75 +1,74 @@
-#congresistas
-  %h1 congresistas
+%h1 congresistas
 
-  %aside
-    %h2
-      Twitter
-    .tweet
+%aside
+  %h2
+    Twitter
+  .tweet
+  
+  %h2
+    deja tu comentario
+  .comentarios-formulario
+    = form_for @comment, :url => congresista_comentarios_path(@representante) do |form|
+      = form.text_field :author, :class => :input, :placeholder => 'nombre'
+      = form.text_field :email, :class => :input, :placeholder => 'correo electronico'
+      = form.text_area :comment, :class => :input, :placeholder => 'mensaje'
+      = form.submit 'comentar', :class => 'button'
+
+%article
+  %h2
+    representante de
+    = @representante.region.name
     
-    %h2
-      deja tu comentario
-    .comentarios-formulario
-      = form_for @comment, :url => congresista_comentarios_path(@representante) do |form|
-        = form.text_field :author, :class => :input, :placeholder => 'nombre'
-        = form.text_field :email, :class => :input, :placeholder => 'correo electronico'
-        = form.text_area :comment, :class => :input, :placeholder => 'mensaje'
-        = form.submit 'comentar', :class => 'button'
+  .primera-columna
+    = image_tag @representante.avatar.url
+    %h4 iniciativas
+    %ul.iniciativas
+      - @representante.initiatives.each do |iniciativa|
+        %li
+          = iniciativa.title
 
-  %article
-    %h2
-      representante de
-      = @representante.region.name
+  .segunda-columna
+    %p
+      %span nombre
+      %span.nombre= @representante.name
       
-    .primera-columna
-      = image_tag @representante.avatar.url
-      %h4 iniciativas
-      %ul.iniciativas
-        - @representante.initiatives.each do |iniciativa|
-          %li
-            = iniciativa.title
+    %p
+      %span partido politico
+      = image_tag @representante.political_party.logo.url(:thumb)
+      = @representante.political_party.name
+    
+    %p
+      %span email
+      = @representante.email
+    
+    %p
+      %span telefono
+      = @representante.phone
+    
+    %p
+      %span twitter
+      = "@#{@representante.twitter}"
+      
+    %p
+      %span suplente
+      = @representante.substitute
+      
+    %p
+      %span fecha de nacimiento
+      = @representante.birthday
+      
+    %p
+      %span comisiones
+      = @representante.commissions
+      
+    %p
+      %span biografia
+      = @representante.biography
 
-    .segunda-columna
-      %p
-        %span nombre
-        %span.nombre= @representante.name
-        
-      %p
-        %span partido politico
-        = image_tag @representante.political_party.logo.url(:thumb)
-        = @representante.political_party.name
-      
-      %p
-        %span email
-        = @representante.email
-      
-      %p
-        %span telefono
-        = @representante.phone
-      
-      %p
-        %span twitter
-        = "@#{@representante.twitter}"
-        
-      %p
-        %span suplente
-        = @representante.substitute
-        
-      %p
-        %span fecha de nacimiento
-        = @representante.birthday
-        
-      %p
-        %span comisiones
-        = @representante.commissions
-        
-      %p
-        %span biografia
-        = @representante.biography
-
-    .comentarios
-      %h3 comentarios
-      - @comments.each do |comentario|
-        %p= comentario.comment
+  .comentarios
+    %h3 comentarios
+    - @comments.each do |comentario|
+      %p= comentario.comment
 
 
 <script>

@@ -1,4 +1,4 @@
-
+require 'CSV'
 namespace :representantes do
   desc "Task description"
   task :create => [:environment] do
@@ -9,12 +9,11 @@ namespace :representantes do
           :district => representante['Distrito'],
           :twitter => representante['Twitter'],
           :phone => "#{representante['Telefono']} Ext. #{representante['Extension']}",
-          :commissions => representante['Comisiones'],
           :election_type => representante['Tipo de eleccion']
       )
       rep.political_party = PoliticalParty.find_or_create_by_name representante['Partido']
       rep.region =  Region.find_by_name representante['Entidad']
-      rep.save
+      rep.save!
     end
   end
 end
@@ -38,9 +37,7 @@ namespace :iniciativas do
         when 'pleno' then 'plenary'
         when 'approved' then 'project'
         end
-      puts state
       ini.state = state
-      puts ini.inspect
       ini.save!
       iniciativa[5].to_i.times {
         Vote.create(:vote => 1, :initiative_id => ini.id)

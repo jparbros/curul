@@ -1,130 +1,129 @@
-#entiende
-  %h1 entiende tu congreso
+%h1 entiende tu congreso
+
+= render :partial => 'shared/entiende_aside'
+
+%article
+  %h2 abc legislativo
   
-  = render :partial => 'shared/entiende_aside'
-  
-  %article
-    %h2 abc legislativo
+  %ul.tabs
+    %li.active
+      %a{:href => '#', 'data-div' => 'poder_legislativo'} poder legislativo
+    %li
+      %a{:href => '#', 'data-div' => 'trabajo_legislativo'} trabajo legislativo
+    %li
+      %a{:href => '#', 'data-div' => 'comisiones'} comisiones legislativas
+      
+  .comisiones
+    %h3 ¿Qué son?
+
+    %p Órganos internos del Congreso de la Unión, constituidos por diputados y/o senadores que a través de la elaboración de dictámenes, informes, opiniones o resoluciones, contribuyen a que las cámaras cumplan con sus atribuciones constitucionales y legales.
     
-    %ul.tabs
-      %li.active
-        %a{:href => '#', 'data-div' => 'poder_legislativo'} poder legislativo
-      %li
-        %a{:href => '#', 'data-div' => 'trabajo_legislativo'} trabajo legislativo
-      %li
-        %a{:href => '#', 'data-div' => 'comisiones'} comisiones legislativas
-        
-    .comisiones
-      %h3 ¿Qué son?
+    %h3 ¿Cuáles tipos existen?
 
-      %p Órganos internos del Congreso de la Unión, constituidos por diputados y/o senadores que a través de la elaboración de dictámenes, informes, opiniones o resoluciones, contribuyen a que las cámaras cumplan con sus atribuciones constitucionales y legales.
-      
-      %h3 ¿Cuáles tipos existen?
+    %p Según la normatividad que rige las prácticas del Congreso General de los Estados Unidos Mexicanos existen tres tipos generales de comisiones: las ordinarias, las especiales y las de investigación. Cada una de ellas tiene diferentes facultades y atribuciones.
+    
+    %h3 Comisiones ordinarias
 
-      %p Según la normatividad que rige las prácticas del Congreso General de los Estados Unidos Mexicanos existen tres tipos generales de comisiones: las ordinarias, las especiales y las de investigación. Cada una de ellas tiene diferentes facultades y atribuciones.
-      
-      %h3 Comisiones ordinarias
+    %p Las ordinarias son comisiones regulares y permanentes en las que intervienen los legisladores para dictaminar o resolver los asuntos de su incumbencia. Estas comisiones permanecen de una legislatura a otra. Se dividen en tres tipos diferentes: a) comisiones de dictamen legislativo que se encargan de la resolución respecto de una propuesta de ley o de reforma legal; b) las de información y control evaluatorio, que también pueden pertenecer a la categoría de dictamen legislativo; y c) las jurisdiccionales que tienen por finalidad conocer los asuntos que requieren el desahogo de un procedimiento formal jurisdiccional.
+    
+    %h3 ¿Cómo se integran las comisiones ordinarias?
 
-      %p Las ordinarias son comisiones regulares y permanentes en las que intervienen los legisladores para dictaminar o resolver los asuntos de su incumbencia. Estas comisiones permanecen de una legislatura a otra. Se dividen en tres tipos diferentes: a) comisiones de dictamen legislativo que se encargan de la resolución respecto de una propuesta de ley o de reforma legal; b) las de información y control evaluatorio, que también pueden pertenecer a la categoría de dictamen legislativo; y c) las jurisdiccionales que tienen por finalidad conocer los asuntos que requieren el desahogo de un procedimiento formal jurisdiccional.
-      
-      %h3 ¿Cómo se integran las comisiones ordinarias?
+    %p Se constituyen durante las primeras sesiones del Pleno al inicio de cada legislatura, a propuesta de la Junta de Coordinación Política, que también designa la conformación de la Junta Directiva de la comisión: un presidente y cinco secretarios. El número máximo de integrantes es treinta, y se eligen respetando los principios de pluralidad y proporcionalidad en la representación de la Cámara. Cada diputado puede pertenecer a tres comisiones ordinarias – sin tomar en cuenta la Comisión Jurisdiccional.
 
-      %p Se constituyen durante las primeras sesiones del Pleno al inicio de cada legislatura, a propuesta de la Junta de Coordinación Política, que también designa la conformación de la Junta Directiva de la comisión: un presidente y cinco secretarios. El número máximo de integrantes es treinta, y se eligen respetando los principios de pluralidad y proporcionalidad en la representación de la Cámara. Cada diputado puede pertenecer a tres comisiones ordinarias – sin tomar en cuenta la Comisión Jurisdiccional.
+    %p Existen dos comisiones ordinarias, con tareas específicas, que se integran de manera diferente:
 
-      %p Existen dos comisiones ordinarias, con tareas específicas, que se integran de manera diferente:
+    %p 1. Comisión de Reglamentos y Prácticas Parlamentarias: se integra con los veinte diputados de mayor experiencia legislativa de entre los 500.
 
-      %p 1. Comisión de Reglamentos y Prácticas Parlamentarias: se integra con los veinte diputados de mayor experiencia legislativa de entre los 500.
+    %p 2. Comisión Jurisdiccional: debe tener entre doce y dieciséis diputados.
+    
+    %h3 ¿Cuáles son las atribuciones de las comisiones?
 
-      %p 2. Comisión Jurisdiccional: debe tener entre doce y dieciséis diputados.
-      
-      %h3 ¿Cuáles son las atribuciones de las comisiones?
+    %p - Elaborar su programa anual de trabajo.
 
-      %p - Elaborar su programa anual de trabajo.
+    %p - Presentar un informe semestral de sus actividades a la Conferencia para la dirección y programación de los trabajos legislativos.
 
-      %p - Presentar un informe semestral de sus actividades a la Conferencia para la dirección y programación de los trabajos legislativos.
+    %p - Organizar y mantener un archivo de todos los asuntos que les sean turnados, que deberá ser entregado a la legislatura siguiente.
 
-      %p - Organizar y mantener un archivo de todos los asuntos que les sean turnados, que deberá ser entregado a la legislatura siguiente.
+    %p - Sesionar cuando menos una vez al mes.
 
-      %p - Sesionar cuando menos una vez al mes.
+    %p - Resolver los asuntos que la Mesa directiva de la cámara les turne.
 
-      %p - Resolver los asuntos que la Mesa directiva de la cámara les turne.
+    %p - Dictaminar, atender y resolver las iniciativas, proyectos y proposiciones turnadas en los términos de los programas legislativos acordados por la conferencia para la dirección y programación de los trabajos legislativos.
 
-      %p - Dictaminar, atender y resolver las iniciativas, proyectos y proposiciones turnadas en los términos de los programas legislativos acordados por la conferencia para la dirección y programación de los trabajos legislativos.
+    %p - Realizar las actividades que se deriven de la legislación, de los ordenamientos aplicables, de los acuerdos tomados por el Pleno de la cámara y los que adopten por si mismas con relación a las materias de su competencia.
 
-      %p - Realizar las actividades que se deriven de la legislación, de los ordenamientos aplicables, de los acuerdos tomados por el Pleno de la cámara y los que adopten por si mismas con relación a las materias de su competencia.
+    %p Las comisiones además tienen la obligación de realizar un informe sobre el estado que guarda la dependencia de la Administración Pública Federal que corresponde con su tema. De igual forma, estas comisiones darán su opinión a la Comisión de Presupuesto y Cuenta Pública en torno a los informes del Ejecutivo y demás entidades fiscalizadas.
+    
+    %h3 ¿Cuáles son las atribuciones de la Junta Directiva de una comisión?
 
-      %p Las comisiones además tienen la obligación de realizar un informe sobre el estado que guarda la dependencia de la Administración Pública Federal que corresponde con su tema. De igual forma, estas comisiones darán su opinión a la Comisión de Presupuesto y Cuenta Pública en torno a los informes del Ejecutivo y demás entidades fiscalizadas.
-      
-      %h3 ¿Cuáles son las atribuciones de la Junta Directiva de una comisión?
+    %p Debe presentar los proyectos del plan de trabajo anual de la comisión, integrar subcomisiones de trabajo y elaborar el orden del día de las reuniones. El presidente de la comisión es responsable de los expedientes que pasen a su estudio, de coordinar el trabajo de los integrantes, citarlos a las reuniones, presidirlas y conducirlas, además de nombrar al Secretario Técnico de la Comisión y vigilar el envío de la documentación a la Gaceta Parlamentaria para su publicación.
 
-      %p Debe presentar los proyectos del plan de trabajo anual de la comisión, integrar subcomisiones de trabajo y elaborar el orden del día de las reuniones. El presidente de la comisión es responsable de los expedientes que pasen a su estudio, de coordinar el trabajo de los integrantes, citarlos a las reuniones, presidirlas y conducirlas, además de nombrar al Secretario Técnico de la Comisión y vigilar el envío de la documentación a la Gaceta Parlamentaria para su publicación.
+    %p La directiva de la Comisión tiene la facultad de permitir a expertos, peritos o grupos de interés su participación en los debates y en las sesiones de comisión. Es el Presidente el que está facultado para proponer a alguno de estos para su participación.
 
-      %p La directiva de la Comisión tiene la facultad de permitir a expertos, peritos o grupos de interés su participación en los debates y en las sesiones de comisión. Es el Presidente el que está facultado para proponer a alguno de estos para su participación.
+    %p 1. Comisiones especiales
 
-      %p 1. Comisiones especiales
+    %p Las Comisiones especiales tienen como objetivo hacerse cargo de un asunto específico; se constituyen por acuerdo del Pleno, aclarando el objeto para su creación, el número de integrantes que han de conformarla y el plazo de su existencia. Una vez cumplido el objetivo –o en su defecto hacia el final de la legislatura--, la comisión especial se extinguirá mediante un informe realizado por la Secretaría General a la Conferencia para la Dirección y Programación de los trabajos Legislativos.
 
-      %p Las Comisiones especiales tienen como objetivo hacerse cargo de un asunto específico; se constituyen por acuerdo del Pleno, aclarando el objeto para su creación, el número de integrantes que han de conformarla y el plazo de su existencia. Una vez cumplido el objetivo –o en su defecto hacia el final de la legislatura--, la comisión especial se extinguirá mediante un informe realizado por la Secretaría General a la Conferencia para la Dirección y Programación de los trabajos Legislativos.
+    %p 2. Comisiones de investigación
 
-      %p 2. Comisiones de investigación
+    %p Las Comisiones de investigación tienen un carácter transitorio; se crean por acuerdo del pleno y a solicitud de una cuarta parte de los miembros de la Cámara con el fin de investigar el funcionamiento de organismos descentralizados federales o de empresas de participación estatal mayoritaria. Estas comisiones tienen la obligación de hacer del conocimiento del Ejecutivo Federal los resultados de sus investigaciones.
+    
+  .trabajo_legislativo
+    %h3 Iniciativa
 
-      %p Las Comisiones de investigación tienen un carácter transitorio; se crean por acuerdo del pleno y a solicitud de una cuarta parte de los miembros de la Cámara con el fin de investigar el funcionamiento de organismos descentralizados federales o de empresas de participación estatal mayoritaria. Estas comisiones tienen la obligación de hacer del conocimiento del Ejecutivo Federal los resultados de sus investigaciones.
-      
-    .trabajo_legislativo
-      %h3 Iniciativa
+    %p Es el documento formal que contiene la propuesta para crear, modificar, abrogar o derogar alguna ley.  Las iniciativas pueden ser presentadas por el presidente, los diputados, los senadores y las legislaturas de los estados. Pueden presentarse indistintamente en cualquiera de las dos Cámaras, aunque en ciertas materias alguna de los dos debe ser la de origen.
 
-      %p Es el documento formal que contiene la propuesta para crear, modificar, abrogar o derogar alguna ley.  Las iniciativas pueden ser presentadas por el presidente, los diputados, los senadores y las legislaturas de los estados. Pueden presentarse indistintamente en cualquiera de las dos Cámaras, aunque en ciertas materias alguna de los dos debe ser la de origen.
+    %h3 Dictamen
 
-      %h3 Dictamen
+    %p El dictamen es la declaración de la voluntad mayoritaria de la comisión o las comisiones. Mediante este documento se exponen las razones para aceptar, modificar o prescribir la vigencia o aplicabilidad de las disposiciones contenidas en la iniciativa de ley o decreto que se les turnó para ser estudiada. Si el dictamen es aprobatorio, parcial o totalmente, la Mesa Directiva está en condiciones de someterlo a votación en el pleno de la Cámara.
+    
+    %h3 Excitativa
 
-      %p El dictamen es la declaración de la voluntad mayoritaria de la comisión o las comisiones. Mediante este documento se exponen las razones para aceptar, modificar o prescribir la vigencia o aplicabilidad de las disposiciones contenidas en la iniciativa de ley o decreto que se les turnó para ser estudiada. Si el dictamen es aprobatorio, parcial o totalmente, la Mesa Directiva está en condiciones de someterlo a votación en el pleno de la Cámara.
-      
-      %h3 Excitativa
+    %p Es un procedimiento parlamentario por medio del cual los legisladores solicitan a la Mesa Directiva que, a su vez, requiera a las comisiones legislativas dictaminadoras, la elaboración y presentación del dictamen, una vez agotado el tiempo que establece la ley para su cumplimiento.
+    
+    %h3 Punto de acuerdo
 
-      %p Es un procedimiento parlamentario por medio del cual los legisladores solicitan a la Mesa Directiva que, a su vez, requiera a las comisiones legislativas dictaminadoras, la elaboración y presentación del dictamen, una vez agotado el tiempo que establece la ley para su cumplimiento.
-      
-      %h3 Punto de acuerdo
+    %p Son proposiciones o solicitudes realizadas por los legisladores que no constituyen una iniciativa de ley. Tratan diversos temas, principalmente sobre la actualidad política del país. El trámite para aprobar un punto de acuerdo es: presentarlo por escrito y firmado por el o los autores al Presidente de la Cámara, dar lectura al documento en la siguiente sesión, fundamentar la proposición, discutirla y, en su caso, turnar la proposición a la Comisión legislativa competente.
+    
+  .poder_legislativo
+    %h3 ¿Qué es el Poder Legislativo?
 
-      %p Son proposiciones o solicitudes realizadas por los legisladores que no constituyen una iniciativa de ley. Tratan diversos temas, principalmente sobre la actualidad política del país. El trámite para aprobar un punto de acuerdo es: presentarlo por escrito y firmado por el o los autores al Presidente de la Cámara, dar lectura al documento en la siguiente sesión, fundamentar la proposición, discutirla y, en su caso, turnar la proposición a la Comisión legislativa competente.
-      
-    .poder_legislativo
-      %h3 ¿Qué es el Poder Legislativo?
+    %p El poder Legislativo es un órgano fundamental de la democracia constitucional integrado por representantes de la nación. Su naturaleza representativa intenta traducir las inquietudes y anhelos de la sociedad. El Congreso de la Unión – Cámara de Diputados y Cámara de Senadores –  es un espacio donde se delibera a partir de la pluralidad de manifestaciones humanas, sociales, culturales y políticas de la sociedad, en torno a los temas públicos más relevantes. Sus facultades y atribuciones se estipulan en el artículo 73 constitucional.
+    
+    %h3 ¿Qué es la Cámara de Diputados?
 
-      %p El poder Legislativo es un órgano fundamental de la democracia constitucional integrado por representantes de la nación. Su naturaleza representativa intenta traducir las inquietudes y anhelos de la sociedad. El Congreso de la Unión – Cámara de Diputados y Cámara de Senadores –  es un espacio donde se delibera a partir de la pluralidad de manifestaciones humanas, sociales, culturales y políticas de la sociedad, en torno a los temas públicos más relevantes. Sus facultades y atribuciones se estipulan en el artículo 73 constitucional.
-      
-      %h3 ¿Qué es la Cámara de Diputados?
+    %p Junto con la Cámara de Senadores conforma el poder legislativo de la nación. Está integrada por quinientos diputados: trescientos de ellos son elegidos por el principio de mayoría y doscientos mediante una fórmula de representación proporcional, la cual se define a partir de los votos totales para el partido que representan en una de las cinco divisiones electorales llamadas circunscripciones. Estos diputados se en una lista propuesta por el partido.
+    
+    %h3 ¿Cuales son las funciones de la Cámara de Diputados?
 
-      %p Junto con la Cámara de Senadores conforma el poder legislativo de la nación. Está integrada por quinientos diputados: trescientos de ellos son elegidos por el principio de mayoría y doscientos mediante una fórmula de representación proporcional, la cual se define a partir de los votos totales para el partido que representan en una de las cinco divisiones electorales llamadas circunscripciones. Estos diputados se en una lista propuesta por el partido.
-      
-      %h3 ¿Cuales son las funciones de la Cámara de Diputados?
+    %h4 1. Legislativa
 
-      %h4 1. Legislativa
+    %p Es la atribución fundamental de dictar leyes, reformarlas y derogarlas. Esta función tiene como propósito adecuar el ordenamiento jurídico a la realidad y la contingencia de la sociedad contemporánea.
 
-      %p Es la atribución fundamental de dictar leyes, reformarlas y derogarlas. Esta función tiene como propósito adecuar el ordenamiento jurídico a la realidad y la contingencia de la sociedad contemporánea.
+    %h4 2. Financiera y presupuestaria
 
-      %h4 2. Financiera y presupuestaria
+    %p Es exclusiva de la Cámara de Diputados, que se encarga de aprobar, previa discusión y negociación, el Proyecto de Presupuesto de Egresos de la Federación, propuesto por el Poder Ejecutivo para cada año fiscal. También revisa todo el proceso presupuestario, desde su aprobación hasta la revisión de la Cuenta Pública, es decir, el ejercicio real del gasto gubernamental (Artículo 74. IV, CPEUM).
 
-      %p Es exclusiva de la Cámara de Diputados, que se encarga de aprobar, previa discusión y negociación, el Proyecto de Presupuesto de Egresos de la Federación, propuesto por el Poder Ejecutivo para cada año fiscal. También revisa todo el proceso presupuestario, desde su aprobación hasta la revisión de la Cuenta Pública, es decir, el ejercicio real del gasto gubernamental (Artículo 74. IV, CPEUM).
+    %h4 3. Jurisdiccional
 
-      %h4 3. Jurisdiccional
+    %p El Poder Legislativo decide sobre la validez o invalidez de una acusación a cualquier servidor público de los Supremos Poderes, ya que cuentan con un fuero especial que garantiza que no pueden ser sometidos a juicio sin el levantamiento previo y expreso de ese fuero. (Artículo 74.V, CPEUM).
 
-      %p El Poder Legislativo decide sobre la validez o invalidez de una acusación a cualquier servidor público de los Supremos Poderes, ya que cuentan con un fuero especial que garantiza que no pueden ser sometidos a juicio sin el levantamiento previo y expreso de ese fuero. (Artículo 74.V, CPEUM).
+    %h4 4. Administrativa
 
-      %h4 4. Administrativa
+    %p Cuenta con dos modalidades. La primera concierne a la ratificación o proposición de altos funcionarios públicos. La segunda implica la capacidad de los legisladores para diseñar las propias reglas del juego al interior de las cámaras. Estas reglas emanan, en el caso de México, principalmente de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos y del Reglamento para el gobierno interior del Congreso General de los Estados Unidos Mexicanos.
 
-      %p Cuenta con dos modalidades. La primera concierne a la ratificación o proposición de altos funcionarios públicos. La segunda implica la capacidad de los legisladores para diseñar las propias reglas del juego al interior de las cámaras. Estas reglas emanan, en el caso de México, principalmente de la Ley Orgánica del Congreso General de los Estados Unidos Mexicanos y del Reglamento para el gobierno interior del Congreso General de los Estados Unidos Mexicanos.
+    %h4 5. Constituyente
 
-      %h4 5. Constituyente
+    %p Es una variante de la función legislativa. Permite a los legisladores la reforma parcial de la norma suprema, es decir, de la Constitución Política de los Estados Unidos Mexicanos. Por razones obvias, este proceso de reforma constitucional implica un proceso legislativo mucho más complejo que cualquier otro. Es necesaria la aprobación de ambas cámaras, de los congresos locales y el decreto presidencial.
 
-      %p Es una variante de la función legislativa. Permite a los legisladores la reforma parcial de la norma suprema, es decir, de la Constitución Política de los Estados Unidos Mexicanos. Por razones obvias, este proceso de reforma constitucional implica un proceso legislativo mucho más complejo que cualquier otro. Es necesaria la aprobación de ambas cámaras, de los congresos locales y el decreto presidencial.
+    %h4 6. Control y contrapeso político
 
-      %h4 6. Control y contrapeso político
+    %p Es una función muy relevante conferida al Poder Legislativo porque esta función responde a la necesidad de dar un equilibrio entre los poderes mediante pesos y contrapesos entre uno y otro. Hay formas diversas de monitorear y dar seguimiento al buen ejercicio de los asuntos públicos por parte del Poder Ejecutivo. (Artículo 74.II, CPEUM).
+    
+    %h3 ¿Qué es el Senado de la República?
 
-      %p Es una función muy relevante conferida al Poder Legislativo porque esta función responde a la necesidad de dar un equilibrio entre los poderes mediante pesos y contrapesos entre uno y otro. Hay formas diversas de monitorear y dar seguimiento al buen ejercicio de los asuntos públicos por parte del Poder Ejecutivo. (Artículo 74.II, CPEUM).
-      
-      %h3 ¿Qué es el Senado de la República?
+    %p Es el cuerpo colegiado que junto con la Cámara de Diputados conforma el poder legislativo de la República. Está constituido por 128 senadores. Los ciudadanos de cada entidad federativa escogen dos senadores según el principio de mayoría relativa, un senador surge de la primera minoría en cada una de estas entidades y los 32 legisladores restantes se obtienen por medio del principio de representación proporcional (Artículo 56, CPEUM). Sus facultades y atribuciones se estipulan en el artículo 76 constitucional.
+    
+    %h3 ¿Qué es la Comisión Permanente?
 
-      %p Es el cuerpo colegiado que junto con la Cámara de Diputados conforma el poder legislativo de la República. Está constituido por 128 senadores. Los ciudadanos de cada entidad federativa escogen dos senadores según el principio de mayoría relativa, un senador surge de la primera minoría en cada una de estas entidades y los 32 legisladores restantes se obtienen por medio del principio de representación proporcional (Artículo 56, CPEUM). Sus facultades y atribuciones se estipulan en el artículo 76 constitucional.
-      
-      %h3 ¿Qué es la Comisión Permanente?
-
-      %p Durante los recesos del Congreso de la Unión habrá una Comisión Permanente compuesta de treinta y siete miembros, de los que diecinueve serán diputados y dieciocho senadores, nombrados por sus respectivas Cámaras en víspera de la clausura de los periodos ordinarios de sesiones.  Sus facultades y atribuciones se estipulan en el artículo 78 constitucional.
+    %p Durante los recesos del Congreso de la Unión habrá una Comisión Permanente compuesta de treinta y siete miembros, de los que diecinueve serán diputados y dieciocho senadores, nombrados por sus respectivas Cámaras en víspera de la clausura de los periodos ordinarios de sesiones.  Sus facultades y atribuciones se estipulan en el artículo 78 constitucional.

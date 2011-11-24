@@ -25,292 +25,293 @@ html {
      margin: 20px 0 50px;
      width: 950px;
     }
-  }
-}
-
-.entiende {
-  @include column(24, true);
-  background-color: $light-brownish-gray;
-  margin: 10px 0;
-  padding: 0 0 10px 0;
-  
-  p {
-    @include arial-font($dark-grey, 11px);
-    border-bottom: 1px solid $grey-2;
-    margin: 10px;
-    padding: 0 0 20px 0;
-  }
-  
-  section {
-    @include column(5);
-    @include arial-font($dark-grey, 11px);
-    margin-top: 25px;
     
-    &.left { margin-left: 25px;}
-    
-    h4 {
-      @include trebuchet-font($dark, 11px, uppercase);
-      border-bottom: 1px solid $dark;
-      font-weight: bold;
-      height: 25px;
-    }
-  }
-  
-  .push { margin-right: 40px;}
-}
-
-.input-button { margin: 0; }
-
-.integrantes {
-  @include column(24, true);
-  background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
-  padding: 12px 0;
-  margin: 10px 0 20px 0;
-  
-  .integrantes-content {
-    @include column(24, true);
-    border-top: 1px solid $light-amberish-gray;
-    border-bottom: 1px solid $light-amberish-gray;
-    
-    h1 { margin: 20px 10px 10px 0;}
-    
-    label {
-      @include cuprum-font(#333333, 18px, uppercase);
-      text-align: left;
-      width: 160px;
-    }
-    
-    input, select {
-      @include border-radius(0);
-      margin: 10px 0 20px;
-    }
-    
-    input { height: 25px }
-    select { height: 35px }
-    
-    .button {
-      @include column(4);
-      background-color: $dark-mulberry;
-      border: 0;
-      color: $white;
-      font-size: 20px;
-      height: 35px;
-      margin-top: 28px;
-    }
-  }
-}
-
-.twitter {
-  @include column(24, true);
-  background:url('/assets/front/twitter.png') no-repeat 0 center, url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
-  padding: 12px 0;
-  margin: 20px 0 10px;
-  
-  .twitter-content {
-    @include column(24, true);
-    border-top: 1px solid $light-amberish-gray;
-    border-bottom: 1px solid $light-amberish-gray;
-  }
-  
-  .tweet {
-    @include column(22, true);
-    @include push(2);
-    color: $grey;
-    
-    ul {
-      li {
-        @include column(7);
-        border-left: 1px dashed $grey-2;
-        border-bottom: 0;
-        float: left;
-        padding-left: 8px;
-        
-        &:first-child { border: 0;}
-      }
-    }
-  }
-}
-
-.iniciativas {
-  @include column(17);
-}
-
-
-article {
-  &#home {
-    @include column(24, true);
-    background-color: $nu-white;
-    padding: 0 0 20px;
-    margin: 20px 0;
-    
-    h1 {
-      background: transparent;
-      margin: 10px;
-    }
-    
-    .buscar {
-      @include column(6);
-      @include push(1);
-      margin-bottom: 0;
-
-      h1 { margin: 10px 0 10px 0; }
-    }
-    
-    
-    p {
-      @include trebuchet-font($grey, 18px, uppercase);
-      border-bottom: 1px solid $grey;
-      margin: 10px;
-      padding: 10px 0 20px;
-    }
-    
-    .iniciativa {
-      @include column(8);
+    .entiende {
+      @include column(24, true);
+      background-color: $light-brownish-gray;
+      margin: 10px 0;
+      padding: 0 0 10px 0;
 
       p {
-        @include arial-font($dark-grey, 11px, capitalize);
-        margin: 0 0 10px 20px;
+        @include arial-font($dark-grey, 11px);
+        border-bottom: 1px solid $grey-2;
+        margin: 10px;
+        padding: 0 0 20px 0;
+      }
 
-        &.info {
+      section {
+        @include column(5);
+        @include arial-font($dark-grey, 11px);
+        margin-top: 25px;
+
+        &.left { margin-left: 25px;}
+
+        h4 {
+          @include trebuchet-font($dark, 11px, uppercase);
+          border-bottom: 1px solid $dark;
+          font-weight: bold;
+          height: 25px;
+        }
+      }
+
+      .push { margin-right: 40px;}
+    }
+    
+    .integrantes {
+      @include column(24, true);
+      background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
+      padding: 12px 0;
+      margin: 10px 0 20px 0;
+
+      .integrantes-content {
+        @include column(24, true);
+        border-top: 1px solid $light-amberish-gray;
+        border-bottom: 1px solid $light-amberish-gray;
+
+        h1 { margin: 20px 10px 10px 0;}
+
+        label {
+          @include cuprum-font(#333333, 18px, uppercase);
+          text-align: left;
+          width: 160px;
+        }
+
+        input, select {
+          @include border-radius(0);
+          margin: 10px 0 20px;
+        }
+
+        input { height: 25px }
+        select { height: 35px }
+
+        .button {
+          @include column(4);
+          background-color: $dark-mulberry;
           border: 0;
+          color: $white;
+          font-size: 20px;
+          height: 35px;
+          margin-top: 28px;
+        }
+      }
+    }
+    
+    .twitter {
+      @include column(24, true);
+      background:url('/assets/front/twitter.png') no-repeat 0 center, url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
+      padding: 12px 0;
+      margin: 20px 0 10px;
+
+      .twitter-content {
+        @include column(24, true);
+        border-top: 1px solid $light-amberish-gray;
+        border-bottom: 1px solid $light-amberish-gray;
+      }
+
+      .tweet {
+        @include column(22, true);
+        @include push(2);
+        color: $grey;
+
+        ul {
+          li {
+            @include column(7);
+            border-left: 1px dashed $grey-2;
+            border-bottom: 0;
+            float: left;
+            padding-left: 8px;
+
+            &:first-child { border: 0;}
+          }
+        }
+      }
+    }
+    
+    article {
+      &#home {
+        @include column(24, true);
+        background-color: $nu-white;
+        padding: 0 0 20px;
+        margin: 20px 0;
+
+        .iniciativas {
+          @include column(17);
+        }
+
+
+        h1 {
+          background: transparent;
+          margin: 10px;
+        }
+
+        .buscar {
+          @include column(6);
+          @include push(1);
           margin-bottom: 0;
-          padding-bottom: 0;
-          
-          span {
-            color: $mulberryish-gray;
-            
-            &.presented_by { color: #242424;}
-          }
+
+          h1 { margin: 10px 0 10px 0; }
         }
 
-        &.description {
-          color: $very-dark-persian-blue;
+
+        p {
+          @include trebuchet-font($grey, 18px, uppercase);
           border-bottom: 1px solid $grey;
-          margin-bottom: 0 5px 5px 20px;
-          padding-bottom: 20px; 
-          
-          a {
-            @include arial-font($dark-mulberry, 11px, uppercase);
-            display: block;
-            margin: 10px 0 0;
-          }
-        }
-      }
-
-      ul {
-
-        &.info {
-          @include column-base(true);
-          font-size: 11px;
-          width: 185px;
-
-          li {
-            @include arial-font($mulberryish-gray, 11px, uppercase);
-            border-bottom: 1px solid $grey;
-            padding: 11.5px 0;
-
-            span {
-              @include arial-font(#232222, 11px, capitalize);
-              display: block;
-            }
-          }
+          margin: 10px;
+          padding: 10px 0 20px;
         }
 
-        &.colores {
-          @include column-base;
-          text-align: right;
-          width: 115px;
+        .iniciativa {
+          @include column(8);
 
-          li {
-            @include cuprum-font($white, 12px, uppercase);
-            margin-top: 5px;
-            padding: 0 5px 0 0;
+          p {
+            @include arial-font($dark-grey, 11px, capitalize);
+            margin: 0 0 10px 20px;
 
-            a{
-              @include cuprum-font($white, 12px, uppercase);
-            }
+            &.info {
+              border: 0;
+              margin-bottom: 0;
+              padding-bottom: 0;
 
-            &.comenta {
-              background: url("/assets/front/comenta-bg.png") no-repeat scroll 3px 10px $dark-mulberry;
-              height: 35px;
-              margin-left: 20px;
-              padding-top: 5px;
-            }
-
-            &.votos {
-              background-color: $light-amber;
-              height: 75px;
-              margin-left: 20px;
-              
               span {
-                @include cuprum-font($white, 60px, uppercase);
-                display: inline-block;
-                margin: 10px 0 -10px;
+                color: $mulberryish-gray;
+
+                &.presented_by { color: #242424;}
               }
             }
 
-            &.comentarios {
-              background-color: $arctic-bluish-gray;
-              height: 20px;
-              margin-left: 20px;
-              padding: 10px 5px 0 0;
-              
-              span {
-                @include cuprum-font($white, 18px, uppercase);
-                margin: 0;
+            &.description {
+              color: $very-dark-persian-blue;
+              border-bottom: 1px solid $grey;
+              margin-bottom: 0 5px 5px 20px;
+              padding-bottom: 20px; 
+
+              a {
+                @include arial-font($dark-mulberry, 11px, uppercase);
+                display: block;
+                margin: 10px 0 0;
+              }
+            }
+          }
+
+          ul {
+
+            &.info {
+              @include column-base(true);
+              font-size: 11px;
+              width: 185px;
+
+              li {
+                @include arial-font($mulberryish-gray, 11px, uppercase);
+                border-bottom: 1px solid $grey;
+                padding: 11.5px 0;
+
+                span {
+                  @include arial-font(#232222, 11px, capitalize);
+                  display: block;
+                }
+              }
+            }
+
+            &.colores {
+              @include column-base;
+              text-align: right;
+              width: 115px;
+
+              li {
+                @include cuprum-font($white, 12px, uppercase);
+                margin-top: 5px;
+                padding: 0 5px 0 0;
+
+                a{
+                  @include cuprum-font($white, 12px, uppercase);
+                }
+
+                &.comenta {
+                  background: url("/assets/front/comenta-bg.png") no-repeat scroll 3px 10px $dark-mulberry;
+                  height: 35px;
+                  margin-left: 20px;
+                  padding-top: 5px;
+                }
+
+                &.votos {
+                  background-color: $light-amber;
+                  height: 75px;
+                  margin-left: 20px;
+
+                  span {
+                    @include cuprum-font($white, 60px, uppercase);
+                    display: inline-block;
+                    margin: 10px 0 -10px;
+                  }
+                }
+
+                &.comentarios {
+                  background-color: $arctic-bluish-gray;
+                  height: 20px;
+                  margin-left: 20px;
+                  padding: 10px 5px 0 0;
+
+                  span {
+                    @include cuprum-font($white, 18px, uppercase);
+                    margin: 0;
+                  }
+                }
               }
             }
           }
         }
-      }
-    }
-    
-    .no-margin { margin-left: 0; margin-right: 0;}
-    
-    .margin-left-30 { margin-left: 30px; }
-    
-    img {
-      @include column(7);
-      margin-top: -60px;
-    }
-    
-    form {
-      @include column(9, true);
-      
-      input, select {
-        @include trebuchet-font(#616161, 14px, uppercase);
-        @include border-radius(0);
-        background-color: $light-yellowish-gray;
-        border: 0;
-        height: 35px;
-        margin: 4.5px 0;
-        padding-top: 8px;
-        width: 210px;
-      }
-      
-      .button {
-        @include cuprum-font(#333333, 30px, uppercase);
-        @include column(4, true);
-        background-color: $light-brilliant-amber;
-        border: 0;
-        height: 50px;
-        padding-top: 9px;
-      }
-      
-    }
 
-    h2 {
-      margin: 17px 10px 10px;
+        .no-margin { margin-left: 0; margin-right: 0;}
+
+        .margin-left-30 { margin-left: 30px; }
+
+        img {
+          @include column(7);
+          margin-top: -60px;
+        }
+
+        form {
+          @include column(9, true);
+
+          input, select {
+            @include trebuchet-font(#616161, 14px, uppercase);
+            @include border-radius(0);
+            background-color: $light-yellowish-gray;
+            border: 0;
+            height: 35px;
+            margin: 4.5px 0;
+            padding-top: 8px;
+            width: 210px;
+          }
+
+          .button {
+            @include cuprum-font(#333333, 30px, uppercase);
+            @include column(4, true);
+            background-color: $light-brilliant-amber;
+            border: 0;
+            height: 50px;
+            padding-top: 9px;
+          }
+
+        }
+
+        h2 {
+          margin: 17px 10px 10px;
+        }
+      }
+    }
+    
+    .input-button { margin: 0; }
+
+    .main-banner {
+      @include column(24, true);
+      background-color: $white;
+      margin: 20px 0 20px 0;
+
+      img {
+        margin-left: 15px;
+      }
     }
   }
 }
 
-.main-banner {
-  @include column(24, true);
-  background-color: $white;
-  margin: 20px 0 20px 0;
-
-  img {
-    margin-left: 15px;
-  }
-}

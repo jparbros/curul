@@ -1,22 +1,21 @@
-#iniciativas
-  %h1 iniciativas
+%h1 iniciativas
+
+%aside
+  %h2
+    buscar iniciativa
   
-  %aside
-    %h2
-      buscar iniciativa
-    
-    = form_for @search, :url => iniciativas_path, :method => :get do |form|
-    
-      = form.text_field :title_or_description_contains, :placeholder => 'palabras clave', :class => 'input'
-    
-      = form.submit :buscar, :class => 'button'
-    
-    %h2
-      temas
-    %ul.ul-aside
-      - @temas.each do |tema|
-        %li= link_to tema.name, "?search[topics_name_contains]=#{tema.name}"
+  = form_tag search_initiatives_path, :method => :post do |form|
   
-  %section.container
-    = render :partial => 'iniciativa', :collection => @iniciativas, :locals => { :show => false }
-    = paginate @iniciativas, window: 2
+    = text_field_tag 'search[keywords]', '', :placeholder => 'palabras clave', :class => 'input'
+  
+    = submit_tag :buscar, :class => 'button'
+  
+  %h2
+    temas
+  %ul.ul-aside
+    - @temas.each do |tema|
+      %li= link_to tema.name, "?search[topics_name_contains]=#{tema.name}"
+
+%section.container
+  = render :partial => 'iniciativas/iniciativa', :collection => @iniciativas, :locals => { :show => false }
+  = paginate @iniciativas, window: 2
