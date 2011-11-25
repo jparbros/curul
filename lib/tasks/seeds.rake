@@ -1,5 +1,3 @@
-require 'csv'
-
 namespace :representantes do
   desc "Task description"
   task :create => [:environment] do
