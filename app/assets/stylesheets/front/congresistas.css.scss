@@ -23,7 +23,7 @@ html {
         border-bottom: 1px solid $grey-2;
 
         p {
-          @include arial-font($dark-grey, 10px);
+          @include arial-font($dark-grey, 13px);
           border-top: 1px solid $grey-2;
           padding-top: 10px;
         }

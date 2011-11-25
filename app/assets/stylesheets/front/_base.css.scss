@@ -13,12 +13,12 @@ body > .container, .container-fluid { padding-top: 50px !important}
 html { background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/assets/front/second-bg.png") repeat-x, url("/assets/front/main-bg.png")  }
 
 body {
-  @include trebuchet-font($dark-grey, 14px);
+  @include trebuchet-font($dark-grey, 13px);
   
   .margin-left-15 {margin-left: 15px;}
 }
 
-a { @include trebuchet-font($dark-grey, 14px);}
+a { @include trebuchet-font($dark-grey, 13px);}
 
 #container {
   @include column(24,true);
@@ -153,11 +153,12 @@ aside {
   
   ul {
     &.ul-aside {
-      @include trebuchet-font($dark-grey, 14px);
+      @include trebuchet-font($dark-grey, 13px, capitalize);
       margin: 0 0 0 20px;
 
       li {
         margin: 0 0 10px 0;
+        a{ @include trebuchet-font($dark-grey, 13px, capitalize);}
       }
     }
   }

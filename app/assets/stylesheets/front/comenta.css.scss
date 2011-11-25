@@ -14,7 +14,7 @@ html {
       padding: 10px 10px 20px 30px;
     
       .header {
-        @include arial-font($mulberryish-gray, 11px);
+        @include arial-font($mulberryish-gray, 13px);
         background: url('/assets/front/comentario.png') no-repeat 0 0;
         height: 20px;
         padding: 3px 0 0 30px;
@@ -28,7 +28,7 @@ html {
       }
     
       p { 
-        @include arial-font($dark-mulberry, 11px); 
+        @include arial-font($dark-mulberry, 13px); 
         border-bottom: 1px solid $dark-mulberry;
         padding: 10px 0;
       }
@@ -42,14 +42,14 @@ html {
       width: 670px;
     
       .content {
-        @include arial-font($mulberryish-gray, 11px);
+        @include arial-font($mulberryish-gray, 13px);
         border-top: 1px solid $light-amberish-gray;
         border-bottom: 1px solid $light-amberish-gray;
         margin: 13px 0;
         padding: 10px 10px 10px 30px;
       
         .header {
-          @include arial-font($mulberryish-gray, 11px);
+          @include arial-font($mulberryish-gray, 13px);
           background: url('/assets/front/mensaje.png') no-repeat 0 0;
           height: 20px;
           padding: 4px 0 0 30px;
@@ -74,7 +74,7 @@ html {
         }
 
         p { 
-          @include arial-font($dark-mulberry, 11px); 
+          @include arial-font($dark-mulberry, 13px); 
           padding: 10px 0;
         }
       }

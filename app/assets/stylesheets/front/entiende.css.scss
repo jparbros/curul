@@ -20,7 +20,7 @@ html {
       }
 
       .descripcion {
-        @include trebuchet-font($dark, 12px);
+        @include trebuchet-font($dark, 13px);
         padding: 10px;
       }
     }
@@ -36,7 +36,7 @@ html {
         margin-bottom: 10px;
 
         h4 {
-          @include trebuchet-font($dark, 11px);
+          @include trebuchet-font($dark, 13px);
           border-bottom: 1px solid $dark;
         }
 
@@ -47,7 +47,7 @@ html {
 
         ul {
           li {
-            @include trebuchet-font($dark, 11px);
+            @include trebuchet-font($dark, 13px);
             float: left;
 
             &:last-child {
@@ -80,7 +80,7 @@ html {
       
        ul {
         li {
-          @include trebuchet-font($dark, 11px);
+          @include trebuchet-font($dark, 13px);
           float: left;
 
           &:last-child {
@@ -101,7 +101,7 @@ html {
     }
     
     .descripcion {
-      @include trebuchet-font($dark, 12px);
+      @include trebuchet-font($dark, 13px);
       padding: 10px;
     }
   }

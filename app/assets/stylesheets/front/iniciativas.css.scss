@@ -20,7 +20,7 @@ html {
     }
     
     .first-child {
-      @include arial-font($dark-grey, 11px);
+      @include arial-font($dark-grey, 13px, uppercase);
       border: 0;
       padding-right: 5px;
       text-align: right;
@@ -88,14 +88,14 @@ html {
         width: 610px;
 
         li {
-          @include trebuchet-font($dark-grey, 12px);
+          @include trebuchet-font($dark-grey, 12px, uppercase);
           float: left;
           height: 24px;
           padding-top: 6px;
           text-align: center;
 
           a {
-            @include trebuchet-font($dark-grey, 12px);
+            @include trebuchet-font($dark-grey, 12px, uppercase);
           }
 
           &.a-favor {
@@ -126,7 +126,7 @@ html {
         width: 610px;
 
         li {
-          @include trebuchet-font($dark-grey, 12px);
+          @include trebuchet-font($dark-grey, 12px, uppercase);
           float: left;
           height: 24px;
           padding-top: 6px;
@@ -199,6 +199,14 @@ html {
           background-color: white;
         }
         
+        p {
+          a {
+            @include arial-font($dark-mulberry, 13px, uppercase);
+            display: block;
+            margin: 10px 0 0;
+          }
+        }
+        
         .main {@include column-base(true);}
 
         .content {
@@ -209,11 +217,11 @@ html {
             margin-bottom: 10px;
 
             &.temas {
-              @include arial-font($mulberryish-gray, 10px, downcase);
+              @include arial-font($mulberryish-gray, 13px, capitalize);
               margin-bottom: 5px;
 
               li {
-                @include arial-font($mulberryish-gray, 10px, downcase);
+                @include arial-font($mulberryish-gray, 13px, capitalize);
                 border-left: 1px solid $mulberryish-gray;
                 float: left;
                 padding: 0 10px;
@@ -228,7 +236,7 @@ html {
               border-top: 1px solid $grey-2;
 
               li {
-                @include trebuchet-font($dark-grey, 11px);
+                @include trebuchet-font($dark-grey, 13px, uppercase);
                 border: 1px solid $grey-2;
                 float: left;
                 height: 24px;
@@ -247,7 +255,7 @@ html {
               border-top: 1px solid $grey-2;
 
               li {
-                @include trebuchet-font($dark-grey, 12px);
+                @include trebuchet-font($dark-grey, 13px, uppercase);
                 float: left;
                 height: 24px;
                 padding-top: 6px;
@@ -280,14 +288,14 @@ html {
               border-top: 1px solid $grey-2;
 
               li {
-                @include trebuchet-font($dark-grey, 12px);
+                @include trebuchet-font($dark-grey, 13px, uppercase);
                 float: left;
                 height: 24px;
                 padding-top: 6px;
                 text-align: center;
 
                 a {
-                  @include trebuchet-font($dark-grey, 12px);
+                  @include trebuchet-font($dark-grey, 13px, uppercase);
                 }
 
                 &.a-favor {
@@ -315,7 +323,7 @@ html {
             
             &.etapa {
               li {
-                @include trebuchet-font($dark-grey, 12px);
+                @include trebuchet-font($dark-grey, 13px, uppercase);
                 border-left: 1px solid  $grey-2;
                 float: left;
                 height: 24px;
@@ -349,12 +357,12 @@ html {
             width: 85px;
 
             li {
-              @include trebuchet-font($white, 12px);
+              @include trebuchet-font($white, 13px, uppercase);
               margin-top: 5px;
               padding: 0 5px 0 0;
 
               a{
-                @include trebuchet-font($white, 12px);
+                @include trebuchet-font($white, 13px, uppercase);
               }
 
               span {
@@ -392,13 +400,13 @@ html {
         }
 
         p {
-          @include arial-font($dark-grey, 11px, capitalize);
+          @include arial-font($dark-grey, 13px, capitalize);
           margin-bottom: 10px;
 
           &.info {
             padding: 30px 0 0 0;
             span a {
-              @include arial-font($dark-grey, 11px, capitalize);
+              @include arial-font($dark-grey, 13px, capitalize);
               color: $dark-mulberry;
             }
           }
@@ -410,10 +418,11 @@ html {
           }
 
           &.description {
+            @include arial-font($dark-grey, 13px, none);
             color: $very-dark-persian-blue;
             margin-bottom: 40px;
             a {
-              @include arial-font($dark-grey, 11px, capitalize);
+              @include arial-font($dark-grey, 13px, none);
             }
           }
         }
