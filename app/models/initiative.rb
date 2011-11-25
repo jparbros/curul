@@ -3,9 +3,11 @@ class Initiative < ActiveRecord::Base
   # Associations
   #
   has_many :comments, :as => :commentable, :dependent => :destroy
+  has_and_belongs_to_many :commissions
   has_many :votes
   has_and_belongs_to_many :topics
   belongs_to :representative
+  belongs_to :political_party
   
   #
   # Attributes
@@ -42,6 +44,8 @@ class Initiative < ActiveRecord::Base
     state :commission
     state :plenary
     state :project
+    state :rejected_by_commission
+    state :rejected_by_board
     
     event :in_presentation do
       transition :to => :presentation, :from => :any

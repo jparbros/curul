@@ -15,11 +15,87 @@
       temas
     %ul.ul-aside
       - @temas.each do |tema|
-        %li= link_to tema.name, "?search[topics_name_contains]=#{tema.name}"
+        %li= link_to tema.name, tema_path(tema)
   
   %section.container
-    = render :partial => 'iniciativa', :locals => { :iniciativa => @iniciativa, :show => true }
-    
+    %article.iniciativa{:class => "#{(@iniciativa.main?)? 'main' :  ''}"}
+      .main
+        .content
+          %p.info
+            = @iniciativa.presented_at.to_s(:month_year)
+            %br
+            Propuesta por:
+            %span
+              = link_to @iniciativa.representative.name, congresista_path(@iniciativa.representative)
+
+          %p.description
+            = @iniciativa.description
+
+          - temas(@iniciativa)
+
+          - estado_de_iniciativa(@iniciativa)
+        
+          %ul.etapa
+            %li etapa
+            %li= @iniciativa.state
+          
+          %ul.etapa
+            %li descripcion
+            %li breve descripcion de la etapa
+          
+          %ul.recursos
+            %li recursos adicionales
+            %li= link_to 'gaceta parlamentaria', @iniciativa.additional_resources
+
+        .aside
+          %ul
+            %li.votos
+              %span
+                = @iniciativa.total_votes
+              %br
+              votos
+            %li.comentarios
+              %span
+                = @iniciativa.comments.count
+              %br
+              comentarios
+            %li.share
+              .share-fb
+                <div class="fb-send" data-href="http://voces.herokuapp.com/"></div>
+              .share-tw
+                <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es">Tweet</a>
+
+      %ul.botones
+        %li= link_to "vota a favor", iniciativa_vote_up_path(@iniciativa), :method => :post, :class => 'favor'
+        %li= link_to "vota en contra", iniciativa_vote_down_path(@iniciativa), :method => :post, :class => 'contra'
+        %li= link_to "comenta", '#', :class => 'comenta'
+      
+      #separator &nbsp
+      
+      .votaciones
+        %h2.no-border votaciones
+      
+        - votacion_oficial(@iniciativa)
+
+        - votacion_local(@iniciativa)
+      
+  
+    .haz-comentario
+      .comenta-content
+        %h2 deja tu comentario
+
+        = form_for Comment.new, :url => iniciativa_comments_path(@iniciativa), :method => :post do |form|
+          .form-inputs
+            = form.text_field :author, :placeholder => 'Nombre', :class => 'span3 input-text'
+
+            = form.text_field :email, :placeholder => 'Email', :class => 'span4 input-text margin-left-15'
+
+            = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
+
+          = hidden_field_tag :other_email
+
+          = submit_tag 'comenta', :class => 'submit span4'
+  
     %article.iniciativa{:class => "#{(@iniciativa.main?)? 'main' :  ''}"}
       %h2 comentarios
       - @iniciativa.comments.each do |comment|

@@ -14,6 +14,7 @@ gem 'mini_magick'
 gem "oauth"
 gem 'oauth2'
 gem 'pg'
+gem 'rails-i18n'
 gem 'state_machine'
 gem 'twitter_oauth'
 gem 'unicorn'

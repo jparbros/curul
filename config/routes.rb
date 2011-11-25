@@ -26,6 +26,8 @@ Congresspedia::Application.routes.draw do
   resource :abc_legislativo, :only => [:show], :controller => :abc_legislativo
   resource :contacto, :only => [:new, :create], :controller => :contacto
   resource :comenta, :only => [:show, :create], :controller => :comenta
+  resource :iniciativa_comenta, :only => [:create], :controller => :iniciativa_comenta
+  resources :temas, :only => [:show], :controller => :temas
   
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :post, :as => "search_initiatives"
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :get, :as => "search_initiatives"

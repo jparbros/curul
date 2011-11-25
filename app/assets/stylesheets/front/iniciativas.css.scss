@@ -4,7 +4,7 @@
 
 
 html {
-  &.iniciativas, &.search_initiatives {
+  &.iniciativas, &.search_initiatives, &.temas {
     section {
       &.container {
         @include column(18, true);
@@ -18,7 +18,178 @@ html {
        &:hover { background-color: $light-amber; }
       }
     }
+    
+    .first-child {
+      @include arial-font($dark-grey, 11px);
+      border: 0;
+      padding-right: 5px;
+      text-align: right;
+      width: 120px;
+    }
   
+    #separator {
+      @include column(17, true);
+      background-color: $light-amber;
+      height: 20px;
+      margin: -12px 0 0 -30px;
+    }
+    
+    .votaciones { @include column-base(true);}
+    
+    .no-border { border: 0;}
+    
+    .haz-comentario {
+      @include column(17, true);
+      background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
+      margin: 0 0 20px 40px;
+      padding: 12px 0;
+      
+      .comenta-content {
+        @include column(17, true);
+        border-top: 1px solid $light-amberish-gray;
+        border-bottom: 1px solid $light-amberish-gray;
+        
+        form {
+          float: left;
+          margin: 0 0 20px 20px;
+        }
+        
+        .form-inputs {
+          display: inline;
+          float: left;
+          width: 400px;
+        }
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        textarea {
+          height: 150px;
+          margin: 10px 0 0;
+        }
+
+        .submit {
+          @extend .submit-button;
+          color: $white;
+          font-size: 24px;
+          height: 40px;
+          margin: 80px 0 0 15px;
+        }
+      }
+    }
+  
+    ul {
+      @include column-base(true);
+      margin-top: 10px;
+      
+      &.votacion-local {
+        border-top: 1px solid $grey-2;
+        width: 610px;
+
+        li {
+          @include trebuchet-font($dark-grey, 12px);
+          float: left;
+          height: 24px;
+          padding-top: 6px;
+          text-align: center;
+
+          a {
+            @include trebuchet-font($dark-grey, 12px);
+          }
+
+          &.a-favor {
+            background-color: $grey-2;
+            min-width: 57px;
+            max-width: 327px;
+          }
+
+          &.en-contra {
+            color: $grey-2;
+            min-width: 57px;
+            max-width: 327px;
+          }
+
+          &.no-votada {
+            border: 1px solid $grey-2;
+            width: 190px;
+          }
+
+          &:first-child {@extend .first-child;}
+        }
+
+        &:first-child {@extend .first-child;}
+      }
+      
+      &.votacion-oficial {
+        border-top: 1px solid $grey-2;
+        width: 610px;
+
+        li {
+          @include trebuchet-font($dark-grey, 12px);
+          float: left;
+          height: 24px;
+          padding-top: 6px;
+          text-align: center;
+
+          &.a-favor {
+            background-color: $light-cyanish-gray;
+            min-width: 57px;
+            max-width: 327px;
+          }
+
+          &.en-contra {
+            color: $grey-2;
+            min-width: 57px;
+            max-width: 327px;
+          }
+
+          &.no-votada {
+            border: 1px solid $grey-2;
+            width: 383px;
+          }
+
+          &:first-child {
+            @extend .first-child;
+          }
+        }
+      }
+      
+      &.botones{
+        margin: 30px 0 0 0;
+        
+        li {
+          float: left;
+          height: 40px;
+          margin: 0 20px 0 0;
+          width: 190px;
+          
+          &.first-child { margin-left: 20px;}
+          
+          a {
+            @include cuprum-font($white, 15px, uppercase);
+            height: 40px;
+            width: 190px;
+            
+            &.favor {
+              background: url("/assets/front/vote.png") no-repeat 34px 2px #9cbc5b;
+              padding: 13px 35px 13px 75px;
+            }
+            
+            &.contra {
+              background: url("/assets/front/vote.png") no-repeat 34px 2px #e18383;
+              padding: 13px 20px 13px 75px;
+            }
+            
+            &.comenta {
+               background: url("/assets/front/comenta-bg.png") no-repeat 40px 10px #594461;
+               padding: 13px 62px 13px 75px;
+            }
+          }
+        }
+      }
+    }
+
     article {
       &.iniciativa {
         @extend #content;
@@ -27,6 +198,8 @@ html {
         &.main {
           background-color: white;
         }
+        
+        .main {@include column-base(true);}
 
         .content {
           @include column(13);
@@ -134,21 +307,34 @@ html {
                   width: 190px;
                 }
 
-                &:first-child {
-                  @extend .first-child;
-                }
+                &:first-child {@extend .first-child;}
               }
 
-              &:first-child {
-                @extend .first-child;
+              &:first-child {@extend .first-child;}
+            }
+            
+            &.etapa {
+              li {
+                @include trebuchet-font($dark-grey, 12px);
+                border-left: 1px solid  $grey-2;
+                float: left;
+                height: 24px;
+                padding-top: 6px;
+                padding-left: 5px;
+                text-align: center;
+                
+                &:first-child { border: 0; @extend .first-child;}
               }
             }
-            .first-child {
-              @include arial-font($dark-grey, 11px);
-              border: 0;
-              padding-right: 5px;
-              text-align: right;
-              width: 120px;
+            
+            &.recursos {
+              li {
+                border-left: 1px solid  $grey-2;
+                float: left;
+                padding-left: 5px;
+                
+                &:first-child { border: 0; @extend .first-child;}
+              }
             }
           }
         }

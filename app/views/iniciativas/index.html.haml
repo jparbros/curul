@@ -14,7 +14,7 @@
     temas
   %ul.ul-aside
     - @temas.each do |tema|
-      %li= link_to tema.name, "?search[topics_name_contains]=#{tema.name}"
+      %li= link_to tema.name, tema_path(tema)
 
 %section.container
   = render :partial => 'iniciativas/iniciativa', :collection => @iniciativas, :locals => { :show => false }

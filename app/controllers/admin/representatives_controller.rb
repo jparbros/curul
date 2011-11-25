@@ -1,7 +1,7 @@
 class Admin::RepresentativesController < Admin::BaseController
   def index
     @representatives =   if params[:q]
-        Representative.where("name like ?", "%#{params[:q]}%")
+        Representative.where("name ilike ?", "%#{params[:q]}%")
       else
         Representative.all
       end
