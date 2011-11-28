@@ -25,10 +25,11 @@
   
   .aside
     %ul
-      %li.comenta
-        vota
-        %br
-        = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{iniciativa.id}"
+      %a{:href => iniciativa_path(iniciativa)}
+        %li.comenta
+          vota
+          %br
+          comenta
       %li.votos
         %span
           = iniciativa.total_votes
@@ -44,25 +45,6 @@
           <div class="fb-send" data-href="http://voces.herokuapp.com/"></div>
         .share-tw
           <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es">Tweet</a>
-    
-  - content_for(:modals) do
-    .modal.hide.fade{:id => "comment-modal-#{iniciativa.id}"}
-      = form_for iniciativa.comments.new, :url => iniciativa_comments_path(iniciativa) do |form|
-        .modal-header
-          %a.close{:href => "#"} &times;
-          %h3 comenta
-        .modal-body
-          .clearfix
-            = form.label :autor
-            .input
-              = form.text_field :author, :class => 'xlarge input-text'
-          
-          .clearfix
-            = form.label :comentario
-            .input
-              = form.text_area :comment, :class => 'xlarge input-text', :rows => 10
-        .modal-footer
-          = form.submit 'Comentar', :class =>'btn primary'
 
   - content_for(:javascript_onload) do
     $("#comment-modal-#{iniciativa.id}").modal(true)

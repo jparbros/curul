@@ -221,10 +221,13 @@ html {
               margin-bottom: 5px;
 
               li {
-                @include arial-font($mulberryish-gray, 13px, capitalize);
-                border-left: 1px solid $mulberryish-gray;
-                float: left;
-                padding: 0 10px;
+                 border-left: 1px solid $mulberryish-gray;
+                 float: left;
+                 padding: 0 10px;
+                 
+                a {
+                  @include arial-font($mulberryish-gray, 13px, capitalize);
+                }
 
                 &:last-child {
                   border-right: 1px solid $grayish-cyan;

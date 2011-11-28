@@ -25,7 +25,7 @@
     %ul.iniciativas
       - @representante.initiatives.each do |iniciativa|
         %li
-          = iniciativa.title
+          = link_to iniciativa.title[0..50] + '...', iniciativa_path(iniciativa)
 
   .segunda-columna
     %p
@@ -59,7 +59,8 @@
       
     %p
       %span comisiones
-      = @representante.commissions
+      - @representante.commissions.collect do |commision| 
+        = link_to commision.name + ',', ''
       
     %p
       %span biografia

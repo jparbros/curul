@@ -4,7 +4,8 @@
     .tweet
 
 %article#home
-  %h1 iniciativas
+  %h1 
+    = link_to 'iniciativas', iniciativas_path
   
   %p Las iniciativas son Lorem ipsum dolor adipiscing elit. Morbi varius facil isistelus ut sollic udin Lorem ipsum dolor sit amet, consec tetur adip iscing elit. Morbi  varius facilisistel lus usollic udin Lorem ipsum dolor sit amet, consec tetur adip iscing elit. Morbi  varius facil
   
@@ -23,10 +24,11 @@
           = @iniciativas.first.description
           = link_to 'resumen completo >>', iniciativa_path(@iniciativas.first)
         %ul.colores
-          %li.comenta
-            vota
-            %br
-            = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativas.first.id}"
+          %a{:href => iniciativa_path(@iniciativas.first)}
+            %li.comenta
+              vota
+              %br
+              comenta
           %li.votos
             %span
               = @iniciativas.first.total_votes
@@ -71,10 +73,11 @@
           = @iniciativas.last.description
           = link_to 'resumen completo >>', iniciativa_path(@iniciativas.last)
         %ul.colores
-          %li.comenta
-            vota
-            %br
-            = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativas.last.id}"
+          %a{:href => iniciativa_path(@iniciativas.first)}
+            %li.comenta
+              vota
+              %br
+              comenta
           %li.votos
             %span
               = @iniciativas.last.total_votes
@@ -119,7 +122,8 @@
       
 .integrantes
   .integrantes-content
-    %h1 integrantes del congreso
+    %h1 
+      = link_to 'integrantes del congreso', congresistas_path
     = form_tag search_representative_path, :method => :post do |form|
       .input
         = label_tag :buscar_por_nombre
@@ -137,7 +141,8 @@
         = submit_tag 'Buscar', :class => 'button'
 
 .entiende
-  %h1 entiende tu congreso
+  %h1 
+    = link_to 'entiende tu congreso', entiende_tu_congreso_path
   %p “Entiende tu Congreso” te facilita las siguientes herramientas para Lorem ipsum dolor sit amet,  consectetur adipiscing  consectetur adipiscing  consectetur adipiscing elit.Morbi varius facilisis tellus ut sollicitudin.
   %a{:href => "#{entiende_tu_congreso_path}"}
     %section.push.left

@@ -4,6 +4,6 @@ class VoteDownController < ApplicationController
     @iniciativa = Initiative.find(params[:iniciativa_id])
     @iniciativa.votes.vote_down
     cookies["voted_#{@iniciativa.id}"] = true
-    redirect_to :back
+    redirect_to request.env["HTTP_REFERER"] + '?voted=true'
   end
 end

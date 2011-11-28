@@ -33,6 +33,13 @@ h1 {
   background: url("/assets/front/h1-bg.png") repeat-x;
   margin: 40px 0 0 0;
   padding: 20px 5px 20px 0;
+  
+  a{
+    @include cuprum-font($mulberryish-gray, 36px, uppercase);
+    text-decoration: none;
+    
+    &:hover {text-decoration: none;}
+  }
 }
 
 h2 {
@@ -62,6 +69,7 @@ h4 {
   color: $grayish-cyan;
   font-size: 14px;
   padding: 10px 0 5px;
+  text-transform: uppercase;
   margin: 0 0 10px;
 }
 
@@ -191,6 +199,7 @@ article {
 .tweet {
   @include arial-font($dark-grey, 13px, none);
   margin: 0 0 100px 20px;
+  overflow: hidden;
   width: 200px;
   
   ul {

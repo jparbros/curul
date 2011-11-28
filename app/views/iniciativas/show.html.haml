@@ -68,7 +68,7 @@
       %ul.botones
         %li= link_to "vota a favor", iniciativa_vote_up_path(@iniciativa), :method => :post, :class => 'favor'
         %li= link_to "vota en contra", iniciativa_vote_down_path(@iniciativa), :method => :post, :class => 'contra'
-        %li= link_to "comenta", '#', :class => 'comenta'
+        %li= link_to "comenta", '#comenta', :class => 'comenta'
       
       #separator &nbsp
       
@@ -82,7 +82,8 @@
   
     .haz-comentario
       .comenta-content
-        %h2 deja tu comentario
+        %a{:name => 'comenta'}
+          %h2 deja tu comentario
 
         = form_for Comment.new, :url => iniciativa_comments_path(@iniciativa), :method => :post do |form|
           .form-inputs
@@ -104,3 +105,7 @@
             %span
               = comment.author
             = comment.comment
+
+- content_for(:javascript_onload) do
+  - if params[:voted]
+    location.href = '#comenta'

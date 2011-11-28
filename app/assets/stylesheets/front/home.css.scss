@@ -87,11 +87,9 @@ html {
         select { height: 35px }
 
         .button {
+          @include trebuchet-font($white, 20px, uppercase);
           @include column(4);
           background-color: $dark-mulberry;
-          border: 0;
-          color: $white;
-          font-size: 20px;
           height: 35px;
           margin-top: 28px;
         }
@@ -282,18 +280,18 @@ html {
             background-color: $light-yellowish-gray;
             border: 0;
             height: 35px;
-            margin: 7px 0;
+            margin: 8px 0;
             padding-top: 8px;
             width: 210px;
           }
 
           .button {
-            @include cuprum-font(#333333, 30px, uppercase);
-            @include column(4, true);
-            background-color: $light-brilliant-amber;
+            @include column(4);
+            background-color: $dark-mulberry;
             border: 0;
-            height: 50px;
-            padding-top: 9px;
+            color: $white;
+            font-size: 20px;
+            height: 35px;
           }
 
         }

@@ -1,7 +1,7 @@
 module IniciativasHelper
   
   def temas(inicitiva)
-    list = inicitiva.topics.collect {|topic| content_tag(:li, topic.name) }.join('')
+    list = inicitiva.topics.collect {|topic| content_tag(:li, link_to(topic.name, tema_path(topic))) }.join('')
     unsorted_list = content_tag(:ul, raw(list), :class => :temas)
     concat raw(unsorted_list)
   end
