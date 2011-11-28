@@ -1,3 +1,4 @@
+require 'csv'
 namespace :representantes do
   desc "Task description"
   task :create => [:environment] do
@@ -18,6 +19,21 @@ namespace :representantes do
       rep.political_party = PoliticalParty.find_or_create_by_name representante['party']
       rep.region =  Region.find_by_name representante['state']
       rep.save!
+    end
+  end
+  
+  desc "Task description"
+  task :update_commissions => [:environment] do
+    CSV.open('doc/representantes.csv', 'r', :col_sep => "\t", :headers => true).each do |representante|
+      representative = Representative.find_by_name representante['name']
+      unless representante['commission'].blank?
+        representante['commission'].split(',').each do |commission_name|
+          puts commission_name
+          commission = Commission.find_or_create_by_name commission_name.lstrip
+          representative.commissions << commission
+        end
+        representative.save!
+      end
     end
   end
 end

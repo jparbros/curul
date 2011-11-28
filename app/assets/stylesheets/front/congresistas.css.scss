@@ -40,6 +40,8 @@ html {
       span {
         display: block;
         color: $grayish-cyan;
+        text-transform: uppercase;
+        
         &.nombre { font-size: 18px; color: $dark-grey;}
       }
     }

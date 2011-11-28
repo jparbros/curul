@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
 
   def show
-    @iniciativa_main = Initiative.main.first
-    @iniciativa = Initiative.last
+    @iniciativas = Initiative.to_home
   end
 end

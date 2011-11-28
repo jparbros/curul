@@ -11,100 +11,100 @@
   .iniciativas
     %h2 las propuestas mas vistas
     .iniciativa
-      - if @iniciativa_main    
+      - if @iniciativas.first
         %p.info
-          = @iniciativa_main.presented_at.to_s(:month_year)
+          = @iniciativas.first.presented_at.to_s(:month_year)
           %br
           %span Propuesta por:
           %span.presented_by
-            = @iniciativa_main.presented_by
+            = @iniciativas.first.presented_by
 
         %p.description
-          = @iniciativa_main.description
-          = link_to 'resumen completo >>', iniciativa_path(@iniciativa_main)
+          = @iniciativas.first.description
+          = link_to 'resumen completo >>', iniciativa_path(@iniciativas.first)
         %ul.colores
           %li.comenta
             vota
             %br
-            = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativa_main.id}"
+            = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativas.first.id}"
           %li.votos
             %span
-              = @iniciativa_main.total_votes
+              = @iniciativas.first.total_votes
             %br
             votos
           %li.comentarios
             %span
-              = @iniciativa_main.comments.count
+              = @iniciativas.first.comments.count
             comentarios
 
         %ul.info
           %li
             estado de la iniciativa
-            %span= @iniciativa_main.state_formated
+            %span= @iniciativas.first.state_formated
           %li
             votacion oficial
             %span 
               a favor:
-              = "#{@iniciativa_main.official_percentage_up}%"
+              = "#{@iniciativas.first.official_percentage_up}%"
             %span 
               en contra:
-              = "#{@iniciativa_main.official_percentage_down}%"
+              = "#{@iniciativas.first.official_percentage_down}%"
           %li
             votacion en 131 voces
             %span 
               a favor:
-              = "#{@iniciativa_main.percentage_votes_up}%"
+              = "#{@iniciativas.first.percentage_votes_up}%"
             %span 
               en contra:
-              = "#{@iniciativa_main.percentage_votes_down}%"
+              = "#{@iniciativas.first.percentage_votes_down}%"
 
     .iniciativa.margin-left-30
-      - if @iniciativa    
+      - if @iniciativas.last
         %p.info
-          = @iniciativa.presented_at.to_s(:month_year)
+          = @iniciativas.last.presented_at.to_s(:month_year)
           %br
           %span Propuesta por:
           %span.presented_by
-            = @iniciativa.presented_by
+            = @iniciativas.last.presented_by
 
         %p.description
-          = @iniciativa.description
-          = link_to 'resumen completo >>', iniciativa_path(@iniciativa)
+          = @iniciativas.last.description
+          = link_to 'resumen completo >>', iniciativa_path(@iniciativas.last)
         %ul.colores
           %li.comenta
             vota
             %br
-            = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativa.id}"
+            = link_to 'comenta', '#', 'data-controls-modal' => "comment-modal-#{@iniciativas.last.id}"
           %li.votos
             %span
-              = @iniciativa.total_votes
+              = @iniciativas.last.total_votes
             %br
             votos
           %li.comentarios
             %span
-              = @iniciativa.comments.count
+              = @iniciativas.last.comments.count
             comentarios
 
         %ul.info
           %li
             estado de la iniciativa
-            %span= @iniciativa.state_formated
+            %span= @iniciativas.last.state_formated
           %li
             votacion oficial
             %span 
               a favor:
-              = "#{@iniciativa.official_percentage_up}%"
+              = "#{@iniciativas.last.official_percentage_up}%"
             %span 
               en contra:
-              = "#{@iniciativa.official_percentage_down}%"
+              = "#{@iniciativas.last.official_percentage_down}%"
           %li
             votacion en 131 voces
             %span 
               a favor:
-              = "#{@iniciativa.percentage_votes_up}%"
+              = "#{@iniciativas.last.percentage_votes_up}%"
             %span 
               en contra:
-              = "#{@iniciativa.percentage_votes_down}%"
+              = "#{@iniciativas.last.percentage_votes_down}%"
 
 
   .buscar

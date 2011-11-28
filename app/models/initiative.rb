@@ -149,5 +149,10 @@ class Initiative < ActiveRecord::Base
   def state_formated
     STATES[state.to_sym]
   end
+  
+  def self.to_home
+    initiative =  self.order('RANDOM()').limit(5)
+    return self.main.first ? [self.main.first, initiative.first] : [initiative.first, initiative.last]
+  end
 
 end

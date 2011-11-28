@@ -6,6 +6,7 @@ class Representative < ActiveRecord::Base
   belongs_to :region
   belongs_to :province
   belongs_to :political_party
+  has_and_belongs_to_many :commissions
   has_many :initiatives
   has_many :comments, :as => :commentable, :dependent => :destroy
   

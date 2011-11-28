@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111125111148) do
+ActiveRecord::Schema.define(:version => 20111125173727) do
 
   create_table "comments", :force => true do |t|
     t.text     "comment"
@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(:version => 20111125111148) do
   create_table "commissions_initiatives", :id => false, :force => true do |t|
     t.integer "commission_id"
     t.integer "initiative_id"
+  end
+
+  create_table "commissions_representatives", :id => false, :force => true do |t|
+    t.integer "commission_id"
+    t.integer "representative_id"
   end
 
   create_table "initiatives", :force => true do |t|
@@ -97,7 +102,7 @@ ActiveRecord::Schema.define(:version => 20111125111148) do
     t.string   "email"
     t.string   "substitute"
     t.string   "election_type"
-    t.string   "commissions"
+    t.string   "old_commissions"
   end
 
   create_table "topics", :force => true do |t|

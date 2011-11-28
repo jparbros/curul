@@ -47,7 +47,7 @@
     
     %p
       %span twitter
-      = "@#{@representante.twitter}"
+      = "#{@representante.twitter || 'no disponible'}"
       
     %p
       %span suplente
@@ -74,7 +74,7 @@
 <script>
 jQuery(function($){
 $(".tweet").tweet({
-username: "#{@representante.twitter}",
+username: "#{@representante.twitter || 'curul501'}",
 count: 10,
 loading_text: "cargando tweets...",
 template: "{text}"
