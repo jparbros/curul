@@ -447,6 +447,7 @@ html {
             span a {
               @include arial-font($dark-grey, 13px, capitalize);
               color: $dark-mulberry;
+              display: inline;
             }
           }
 
