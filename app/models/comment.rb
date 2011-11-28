@@ -9,6 +9,8 @@ class Comment < ActiveRecord::Base
   # Scopes
   #
   scope :approved, where(:approved => true)
+  scope :favor, where(:tendency => 1)
+  scope :against, where(:tendency => -1)
   
   #
   # Validations

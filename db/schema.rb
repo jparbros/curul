@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111125173727) do
+ActiveRecord::Schema.define(:version => 20111128153626) do
 
   create_table "comments", :force => true do |t|
     t.text     "comment"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20111125173727) do
     t.integer  "commentable_id"
     t.string   "commentable_type"
     t.string   "email"
+    t.integer  "tendency"
   end
 
   create_table "commissions", :force => true do |t|

@@ -93,19 +93,35 @@
             = form.text_field :email, :placeholder => 'Email', :class => 'span4 input-text margin-left-15'
 
             = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
+            
+            = form.label 'A favor'
+            = form.radio_button :tendency, 1, :checked => 'checked'
+
+            = form.label 'En contra', :class => 'contra'
+            = form.radio_button :tendency, -1
 
           = hidden_field_tag :other_email
 
           = submit_tag 'comenta', :class => 'submit span4'
   
     %article.iniciativa{:class => "#{(@iniciativa.main?)? 'main' :  ''}"}
-      %h2 comentarios
-      - @iniciativa.comments.each do |comment|
-        - unless comment.comment.nil?
-          %p.comment
-            %span
-              = comment.author
-            = comment.comment
+      .comments
+        %h4.favor comentarios a favor 
+        - @iniciativa.comments.favor.each do |comment|
+          - unless comment.comment.nil?
+            %p.comment
+              %span
+                = comment.author
+              = comment.comment
+      .comments.push
+        %h4.contra comentarios en contra
+        - @iniciativa.comments.against.each do |comment|
+          - unless comment.comment.nil?
+            %p.comment
+              %span
+                = comment.author
+              = comment.comment
+      
 
 - content_for(:javascript_onload) do
   - if params[:voted]

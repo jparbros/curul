@@ -58,6 +58,12 @@ html {
           display: inline;
           float: left;
           width: 400px;
+          
+          label { 
+            float: none;
+            
+            &.contra {margin-left: 50px}
+          }
         }
 
         p {
@@ -195,6 +201,30 @@ html {
         @extend #content;
         padding: 0 10px 30px 30px;
 
+        .comments { 
+          @include column(7);
+          margin: 10px 10px 0 0;
+          
+          &.push { @include push(1); margin-top: 10px}
+          
+           h4 {
+            border: 0;
+            color: $white;
+            height: 20px;
+            padding: 7px 0 0 5px; 
+            width: 200px;
+
+            &.favor{
+              background-color: #9cbb5b;
+            }
+
+            &.contra {
+              background-color: #e08383;
+            }
+
+          }
+        }
+        
         &.main {
           background-color: white;
         }
@@ -421,9 +451,18 @@ html {
           }
 
           &.comment {
-            border-top: 1px solid $grey-2;
+            border-bottom: 1px solid $grey-2;
             padding-bottom: 10px;
             margin-bottom: 10px;
+            
+            span {
+              @include arial-font($dark-mulberry, 11px, uppercase);
+              background: url('/assets/front/mensaje.png') no-repeat;
+              display: block;
+              font-weight: bold;
+              height: 30px;
+              padding: 5px 0 0 30px;
+            }
           }
 
           &.description {
