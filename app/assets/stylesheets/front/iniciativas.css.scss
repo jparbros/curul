@@ -247,6 +247,11 @@ html {
                 padding-top: 6px;
                 text-align: center;
                 width: 93px;
+                
+                &.presentation { background-color: #a196a5;}
+                &.commission { background-color: #827387; }
+                &.plenary { background-color: #5b4763; }
+                &.project { background-color: #34193e; }
 
                 &:first-child {
                   @extend .first-child;
@@ -332,7 +337,8 @@ html {
                 height: 24px;
                 padding-top: 6px;
                 padding-left: 5px;
-                text-align: center;
+                text-align: left;
+                width: 370px;
                 
                 &:first-child { border: 0; @extend .first-child;}
               }

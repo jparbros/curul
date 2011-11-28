@@ -1,3 +1,4 @@
+# encoding: utf-8
 module IniciativasHelper
   
   def temas(inicitiva)
@@ -9,10 +10,10 @@ module IniciativasHelper
   def estado_de_iniciativa(iniciativa)
     list = []
     list << content_tag(:li, 'estado de la iniciativa')
-    list << content_tag(:li, 'presentacion')
-    list << content_tag(:li, 'comision')
-    list << content_tag(:li, 'en pleno')
-    list << content_tag(:li, 'proyecto')
+    list << content_tag(:li, 'presentacion', :class => iniciativa.presented? ? 'presentation' : '')
+    list << content_tag(:li, 'comision', :class => iniciativa.commissioned? ? 'commission' : '')
+    list << content_tag(:li, 'en pleno', :class => iniciativa.plenaried? ? 'plenary' : '')
+    list << content_tag(:li, 'proyecto', :class => iniciativa.projected? ? 'project' : '')
     concat raw(content_tag(:ul, raw(list.join('')), :class => :estado))
   end
   
@@ -32,19 +33,28 @@ module IniciativasHelper
     list = []
     list << content_tag(:li, 'votacion en curul 501')
     list << content_tag(:li, :style => "#{(iniciativa.voted?)? "width:#{iniciativa.pixel_votes_up}px" : '' }", :class => "#{(iniciativa.voted?)? 'a-favor' : 'no-votada'}") do
-      if cookies["voted_#{iniciativa.id}"]
-        "a favor: #{iniciativa.percentage_votes_up}%"
-      else
-        link_to "a favor: #{iniciativa.percentage_votes_up}%", iniciativa_vote_up_path(iniciativa), :method => :post
-      end
+      "a favor: #{iniciativa.percentage_votes_up}%"
     end
     list << content_tag(:li, :style => "#{(iniciativa.voted?)? "width:#{iniciativa.pixel_votes_down}px" : '' }", :class => "#{(iniciativa.voted?)? 'en-contra' : 'no-votada'}") do
-    if cookies["voted_#{iniciativa.id}"]
       "en contra #{iniciativa.percentage_votes_down}%"
-    else
-      link_to "en contra #{iniciativa.percentage_votes_down}%", iniciativa_vote_down_path(iniciativa), :method => :post
-    end
     end
     concat raw(content_tag(:ul, raw(list.join('')), :class => 'votacion-local'))
+  end
+  
+  def state_description(state)
+    concat case state
+    when 'presentation'
+      'Fecha en que la Mesa Directiva de la Cámara turna la iniciativa a las comisiones, para su estudio, discusión y dictaminación.'
+    when 'commission'
+      'En esta etapa se analiza y se discute el contenido de la iniciativa, para hacer un dictamen o desecharla.'
+    when 'plenary'
+      'El dictamen preparado por la comisión correspondiente se presenta ante todos los diputados para su discusión y aprobación o descarte.'
+    when 'project'
+      'El dictamen se convierte en proyecto y pasa a la cámara revisora. Si es una minuta, se envía al Ejecutivo.'
+    when 'rejected_by_commission'
+      'El dictamen fue rechazado por la comision.'
+    when 'rejected_by_board'
+      'El dictamen fue rechazado por la mesa directiva.'
+    end
   end
 end

@@ -32,7 +32,9 @@ class Initiative < ActiveRecord::Base
     :presentation => 'presentacion',
     :commission => 'en comision',
     :plenary => 'en pleno',
-    :project => 'proyecto'
+    :project => 'proyecto',
+    :rejected_by_commission => 'desechada en comision',
+    :rejected_by_board => 'desechada por la mesa directiva'
   }
 
   #
@@ -154,5 +156,20 @@ class Initiative < ActiveRecord::Base
     initiative =  self.order('RANDOM()').limit(5)
     return self.main.first ? [self.main.first, initiative.first] : [initiative.first, initiative.last]
   end
+  
+  def presented?
+    self.state != 'new'
+  end
+  
+  def commissioned?
+    self.state == 'commission' || self.state == 'plenary' || self.state == 'project' || self.state == 'rejected_by_commission'
+  end
+  
+  def plenaried?
+    self.state == 'plenary' || self.state == 'project'
+  end
 
+  def projected?
+    self.state == 'project'
+  end
 end

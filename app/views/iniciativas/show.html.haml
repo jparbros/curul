@@ -37,11 +37,12 @@
         
           %ul.etapa
             %li etapa
-            %li= @iniciativa.state
+            %li= @iniciativa.state_formated
           
           %ul.etapa
             %li descripcion
-            %li breve descripcion de la etapa
+            %li
+              - state_description(@iniciativa.state)
           
           %ul.recursos
             %li recursos adicionales
