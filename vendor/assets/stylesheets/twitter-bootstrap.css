@@ -2012,7 +2012,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   margin-left: -5px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #000000;
+  border-top: 5px solid #512561;
 }
 .popover.right .arrow {
   top: 50%;
@@ -2020,7 +2020,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   margin-top: -5px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #000000;
+  border-right: 5px solid #512561;
 }
 .popover.below .arrow {
   top: 0;
@@ -2028,7 +2028,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   margin-left: -5px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #512561;
 }
 .popover.left .arrow {
   top: 50%;
@@ -2036,7 +2036,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   margin-top: -5px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #000000;
+  border-left: 5px solid #512561;
 }
 .popover .arrow {
   position: absolute;
@@ -2044,17 +2044,17 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   height: 0;
 }
 .popover .inner {
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #512561;
+  background-color: rgba(81,37,97, 0.8);
   padding: 3px;
   overflow: hidden;
   width: 280px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 7px rgba(81,37,97, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(81,37,97, 0.3);
+  box-shadow: 0 3px 7px rgba(81,37,97, 0.3);
 }
 .popover .title {
   background-color: #f5f5f5;

@@ -10,10 +10,10 @@ module IniciativasHelper
   def estado_de_iniciativa(iniciativa)
     list = []
     list << content_tag(:li, 'estado de la iniciativa')
-    list << content_tag(:li, 'presentacion', :class => iniciativa.presented? ? 'presentation' : '')
-    list << content_tag(:li, 'comision', :class => iniciativa.commissioned? ? 'commission' : '')
-    list << content_tag(:li, 'en pleno', :class => iniciativa.plenaried? ? 'plenary' : '')
-    list << content_tag(:li, 'proyecto', :class => iniciativa.projected? ? 'project' : '')
+    list << content_tag(:li, 'presentación', :id => 'presentacion', :class => iniciativa.presented? ? 'presentation' : '', 'data-content' => 'Fecha en que la Mesa Directiva de la Cámara turna la iniciativa a las comisiones, para su estudio, discusión y dictaminación.')
+    list << content_tag(:li, 'comision', :id => 'comision', :class => iniciativa.commissioned? ? 'commission' : '', 'data-content' => 'En esta etapa se analiza y se discute el contenido de la iniciativa, para hacer un dictamen o desecharla.')
+    list << content_tag(:li, 'en pleno', :id => 'en_pleno', :class => iniciativa.plenaried? ? 'plenary' : '', 'data-content' => 'El dictamen preparado por la comisión correspondiente se presenta ante todos los diputados para su discusión y aprobación o descarte.')
+    list << content_tag(:li, 'proyecto', :id => 'proyecto', :class => iniciativa.projected? ? 'project' : '', 'data-content' => 'El dictamen se convierte en proyecto y pasa a la cámara revisora. Si es una minuta, se envía al Ejecutivo.')
     concat raw(content_tag(:ul, raw(list.join('')), :class => :estado))
   end
   

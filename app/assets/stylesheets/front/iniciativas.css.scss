@@ -167,15 +167,15 @@ html {
         li {
           float: left;
           height: 40px;
-          margin: 0 20px 0 0;
-          width: 190px;
+          margin: 0 10px 0 0;
+          width: 200px;
           
           &.first-child { margin-left: 20px;}
           
           a {
             @include cuprum-font($white, 15px, uppercase);
             height: 40px;
-            width: 190px;
+            width: 200px;
             
             &.favor {
               background: url("/assets/front/vote.png") no-repeat 34px 2px #9cbc5b;
@@ -278,10 +278,10 @@ html {
                 text-align: center;
                 width: 93px;
                 
-                &.presentation { background-color: #a196a5;}
-                &.commission { background-color: #827387; }
-                &.plenary { background-color: #5b4763; }
-                &.project { background-color: #34193e; }
+                &.presentation { background-color: #a196a5; color: $white;}
+                &.commission { background-color: #827387; color: $white; }
+                &.plenary { background-color: #5b4763; color: $white; }
+                &.project { background-color: #34193e; color: $white; }
 
                 &:first-child {
                   @extend .first-child;
