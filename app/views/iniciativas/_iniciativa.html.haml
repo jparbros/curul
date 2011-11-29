@@ -44,7 +44,7 @@
         .share-fb
           <div class="fb-send" data-href="http://voces.herokuapp.com/"></div>
         .share-tw
-          <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es">Tweet</a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es" data-text="#{iniciativa.title[0..80]}... #{iniciativa_url(iniciativa)}">Tweet</a>
 
   - content_for(:javascript_onload) do
     $("#comment-modal-#{iniciativa.id}").modal(true)
