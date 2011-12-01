@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html {
-  &.entiende, &.abc_legislativo {
+  &.entiende, &.abc_legislativo, &.proceso_legislativo, &.funciona_congreso {
 
     .tabs {
       padding: 0 10px;
@@ -11,8 +11,8 @@ html {
     }
     
     article {
-      @extend #content;
-      @include column(15 ,true);
+      @include column(24 ,true);
+      background-color: $nu-white;
       padding-bottom: 15px;
 
       iframe {
@@ -24,42 +24,58 @@ html {
         padding: 10px;
       }
     }
-    
+
     aside {
-      @include column(8, true);
+      @include column(24, true);
+      background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
       background-color: transparent;
-      padding: 5px 0 0 5px;
+      padding: 12px 0;
+      margin: 20px 0 10px;
+      min-height: 0;
 
-      section {
-        @include column(8, true);
-        padding: 5px;
-        margin-bottom: 10px;
-
-        h4 {
-          @include trebuchet-font($dark, 13px);
-          border-bottom: 1px solid $dark;
+      ul {
+        @include column(24, true);
+        border-top: 1px solid $light-amberish-gray;
+        border-bottom: 1px solid $light-amberish-gray;
+        
+        li {
+          @include column(5);
+          height: 230px;
+          padding: 15px 20px;
+          
+          h4 {
+            @include cuprum-font($dark, 13px, uppercase);
+            border-bottom: 1px solid $dark;
+          }
+          
+          &.selected {
+            background-color: $white;
+          }
+          
+          &:last-child { @include last;}
         }
-
-        &.selected {
-          background-color: $white;
-          @include border-radius(5px);
-        }
-
-        ul {
-          li {
-            @include trebuchet-font($dark, 13px);
-            float: left;
-
-            &:last-child {
-              margin-left: 5px;
-            }
+        
+      }
+    }
+    
+    ul {
+      &.tabs {
+        li {
+          a {
+            text-transform: capitalize;
           }
         }
       }
     }
     
     .comisiones, .trabajo_legislativo, .poder_legislativo {
+      width: 780px;
       padding: 10px;
+      margin: 10px 92px;
+      
+      p {
+        margin: 10px 0;
+      }
     }
 
     .comisiones, .trabajo_legislativo {
@@ -69,43 +85,7 @@ html {
 }
 
 #entiende-horizontal {
-  aside {
-    @include column(24, true);
-    background-color: transparent;
-    min-height: 0;
-    
-    section {
-      @include column(6, true);
-      float: left;
-      
-       ul {
-        li {
-          @include trebuchet-font($dark, 13px);
-          float: left;
 
-          &:last-child {
-            margin-left: 5px;
-          }
-        }
-      }
-    }
-  }
-  
-  article {
-    @include column(24 ,true);
-    background-color: $nu-white;
-    padding-bottom: 15px;
-    
-    iframe {
-      margin: 10px 92px;
-    }
-    
-    .descripcion {
-      @include trebuchet-font($dark, 13px);
-      padding: 10px;
-    }
-  }
-  
   .comisiones, .trabajo_legislativo, .poder_legislativo {
     padding: 10px;
   }
