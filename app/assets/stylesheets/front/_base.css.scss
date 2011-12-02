@@ -20,6 +20,31 @@ body {
 
 a { @include trebuchet-font($dark-grey, 13px);}
 
+ul {
+  &.follow {
+    @include column-base(true);
+    float: right;
+    
+    img { margin: 0;}
+    
+    li {
+      @include cuprum-font($mulberryish-gray, 13px, uppercase);
+      border-right: 2px solid $white;
+      float: left;
+      width: 30px;
+      height: 35px;
+      
+      &:first-child {
+        background: url('/assets/front/follow-bg.png') repeat-x;
+        height: 27px;
+        padding: 8px 0 0 10px;
+        width: 75px;
+      }
+      
+    }
+  }
+}
+
 #container {
   @include column(24,true);
   float:none;
