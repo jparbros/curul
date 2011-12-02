@@ -1,4 +1,4 @@
-%h1 congresistas
+%h1 integrantes del congreso
 
 %aside
   %h2
@@ -20,7 +20,7 @@
     = @representante.region.name
     
   .primera-columna
-    = image_tag @representante.avatar.url
+    = image_tag @representante.photo
     %h4 iniciativas
     %ul.iniciativas
       - @representante.initiatives.each do |iniciativa|

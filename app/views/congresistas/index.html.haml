@@ -1,4 +1,4 @@
-%h1 congresistas
+%h1 integrantes del congreso
 
 %aside
   = render :partial => 'shared/congresistas_aside'
@@ -10,7 +10,7 @@
       %ul.column
         - PoliticalParty.all.each do |political_party|
           %li
-            = link_to image_tag(political_party.logo.url(:thumb)) + political_party.name, ''
+            = link_to image_tag(political_party.logo.url(:thumb)) + political_party.name, partido_politico_path(political_party)
         
       - Region.where('name is not null').find_in_batches(:batch_size => 11) do |regions|
         %ul.column
@@ -18,6 +18,6 @@
             %li= link_to region.name, regione_path(region.id)
       
   %article
-    %h2 integrantes del congreso
+    %h2 integrantes mas populares
   
   = render :partial => 'representante', :collection => @representantes

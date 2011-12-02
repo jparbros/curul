@@ -1,0 +1,2 @@
+module PartidoPoliticoHelper
+end

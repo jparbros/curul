@@ -1,20 +1,17 @@
 %h1 integrantes del congreso
 
 %article
-  %h2
-    Busqueda: 
-    = params[:search][:name]
+  %h2= @political_party.name
   Selecciona un representante para ver su perfil e interactuar con el.
   = link_to '<< volver', congresistas_path, :class => 'volver'
-  
-- @representantes.each do |partido_politico, representatives|
+
   %article
     .logo
-      = image_tag partido_politico.logo.url
+      = image_tag @political_party.logo.url
       %span
-        = partido_politico.name
+        = @political_party.name
     .congresistas
-      - representatives.each_with_index do |representante, index|
+      - @political_party.representatives.each do |representante|
         .congresista
           %ul
             %li= image_tag(representante.photo(:thumb))
