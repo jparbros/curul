@@ -3,7 +3,7 @@ class Comment < ActiveRecord::Base
   #
   # Associations
   #
-  belongs_to :commentable, :polymorphic => true
+  belongs_to :commentable, :polymorphic => true, :counter_cache => true
   
   #
   # Scopes

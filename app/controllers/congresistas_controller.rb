@@ -3,6 +3,7 @@ class CongresistasController < ApplicationController
   def index
     @regiones = Region.all
     @partidos_politicos = PoliticalParty.all
+    @representantes = Representative.most_commented.limit(5)
   end
   
   def show

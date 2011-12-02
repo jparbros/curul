@@ -6,8 +6,98 @@ html {
   &.congresistas {
     article {
       @extend #content;
-      padding: 0 10px 15px 30px;
+      @include column(17, true);
 
+      &.representante {
+        background-color: $white;
+        
+        .bottom {
+          @include column(17, true);
+          background-color: $light-amber;
+          height: 15px;
+        }
+        
+        ul {
+          @include column-base(true);
+          
+          &.datos {
+            margin: 5px;
+            
+            li {
+              @include arial-font($dark-grey, 18px);
+              border-right: 1px dashed $grey;
+              float: left;
+              height: 50px;
+              padding: 10px;
+              width: 370px;
+              
+              a {
+                @include arial-font($dark-grey, 18px);
+              }
+
+              &:first-child { 
+                width: 45px;
+
+                img { margin: 10px 5px 0;}
+              }
+
+              &:last-child { 
+                border: 0; 
+                font-size: 12px;
+                padding: 10px 0 10px 10px; 
+                width: 190px;
+              }
+
+              span {
+                @include trebuchet-font($dark-mulberry, 14px, uppercase);
+                display: block;
+              }
+
+              .photo { padding: 0 10px 0 0;}
+
+              .photo, .name { 
+                float: left;
+              }
+            }
+          }
+          
+          &.contadores {
+            li {
+              @include cuprum-font($grey, 13px, uppercase);
+              border-top: 1px solid #f1eee9;
+              float: left;
+              height: 27px;
+              padding: 18px 5px 0 0;
+              text-align: right;
+              width: 272px;
+              
+              &:first-child {
+                font-size: 18px;
+                padding: 13px 2px 0;
+                text-align: left;
+                
+                span {
+                  color: $dark;
+                  font-size: 24px;
+                  margin: 0 0 0 20px;
+                }
+              }
+              
+              &:last-child { 
+                background-color: $light-amber;
+                border-top: 1px solid $light-amber;
+                color: white;
+                font-size: 30px;
+                height: 35px;
+                padding: 10px 0 0 10px;
+                text-align: left;
+                width: 107px;
+              }
+            }
+          }
+        }
+      }
+      
       .primera-columna {
         @include column(6,true);
         @include append(1);
@@ -32,17 +122,18 @@ html {
     
     section {
       @include column(17, true);
-      padding: 10px 0;
+      padding: 0;
       
       &.entidades {
         @include column(17, true);
         background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
         padding: 12px 0;
-        margin: 10px 0 20px 40px;
+        margin: 0 0 20px 40px;
         
         section {
           border-top: 1px solid $light-amberish-gray;
           border-bottom: 1px solid $light-amberish-gray;
+          padding: 10px 0;
           
           ul.column {
             @include column-base(true);
@@ -51,7 +142,7 @@ html {
             padding: 0 0 0 15px;
             width: 130px;
             
-            &:first-child { width: 215px; }
+            &:first-child { width: 215px; border: 0;}
             
             li {
               @include arial-font($dark-grey, 13px, uppercase);
@@ -68,7 +159,6 @@ html {
     }
     
     aside {
-      background-color: $white;
       min-height: 0;
     }
     

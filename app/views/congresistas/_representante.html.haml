@@ -1,0 +1,26 @@
+%article.representante
+  %ul.datos
+    %li
+      = image_tag representante.political_party.logo.url(:thumb)
+    %li
+      .photo
+        = image_tag representante.photo(:thumb)
+      .name
+        %span Nombre
+        = link_to representante.name, congresista_path(representante)
+    %li
+      %span cargo y entidad
+      = representante.position
+      |
+      = representante.region_name
+
+  %ul.contadores
+    %li
+      %span
+        = representante.initiatives.count
+      iniciativas
+    %li 
+      comentarios
+    %li
+      = representante.comments_count
+  .bottom &nbsp;

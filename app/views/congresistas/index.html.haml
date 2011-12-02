@@ -4,17 +4,20 @@
   = render :partial => 'shared/congresistas_aside'
 
 
-%section.entidades
-  %section
-    %ul.column
-      - PoliticalParty.all.each do |political_party|
-        %li
-          = link_to image_tag(political_party.logo.url(:thumb)) + political_party.name, ''
-        
-    - Region.where('name is not null').find_in_batches(:batch_size => 11) do |regions|
+%section
+  %section.entidades
+    %section
       %ul.column
-        - regions.each do |region|
-          %li= link_to region.name, regione_path(region.id)
+        - PoliticalParty.all.each do |political_party|
+          %li
+            = link_to image_tag(political_party.logo.url(:thumb)) + political_party.name, ''
+        
+      - Region.where('name is not null').find_in_batches(:batch_size => 11) do |regions|
+        %ul.column
+          - regions.each do |region|
+            %li= link_to region.name, regione_path(region.id)
       
-%article
-  %h2 integrantes del congreso
+  %article
+    %h2 integrantes del congreso
+  
+  = render :partial => 'representante', :collection => @representantes
