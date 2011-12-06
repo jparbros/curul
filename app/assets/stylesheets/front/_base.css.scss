@@ -18,7 +18,11 @@ body {
   .margin-left-15 {margin-left: 15px;}
 }
 
-a { @include trebuchet-font($dark-grey, 13px);}
+a { 
+  @include trebuchet-font($dark-grey, 13px); 
+
+  &:hover { text-decoration:none; }
+}
 
 ul {
   &.follow {
@@ -100,20 +104,33 @@ h4 {
 
 header {
   @include column(24,true);
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  
+  .logo, .navigation { float: left;}
+  
+  .logo {
+    @include column(5);
+    img { margin-top: 25px; }
+  }
+  
+  .navigation {
+    @include column(19, true);
+    text-align: right;
 
-  img { margin-top: 25px; }
-  nav {
-    float: right;
-    margin-top: 50px;
-    ul {
-      list-style: none;
-      li {
-        border-left: 1px solid $grey;
-        float: left;
-        padding: 0 25px 0 5px;
-        a {
-          @include cuprum-font($grey, 13px, uppercase);
+    div { @include column(19, true);}
+
+    nav {
+      float: right;
+      margin-top: 30px;
+      ul {
+        list-style: none;
+        li {
+          border-left: 1px solid $grey;
+          float: left;
+          padding: 0 25px 0 5px;
+          a {
+            @include cuprum-font($grey, 13px, uppercase);
+          }
         }
       }
     }
@@ -237,6 +254,8 @@ article {
       a {
         font-size: 13px;
         text-transform: none;
+        
+        &:hover { color: $dark-grey;}
       }
     }
   }

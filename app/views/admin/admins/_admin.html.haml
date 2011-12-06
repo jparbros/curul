@@ -1,0 +1,5 @@
+%tr
+  %td= admin.email
+  %td=# admin.super? ? 'Super Admin' : 'X'
+  %td= link_to 'Editar', edit_admin_admin_path(admin)
+  %td= link_to 'Eliminar', admin_admin_path(admin), :method => :delete, :confirmation => 'Desea eliminar al usuario?'

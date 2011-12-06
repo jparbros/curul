@@ -1,6 +1,6 @@
 class Admin::PoliticalPartiesController < Admin::BaseController
   def index
-    @political_parties = PoliticalParty.all
+    @political_parties = PoliticalParty.page(params[:page])
   end
   
   def show

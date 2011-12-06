@@ -1,0 +1,19 @@
+.clearfix
+  = form.label :email
+  .input
+    = form.text_field :email, :class => 'xxlarge'
+
+.clearfix
+  = form.label :password
+  .input
+    = form.password_field :password, :class => 'xxlarge'
+    
+.clearfix
+  = form.label :password_confirmation
+  .input
+    = form.password_field :password_confirmation, :class => 'xxlarge'
+
+/ .clearfix
+/   = form.label :super_admin
+/   .input
+/     = form.check_box :super

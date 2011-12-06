@@ -1,7 +1,9 @@
 .page-header
-  %h2 Partidos Politicos
+  %h2 Representantes
 
-= link_to 'Nuevo Representante', new_admin_representative_path
+= link_to 'Nuevo Representante', new_admin_representative_path  , :class => [:btn, :primary]
+%br
+%br
 
 %table.zebra-striped
   %thead
@@ -13,4 +15,4 @@
   %tbody
     = render @representatives
 
-/= paginate @initiatives
+= paginate @representatives

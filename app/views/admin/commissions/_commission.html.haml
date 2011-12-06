@@ -1,0 +1,4 @@
+%tr
+  %td= commission.name
+  %td= link_to 'Editar', edit_admin_commission_path(commission)
+  %td= link_to 'Borrar', admin_commission_path(commission), :method => :delete, :confirm => '¿Esta seguro que desea eliminar la comision?'

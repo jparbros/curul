@@ -3,7 +3,7 @@ class Admin::TopicsController < Admin::BaseController
     @topics = if params[:q]
       Topic.where("name like ?", "%#{params[:q]}%")
     else
-      Topic.all
+      Topic.page(params[:page])
     end
     respond_to do |format|
       format.html

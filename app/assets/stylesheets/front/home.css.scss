@@ -190,6 +190,8 @@ html {
                 @include arial-font($dark-mulberry, 13px, uppercase);
                 display: block;
                 margin: 10px 0 0;
+                
+                &:hover { color:$dark-mulberry; }
               }
             }
           }

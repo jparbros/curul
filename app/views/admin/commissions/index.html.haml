@@ -1,0 +1,18 @@
+.page-header
+  %h2 Iniciativas
+
+= link_to 'Nueva Comision', new_admin_commission_path, :class => [:btn, :primary]
+%br
+%br
+
+%table.zebra-striped
+  %thead
+    %tr
+      %th Comision
+      %th
+      %th
+
+  %tbody
+    = render @commisions
+
+= paginate @commisions

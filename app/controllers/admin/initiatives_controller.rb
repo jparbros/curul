@@ -1,6 +1,6 @@
 class Admin::InitiativesController < Admin::BaseController
   def index
-    @initiatives = Initiative.all
+    @initiatives = Initiative.page(params[:page])
   end
   
   def show

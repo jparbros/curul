@@ -14,18 +14,22 @@
   %body
     #container
       %header
-        = link_to image_tag('front/logo.png'), root_path
-        %ul.follow
-          %li siguenos en
-          %li= link_to image_tag('front/twitter-bg.png'), 'http://www.twitter.com/curul501', :target => '_blank'
-          %li= link_to image_tag('front/facebook-bg.png'), 'http://www.facebom.com/curul501', :target => '_blank'
-        %nav
-          %ul
-            %li= link_to 'iniciativas', iniciativas_path
-            %li= link_to 'integrantes del congreso', congresistas_path
-            %li= link_to 'entiende tu congreso', entiende_tu_congreso_path
-            %li= link_to 'comenta', comenta_path
-            %li= link_to 'blog', 'http://curul-501.tumblr.com', :target => '_blank'
+        .logo
+          = link_to image_tag('front/logo.png'), root_path
+        .navigation
+          %div
+            %ul.follow
+              %li siguenos en
+              %li= link_to image_tag('front/twitter-bg.png'), 'http://www.twitter.com/curul501', :target => '_blank'
+              %li= link_to image_tag('front/facebook-bg.png'), 'http://www.facebom.com/curul501', :target => '_blank'
+          %div
+            %nav
+              %ul
+                %li= link_to 'iniciativas', iniciativas_path
+                %li= link_to 'integrantes del congreso', congresistas_path
+                %li= link_to 'entiende tu congreso', entiende_tu_congreso_path
+                %li= link_to 'comenta', comenta_path
+                %li= link_to 'blog', 'http://curul-501.tumblr.com', :target => '_blank'
 
       %section#main-content
         = yield

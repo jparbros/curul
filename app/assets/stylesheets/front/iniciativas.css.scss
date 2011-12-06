@@ -102,6 +102,8 @@ html {
 
           a {
             @include trebuchet-font($dark-grey, 12px, uppercase);
+            
+            &:hover { color: $dark-grey;}
           }
 
           &.a-favor {
@@ -177,6 +179,8 @@ html {
             height: 40px;
             width: 200px;
             
+            &:hover { color: $white; }
+            
             &.favor {
               background: url("/assets/front/vote.png") no-repeat 34px 2px #9cbc5b;
               padding: 13px 35px 13px 75px;
@@ -234,6 +238,8 @@ html {
             @include arial-font($dark-mulberry, 13px, uppercase);
             display: block;
             margin: 10px 0 0;
+            
+            &:hover { color: $dark-mulberry;}
           }
         }
         
@@ -257,6 +263,8 @@ html {
                  
                 a {
                   @include arial-font($mulberryish-gray, 13px, capitalize);
+                  
+                  &:hover { color: $mulberryish-gray;}
                 }
 
                 &:last-child {
@@ -334,6 +342,8 @@ html {
 
                 a {
                   @include trebuchet-font($dark-grey, 13px, uppercase);
+                  
+                  &:hover { color: $dark-grey;}
                 }
 
                 &.a-favor {
@@ -472,6 +482,8 @@ html {
             margin-bottom: 40px;
             a {
               @include arial-font($dark-grey, 13px, none);
+              
+              &:hover { color: $dark-grey;}
             }
           }
         }

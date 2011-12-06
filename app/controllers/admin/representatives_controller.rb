@@ -3,7 +3,7 @@ class Admin::RepresentativesController < Admin::BaseController
     @representatives =   if params[:q]
         Representative.where("name ilike ?", "%#{params[:q]}%")
       else
-        Representative.all
+        Representative.page(params[:page])
       end
     respond_to do |format|
       format.html

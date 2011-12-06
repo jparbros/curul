@@ -1,7 +1,10 @@
 .page-header
   %h2 Temas
 
-= link_to 'Nuevo Tema', new_admin_topic_path
+= link_to 'Nuevo Tema', new_admin_topic_path  , :class => [:btn, :primary]
+%br
+%br
+
 
 %table.zebra-striped
   %thead
@@ -13,4 +16,4 @@
   %tbody
     = render @topics
 
-/= paginate @topics
+= paginate @topics

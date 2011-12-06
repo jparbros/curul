@@ -1,4 +1,6 @@
 Congresspedia::Application.routes.draw do
+  devise_for :admins, :controllers => { :sessions => "admin/sessions" }
+  
   namespace :admin do
     resources :initiatives do
       resource :main, :controller => :main, :only => [:create]
@@ -6,6 +8,8 @@ Congresspedia::Application.routes.draw do
     resources :topics
     resources :political_parties
     resources :representatives
+    resources :commissions
+    resources :admins
     
     root :to => "dashboard#show"
   end

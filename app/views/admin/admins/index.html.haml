@@ -1,0 +1,15 @@
+.page-header
+  %h2 Usuarios
+
+= link_to 'Nuevo Usuario', new_admin_admin_path, :class => 'btn primary'
+
+%table.common-table.zebra-striped
+  %thead
+    %tr
+      %td Email
+      %td Super Admin
+      %td
+      %td
+  
+  %tbody
+    = render @admins
