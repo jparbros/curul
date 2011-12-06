@@ -6,8 +6,35 @@ html {
   &.congresistas {
     article {
       @extend #content;
-      @include column(17, true);
-
+      padding-left: 10px;
+      padding-bottom: 10px;
+      margin-right:0;
+      width: 660px;
+      
+      
+      .form-inputs {
+        display: inline;
+        float: left;
+        width: 400px;
+      }
+    
+      p {
+        margin-bottom: 10px;
+      }
+    
+      textarea {
+        height: 150px;
+        margin: 10px 0 0;
+      }
+    
+      .submit {
+        @extend .submit-button;
+        color: $white;
+        font-size: 24px;
+        height: 40px;
+        margin: 80px 0 0 15px;
+      }
+      
       &.representante {
         background-color: $white;
         

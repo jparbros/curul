@@ -4,15 +4,6 @@
   %h2
     Twitter
   .tweet
-  
-  %h2
-    deja tu comentario
-  .comentarios-formulario
-    = form_for @comment, :url => congresista_comentarios_path(@representante) do |form|
-      = form.text_field :author, :class => :input, :placeholder => 'nombre'
-      = form.text_field :email, :class => :input, :placeholder => 'correo electronico'
-      = form.text_area :comment, :class => :input, :placeholder => 'mensaje'
-      = form.submit 'comentar', :class => 'button'
 
 %article
   %h2
@@ -66,11 +57,27 @@
       %span biografia
       = @representante.biography
 
-  .comentarios
-    %h3 comentarios
-    - @comments.each do |comentario|
-      %p= comentario.comment
 
+%article
+  %h2 deja tu comentario
+
+  = form_for @comment, :url => congresista_comentarios_path(@representante) do |form|
+    .form-inputs
+      = form.text_field :author, :placeholder => 'Nombre', :class => 'span3 input-text'
+
+      = form.text_field :email, :placeholder => 'Email', :class => 'span4 input-text margin-left-15'
+
+      = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
+
+    = hidden_field_tag :other_email
+
+    = submit_tag 'comenta', :class => 'submit span4'
+    
+    
+%article
+  %h3 comentarios
+  - @comments.each do |comentario|
+    %p= comentario.comment
 
 <script>
 jQuery(function($){

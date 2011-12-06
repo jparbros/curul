@@ -3,7 +3,7 @@
     %h2.estrella La m&aacute;s vista
   .content
     %p.info
-      = iniciativa.presented_at.to_s(:month_year)
+      = I18n.l iniciativa.presented_at.to_s(:month_year)
       %br
       Propuesta por:
       %span
@@ -13,7 +13,7 @@
       = iniciativa.description
     
     %p  
-      = link_to 'resumen completo >>', iniciativa_path(iniciativa)
+      = link_to 'vota y comenta >>', iniciativa_path(iniciativa)
     
     - temas(iniciativa)
   
