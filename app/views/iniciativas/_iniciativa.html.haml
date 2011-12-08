@@ -3,7 +3,7 @@
     %h2.estrella La m&aacute;s vista
   .content
     %p.info
-      = iniciativa.presented_at.to_s(:month_year)
+      = I18n.localize(iniciativa.presented_at, :format => :month_year)
       %br
       Propuesta por:
       %span

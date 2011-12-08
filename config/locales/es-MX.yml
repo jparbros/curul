@@ -1,0 +1,5 @@
+es-MX:
+  time:
+    formats:
+      month_year: "%B de %Y"
+      
