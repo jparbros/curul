@@ -36,7 +36,9 @@ html {
       }
       
       &.representante {
+        @include column(17, true);
         background-color: $white;
+        padding: 0;
         
         .bottom {
           @include column(17, true);
