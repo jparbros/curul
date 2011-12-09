@@ -51,7 +51,7 @@
 .clearfix
   = form.label :comisiones
   .input
-    = form.text_area :commissions, :class => 'xxlarge'
+    = form.text_field :commission_tokens, "data-pre" => @representative.commissions.map(&:attributes).to_json
 
 .clearfix
   = form.label :avatar

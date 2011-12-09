@@ -26,4 +26,10 @@ $(document).ready(function(){
       prePopulate: $("#initiative_presented_by_token").data("pre"),
       crossDomain: false
   });
+  
+  $("#representative_commission_tokens").tokenInput("/admin/representatives.json", {
+      theme: "facebook",
+      prePopulate: $("#representative_commission_tokens").data("pre"),
+      crossDomain: false
+  });
 });

@@ -11,6 +11,11 @@ class Representative < ActiveRecord::Base
   has_many :comments, :as => :commentable, :dependent => :destroy
   
   #
+  # Accessor
+  #
+  attr_reader :commission_tokens
+  
+  #
   # Uploader
   #
   mount_uploader :avatar, AvatarUploader
@@ -25,6 +30,10 @@ class Representative < ActiveRecord::Base
   # Delegates
   #
   delegate :name, :to => :region, :prefix => true
+  
+  def commission_tokens=(ids)
+    self.commission_ids = ids.split(',') 
+  end
   
   def photo(size = nil)
     return self.avatar.url(size) unless self.avatar.url.include? 'txt'
