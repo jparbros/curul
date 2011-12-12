@@ -67,8 +67,12 @@
                 <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="es" data-text="#{@iniciativa.title[0..70]}..." data-url="#{iniciativa_url(@iniciativa)}">Tweet</a>
 
       %ul.botones
-        %li= link_to "vota a favor", iniciativa_vote_up_path(@iniciativa), :method => :post, :class => 'favor'
-        %li= link_to "vota en contra", iniciativa_vote_down_path(@iniciativa), :method => :post, :class => 'contra'
+        - if cookies["voted_#{@iniciativa.id}"]
+          %li= link_to "vota a favor", "", :class => 'favor'
+          %li= link_to "vota en contra", "", :class => 'contra'
+        - else
+          %li= link_to "vota a favor", iniciativa_vote_up_path(@iniciativa), :method => :post, :class => 'favor'
+          %li= link_to "vota en contra", iniciativa_vote_down_path(@iniciativa), :method => :post, :class => 'contra'
         %li= link_to "comenta", '#comenta', :class => 'comenta'
       
       #separator &nbsp
@@ -95,10 +99,10 @@
             = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
             
             = form.label 'A favor'
-            = form.radio_button :tendency, 1, :checked => 'checked'
+            = form.radio_button :tendency, 1, :checked => ((params[:voto]!='contra')? 'checked' : '')
 
             = form.label 'En contra', :class => 'contra'
-            = form.radio_button :tendency, -1
+            = form.radio_button :tendency, -1, :checked => ((params[:voto]=='contra')? 'checked' : '')
 
           = hidden_field_tag :other_email
 
