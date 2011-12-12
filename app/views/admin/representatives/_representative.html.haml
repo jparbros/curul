@@ -1,4 +1,4 @@
 %tr
-  %td= representative.name if representative.name
+  %td= representative.name if representative
   %td= link_to 'Editar', edit_admin_representative_path(representative)
   %td= link_to 'Borrar', admin_representative_path(representative), :method => :delete, :confirm => '¿Esta seguro que desea eliminar la iniciativa?'

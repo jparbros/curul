@@ -26,7 +26,7 @@
             %br
             Propuesta por:
             %span
-              = link_to @iniciativa.representative.name, congresista_path(@iniciativa.representative) if @iniciativa.representative.name
+              = link_to @iniciativa.representative.name, congresista_path(@iniciativa.representative) if @iniciativa.representative
 
           %p.description
             = @iniciativa.description
