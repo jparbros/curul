@@ -5,11 +5,11 @@
       %span.author= comentario.author
       comento en la propuesta:
     .representante_foto
-      = image_tag(iniciativa.representative.avatar.url(:thumb))
+      = image_tag(iniciativa.representative.avatar.url(:thumb)) if iniciativa.representative
     .iniciativa_resumen
       %span= iniciativa.representative.name if iniciativa.representative
       = iniciativa.description[0, 160] + '...'
-      = link_to 'ver m&aacute;s >>', iniciativa_path(iniciativa)
+      = link_to raw("ver m&aacute;s >>"), iniciativa_path(iniciativa)
       
     %p
       = "\"#{comentario.comment}\""
