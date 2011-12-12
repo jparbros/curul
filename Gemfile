@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 
+gem "airbrake"
 gem 'bitly'
 gem 'carrierwave'
 gem 'devise'
