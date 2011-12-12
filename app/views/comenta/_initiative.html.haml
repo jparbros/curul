@@ -7,7 +7,7 @@
     .representante_foto
       = image_tag(iniciativa.representative.avatar.url(:thumb))
     .iniciativa_resumen
-      %span= iniciativa.representative.name
+      %span= iniciativa.representative.name if iniciativa.representative.name
       = iniciativa.description[0, 160] + '...'
       = link_to 'ver m&aacute;s >>', iniciativa_path(iniciativa)
       

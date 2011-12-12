@@ -25,11 +25,11 @@
 
     .container
       - if alert
-        .alert-message.error
+        .alert-message.error{'data-alert'=>"alert"}
           = link_to 'x','#', :class => 'close'
           %p= alert
       - if notice
-        .alert-message.info
+        .alert-message.info{'data-alert'=>"alert"}
           = link_to 'x','#', :class => 'close'
           %p= notice
       = yield
