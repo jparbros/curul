@@ -11,7 +11,7 @@
     .iniciativa
       - if @iniciativas.first
         %p.info
-          = @iniciativas.first.presented_at.to_s(:month_year)
+          = I18n.localize(@iniciativas.first.presented_at, :format => :month_year)
           %br
           %span Propuesta por:
           %span.presented_by
@@ -111,10 +111,10 @@
     %h1 buscar iniciativa
     = form_tag search_initiatives_path, :method => :post do |form|
       = text_field_tag 'search[keywords]', '', :placeholder => 'escribir palabras claves'
-      = select_tag 'search[estado]', options_for_select(Region.all.collect {|region| [region.name, region.name]}), :prompt => 'estado'
-      = select_tag 'search[political_party]', options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :prompt => 'partido politico'
-      = select_month(Date.today)
-      = select_year(Date.today)
+      = select_tag 'search[estado]', options_for_select(Region.all.collect {|region| [region.name, region.name]}), :prompt => 'estado', :include_blank => true
+      = select_tag 'search[political_party]', options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.name]}), :prompt => 'partido politico', :include_blank => true
+      = select_month(Date.today, :include_blank => true, :field_name => 'mes')
+      = select_year(Date.today, :include_blank => true, :field_name => 'ano')
       = submit_tag 'Buscar', :class => 'button'
       
 .integrantes

@@ -14,6 +14,9 @@ class InitiativeSearch
       find_by_topic_name conditions[:topic_name] if conditions[:topic_name]
       find_by_representative conditions[:representative] if conditions[:representative]
       find_by_keywords conditions[:keywords] if conditions[:keywords]
+      find_by_region conditions[:estado] if conditions[:estado]
+      find_by_political_party conditions[:political_party] if conditions[:political_party]
+      find_by_date conditions[:mes], conditions[:ano]  if conditions[:mes] and conditions[:ano]
     end
     @initiative_search.page(current_page)
   end
@@ -40,4 +43,18 @@ class InitiativeSearch
     @initiative_search = @initiative_search.where('title iLIKE ? OR description iLIKE ?',"%#{keywords}%", "%#{keywords}%") if keywords
   end
   
+  def find_by_region(region_name)
+    @initiative_search = @initiative_search.joins(:representative => :region).where('regions.name iLIKE ?',"%#{region_name}%") if region_name
+  end
+  
+  def find_by_political_party(political_party_name)
+    @initiative_search = @initiative_search.joins(:representative => :political_party).where('political_parties.name iLIKE ?',"%#{political_party_name}%") if political_party_name
+  end
+  
+  def find_by_date(month, year)
+    @initiative_search = @initiative_search.where('presented_at BETWEEN ? AND ?',
+      Time.new(year, month).beginning_of_month,
+      Time.new(year, month).end_of_month
+    ) if month and year
+  end
 end

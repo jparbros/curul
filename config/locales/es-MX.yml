@@ -2,4 +2,8 @@ es-MX:
   time:
     formats:
       month_year: "%B de %Y"
-      
+  views:
+    pagination:
+      previous: "&laquo; Prev"
+      next: "Next &raquo;"
+      truncate: "..."
