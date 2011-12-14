@@ -2,7 +2,6 @@
   iniciativas
   = " - tema: #{@topic.name}" if params[:controller] == 'temas'
   = " - busqueda: #{@query.values.join(',')}" if params[:controller] == 'search_initiatives'
-  = @iniciativas.total_count
 
 %aside
   %h2
