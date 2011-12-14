@@ -419,6 +419,7 @@ html {
 
               span {
                 @include trebuchet-font($white, 60px);
+                display: block;
               }
 
               &.comenta {
@@ -435,6 +436,11 @@ html {
               &.comentarios {
                 background-color: $arctic-bluish-gray;
                 height: 75px;
+              }
+              
+              &.numero_iniciativa {
+                background-color: $grey-2;
+                height: 90px;
               }
 
               &.share {

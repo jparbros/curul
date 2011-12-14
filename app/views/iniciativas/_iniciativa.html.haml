@@ -28,18 +28,18 @@
       %a{:href => iniciativa_path(iniciativa)}
         %li.comenta
           vota
-          %br
           comenta
       %li.votos
         %span
           = iniciativa.total_votes
-        %br
         votos
       %li.comentarios
         %span
           = iniciativa.comments.count
-        %br
         comentarios
+      %li.numero_iniciativa
+        %span= iniciativa.id
+        #{'#'} de iniciativa
       %li.share
         .share-fb
           <a name="fb_share" type="button" share_url="#{iniciativa_url(iniciativa)}">Enviar</a>

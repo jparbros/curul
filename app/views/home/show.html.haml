@@ -22,10 +22,10 @@
           = link_to 'resumen completo >>', iniciativa_path(@iniciativas.first)
         %ul.colores
           %a{:href => iniciativa_path(@iniciativas.first)}
-            %li.comenta
-              vota
+            %li.ver_iniciativa
+              >> ver
               %br
-              comenta
+              iniciativa
           %li.votos
             %span
               = @iniciativas.first.total_votes
@@ -71,10 +71,10 @@
           = link_to 'resumen completo >>', iniciativa_path(@iniciativas.last)
         %ul.colores
           %a{:href => iniciativa_path(@iniciativas.first)}
-            %li.comenta
-              vota
+            %li.ver_iniciativa
+              >> ver
               %br
-              comenta
+              iniciativa
           %li.votos
             %span
               = @iniciativas.last.total_votes
