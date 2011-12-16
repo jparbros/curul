@@ -1,4 +1,14 @@
 .clearfix
+  = form.label :id
+  .input
+    = form.text_field :id, :class => 'xxlarge', :disabled => :disabled
+
+.clearfix
+  = form.label :numero
+  .input
+    = form.text_field :number, :class => 'xxlarge'
+
+.clearfix
   = form.label :titulo
   .input
     = form.text_field :title, :class => 'xxlarge'
@@ -32,3 +42,34 @@
   = form.label :temas
   .input
     = form.text_field :topic_tokens, "data-pre" => @initiative.topics.map(&:attributes).to_json
+    
+.clearfix
+  = form.label :estado
+  .input
+    = form.select :state, Initiative::STATES.to_a.each {|t| t.reverse!}
+    
+.page-header
+  %h2 Votaciones
+  
+.clearfix
+  = form.label :a_favor
+  .input
+    = form.text_field :official_vote_up, :class => 'xxlarge'
+    
+.clearfix
+  = form.label :en_contra
+  .input
+    = form.text_field :official_vote_down, :class => 'xxlarge'
+        
+.clearfix
+  = form.label :abstenciones
+  .input
+    = form.text_field :official_vote_abstentions, :class => 'xxlarge'
+
+= form.fields_for :official_votes do |official_vote_form|
+  .clearfix
+    %label
+      = image_tag(official_vote_form.object.political_party.logo.url(:thumb))
+    .input
+      = official_vote_form.text_field :votes, :class => 'xxlarge'
+      = official_vote_form.hidden_field :political_party_id

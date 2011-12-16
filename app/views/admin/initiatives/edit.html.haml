@@ -1,5 +1,5 @@
 .page-header
-  %h2 Editar Iniciativa ##{@initiative.id}
+  %h2 Editar Iniciativa ##{@initiative.number}
 = form_for [:admin, @initiative], :html => {:multipart => true} do |form|
   = render "admin/shared/error_messages", :target => @initiative
   %fieldset

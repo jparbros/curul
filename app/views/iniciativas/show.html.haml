@@ -21,15 +21,18 @@
     %article.iniciativa{:class => "#{(@iniciativa.main?)? 'main' :  ''}"}
       .main
         .content
-          %p.info
-            = I18n.localize(@iniciativa.presented_at, :format => :month_year)
-            %br
-            Propuesta por:
-            %span
-              = link_to @iniciativa.representative.name, congresista_path(@iniciativa.representative) if @iniciativa.representative
+          .iniciativa_icon
+            = image_tag 'front/iniciativa.png'
+          .iniciativa_info
+            %p.info
+              = I18n.localize(@iniciativa.presented_at, :format => :month_year)
+              %br
+              Propuesta por:
+              %span
+                = link_to @iniciativa.representative.name, congresista_path(@iniciativa.representative) if @iniciativa.representative
 
-          %p.description
-            = @iniciativa.description
+            %p.description
+              = @iniciativa.description
 
           - temas(@iniciativa)
 
@@ -80,11 +83,28 @@
       
       .votaciones
         %h2.no-border votaciones
-      
+
         - votacion_oficial(@iniciativa)
 
         - votacion_local(@iniciativa)
-      
+        
+        %ul.votacion-pleno
+          %li votacion en pleno
+          %li.favor= "#{@iniciativa.official_vote_up} Votos a favor"
+          %li= "#{@iniciativa.official_vote_down} Votos en contra"
+          
+        %ul.votaciones-detalles
+          %li= image_tag 'front/vote-meter.png'
+          - @iniciativa.official_votes.each do |official_vote|
+            %li
+              = official_vote.votes
+              .barra{:style => "height:#{official_vote.percentage}px;margin-top:#{(64-official_vote.percentage)}px", :class => official_vote.political_party.initials}
+                &nbsp;
+            
+        %ul.votaciones-logos
+          %li Votos a favor
+          - @iniciativa.official_votes.each do |official_vote|
+            %li= image_tag official_vote.political_party.logo.url(:thumb)
   
     .haz-comentario
       .comenta-content

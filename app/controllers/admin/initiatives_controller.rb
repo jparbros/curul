@@ -9,6 +9,7 @@ class Admin::InitiativesController < Admin::BaseController
   
   def new
     @initiative = Initiative.new
+    @initiative.official_votes_objects
   end
   
   def create
@@ -31,6 +32,7 @@ class Admin::InitiativesController < Admin::BaseController
   
   def edit
     @initiative = Initiative.find(params[:id])
+    @initiative.official_votes_objects true
   end
   
   def destroy

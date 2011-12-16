@@ -5,9 +5,15 @@ class Initiative < ActiveRecord::Base
   has_many :comments, :as => :commentable, :dependent => :destroy
   has_and_belongs_to_many :commissions
   has_many :votes
+  has_many :official_votes
   has_and_belongs_to_many :topics
   belongs_to :representative
   belongs_to :political_party
+  
+  #
+  # Nested Attributes
+  #
+  accepts_nested_attributes_for :official_votes
   
   #
   # Attributes
@@ -171,5 +177,14 @@ class Initiative < ActiveRecord::Base
 
   def projected?
     self.state == 'project'
+  end
+  
+  def official_votes_objects(create = false)
+    if official_votes.empty?
+      PoliticalParty.all.each do |political_party|
+        official_vote = official_votes.build :political_party => political_party
+        official_vote.save if create
+      end
+    end
   end
 end

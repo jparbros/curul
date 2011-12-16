@@ -135,6 +135,100 @@ html {
         &:first-child {@extend .first-child;}
       }
       
+      &.votaciones-detalles, &.votaciones-logos {
+        @include column-base(true);
+        margin-top: 10px;
+        border-bottom: 1px solid $grey-2;
+        border-top: 1px solid $grey-2;
+        width: 610px;
+        
+        li {
+          @include trebuchet-font($dark-grey, 13px);
+          float: left;
+          height: 77px;
+          padding-top: 6px;
+          text-align: center;
+          width: 65px;
+          
+          .barra {
+            margin: 0 auto;
+            width: 45px;
+            
+            &.pan {
+              background-color: #182e94;
+            }
+            
+            &.pri {
+              background-color: #2e7235;
+            }
+            
+            &.pdlrd {
+              background-color: #fdd100;
+            }
+            
+            &.pdt {
+              background-color: #ff0f00;
+            }
+            
+            &.pvedm {
+              background-color: #a7ce01;
+            }
+            
+            &.pc {
+              background-color: #fd7400;
+            }
+            
+            &.pna {
+              background-color: #059caf;
+            }
+          }
+          
+          &:first-child {
+            @extend .first-child;
+          }
+        }
+      }
+      
+      &.votaciones-logos {
+        border: 0;
+        
+        li {
+          height: 35px;
+          
+          &:first-child {
+            height: 35px;
+            text-transform: none;
+          }
+        }
+      }
+      
+      &.votacion-pleno {
+        @include column-base(true);
+        margin-top: 10px;
+        border-top: 1px solid $grey-2;
+        width: 610px;
+        
+        li {
+          @include trebuchet-font($dark-grey, 13px);
+          float: left;
+          height: 24px;
+          padding-top: 6px;
+          text-align: center;
+          
+          &.favor {
+            border-right: 1px solid $dark-grey;
+            padding-right: 10px;
+            margin-right: 10px;
+          }
+          
+          &:first-child {
+            @extend .first-child;
+            text-transform: uppercase;
+          }
+        }
+      }
+      
+      
       &.votacion-oficial {
         @include column-base(true);
         margin-top: 10px;
@@ -257,6 +351,16 @@ html {
 
         .content {
           @include column(13);
+          
+          .iniciativa_icon {
+            @include column(2);
+            margin: 30px 0 0 0;
+          }
+
+          .iniciativa_info {
+            @include column(11, true);
+          }
+          
 
           ul {
             @include column(13);
