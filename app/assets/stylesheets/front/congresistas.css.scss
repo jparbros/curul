@@ -107,10 +107,15 @@ html {
                 padding: 13px 2px 0;
                 text-align: left;
                 
+                img {
+                  width: 28px;
+                  margin: 0 0 0 20px;
+                }
+                
                 span {
                   color: $dark;
                   font-size: 24px;
-                  margin: 0 0 0 20px;
+                  margin: 0;
                 }
               }
               

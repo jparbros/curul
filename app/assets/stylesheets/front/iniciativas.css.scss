@@ -113,7 +113,7 @@ html {
           }
 
           &.a-favor {
-            background-color: $grey-2;
+            background-color: $light-spring-budish-gray;
             min-width: 57px;
             max-width: 327px;
           }
@@ -243,7 +243,7 @@ html {
           text-align: center;
 
           &.a-favor {
-            background-color: $light-cyanish-gray;
+            background-color: $moderate-spring-bud;
             min-width: 57px;
             max-width: 327px;
           }
@@ -286,12 +286,12 @@ html {
             &:hover { color: $white; }
             
             &.favor {
-              background: url("/assets/front/vote.png") no-repeat 34px 2px #9cbc5b;
+              background: url("/assets/front/vote.png") no-repeat 34px 2px $moderate-spring-bud;
               padding: 13px 35px 13px 75px;
             }
             
             &.contra {
-              background: url("/assets/front/vote.png") no-repeat 34px 2px #e18383;
+              background: url("/assets/front/vote.png") no-repeat 34px 2px $pink;
               padding: 13px 20px 13px 75px;
             }
             
@@ -323,11 +323,11 @@ html {
             width: 200px;
 
             &.favor{
-              background-color: #9cbb5b;
+              background-color: $moderate-spring-bud;
             }
 
             &.contra {
-              background-color: #e08383;
+              background-color: $pink;
             }
 
           }
@@ -422,7 +422,7 @@ html {
                 text-align: center;
 
                 &.a-favor {
-                  background-color: $light-cyanish-gray;
+                  background-color: $moderate-spring-bud;
                   min-width: 57px;
                   max-width: 327px;
                 }
@@ -461,7 +461,7 @@ html {
                 }
 
                 &.a-favor {
-                  background-color: $grey-2;
+                  background-color: $light-spring-budish-gray;
                   min-width: 57px;
                   max-width: 327px;
                 }

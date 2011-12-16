@@ -16,6 +16,8 @@
 
   %ul.contadores
     %li
+      - search = {:search => {:representative => representante.name}}
+      = link_to image_tag('front/iniciativa.png'), search_initiatives_path(search), :method => :post
       %span
         = representante.initiatives.count
       iniciativas
