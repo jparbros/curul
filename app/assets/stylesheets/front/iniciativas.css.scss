@@ -11,6 +11,13 @@ html {
       }
     }
 
+    span {
+      &.disclaimer {
+        margin: 0 0 0 40px;
+        padding: 0;
+      }
+    }
+    
     .pagination {
       float: right;
       .active a { background-color: $arctic-bluish-gray; }  

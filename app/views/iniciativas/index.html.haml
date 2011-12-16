@@ -21,6 +21,10 @@
 
 %section.container
   = render :partial => 'iniciativas/iniciativa', :collection => @iniciativas, :locals => { :show => false }
+  
+  %span.disclaimer
+    <b>Nota:</b> Sólo aparecen las iniciativas que se presentaron a partir de febrero de 2011 y sobre los temas de seguridad, transparencia y presupuesto. Si consideras que hay que agregar alguna iniciativa, contáctanos.
+    
   = paginate @iniciativas, window: 2
   
 - content_for(:javascript_onload) do

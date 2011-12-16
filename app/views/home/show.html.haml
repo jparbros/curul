@@ -4,7 +4,7 @@
   %h1 
     = link_to 'iniciativas', iniciativas_path
   
-  %p Las iniciativas son Lorem ipsum dolor adipiscing elit. Morbi varius facil isistelus ut sollic udin Lorem ipsum dolor sit amet, consec tetur adip iscing elit. Morbi  varius facilisistel lus usollic udin Lorem ipsum dolor sit amet, consec tetur adip iscing elit. Morbi  varius facil
+  %p Encuentra y entiende las iniciativas de ley sobre los temas que te interesan. Etapa en la que se encuentran, votación oficial, y la opinión ciudadana. Vota y comenta. 
   
   .iniciativas
     %h2 las iniciativas m&aacute;s vistas
@@ -116,6 +116,8 @@
       = select_month(Date.today, :include_blank => true, :field_name => 'mes')
       = select_year(Date.today, :include_blank => true, :field_name => 'ano')
       = submit_tag 'Buscar', :class => 'button'
+  %span.disclaimer
+    <b>Nota:</b> Sólo aparecen las iniciativas que se presentaron a partir de febrero de 2011 y sobre los temas de seguridad, transparencia y presupuesto. Si consideras que hay que agregar alguna iniciativa, contáctanos. 
       
 .integrantes
   .integrantes-content
@@ -140,7 +142,7 @@
 .entiende
   %h1 
     = link_to 'entiende tu congreso', entiende_tu_congreso_path
-  %p “Entiende tu Congreso” te facilita las siguientes herramientas para Lorem ipsum dolor sit amet,  consectetur adipiscing  consectetur adipiscing  consectetur adipiscing elit.Morbi varius facilisis tellus ut sollicitudin.
+  %p Conoce el proceso legislativo, la estructura de la Cámara de Diputados, y el lenguaje legislativo desde una perspectiva ciudadana.
   %a{:href => "#{entiende_tu_congreso_path}"}
     %section.push.left
       %ul

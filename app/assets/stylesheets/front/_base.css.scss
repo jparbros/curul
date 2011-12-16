@@ -24,6 +24,14 @@ a {
   &:hover { text-decoration:none; }
 }
 
+span {
+  &.disclaimer {
+    @include column-base(true);
+    @include arial-font(#c5c5c5, 11px);
+    padding: 20px;
+  }
+}
+
 ul {
   &.follow {
     @include column-base(true);
