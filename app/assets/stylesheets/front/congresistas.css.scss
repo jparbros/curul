@@ -4,6 +4,11 @@
 
 html {
   &.congresistas {
+  
+    .congresista_content {
+      @include column(16, true);
+    }
+    
     article {
       @extend #content;
       padding-left: 10px;

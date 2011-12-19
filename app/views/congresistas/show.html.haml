@@ -4,88 +4,91 @@
   %h2
     Twitter
   .tweet
+    = "No disponible" unless @representante.twitter
 
-%article
-  %h2
-    representante de
-    = @representante.region.name if @representante.region
+.congresista_content
+  %article
+    %h2
+      representante de
+      = @representante.region.name if @representante.region
     
-  .primera-columna
-    = image_tag @representante.photo
-    %h4 iniciativas
-    %ul.iniciativas
-      - @representante.initiatives.each do |iniciativa|
-        %li
-          = link_to iniciativa.title[0..50] + '...', iniciativa_path(iniciativa)
+    .primera-columna
+      = image_tag @representante.photo
+      %h4 iniciativas
+      %ul.iniciativas
+        - @representante.initiatives.each do |iniciativa|
+          %li
+            = link_to iniciativa.title[0..50] + '...', iniciativa_path(iniciativa)
 
-  .segunda-columna
-    %p
-      %span nombre
-      %span.nombre= @representante.name
+    .segunda-columna
+      %p
+        %span nombre
+        %span.nombre= @representante.name
       
-    %p
-      %span partido politico
-      = image_tag @representante.political_party.logo.url(:thumb)
-      = @representante.political_party.name
+      %p
+        %span partido politico
+        = image_tag @representante.political_party.logo.url(:thumb)
+        = @representante.political_party.name
     
-    %p
-      %span email
-      = @representante.email
+      %p
+        %span email
+        = @representante.email
     
-    %p
-      %span telefono
-      = @representante.phone
+      %p
+        %span telefono
+        = @representante.phone
     
-    %p
-      %span twitter
-      = "#{@representante.twitter || 'no disponible'}"
+      %p
+        %span twitter
+        = "#{@representante.twitter || 'no disponible'}"
       
-    %p
-      %span suplente
-      = @representante.substitute
+      %p
+        %span suplente
+        = @representante.substitute
       
-    %p
-      %span fecha de nacimiento
-      = @representante.birthday
+      %p
+        %span fecha de nacimiento
+        = @representante.birthday
       
-    %p
-      %span comisiones
-      - @representante.commissions.collect do |commision| 
-        = link_to commision.name + ',', ''
+      %p
+        %span comisiones
+        - @representante.commissions.collect do |commision| 
+          = link_to commision.name + ',', ''
       
-    %p
-      %span biografia
-      = @representante.biography
+      %p
+        %span biografia
+        = @representante.biography
 
 
-%article
-  %h2 deja tu comentario
+  %article
+    %h2 deja tu comentario
 
-  = form_for @comment, :url => congresista_comentarios_path(@representante) do |form|
-    .form-inputs
-      = form.text_field :author, :placeholder => 'Nombre', :class => 'span3 input-text'
+    = form_for @comment, :url => congresista_comentarios_path(@representante) do |form|
+      .form-inputs
+        = form.text_field :author, :placeholder => 'Nombre', :class => 'span3 input-text'
 
-      = form.text_field :email, :placeholder => 'Email', :class => 'span4 input-text margin-left-15'
+        = form.text_field :email, :placeholder => 'Email', :class => 'span4 input-text margin-left-15'
 
-      = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
+        = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text'
 
-    = hidden_field_tag :other_email
+      = hidden_field_tag :other_email
 
-    = submit_tag 'comenta', :class => 'submit span4'
+      = submit_tag 'comenta', :class => 'submit span4'
     
     
-%article
-  %h3 comentarios
-  - @comments.each do |comentario|
-    %p= comentario.comment
+  %article
+    %h3 comentarios
+    - @comments.each do |comentario|
+      %p= comentario.comment
 
 <script>
-jQuery(function($){
-$(".tweet").tweet({
-username: "#{@representante.twitter || 'curul501'}",
-count: 10,
-loading_text: "cargando tweets...",
-template: "{text}"
-});
-});
+- if @representante.twitter
+  jQuery(function($){
+  $(".tweet").tweet({
+  username: "#{@representante.twitter}",
+  count: 10,
+  loading_text: "cargando tweets...",
+  template: "{text}"
+  });
+  });
 </script>

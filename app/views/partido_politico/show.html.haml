@@ -16,8 +16,6 @@
           %ul
             %li= image_tag(representante.photo(:thumb))
             %li.nombre
-              %span nombre
-              %br
               = link_to(representante.name, congresista_path(representante))
               %br
               %span.position= representante.position

@@ -13,7 +13,8 @@ html {
 
     span {
       &.disclaimer {
-        margin: 0 0 0 40px;
+        color: $grey;
+        margin: 0 0 20px 40px;
         padding: 0;
       }
     }
@@ -119,7 +120,7 @@ html {
           }
 
           &.en-contra {
-            color: $grey-2;
+            color: $pink;
             min-width: 57px;
             max-width: 327px;
           }
@@ -249,7 +250,7 @@ html {
           }
 
           &.en-contra {
-            color: $grey-2;
+            color: $pink;
             min-width: 57px;
             max-width: 327px;
           }
@@ -428,7 +429,7 @@ html {
                 }
 
                 &.en-contra {
-                  color: $grey-2;
+                  color: $pink;
                   min-width: 57px;
                   max-width: 327px;
                 }
@@ -467,7 +468,7 @@ html {
                 }
 
                 &.en-contra {
-                  color: $grey-2;
+                  color: $pink;
                   min-width: 57px;
                   max-width: 327px;
                 }
