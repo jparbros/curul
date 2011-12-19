@@ -107,3 +107,22 @@ namespace :iniciativas do
     end
   end
 end
+
+namespace :commission do
+  desc "Task description"
+  task :update => [:environment] do
+    Commission.delete_all
+    
+    CSV.open('doc/representantes.csv', 'r', :col_sep => "\t", :headers => true).each do |representante|
+      rep = Representative.find_by_name(representante['name'])
+      rep.commissions = []
+      if representante['commission']
+        representante['commission'].split(',').each do |commission|
+          commission = Commission.find_or_create_by_name commission.strip
+          rep.commissions << commission
+        end
+      end
+    end
+    
+  end
+end

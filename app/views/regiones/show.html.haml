@@ -17,10 +17,8 @@
         - representatives.each_with_index do |representante, index|
           .congresista
             %ul
-              %li= image_tag(representante.photo(:thumb))
+              %li= link_to image_tag(representante.photo(:thumb)), congresista_path(representante)
               %li.nombre
-                %span nombre
-                %br
                 = link_to(representante.name, congresista_path(representante))
                 %br
                 %span.position= representante.position

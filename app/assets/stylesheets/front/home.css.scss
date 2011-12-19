@@ -163,6 +163,20 @@ html {
         .iniciativa {
           @include column(8);
 
+          .iniciativa_icon { 
+            @include column(2, true); 
+            margin-left: 20px;
+            
+            img {
+              margin: 0 auto;
+            }
+          }
+
+          .iniciativa_info { 
+            @include column-base(true); 
+            width: 220px;
+          }
+
           p {
             @include arial-font($dark-grey, 13px, capitalize);
             margin: 0 0 10px 20px;
@@ -275,10 +289,7 @@ html {
 
         .margin-left-30 { margin-left: 30px; }
 
-        img {
-          @include column(7);
-          margin-top: -60px;
-        }
+        
 
         form {
           @include column(9, true);

@@ -10,16 +10,19 @@
     %h2 las iniciativas m&aacute;s vistas
     .iniciativa
       - if @iniciativas.first
-        %p.info
-          = I18n.localize(@iniciativas.first.presented_at, :format => :month_year)
-          %br
-          %span Propuesta por:
-          %span.presented_by
-            = @iniciativas.first.presented_by
+        .iniciativa_icon
+          = link_to image_tag('front/iniciativa.png'), iniciativa_path(@iniciativas.first)
+        .iniciativa_info
+          %p.info
+            = I18n.localize(@iniciativas.first.presented_at, :format => :month_year)
+            %br
+            %span Propuesta por:
+            %span.presented_by
+              = @iniciativas.first.presented_by
 
-        %p.description
-          = @iniciativas.first.description
-          = link_to 'resumen completo >>', iniciativa_path(@iniciativas.first)
+          %p.description
+            = @iniciativas.first.description
+        
         %ul.colores
           %a{:href => iniciativa_path(@iniciativas.first)}
             %li.ver_iniciativa
@@ -59,16 +62,19 @@
 
     .iniciativa.margin-left-30
       - if @iniciativas.last
-        %p.info
-          = @iniciativas.last.presented_at.to_s(:month_year)
-          %br
-          %span Propuesta por:
-          %span.presented_by
-            = @iniciativas.last.presented_by
+        .iniciativa_icon
+          = link_to image_tag('front/iniciativa.png'), iniciativa_path(@iniciativas.last)
+        .iniciativa_info
+          %p.info
+            = @iniciativas.last.presented_at.to_s(:month_year)
+            %br
+            %span Propuesta por:
+            %span.presented_by
+              = @iniciativas.last.presented_by
 
-        %p.description
-          = @iniciativas.last.description
-          = link_to 'resumen completo >>', iniciativa_path(@iniciativas.last)
+          %p.description
+            = @iniciativas.last.description
+
         %ul.colores
           %a{:href => iniciativa_path(@iniciativas.first)}
             %li.ver_iniciativa

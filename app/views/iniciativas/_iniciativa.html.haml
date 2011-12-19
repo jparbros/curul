@@ -3,7 +3,7 @@
     %h2.estrella La m&aacute;s vista
   .content
     .iniciativa_icon
-      = image_tag 'front/iniciativa.png'
+      = link_to image_tag('front/iniciativa.png'), iniciativa_path(iniciativa)
     .iniciativa_info
       %p.info
         = I18n.localize(iniciativa.presented_at, :format => :month_year)
@@ -14,10 +14,7 @@
     
       %p.description
         = iniciativa.description
-    
-    %p  
-      = link_to 'vota y comenta >>', iniciativa_path(iniciativa)
-    
+
     - temas(iniciativa)
   
     - estado_de_iniciativa(iniciativa)

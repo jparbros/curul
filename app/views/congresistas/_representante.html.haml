@@ -4,9 +4,8 @@
       = image_tag representante.political_party.logo.url(:thumb)
     %li
       .photo
-        = image_tag representante.photo(:thumb)
+        = link_to image_tag(representante.photo(:thumb)), congresista_path(representante)
       .name
-        %span Nombre
         = link_to representante.name, congresista_path(representante)
     %li
       %span cargo y entidad
