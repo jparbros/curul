@@ -15,9 +15,10 @@
   
   %h2
     temas
-  %ul.ul-aside
-    - @temas.each do |tema|
-      %li= link_to tema.name, tema_path(tema)
+  .carousel
+    %ul.ul-aside
+      - @temas.each do |tema|
+        %li= link_to tema.name, tema_path(tema)
 
 %section.container
   %span.disclaimer

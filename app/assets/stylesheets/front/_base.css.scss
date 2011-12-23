@@ -30,6 +30,22 @@ span {
     @include arial-font(#c5c5c5, 11px);
     padding: 20px;
   }
+  
+  &.button-up {
+    background: url(/assets/front/up.png) no-repeat;
+    display: inline-block;
+    height: 25px;
+    margin: 0 100px;
+    width: 30px;
+  }
+  
+  &.button-down {
+    background: url(/assets/front/down.png) no-repeat;
+    display: inline-block;
+    height: 25px;
+    margin: 0 100px;
+    width: 30px;
+  }
 }
 
 ul {
@@ -215,7 +231,9 @@ aside {
       margin: 0 0 0 20px;
 
       li {
+        display: block;
         margin: 0 0 10px 0;
+        
         a{ @include trebuchet-font($dark-grey, 13px, capitalize);}
       }
     }

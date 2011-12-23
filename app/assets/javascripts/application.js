@@ -10,4 +10,16 @@
 //= require bootstrap-twipsy
 //= require bootstrap-modal
 //= require bootstrap-popover
+//= require jquery.jcarousel.min
 //= require entiende
+
+
+$(document).ready(function(){
+  $('.carousel').carousel({
+    direction: "vertical",
+    dispItems: 30,
+    loop: true,
+    nextBtn: '<span class="button-down">&nbsp;</span>',
+    prevBtn: '<span class="button-up">&nbsp;</span>'
+  });
+});
