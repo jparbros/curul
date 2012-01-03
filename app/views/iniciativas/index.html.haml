@@ -27,9 +27,3 @@
   = render :partial => 'iniciativas/iniciativa', :collection => @iniciativas, :locals => { :show => false }
     
   = paginate @iniciativas, window: 2
-  
-- content_for(:javascript_onload) do
-  $('#presentacion').popover({html : true, placement: 'above'});
-  $('#comision').popover({html : true, placement: 'above'});
-  $('#en_pleno').popover({html : true, placement: 'above'});
-  $('#proyecto').popover({html : true, placement: 'above'});

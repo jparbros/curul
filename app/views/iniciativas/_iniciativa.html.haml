@@ -37,7 +37,7 @@
         %span
           = iniciativa.comments.count
         comentarios
-      %li.numero_iniciativa
+      %li.numero_iniciativa{:id => "Numero_iniciativa_#{iniciativa.id}", 'data-content' => 'número asignado por curul 501'}
         %span= iniciativa.id
         #{'#'} de iniciativa
       %li.share
@@ -48,4 +48,9 @@
 
   - content_for(:javascript_onload) do
     $("#comment-modal-#{iniciativa.id}").modal(true)
-      
+    $('#presentacion_#{iniciativa.id}').popover({html : true, placement: 'above'});
+    $('#comision_#{iniciativa.id}').popover({html : true, placement: 'above'});
+    $('#en_pleno_#{iniciativa.id}').popover({html : true, placement: 'above'});
+    $('#proyecto_#{iniciativa.id}').popover({html : true, placement: 'above'});
+    $('#numero_iniciativa_#{iniciativa.id}').popover({html : true, placement: 'above'});
+    

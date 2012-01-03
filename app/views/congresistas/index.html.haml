@@ -1,4 +1,4 @@
-%h1 integrantes del congreso
+%h1 integrantes de la camara
 
 %aside
   = render :partial => 'shared/congresistas_aside'
@@ -18,6 +18,6 @@
             %li= link_to region.name, regione_path(region.id)
       
   %article
-    %h2 integrantes m&aacute;s populares
+    %h2 integrantes m&aacute;s comentados
   
   = render :partial => 'representante', :collection => @representantes

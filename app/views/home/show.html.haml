@@ -52,7 +52,7 @@
               en contra:
               = "#{@iniciativas.first.official_percentage_down}%"
           %li
-            votacion en 131 voces
+            votacion en curul 501
             %span 
               a favor:
               = "#{@iniciativas.first.percentage_votes_up}%"
@@ -104,7 +104,7 @@
               en contra:
               = "#{@iniciativas.last.official_percentage_down}%"
           %li
-            votacion en 131 voces
+            votacion en curul 501
             %span 
               a favor:
               = "#{@iniciativas.last.percentage_votes_up}%"
@@ -128,7 +128,7 @@
 .integrantes
   .integrantes-content
     %h1 
-      = link_to 'integrantes del congreso', congresistas_path
+      = link_to 'integrantes de la camara', congresistas_path
     = form_tag search_representative_path, :method => :post do |form|
       .input
         = label_tag :buscar_por_nombre
