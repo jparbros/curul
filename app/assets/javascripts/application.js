@@ -11,6 +11,7 @@
 //= require bootstrap-modal
 //= require bootstrap-popover
 //= require jquery.jcarousel.min
+//= require jquery.trimtext
 //= require entiende
 
 
@@ -21,5 +22,9 @@ $(document).ready(function(){
     loop: true,
     nextBtn: '<span class="button-down">&nbsp;</span>',
     prevBtn: '<span class="button-up">&nbsp;</span>'
+  });
+  
+  $('#comment_comment').keyup(function(){
+   $('#comment_comment').trimTxt(); 
   });
 });
