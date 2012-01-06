@@ -33,6 +33,7 @@ Congresspedia::Application.routes.draw do
   resource :iniciativa_comenta, :only => [:create], :controller => :iniciativa_comenta
   resources :temas, :only => [:show], :controller => :temas
   resources :partido_politico, :only => [:show], :controller => :partido_politico
+  resources :comisiones, :only => [:show]
   
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :post, :as => "search_initiatives"
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :get, :as => "search_initiatives"

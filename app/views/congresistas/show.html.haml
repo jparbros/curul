@@ -53,7 +53,7 @@
       %p
         %span comisiones
         - @representante.commissions.collect do |commision| 
-          = link_to commision.name + ',', ''
+          = link_to commision.name + ',', comisione_path(commision)
       
       %p
         %span biografia

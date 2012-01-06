@@ -12,6 +12,7 @@ class RepresentativeSearch
       find_by_name conditions[:name] if conditions[:name]
       find_by_state conditions[:state] if conditions[:state] && !conditions[:state].blank?
       find_by_political_party conditions[:political_party] if conditions[:political_party] && !conditions[:political_party].blank?
+      find_by_commision(conditions[:commision]) if conditions[:commision]
     end
     @representative_search.page(current_page)
   end
@@ -28,6 +29,10 @@ class RepresentativeSearch
   
   def find_by_political_party political_party
     @representative_search = @representative_search.joins(:political_party).where('political_parties.id = ?', political_party) if political_party
+  end
+  
+  def find_by_commision(commision_name)
+    @representative_search = @representative_search.joins(:commissions).where('commissions.name = ?', commision_name) if commision_name
   end
   
 end

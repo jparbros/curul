@@ -24,6 +24,7 @@ class Representative < ActiveRecord::Base
   # scopes
   #
   scope :by_region, lambda {|region_id| where(:region_id => region_id)}
+  scope :by_commission, lambda {|commission_id| joins(:commissions).where('commissions_representatives.commission_id = ?', commission_id)}
   scope :most_commented, order('comments_count DESC')
   
   #
