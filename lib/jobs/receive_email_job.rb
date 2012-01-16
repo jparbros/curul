@@ -1,6 +1,6 @@
 class ReceiveEmailJob
 
-  @queue = :receive_comments
+  @queue = :ReceiveComments
 
   def self.perform(options = nil)
     ReceiveEmail.new.create_comments

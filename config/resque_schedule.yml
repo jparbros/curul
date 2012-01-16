@@ -1,0 +1,5 @@
+receive:emails:
+  every: 1m
+  queue: ReceiveComments
+  class: ReceiveEmailJob
+  description: This job get all comments in mail (curul501@citivox.com)
