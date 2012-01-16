@@ -21,6 +21,8 @@ gem 'twitter_oauth'
 gem 'unicorn'
 gem 'mime'
 gem 'ruby-gmail', :require => 'gmail'
+gem 'resque'
+gem 'resque-scheduler', require: 'resque_scheduler'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
