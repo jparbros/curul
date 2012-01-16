@@ -19,6 +19,8 @@ gem 'rails-i18n'
 gem 'state_machine'
 gem 'twitter_oauth'
 gem 'unicorn'
+gem 'mime'
+gem 'ruby-gmail', :require => 'gmail'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
