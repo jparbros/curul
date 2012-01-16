@@ -1,23 +1,30 @@
-class receive_email
+# encoding: utf-8
+
+class ReceiveEmail
+  require 'Mail'
   
   def emails
-    @emails ||= client.inbox.emails(:unread).collect do |email|
+    @emails = []
+    client.inbox.emails(:unread).each do |email|
+      mail = Mail.new(email.body.to_s.gsub("\xC3\xB1",'n'))
       if mail.body.to_s.match(/# In Reply To \d*/).to_s.match(/\d+/).to_s.to_i
-        mail = Mail.new(email.body)
-        { body: mail.body.to_s.match(/^.*\r\n\r\n/).to_s.gsub(/\r\n/,''),
-          from: email.from
+        @emails << { body: mail.body.to_s.match(/^.*\r\n\r\n/).to_s.gsub(/\r\n/,''),
+          from: email.from.first,
           reply_to: mail.body.to_s.match(/# In Reply To \d*/).to_s.match(/\d+/).to_s.to_i
         }
+        email.mark(:read)
       end
     end
+    puts @emails.inspect
+    @emails
   end
   
   def create_comments
     emails.each do |email|
       representative = Representative.find_by_email email[:from]
-      comment = (representative.nil?) ? representative.comments.new : Comment.new
-      comment.author = (representative.nil?) ? representative.name : email[:from]
-      comment.comment = email.body
+      comment = (representative.nil?) ? Comment.new : representative.comments.new
+      comment.author = (representative.nil?) ? email[:from] : representative.name
+      comment.comment = email[:body]
       comment.reply_to = email[:reply_to]
       comment.save
     end

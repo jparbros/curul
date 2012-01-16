@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111216133540) do
+ActiveRecord::Schema.define(:version => 20120116122716) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20111216133540) do
     t.string   "commentable_type"
     t.string   "email"
     t.integer  "tendency"
+    t.integer  "reply_to"
   end
 
   create_table "commissions", :force => true do |t|
