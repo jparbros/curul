@@ -1,4 +1,7 @@
-# This file is used by Rack-based servers to start the application.
-
 require ::File.expand_path('../config/environment',  __FILE__)
-run Congresspedia::Application
+require 'resque/server'
+
+run Rack::URLMap.new(
+    "/" => Congresspedia::Application,
+    "/resque" => Resque::Server.new 
+)
