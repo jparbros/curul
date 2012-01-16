@@ -1,3 +1,3 @@
 web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
-worker: QUEUE=* bundle exec rake resque:work
+worker: bundle exec rake resque:work QUEUE=*
 scheduler: bundle exec rake resque:scheduler
