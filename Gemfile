@@ -23,6 +23,7 @@ gem 'twitter_oauth'
 gem 'unicorn'
 gem 'mime'
 gem 'ruby-gmail', :require => 'gmail'
+gem 'mail'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
