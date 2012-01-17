@@ -1,7 +1,5 @@
 # encoding: utf-8
 
-require 'Mail'
-
 class ReceiveEmail
   def emails
     @emails = []
