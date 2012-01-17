@@ -3,6 +3,6 @@ class ReceiveEmailJob
   @queue = :ReceiveComments
 
   def self.perform(options = nil)
-    ReceiveEmail.new.create_comments
+    ReceiveEmail.new.send_request
   end
 end
