@@ -1,8 +1,8 @@
 # encoding: utf-8
 
+require 'Mail'
+
 class ReceiveEmail
-  require 'Mail'
-  
   def emails
     @emails = []
     client.inbox.emails(:unread).each do |email|
