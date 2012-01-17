@@ -3,6 +3,10 @@ class ReceiveEmailJob
   @queue = :ReceiveComments
 
   def self.perform(options = nil)
-    ReceiveEmail.new.create_comments
+    begin
+      ReceiveEmail.new.create_comments
+    rescue Exception => e
+      notify_airbrake e
+    end
   end
 end
