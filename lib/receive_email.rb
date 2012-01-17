@@ -29,6 +29,10 @@ class ReceiveEmail
     Representative.find_by_email
   end
   
+  def send_request
+    Typhoeus::Request.post('http://curul-501.herokuapp.com/api/comments')
+  end
+  
   def client
     @gmail ||= Gmail.new('curul501@citivox.com', 'curulc1t1v0x')
   end

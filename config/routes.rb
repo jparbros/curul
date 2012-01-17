@@ -13,6 +13,11 @@ Congresspedia::Application.routes.draw do
     
     root :to => "dashboard#show"
   end
+  
+  namespace :api do
+    resources :comments, :only => [:create]
+  end
+  
   resources :iniciativas, :only => [:index, :show] do
     get 'page/:page', :action => :index, :on => :collection
     resource :vote_up, :controller => :vote_up, :only => [:create]

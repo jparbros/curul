@@ -24,6 +24,7 @@ gem 'unicorn'
 gem 'mime'
 gem 'ruby-gmail', :require => 'gmail'
 gem 'mail'
+gem 'typhoeus'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
