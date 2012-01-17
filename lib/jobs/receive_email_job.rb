@@ -6,7 +6,7 @@ class ReceiveEmailJob
     begin
       ReceiveEmail.new.create_comments
     rescue Exception => e
-      notify_airbrake e
+      Airbrake.notify e
     end
   end
 end
