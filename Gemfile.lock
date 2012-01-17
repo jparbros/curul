@@ -239,6 +239,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   koala
+  mail
   mime
   mini_magick
   oauth
