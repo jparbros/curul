@@ -79,7 +79,16 @@
   %article
     %h3 comentarios
     - @comments.each do |comentario|
-      %p= comentario.comment
+      .comment
+        %p
+          %span
+            =comentario.author
+          = comentario.comment
+        - comentario.replies.each do |reply|
+          %p.reply
+            %span
+              = reply.author
+            = reply.comment
 
 <script>
 - if @representante.twitter

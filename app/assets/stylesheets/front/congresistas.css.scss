@@ -16,15 +16,37 @@ html {
       margin-right:0;
       width: 660px;
       
+      .comment {
+        margin-bottom: 10px;
+        border-bottom: 1px solid $grey-2;
+        
+        p {
+          padding-bottom: 10px;
+          margin: 10px 10px 10px 0;
+          
+          span {
+            @include arial-font($dark-mulberry, 11px, uppercase);
+            background: url('/assets/front/mensaje.png') no-repeat;
+            display: block;
+            font-weight: bold;
+            height: 30px;
+            padding: 5px 0 0 30px;
+          }
+          
+          &.reply {
+            margin-left: 20px;
+            
+            span {
+              background: url('/assets/front/reply.png') no-repeat;
+            }
+          }
+        }
+      }
       
       .form-inputs {
         display: inline;
         float: left;
         width: 400px;
-      }
-    
-      p {
-        margin-bottom: 10px;
       }
     
       textarea {

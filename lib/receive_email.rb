@@ -24,6 +24,7 @@ class ReceiveEmail
       comment.author = (representative.nil?) ? email[:from] : representative.name
       comment.comment = email[:body]
       comment.reply_to = email[:reply_to]
+      comment.approved = true
       comment.save
     end
     Representative.find_by_email

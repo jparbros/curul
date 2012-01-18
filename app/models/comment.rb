@@ -36,4 +36,8 @@ class Comment < ActiveRecord::Base
   def send_email
     Comentario.send_email(self.author, self).deliver if self.commentable_type == 'Representative'
   end
+  
+  def replies
+    Comment.where("reply_to IS NOT NULL AND reply_to = ?", id)
+  end
 end
