@@ -2,5 +2,5 @@
 
 = form_tag search_representative_path, :method => :post do |form|
   = text_field_tag 'search[name]', '', :class => :input, :placeholder => 'buscar por nombre'
-  = select_tag 'search[political_party]', options_from_collection_for_select(PoliticalParty.all, :id, :name), :class => :input
+  = select_tag 'search[political_party]', options_from_collection_for_select(PoliticalParty.all, :id, :name), :include_blank => true, :class => :input
   = submit_tag :buscar, :class => :button
