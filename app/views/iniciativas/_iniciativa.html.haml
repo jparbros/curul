@@ -6,23 +6,23 @@
       = link_to(image_tag('front/iniciativa.png'), iniciativa_path(iniciativa))
     .iniciativa_info
       %p.info
-        = I18n.localize(iniciativa.presented_at, :format => :month_year)
+        = I18n.localize(iniciativa.presented_at, :format => :month_year).capitalize
         %br
         Propuesta por:
         %span
           = link_to iniciativa.representative.name, congresista_path(iniciativa.representative) if iniciativa.representative
-    
+
       %p.description
         = iniciativa.description
 
     - temas(iniciativa)
-  
+
     - estado_de_iniciativa(iniciativa)
-    
+
     - votacion_oficial(iniciativa)
-    
+
     - votacion_local(iniciativa)
-  
+
   .aside
     %ul
       %a{:href => iniciativa_path(iniciativa)}
@@ -53,4 +53,3 @@
     $('#en_pleno_#{iniciativa.id}').popover({html : true, placement: 'above'});
     $('#proyecto_#{iniciativa.id}').popover({html : true, placement: 'above'});
     $('#numero_iniciativa_#{iniciativa.id}').popover({html : true, placement: 'above'});
-    

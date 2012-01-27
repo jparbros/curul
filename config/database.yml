@@ -5,7 +5,7 @@ server: &server
   pool: 5
   host: 127.0.0.1
   port: 5432
-  username: postgres
+  username: jparbros
   password: p0stgres
 
 development:

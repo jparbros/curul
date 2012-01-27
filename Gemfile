@@ -38,4 +38,8 @@ gem 'jquery-rails'
 group :development do
   gem 'annotate'
   gem 'ruby-debug19'
+  gem 'vagrant','0.9.3'
+  gem 'heroku'
+  gem 'taps'
+  gem 'net-ssh','2.2.2'
 end

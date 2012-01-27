@@ -1,12 +1,12 @@
 # encoding: utf-8
 module IniciativasHelper
-  
+
   def temas(inicitiva)
-    list = inicitiva.topics.collect {|topic| content_tag(:li, link_to(topic.name, tema_path(topic))) }.join('')
+    list = inicitiva.topics.collect {|topic| content_tag(:li, link_to(topic.name.lstrip.capitalize, tema_path(topic))) }.join('')
     unsorted_list = content_tag(:ul, raw(list), :class => :temas)
     concat raw(unsorted_list)
   end
-  
+
   def estado_de_iniciativa(iniciativa)
     list = []
     list << content_tag(:li, 'estado de la iniciativa')
@@ -16,7 +16,7 @@ module IniciativasHelper
     list << content_tag(:li, 'proyecto', :id => "proyecto_#{iniciativa.id}", :class => iniciativa.projected? ? 'project' : '', 'data-content' => 'El dictamen se convierte en proyecto y pasa a la cámara revisora. Si es una minuta, se envía al Ejecutivo.')
     concat raw(content_tag(:ul, raw(list.join('')), :class => :estado))
   end
-  
+
   def votacion_oficial(iniciativa)
     list = []
     list << content_tag(:li, 'votacion oficial')
@@ -28,7 +28,7 @@ module IniciativasHelper
     end
     concat raw(content_tag(:ul, raw(list.join('')), :class => 'votacion-oficial'))
   end
-  
+
   def votacion_local(iniciativa)
     list = []
     list << content_tag(:li, 'votacion en curul 501')
@@ -40,7 +40,7 @@ module IniciativasHelper
     end
     concat raw(content_tag(:ul, raw(list.join('')), :class => 'votacion-local'))
   end
-  
+
   def state_description(state)
     concat case state
     when 'presentation'
