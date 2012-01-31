@@ -6,7 +6,7 @@ MAPPING = [{:id=>1, :legacy_id=>2912}, {:id=>2, :legacy_id=>2913}, {:id=>3, :leg
   desc "Migrate Images"
   task :images => [:environment] do
     IMAGES.each do |image|
-      puts image[:id] + "\n"
+      puts image[:id].to_s + "\n"
       mapped = MAPPING.select {|map| map[:legacy_id] == image[:id]}.first
       representative = Representative.find(mapped[:id])
       representative.avatar_url = "http://curul501.org/" +  image[:picture]
