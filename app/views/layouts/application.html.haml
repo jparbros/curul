@@ -1,7 +1,7 @@
 !!! 5
 %html{:class => params[:controller]}
   %head
-    %title 
+    %title
       Curul 501
       =h yield(:title)
     %link{:href => 'http://fonts.googleapis.com/css?family=Cuprum', :rel => 'stylesheet', :type => 'text/css'}
@@ -9,7 +9,7 @@
     = javascript_include_tag 'application'
     = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
     = csrf_meta_tag
-    
+
 
   %body
     #container
@@ -48,7 +48,7 @@
         $(function(){
         = yield :javascript_onload
         })
-        
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
 var js, fjs = d.getElementsByTagName(s)[0];
@@ -59,3 +59,16 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22378058-4']);
+_gaq.push(['_setDomainName', '.curul501.org']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
