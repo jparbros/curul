@@ -1,7 +1,7 @@
 %article.representante
   %ul.datos
     %li
-      = image_tag representante.political_party.logo.url(:thumb)
+      = image_tag representante.political_party.logo.url(:thumb) if representante.political_party
     %li
       .photo
         = link_to image_tag(representante.photo(:thumb)), congresista_path(representante)
@@ -20,7 +20,7 @@
       %span
         = representante.initiatives.count
       iniciativas
-    %li 
+    %li
       comentarios
     %li
       = representante.comments_count
