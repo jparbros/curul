@@ -10,7 +10,7 @@ server: &server
 
 development:
   <<: *server
-  database: curul
+  database: curul_migration_test
 
 test: &test
   <<: *server

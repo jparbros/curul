@@ -42,4 +42,6 @@ group :development do
   gem 'heroku'
   gem 'taps'
   gem 'net-ssh','2.2.2'
+  gem 'sequel'
+  gem 'newrelic_rpm'
 end
