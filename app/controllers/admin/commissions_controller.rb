@@ -1,13 +1,21 @@
 class Admin::CommissionsController < Admin::BaseController
-  
+
   def index
-    @commisions = Commission.page(params[:page])
+    @commisions =   if params[:q]
+        Commission.where("name ilike ?", "%#{params[:q]}%")
+      else
+        Commission.page(params[:page])
+      end
+    respond_to do |format|
+      format.html
+      format.json { render :json => @commisions.map(&:attributes) }
+    end
   end
-  
+
   def new
     @commission = Commission.new
   end
-  
+
   def create
     @commission = Commission.new(params[:commission])
     if @commission.save
@@ -16,11 +24,11 @@ class Admin::CommissionsController < Admin::BaseController
       render :new
     end
   end
-  
+
   def edit
     @commission = Commission.find(params[:id])
   end
-  
+
   def update
     @commission = Commission.find(params[:id])
     if @commission.update_attributes(params[:commission])
@@ -29,7 +37,7 @@ class Admin::CommissionsController < Admin::BaseController
       render :edit
     end
   end
-  
+
   def destroy
     @commission = Commission.find(params[:id])
     @commission.destroy
