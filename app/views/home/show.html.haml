@@ -18,7 +18,7 @@
             %br
             %span Propuesta por:
             %span.presented_by
-              = @iniciativas.first.presented_by
+              = @iniciativas.first.representative.name
 
           %p.description
             = @iniciativas.first.description
@@ -70,7 +70,7 @@
             %br
             %span Propuesta por:
             %span.presented_by
-              = @iniciativas.last.presented_by
+              = @iniciativas.last.representative.name
 
           %p.description
             = @iniciativas.last.description
