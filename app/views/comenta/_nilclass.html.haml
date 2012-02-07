@@ -4,3 +4,4 @@
     hizo un comentario:
   %p
     = "\"#{comentario.comment}\""
+  %p= I18n.localize(comentario.created_at, :format => :month_year).capitalize

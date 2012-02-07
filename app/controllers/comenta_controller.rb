@@ -1,12 +1,12 @@
 class ComentaController < ApplicationController
-  
+
   def show
     @comentario = Comment.new
-    @comentarios = Comment.all
+    @comentarios = Comment.order('created_at DESC').page(params[:page])
   end
-  
+
   def create
-    message = Comment.create_approved(params[:comment]) ? {:notice => 'Comentario se creo.'} : {:error => 'Error al crear el comentario.'} 
+    message = Comment.create_approved(params[:comment]) ? {:notice => 'Comentario se creo.'} : {:error => 'Error al crear el comentario.'}
     redirect_to :back, message
   end
 end

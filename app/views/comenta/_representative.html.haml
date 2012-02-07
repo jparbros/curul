@@ -5,3 +5,4 @@
     %span.representante= comentario.commentable.name
   %p
     = "\"#{comentario.comment}\""
+  %p= I18n.localize(comentario.created_at, :format => :month_year).capitalize

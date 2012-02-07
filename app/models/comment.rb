@@ -24,6 +24,11 @@ class Comment < ActiveRecord::Base
   #
   after_create :publish, :send_email
 
+  #
+  # Pagination
+  #
+  paginates_per 10
+
   def self.create_approved(comment)
     self.create(comment.merge({:approved => true}))
   end

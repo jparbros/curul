@@ -10,6 +10,7 @@
       %span= iniciativa.representative.name if iniciativa.representative
       = iniciativa.description[0, 160] + '...'
       = link_to raw("ver m&aacute;s >>"), iniciativa_path(iniciativa)
-      
+
     %p
       = "\"#{comentario.comment}\""
+    %p= I18n.localize(comentario.created_at, :format => :month_year).capitalize
