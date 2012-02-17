@@ -11,7 +11,7 @@
     %h2
       representante de
       = @representante.region.name if @representante.region
-    
+
     .primera-columna
       = image_tag @representante.photo
       %h4 iniciativas
@@ -24,37 +24,45 @@
       %p
         %span nombre
         %span.nombre= @representante.name
-      
+
       %p
         %span partido politico
         = image_tag @representante.political_party.logo.url(:thumb)
         = @representante.political_party.name
-    
+
+      %p
+        %span distrito
+        = @representante.district
+
+      %p
+        %span circunscripci&oacute;n
+        = @representante.circumscription
+
       %p
         %span email
         = @representante.email
-    
+
       %p
         %span telefono
         = @representante.phone
-    
+
       %p
         %span twitter
         = "#{@representante.twitter || 'no disponible'}"
-      
+
       %p
         %span suplente
         = @representante.substitute
-      
+
       %p
         %span fecha de nacimiento
         = @representante.birthday
-      
+
       %p
         %span comisiones
-        - @representante.commissions.collect do |commision| 
+        - @representante.commissions.collect do |commision|
           = link_to commision.name + ',', comisione_path(commision)
-      
+
       %p
         %span biografia
         = @representante.biography
@@ -74,8 +82,8 @@
       = hidden_field_tag :other_email
 
       = submit_tag 'comenta', :class => 'submit span4'
-    
-    
+
+
   %article
     %h3 comentarios
     - @comments.each do |comentario|
