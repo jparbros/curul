@@ -8,3 +8,5 @@
 */
 
 body > .container, .container-fluid { padding-top: 50px !important}
+
+.bottom-margin-20 { margin-bottom: 20px;}

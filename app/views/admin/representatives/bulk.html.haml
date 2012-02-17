@@ -1,0 +1,54 @@
+.page-header
+  %h2 Bulk Update
+
+.well.row
+  = form_tag '/admin/representatives/bulk', :method => :get do
+    .span16.bottom-margin-20
+      .span7
+        = label_tag :nombre
+        .input
+          = text_field_tag 'search[name]'
+      .span7
+        = label_tag :estado
+        .input
+          = select_tag 'search[state]', options_from_collection_for_select(Region.all,'id','name'), {:include_blank => true}
+    .span16.bottom-margin-20
+      .span7
+        = label_tag :partido_politico
+        .input
+          = select_tag 'search[political_party]', options_from_collection_for_select(PoliticalParty.all,'id','name'), {:include_blank => true}
+      .span7
+        = label_tag :comision
+        .input
+          = text_field_tag 'search[commision]'
+
+    .span16.bottom-margin-20
+      .span7
+        = submit_tag 'Buscar', :class => [:btn, :primary]
+
+
+= form_tag '/admin/representatives/bulk_update' do
+  = submit_tag 'Actualizar', :class => [:btn, :primary]
+  %table.zebra-striped
+    %thead
+      %tr
+        %th Nombre
+        %th Distrito
+        %th Circunscripcion
+        %th Email
+        %th Telefono
+        %th Biografia
+        %th Twitter
+
+    %tbody
+      - @representatives.each do |representative|
+        %tr
+          %td= text_field_tag 'representatives[][name]', representative.name
+          %td= text_field_tag 'representatives[][district]', representative.district
+          %td= text_field_tag 'representatives[][circumscription]', representative.circumscription
+          %td= text_field_tag 'representatives[][email]', representative.email
+          %td= select_tag 'representatives[][political_party]', options_from_collection_for_select(PoliticalParty.all,'id','name', representative.political_party_id)
+          %td= select_tag 'representatives[][region]', options_from_collection_for_select(Region.all,'id','name', representative.region_id)
+          %td= text_field_tag 'representatives[][twitter]', representative.twitter
+        = hidden_field_tag 'representatives[][id]', representative.id
+  = submit_tag 'Actualizar', :class => [:btn, :primary]

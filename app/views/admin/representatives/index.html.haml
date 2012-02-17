@@ -1,7 +1,35 @@
 .page-header
   %h2 Representantes
 
+.well.row
+  = form_tag admin_representatives_path, :method => :get do
+    .span16.bottom-margin-20
+      .span7
+        = label_tag :nombre
+        .input
+          = text_field_tag 'search[name]'
+      .span7
+        = label_tag :estado
+        .input
+          = select_tag 'search[state]', options_from_collection_for_select(Region.all,'id','name'), {:include_blank => true}
+    .span16.bottom-margin-20
+      .span7
+        = label_tag :partido_politico
+        .input
+          = select_tag 'search[political_party]', options_from_collection_for_select(PoliticalParty.all,'id','name'), {:include_blank => true}
+      .span7
+        = label_tag :comision
+        .input
+          = text_field_tag 'search[commision]'
+
+    .span16.bottom-margin-20
+      .span7
+        = submit_tag 'Buscar', :class => [:btn, :primary]
+
+
 = link_to 'Nuevo Representante', new_admin_representative_path  , :class => [:btn, :primary]
+
+= link_to 'Bulk Update', 'representatives/bulk'  , :class => [:btn, :primary]
 %br
 %br
 
