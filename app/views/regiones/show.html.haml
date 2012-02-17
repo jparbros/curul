@@ -4,7 +4,7 @@
   %h2= @region.name
   Selecciona un representante para ver su perfil e interactuar con el.
   = link_to '<< volver', congresistas_path, :class => 'volver'
-  
+
 - @partidos_politicos.each do |partido_politico|
   - representatives =  partido_politico.representatives.by_region(@region.id)
   - unless representatives.empty?
@@ -22,6 +22,9 @@
                 = link_to(representante.name, congresista_path(representante))
                 %br
                 %span.position= representante.position
+                %br
+                %span.position
+                  Distrito: #{representante.district} Circunscripci&oacute;n: #{representante.circumscription}
               %li
                 %span contacto
                 %br
@@ -31,6 +34,5 @@
                 =representante.phone
                 %span twitter
                 =representante.twitter
-                
-                
-                
+
+
