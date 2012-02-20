@@ -1,11 +1,11 @@
 class CongresistasController < ApplicationController
-  
+
   def index
     @regiones = Region.all
-    @partidos_politicos = PoliticalParty.all
+    @partidos_politicos = PoliticalParty.political_parties
     @representantes = Representative.most_commented.limit(5)
   end
-  
+
   def show
     @representante = Representative.find(params[:id])
     @comment = @representante.comments.build

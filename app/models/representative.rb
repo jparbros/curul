@@ -1,5 +1,5 @@
 class Representative < ActiveRecord::Base
-  
+
   #
   # Associatons
   #
@@ -9,33 +9,34 @@ class Representative < ActiveRecord::Base
   has_and_belongs_to_many :commissions
   has_many :initiatives
   has_many :comments, :as => :commentable, :dependent => :destroy
-  
+
   #
   # Accessor
   #
   attr_reader :commission_tokens
-  
+
   #
   # Uploader
   #
   mount_uploader :avatar, AvatarUploader
-  
+
   #
   # scopes
   #
   scope :by_region, lambda {|region_id| where(:region_id => region_id)}
   scope :by_commission, lambda {|commission_id| joins(:commissions).where('commissions_representatives.commission_id = ?', commission_id)}
   scope :most_commented, order('comments_count DESC')
-  
+  scope :political_parties, where('political_party_id NOT IN (8,9)')
+
   #
   # Delegates
   #
   delegate :name, :to => :region, :prefix => true
-  
+
   def commission_tokens=(ids)
-    self.commission_ids = ids.split(',') 
+    self.commission_ids = ids.split(',')
   end
-  
+
   def photo(size = nil)
     return self.avatar.url(size) unless self.avatar.url.include? 'txt'
     unless size
