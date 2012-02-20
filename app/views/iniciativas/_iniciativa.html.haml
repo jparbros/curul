@@ -13,7 +13,7 @@
           = link_to iniciativa.representative.name, congresista_path(iniciativa.representative) if iniciativa.representative
 
 
-      = link_to(content_tag(:h5, iniciativa.title), iniciativa_path(iniciativa))
+      = link_to(content_tag(:h5, (iniciativa.try(:title) || iniciativa.try(:description))), iniciativa_path(iniciativa))
 
     - temas(iniciativa)
 

@@ -1,4 +1,4 @@
-%h1 
+%h1
   iniciativas
   = " - tema: #{@topic.name}" if params[:controller] == 'temas'
   = " - busqueda: #{@query.values.join(',')}" if params[:controller] == 'search_initiatives'
@@ -6,13 +6,13 @@
 %aside
   %h2
     buscar iniciativa
-  
+
   = form_tag search_initiatives_path, :method => :post do |form|
-  
+
     = text_field_tag 'search[keywords]', '', :placeholder => 'palabras clave', :class => 'input'
-  
+
     = submit_tag :buscar, :class => 'button'
-  
+
   %h2
     temas
   .carousel
@@ -22,8 +22,8 @@
 
 %section.container
   %span.disclaimer
-    <b>Nota:</b> Sólo aparecen las iniciativas que se presentaron a partir de febrero de 2011 y sobre los temas de seguridad, transparencia y presupuesto. Si consideras que hay que agregar alguna iniciativa, contáctanos.
+    <b>Nota:</b> Sólo aparecen las iniciativas que se presentaron a partir de febrero de 2011 y sobre los temas siguientes: presupuesto, derechos humanos, transparencia, rendición de cuentas, salud, industrias extractivas, migración, seguridad, publicidad oficial, entre otros. Si consideras que hay que agregar algún tema o alguna iniciativa, avísanos por correo o twitter.
 
   = render :partial => 'iniciativas/iniciativa', :collection => @iniciativas, :locals => { :show => false }
-    
+
   = paginate @iniciativas, window: 2
