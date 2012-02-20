@@ -12,8 +12,8 @@
         %span
           = link_to iniciativa.representative.name, congresista_path(iniciativa.representative) if iniciativa.representative
 
-      %p.description
-        = iniciativa.description
+
+      = link_to(content_tag(:h5, iniciativa.title), iniciativa_path(iniciativa))
 
     - temas(iniciativa)
 

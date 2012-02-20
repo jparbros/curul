@@ -11,6 +11,11 @@ html {
       }
     }
 
+    h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
     span {
       &.disclaimer {
         color: $grey;
