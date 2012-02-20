@@ -1,3 +1,4 @@
+
 class Initiative < ActiveRecord::Base
   #
   # Associations
@@ -5,7 +6,7 @@ class Initiative < ActiveRecord::Base
   has_many :comments, :as => :commentable, :dependent => :destroy
   has_and_belongs_to_many :commissions
   has_many :votes
-  has_many :official_votes
+  has_many :official_votes, :conditions => 'political_party_id NOT IN (8,9)'
   has_many :resources
   has_and_belongs_to_many :topics
   belongs_to :representative

@@ -91,7 +91,8 @@
         %ul.votacion-pleno
           %li votacion en pleno
           %li.favor= "#{@iniciativa.official_vote_up} Votos a favor"
-          %li= "#{@iniciativa.official_vote_down} Votos en contra"
+          %li.favor= "#{@iniciativa.official_vote_down} Votos en contra"
+          %li= "#{@iniciativa.official_vote_abstentions || "0"} Abstenciones"
 
         %ul.votaciones-detalles
           %li= image_tag 'front/vote-meter.png'

@@ -1,6 +1,6 @@
 server: &server
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   reconnect: false
   pool: 5
   host: 127.0.0.1
