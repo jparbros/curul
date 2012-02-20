@@ -2,16 +2,17 @@ class Admin::InitiativesController < Admin::BaseController
   def index
     @initiatives = Initiative.page(params[:page])
   end
-  
+
   def show
     @initiative = Initiative.find(params[:id])
   end
-  
+
   def new
     @initiative = Initiative.new
     @initiative.official_votes_objects
+    @initiative.resources.build
   end
-  
+
   def create
     @initiative = Initiative.new(params[:initiative])
     if @initiative.save
@@ -20,7 +21,7 @@ class Admin::InitiativesController < Admin::BaseController
       render :new
     end
   end
-  
+
   def update
     @initiative = Initiative.find(params[:id])
     if @initiative.update_attributes(params[:initiative])
@@ -29,12 +30,13 @@ class Admin::InitiativesController < Admin::BaseController
       render :edit
     end
   end
-  
+
   def edit
     @initiative = Initiative.find(params[:id])
     @initiative.official_votes_objects true
+    @initiative.resources.build
   end
-  
+
   def destroy
     @initiative = Initiative.find(params[:id])
     @initiative.destroy

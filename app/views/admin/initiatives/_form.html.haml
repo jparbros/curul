@@ -12,7 +12,7 @@
   = form.label :titulo
   .input
     = form.text_field :title, :class => 'xxlarge'
-    
+
 .clearfix
   = form.label :descripcion
   .input
@@ -37,30 +37,44 @@
   = form.label :url_recurso_adicional
   .input
     = form.text_field :additional_resources_url, :class => 'xxlarge'
-    
+
 .clearfix
   = form.label :temas
   .input
     = form.text_field :topic_tokens, "data-pre" => @initiative.topics.map(&:attributes).to_json
-    
+
 .clearfix
   = form.label :estado
   .input
     = form.select :state, Initiative::STATES.to_a.each {|t| t.reverse!}
-    
+
+.page-header
+  %h2 Recursos Adicionales
+
+= form.fields_for :resources do |resource_form|
+  .clearfix
+    = resource_form.label :nombre
+    .input
+      = resource_form.text_field :name, :class => 'xxlarge'
+
+  .clearfix
+    = resource_form.label :url
+    .input
+      = resource_form.text_field :url, :class => 'xxlarge'
+
 .page-header
   %h2 Votaciones
-  
+
 .clearfix
   = form.label :a_favor
   .input
     = form.text_field :official_vote_up, :class => 'xxlarge'
-    
+
 .clearfix
   = form.label :en_contra
   .input
     = form.text_field :official_vote_down, :class => 'xxlarge'
-        
+
 .clearfix
   = form.label :abstenciones
   .input

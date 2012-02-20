@@ -494,7 +494,7 @@ html {
                 @include trebuchet-font($dark-grey, 13px, uppercase);
                 border-left: 1px solid  $grey-2;
                 float: left;
-                height: 24px;
+                height: auto;
                 padding-top: 6px;
                 padding-left: 5px;
                 text-align: left;
@@ -511,6 +511,8 @@ html {
                 padding-left: 5px;
 
                 &:first-child { border: 0; @extend .first-child;}
+
+                &:last-child { width: 350px; }
               }
             }
           }

@@ -8,6 +8,7 @@ class Initiative < ActiveRecord::Base
   has_many :votes
   has_many :official_votes, :conditions => 'political_party_id NOT IN (8,9)'
   has_many :resources
+  has_and_belongs_to_many :commissions
   has_and_belongs_to_many :topics
   belongs_to :representative
   belongs_to :political_party
@@ -16,6 +17,7 @@ class Initiative < ActiveRecord::Base
   # Nested Attributes
   #
   accepts_nested_attributes_for :official_votes
+  accepts_nested_attributes_for :resources
 
   #
   # Attributes
