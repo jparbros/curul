@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html {
-  &.regiones, &.search_representative, &.partido_politico, &.comisiones {
+  &.regiones, &.search_representative, &.partido_politico, &.comisiones_congresistas {
     table {
       border: 1px solid #dddddd;
       color: $grayish-cyan;
@@ -32,48 +32,48 @@ html {
       @include column(24, true);
       margin: 10px 0;
       padding: 10px;
-      
+
       a.volver {
         color: $dark-mulberry;
         text-transform: uppercase;
       }
-      
-      .logo { 
+
+      .logo {
         @include column(5);
         text-align: center;
-        
+
         span {
           @include trebuchet-font($grey, 14px, uppercase);
           display: block;
         }
       }
-      
+
       .congresistas {
         @include column-base(true);
         border-left: 1px dashed $grey;
         padding: 0 0 0 10px;
         width: 735px;
-        
+
         .congresista {
           @include column-base(true);
           border-bottom: 1px solid #f1eee9;
           margin: 0 0 10px;
           padding: 0 0 10px;
           width: 735px;
-          
+
           span {
             @include trebuchet-font($dark-mulberry, 14px, uppercase);
-            
+
             &.position {font-size: 13px; font-style: italic;}
           }
-          
+
           ul {
             li {
               @include arial-font($grey, 18px);
               float: left;
               height: 50px;
               margin: 0 20px 0 0;
-              
+
               &:last-child {
                 @include column(8);
                 border-left: 1px dashed $grey;
@@ -82,7 +82,7 @@ html {
                 margin: 0;
                 padding: 0 0 0 20px;
               }
-              
+
               &.nombre { width: 300px;}
             }
           }

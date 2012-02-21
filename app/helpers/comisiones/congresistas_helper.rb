@@ -1,0 +1,2 @@
+module Comisiones::CongresistasHelper
+end

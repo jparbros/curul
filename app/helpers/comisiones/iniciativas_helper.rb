@@ -1,0 +1,2 @@
+module Comisiones::IniciativasHelper
+end

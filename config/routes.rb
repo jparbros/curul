@@ -20,6 +20,11 @@ Congresspedia::Application.routes.draw do
     resources :comments, :only => [:create]
   end
 
+  namespace :comisiones do
+    resources :iniciativas, :only => [:show]
+    resources :congresistas, :only => [:show]
+  end
+
   resources :iniciativas, :only => [:index, :show] do
     get 'page/:page', :action => :index, :on => :collection
     resource :vote_up, :controller => :vote_up, :only => [:create]
@@ -40,7 +45,6 @@ Congresspedia::Application.routes.draw do
   resource :iniciativa_comenta, :only => [:create], :controller => :iniciativa_comenta
   resources :temas, :only => [:show], :controller => :temas
   resources :partido_politico, :only => [:show], :controller => :partido_politico
-  resources :comisiones, :only => [:show]
 
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :post, :as => "search_initiatives"
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :get, :as => "search_initiatives"

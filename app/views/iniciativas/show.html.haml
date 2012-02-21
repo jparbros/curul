@@ -53,7 +53,10 @@
           %ul.etapa
             %li comisiones
             %li
-              = @iniciativa.commissions.map(&:name).to_sentence
+              - @iniciativa.commissions.each do |commission|
+                = link_to commission.name, comisiones_iniciativa_path(commission)
+
+                |
 
           %ul.recursos
             %li recursos adicionales

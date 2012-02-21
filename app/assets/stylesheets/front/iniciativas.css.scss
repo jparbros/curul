@@ -4,7 +4,7 @@
 
 
 html {
-  &.iniciativas, &.search_initiatives, &.temas {
+  &.iniciativas, &.search_initiatives, &.temas, &.comisiones_iniciativas {
     section {
       &.container {
         @include column(18, true);
