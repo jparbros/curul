@@ -46,9 +46,14 @@
             %li= @iniciativa.state_formated
 
           %ul.etapa
-            %li descripcion
+            %li descripci&oacute;n
             %li
               - state_description(@iniciativa.state)
+
+          %ul.etapa
+            %li comisiones
+            %li
+              = @iniciativa.commissions.map(&:name).to_sentence
 
           %ul.recursos
             %li recursos adicionales

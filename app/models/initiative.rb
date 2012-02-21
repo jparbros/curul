@@ -22,7 +22,7 @@ class Initiative < ActiveRecord::Base
   #
   # Attributes
   #
-  attr_reader :topic_tokens, :presented_by_token
+  attr_reader :topic_tokens, :presented_by_token, :commission_tokens
 
   #
   # Scope
@@ -82,6 +82,10 @@ class Initiative < ActiveRecord::Base
 
   def presented_by_token=(id)
     self.representative_id = id
+  end
+
+  def commission_tokens=(ids)
+    self.commission_ids = ids.split(',')
   end
 
   def official_percentage_up

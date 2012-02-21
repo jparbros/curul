@@ -29,14 +29,9 @@
     = form.text_field :presented_by_token, "data-pre" => @initiative.representative.to_json
 
 .clearfix
-  = form.label :recurso_adicional
+  = form.label :comisiones
   .input
-    = form.text_field :additional_resources, :class => 'xxlarge'
-
-.clearfix
-  = form.label :url_recurso_adicional
-  .input
-    = form.text_field :additional_resources_url, :class => 'xxlarge'
+    = form.text_field :commission_tokens, "data-pre" => @initiative.commissions.to_json
 
 .clearfix
   = form.label :temas
