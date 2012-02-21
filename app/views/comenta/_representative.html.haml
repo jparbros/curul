@@ -2,7 +2,7 @@
   .header
     %span.author= comentario.author
     Dejó un mensaje para:
-    %span.representante= comentario.commentable.name
+    %span.representante= link_to comentario.commentable.name, congresista_path(comentario.commentable)
   %p
     = "\"#{comentario.comment}\""
   %p= I18n.localize(comentario.created_at, :format => :month_year).capitalize

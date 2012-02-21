@@ -11,7 +11,7 @@
       %span cargo y entidad
       = representante.position
       |
-      = representante.region_name if representante.region
+      = link_to representante.region_name, regione_path(representante.region), :class => :region_link  if representante.region
 
   %ul.contadores
     %li

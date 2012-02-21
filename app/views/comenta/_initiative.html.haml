@@ -7,7 +7,7 @@
     .representante_foto
       = image_tag(iniciativa.representative.avatar.url(:thumb)) if iniciativa.representative
     .iniciativa_resumen
-      %span= iniciativa.representative.name if iniciativa.representative
+      %span= link_to iniciativa.representative.name, congresista_path(iniciativa.representative) if iniciativa.representative
       = iniciativa.description[0, 160] + '...'
       = link_to raw("ver m&aacute;s >>"), iniciativa_path(iniciativa)
 

@@ -27,8 +27,7 @@
 
       %p
         %span partido politico
-        = image_tag @representante.political_party.logo.url(:thumb)
-        = @representante.political_party.name
+        = link_to (image_tag(@representante.political_party.logo.url(:thumb)) + @representante.political_party.name), partido_politico_path(@representante.political_party) if @representante.political_party
 
       %p
         %span distrito

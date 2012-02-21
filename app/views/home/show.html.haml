@@ -18,7 +18,7 @@
             %br
             %span Propuesta por:
             %span.presented_by
-              = @iniciativas.first.representative.name
+              = link_to @iniciativas.first.representative.name, congresista_path(@iniciativas.first.representative) if @iniciativas.first.representative
 
           %p.description
             = @iniciativas.first.description
@@ -70,7 +70,7 @@
             %br
             %span Propuesta por:
             %span.presented_by
-              = @iniciativas.last.representative.name
+              = link_to @iniciativas.last.representative.name, congresista_path(@iniciativas.last.representative) if @iniciativas.last.representative
 
           %p.description
             = @iniciativas.last.description

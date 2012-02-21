@@ -4,26 +4,26 @@
 
 html {
   &.congresistas {
-  
+
     .congresista_content {
       @include column(16, true);
     }
-    
+
     article {
       @extend #content;
       padding-left: 10px;
       padding-bottom: 10px;
       margin-right:0;
       width: 660px;
-      
+
       .comment {
         margin-bottom: 10px;
         border-bottom: 1px solid $grey-2;
-        
+
         p {
           padding-bottom: 10px;
           margin: 10px 10px 10px 0;
-          
+
           span {
             @include arial-font($dark-mulberry, 11px, uppercase);
             background: url('/assets/front/mensaje.png') no-repeat;
@@ -32,28 +32,28 @@ html {
             height: 30px;
             padding: 5px 0 0 30px;
           }
-          
+
           &.reply {
             margin-left: 20px;
-            
+
             span {
               background: url('/assets/front/reply.png') no-repeat;
             }
           }
         }
       }
-      
+
       .form-inputs {
         display: inline;
         float: left;
         width: 400px;
       }
-    
+
       textarea {
         height: 150px;
         margin: 10px 0 0;
       }
-    
+
       .submit {
         @extend .submit-button;
         color: $white;
@@ -61,24 +61,24 @@ html {
         height: 40px;
         margin: 80px 0 0 15px;
       }
-      
+
       &.representante {
         @include column(17, true);
         background-color: $white;
         padding: 0;
-        
+
         .bottom {
           @include column(17, true);
           background-color: $light-amber;
           height: 15px;
         }
-        
+
         ul {
           @include column-base(true);
-          
+
           &.datos {
             margin: 5px;
-            
+
             li {
               @include arial-font($dark-grey, 18px);
               border-right: 1px dashed $grey;
@@ -86,23 +86,25 @@ html {
               height: 50px;
               padding: 10px;
               width: 370px;
-              
+
               a {
                 @include arial-font($dark-grey, 18px);
-                
+
                 &:hover { color:$dark-grey ;}
+
+                &.region_link { font-size: 12px;}
               }
 
-              &:first-child { 
+              &:first-child {
                 width: 45px;
 
                 img { margin: 10px 5px 0;}
               }
 
-              &:last-child { 
-                border: 0; 
+              &:last-child {
+                border: 0;
                 font-size: 12px;
-                padding: 10px 0 10px 10px; 
+                padding: 10px 0 10px 10px;
                 width: 190px;
               }
 
@@ -113,12 +115,12 @@ html {
 
               .photo { padding: 0 10px 0 0;}
 
-              .photo, .name { 
+              .photo, .name {
                 float: left;
               }
             }
           }
-          
+
           &.contadores {
             li {
               @include cuprum-font($grey, 13px, uppercase);
@@ -128,25 +130,25 @@ html {
               padding: 18px 5px 0 0;
               text-align: right;
               width: 272px;
-              
+
               &:first-child {
                 font-size: 18px;
                 padding: 13px 2px 0;
                 text-align: left;
-                
+
                 img {
                   width: 28px;
                   margin: 0 0 0 20px;
                 }
-                
+
                 span {
                   color: $dark;
                   font-size: 24px;
                   margin: 0;
                 }
               }
-              
-              &:last-child { 
+
+              &:last-child {
                 background-color: $light-amber;
                 border-top: 1px solid $light-amber;
                 color: white;
@@ -160,7 +162,7 @@ html {
           }
         }
       }
-      
+
       .primera-columna {
         @include column(6,true);
         @include append(1);
@@ -182,35 +184,35 @@ html {
         }
       }
     }
-    
+
     section {
       @include column(17, true);
       padding: 0;
-      
+
       &.entidades {
         @include column(17, true);
         background: url('/assets/front/h1-bg.png') repeat-x top, url('/assets/front/h1-bg.png') repeat-x bottom;
         padding: 12px 0;
         margin: 0 0 20px 40px;
-        
+
         section {
           border-top: 1px solid $light-amberish-gray;
           border-bottom: 1px solid $light-amberish-gray;
           padding: 10px 0;
-          
+
           ul.column {
             @include column-base(true);
             border-left: 1px dashed $grey;
             height: 365px;
             padding: 0 0 0 15px;
             width: 130px;
-            
+
             &:first-child { width: 215px; border: 0;}
-            
+
             li {
               @include arial-font($dark-grey, 13px, uppercase);
               padding: 10px 0;
-              
+
               img {
                 width: 15px;
                 margin: 0 5px 0 0;
@@ -220,11 +222,11 @@ html {
         }
       }
     }
-    
+
     aside {
       min-height: 0;
     }
-    
+
     p {
       margin-bottom: 10px;
 
@@ -232,11 +234,11 @@ html {
         display: block;
         color: $grayish-cyan;
         text-transform: uppercase;
-        
+
         &.nombre { font-size: 18px; color: $dark-grey;}
       }
     }
-    
+
     ul {
       &.iniciativas {
         list-style: none;
