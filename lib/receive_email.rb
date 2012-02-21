@@ -5,7 +5,7 @@ class ReceiveEmail
     @emails = []
     client.inbox.emails(:unread).each do |email|
       mail = Mail.new(email.body.to_s.gsub("\xC3\xB1",'n'))
-      if mail.body.to_s.match(/# In Reply To \d*/).to_s.match(/\d+/).to_s.to_i
+      if mail.body.to_s.match(/# In Reply To \d*/) && mail.body.to_s.match(/# In Reply To \d*/).to_s.match(/\d+/).to_s.to_i
         @emails << { body: mail.body.to_s.match(/^.*\r\n\r\n/).to_s.gsub(/\r\n/,''),
           from: email.from.first,
           reply_to: mail.body.to_s.match(/# In Reply To \d*/).to_s.match(/\d+/).to_s.to_i
