@@ -25,6 +25,7 @@ gem 'mime'
 gem 'ruby-gmail', :require => 'gmail'
 gem 'mail'
 gem 'typhoeus'
+gem "recaptcha", :require => "recaptcha/rails"
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'

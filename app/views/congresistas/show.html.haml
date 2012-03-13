@@ -78,6 +78,8 @@
 
         = form.text_area :comment, :placeholder => 'Mensaje', :class => 'span7 input-text', 'data-len' => 500
 
+        = recaptcha_tags
+
       = hidden_field_tag :other_email
 
       = submit_tag 'comenta', :class => 'submit span4'
