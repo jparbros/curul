@@ -6,7 +6,7 @@ class ComentaController < ApplicationController
   end
 
   def create
-    message = Comment.create_approved(params[:comment]) ? {:notice => 'Comentario se creo.'} : {:error => 'Error al crear el comentario.'}
+    message = (verify_recaptcha && Comment.create_approved(params[:comment]))? {:notice => 'Comentario se creo.'} : {:error => 'Error al crear el comentario.'}
     redirect_to :back, message
   end
 end
