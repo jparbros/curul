@@ -22,7 +22,7 @@ class Comment < ActiveRecord::Base
   #
   # Callbacks
   #
-  after_create :publish, :send_email
+  after_create :send_email
 
   #
   # Pagination
