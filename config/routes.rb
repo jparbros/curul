@@ -12,6 +12,7 @@ Congresspedia::Application.routes.draw do
     resources :representatives
     resources :commissions
     resources :admins
+    resources :comments
 
     root :to => "dashboard#show"
   end

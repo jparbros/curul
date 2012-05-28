@@ -6,3 +6,7 @@
 */
 
 body > .container, .container-fluid { padding-top: 50px !important}
+
+.other_email {
+  display: none;
+}
