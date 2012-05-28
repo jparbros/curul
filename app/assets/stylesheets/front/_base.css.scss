@@ -14,12 +14,12 @@ html { background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/a
 
 body {
   @include trebuchet-font($dark-grey, 13px);
-  
+
   .margin-left-15 {margin-left: 15px;}
 }
 
-a { 
-  @include trebuchet-font($dark-grey, 13px); 
+a {
+  @include trebuchet-font($dark-grey, 13px);
 
   &:hover { text-decoration:none; }
 }
@@ -30,7 +30,7 @@ span {
     @include arial-font(#c5c5c5, 11px);
     padding: 20px;
   }
-  
+
   &.button-up {
     background: url(/assets/front/up.png) no-repeat;
     display: inline-block;
@@ -38,7 +38,7 @@ span {
     margin: 0 100px;
     width: 30px;
   }
-  
+
   &.button-down {
     background: url(/assets/front/down.png) no-repeat;
     display: inline-block;
@@ -52,23 +52,23 @@ ul {
   &.follow {
     @include column-base(true);
     float: right;
-    
+
     img { margin: 0;}
-    
+
     li {
       @include cuprum-font($mulberryish-gray, 13px, uppercase);
       border-right: 2px solid $white;
       float: left;
       width: 30px;
       height: 35px;
-      
+
       &:first-child {
         background: url('/assets/front/follow-bg.png') repeat-x;
         height: 27px;
         padding: 8px 0 0 10px;
         width: 75px;
       }
-      
+
     }
   }
 }
@@ -86,28 +86,28 @@ h1 {
   background: url("/assets/front/h1-bg.png") repeat-x;
   margin: 40px 0 0 0;
   padding: 20px 5px 20px 0;
-  
+
   a{
     @include cuprum-font($mulberryish-gray, 36px, uppercase);
     text-decoration: none;
-    
+
     &:hover {text-decoration: none;}
   }
 }
 
 h2 {
   @include trebuchet-font($dark-mulberry, 18px, uppercase);
-  border-bottom: 1px solid $grey; 
+  border-bottom: 1px solid $grey;
   margin: 20px 10px 10px 20px;
   padding: 0 0 5px;
-  
+
   &.estrella {
     @include trebuchet-font($dark-grey, 18px);
     background: url('/assets/front/star.png') no-repeat;
     border-bottom: 1px solid $grey;
     padding-left: 30px;
   }
-  
+
   article & {
     margin: 20px 10px 10px 0px;
   }
@@ -129,14 +129,14 @@ h4 {
 header {
   @include column(24,true);
   margin-bottom: 12px;
-  
+
   .logo, .navigation { float: left;}
-  
+
   .logo {
     @include column(5);
     img { margin-top: 25px; }
   }
-  
+
   .navigation {
     @include column(19, true);
     text-align: right;
@@ -172,13 +172,13 @@ footer {
   margin: 20px 0 0 0;
 
   ul {
-  
+
     &.logo {
       float: right;
-      
+
       li { border: 0;}
     }
-    
+
     li {
       float: left;
       border-left: 1px solid $very-dark-persian-blue;
@@ -198,6 +198,10 @@ footer {
   padding: 5px;
 }
 
+.other_email {
+  display: none;
+}
+
 .submit-button {
   @include cuprum-font($white, 14px, uppercase);
   background-color: $dark-mulberry;
@@ -211,20 +215,20 @@ aside {
   background-color: $nu-white;
   padding-bottom: 10px;
   min-height: 600px;
-  
+
   .input {
     @extend .input-text;
     margin-bottom: 10px;
     width: 190px;
   }
-  
+
   .button {
     @extend .submit-button;
     color: $white;
     margin: 5px 0 0 20px;
     width: 200px;
   }
-  
+
   ul {
     &.ul-aside {
       @include trebuchet-font($dark-grey, 13px, capitalize);
@@ -233,12 +237,12 @@ aside {
       li {
         display: block;
         margin: 0 0 10px 0;
-        
+
         a{ @include trebuchet-font($dark-grey, 13px, capitalize);}
       }
     }
   }
-  
+
   textarea { height: 100px !important; }
 }
 
@@ -260,7 +264,7 @@ article {
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
   opacity: 0;
-  
+
   .in{opacity: 1;}
 }
 
@@ -269,18 +273,18 @@ article {
   margin: 0 0 100px 20px;
   overflow: hidden;
   width: 200px;
-  
+
   ul {
     li {
       border-bottom: 1px solid $grey-2;
       margin: 10px 0 0 0;
       min-height: 50px;
       padding: 0 0 10px 0;
-      
+
       a {
         font-size: 13px;
         text-transform: none;
-        
+
         &:hover { color: $dark-grey;}
       }
     }
