@@ -140,7 +140,7 @@
             = form.label 'En contra', :class => 'contra'
             = form.radio_button :tendency, -1, :checked => ((params[:voto]=='contra')? 'checked' : '')
 
-            = hidden_field_tag :other_email
+            = text_field_tag :other_email, '', :class => 'other_email'
 
           = submit_tag 'comenta', :class => 'submit span4'
 
