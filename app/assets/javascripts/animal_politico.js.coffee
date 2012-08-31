@@ -65,6 +65,14 @@ window.GoogleMaps = {
             "visibility":"off"
           }
         ]
+      },
+      {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#ffffff" }
+        ]
       }
     ]
   },
