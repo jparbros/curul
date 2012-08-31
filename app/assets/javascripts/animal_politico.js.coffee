@@ -107,6 +107,7 @@ window.GoogleMaps = {
       feature.strokeWidth = 1;
       feature.distric = klass.district
       feature.distric_id = feature.id if klass.district
+      console.log(feature.name)
     )
 
   setData: (data) ->
