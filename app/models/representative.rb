@@ -45,4 +45,9 @@ class Representative < ActiveRecord::Base
       'front/thumb_missing.png'
     end
   end
+
+  def as_json(options)
+    options.merge!({include: [:region, :political_party]})
+    super
+  end
 end
