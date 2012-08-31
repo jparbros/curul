@@ -69,11 +69,10 @@ window.GoogleMaps = {
     ]
   },
 
-  colors: ["#3595E6", "#9784E2", "#3D599A", "#9F203C", "#E6F3D9", "#0CCBC8", "#2ABD79",
-  "#72E7F1", "#09A3AA", "#D22C61", "#3073B1", "#C3A08A", "#564B73", "#E8725B",
-  "#F9C58C", "#5CC09E", "#A0F159", "#CC0972", "#A03A60", "#C59331", "#9604AA",
-  "#692B8E", "#BC6C47", "#32350A", "#9D8A0B", "#8BAC70", "#98CC72", "#8415EE",
-  "#D88A1D", "#0770CB", "#D180CD", "#818AC7"]
+  colors: ['#80adcc','#99cccc','#b7e1e1','#d6d1c5','#512561','#f6e294','#a6cdd1','#a89eab',
+           '#ffcc33','#efeae4','#e2a04a','#9cbc5b','#d8e4be','#e18383','#80adcc','#99cccc',
+           '#b7e1e1','#d6d1c5','#512561','#f6e294','#a6cdd1','#a89eab','#ffcc33','#efeae4',
+           '#e2a04a','#9cbc5b','#d8e4be','#e18383','#80adcc','#99cccc','#b7e1e1','#d6d1c5']
 
   myLatlng: ->
     new google.maps.LatLng(@center[1], @center[0])
@@ -94,7 +93,7 @@ window.GoogleMaps = {
     klass = @
     _.each(@geo.features, (feature, index) ->
       feature.fillColor = klass.colors[index]
-      feature.fillOpacity = '0.3';
+      feature.fillOpacity = '0.4';
       feature.strokeColor = '#666666';
       feature.strokeOpacity = 1;
       feature.strokeWidth = 1;
