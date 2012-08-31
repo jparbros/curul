@@ -1,0 +1,242 @@
+// Place all the styles related to the animal_politico controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body { margin: 0; padding: 0;}
+
+.hide {display: none;}
+
+#widget {
+  font-family: 'Cuprum', sans-serif;
+  height: 600px;
+  width: 950px;
+
+  a {
+    color: #512561;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  #map_canvas {
+    width: 100%;
+    height: 100%;
+    float: right;
+  }
+
+  #logo-curul {
+    background-color: white;
+    border: 1px solid #888;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    left: 740px;
+    padding: 10px;
+    position: absolute;
+    top: 500px;
+    z-index: 1000;
+  }
+
+  #state-name {
+    background-color: white;
+    border: 1px solid #888;
+    -webkit-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #512561;
+    display: none;
+    font-size: 22px;
+    left: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    text-transform: capitalize;
+    top: 10px;
+  }
+
+  #back-link {
+    background-color: white;
+    border: 1px solid #888;
+    -webkit-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: none;
+    left: 820px;
+    position: absolute;
+    top: 10px;
+
+    a {
+      font-size: 22px;
+      padding: 5px 10px;
+    }
+
+    &:hover {
+      left: 810px;
+
+      a {font-weight: bold;}
+    }
+  }
+
+  #popup {
+    color: white;
+    display: none;
+    position: absolute;
+
+    #popup-arrow {
+      left: -40px;
+      position: relative;
+      top: 35px;
+      z-index: 1000;
+    }
+
+    #popup-content {
+      background-color: #512561;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 18px;
+      padding: 10px;
+      position: relative;
+      z-index: 1000;
+    }
+
+    &.baja-california { top: 30px; left: 60px;}
+    &.baja-california-sur { top: 160px; left: 90px;}
+    &.sonora { top: 60px; left: 140px;}
+    &.chihuahua { top: 60px; left: 240px;}
+    &.coahuila { top: 120px; left: 340px;}
+    &.nuevo-leon { top: 160px; left: 400px;}
+    &.tamaulipas { top: 200px; left: 440px;}
+    &.san-luis-potosi { top: 250px; left: 380px;}
+    &.zacatecas { top: 230px; left: 350px;}
+    &.durango { top: 190px; left: 280px;}
+    &.sinaloa { top: 190px; left: 200px;}
+    &.nayarit { top: 280px; left: 280px;}
+  }
+
+  #error-message {
+    background-color: #F2DEDE;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 3px 5px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 5px 3px 5px rgba(50, 50, 50, 0.5);
+    box-shadow: 5px 3px 5px rgba(50, 50, 50, 0.5);
+    border-color: #EED3D7;
+    color: #B94A48;
+    display: none;
+    left: 170px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    width: 600px;
+    z-index: 1110;
+
+    #close {
+      float: right;
+      font-weight: bold;
+      margin: 15px;
+
+      a {color: #999;}
+
+      &:hover { a {color: #333;}}
+    }
+
+    #content {
+      float: left;
+      margin: 15px 0 15px 15px;
+      width: 90%;
+    }
+  }
+
+  #show-profile {
+    background-color: #FEFBF6;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 9px 5px 10px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 9px 5px 10px rgba(50, 50, 50, 0.5);
+    box-shadow: 9px 5px 10px rgba(50, 50, 50, 0.5);
+    display: none;
+    height: 500px;
+    left: 70px;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    width: 800px;
+    z-index: 1100;
+
+    h2 {
+      color: #512561;
+      font-size: 18px;
+      font-weight: normal;
+      text-transform: uppercase;
+      border-bottom: 1px solid #999;
+      margin-top: 0;
+    }
+
+    .left-column {
+      float: left;
+    }
+
+    .right-column {
+      float: right;
+      width: 500px;
+      x-overflow: auto;
+    }
+
+    #close {
+      border: 1px solid #9CC9CC;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      color: #9CC9CC;
+      float: right;
+      margin-top: -43px;
+      padding: 0px 6px;
+
+      a {color: #9CC9CC;}
+
+      &:hover {
+        border-color: #512561;
+        color: #512561;
+
+        a{color: #512561;}
+      }
+    }
+
+    .container {
+      display: inline-block;
+
+      div {margin-right: 30px;}
+    }
+
+    .left { float: left; }
+    .right { float: right; }
+
+    p {
+      margin: 0 0 10px 0;
+
+      &.location {
+        border: 1px solid #9CC;
+        border-width: 1px 0;
+        font-weight: bold;
+        margin: 10px 0;
+        padding: 10px 0;
+        text-transform: uppercase;
+      }
+
+      span {
+        display: block;
+        color: #9CC;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

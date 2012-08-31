@@ -19,6 +19,7 @@ Congresspedia::Application.routes.draw do
 
   namespace :api do
     resources :comments, :only => [:create]
+    match "representative/:region_name/:district", :to => 'representatives#show'
   end
 
   namespace :comisiones do
@@ -46,6 +47,8 @@ Congresspedia::Application.routes.draw do
   resource :iniciativa_comenta, :only => [:create], :controller => :iniciativa_comenta
   resources :temas, :only => [:show], :controller => :temas
   resources :partido_politico, :only => [:show], :controller => :partido_politico
+
+  match "/animal_politico", :to => 'animal_politico#index'
 
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :post, :as => "search_initiatives"
   match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :get, :as => "search_initiatives"
