@@ -6,7 +6,7 @@
   = link_to '<< volver', congresistas_path, :class => 'volver'
 
 - @partidos_politicos.each do |partido_politico|
-  - representatives =  partido_politico.representatives.by_region(@region.id)
+  - representatives =  partido_politico.representatives.by_region(@region.id).actual_legislature
   - unless representatives.empty?
     %article
       .logo

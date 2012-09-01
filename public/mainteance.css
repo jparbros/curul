@@ -1,0 +1,2850 @@
+/*
+*/
+/* line 17, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 17, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+body {
+  text-align: center;
+}
+
+/* line 11, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+body > .container, .container-fluid {
+  padding-top: 50px !important;
+}
+
+/* line 13, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+html {
+  background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/assets/front/second-bg.png") repeat-x, url("/assets/front/main-bg.png");
+}
+
+/* line 15, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+body {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 18, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+body .margin-left-15 {
+  margin-left: 15px;
+}
+
+/* line 21, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+a {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 24, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 28, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+span.disclaimer {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  color: #c5c5c5;
+  font-family: Arial, san-serif;
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 20px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html span.disclaimer {
+  overflow-x: hidden;
+}
+/* line 34, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+span.button-up {
+  background: url(/assets/front/up.png) no-repeat;
+  display: inline-block;
+  height: 25px;
+  margin: 0 100px;
+  width: 30px;
+}
+/* line 42, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+span.button-down {
+  background: url(/assets/front/down.png) no-repeat;
+  display: inline-block;
+  height: 25px;
+  margin: 0 100px;
+  width: 30px;
+}
+
+/* line 52, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+ul.follow {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  float: right;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html ul.follow {
+  overflow-x: hidden;
+}
+/* line 56, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+ul.follow img {
+  margin: 0;
+}
+/* line 58, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+ul.follow li {
+  color: #a89eab;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-right: 2px solid white;
+  float: left;
+  width: 30px;
+  height: 35px;
+}
+/* line 65, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+ul.follow li:first-child {
+  background: url("/assets/front/follow-bg.png") repeat-x;
+  height: 27px;
+  padding: 8px 0 0 10px;
+  width: 75px;
+}
+
+/* line 76, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+#container {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container {
+  overflow-x: hidden;
+}
+
+/* line 84, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+h1 {
+  color: #a89eab;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: url("/assets/front/h1-bg.png") repeat-x;
+  margin: 40px 0 0 0;
+  padding: 20px 5px 20px 0;
+}
+/* line 90, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+h1 a {
+  color: #a89eab;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 94, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+h1 a:hover {
+  text-decoration: none;
+}
+
+/* line 98, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+h2 {
+  color: #512561;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #999999;
+  margin: 20px 10px 10px 20px;
+  padding: 0 0 5px;
+}
+/* line 104, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+h2.estrella {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: none;
+  background: url("/assets/front/star.png") no-repeat;
+  border-bottom: 1px solid #999999;
+  padding-left: 30px;
+}
+/* line 111, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+article h2 {
+  margin: 20px 10px 10px 0px;
+}
+
+/* line 116, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 120, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+h4 {
+  border-bottom: 1px solid #99cccc;
+  color: #99cccc;
+  font-size: 14px;
+  padding: 10px 0 5px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+/* line 129, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  margin-bottom: 12px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html header {
+  overflow-x: hidden;
+}
+/* line 133, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .logo, header .navigation {
+  float: left;
+}
+/* line 135, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .logo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html header .logo {
+  overflow-x: hidden;
+}
+/* line 137, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .logo img {
+  margin-top: 25px;
+}
+/* line 140, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .navigation {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 750px;
+  text-align: right;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html header .navigation {
+  overflow-x: hidden;
+}
+/* line 144, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .navigation div {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 750px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html header .navigation div {
+  overflow-x: hidden;
+}
+/* line 146, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .navigation nav {
+  float: right;
+  margin-top: 30px;
+}
+/* line 149, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .navigation nav ul {
+  list-style: none;
+}
+/* line 151, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .navigation nav ul li {
+  border-left: 1px solid #999999;
+  float: left;
+  padding: 0 25px 0 5px;
+}
+/* line 155, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+header .navigation nav ul li a {
+  color: #999999;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 164, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+section#main-content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html section#main-content {
+  overflow-x: hidden;
+}
+
+/* line 168, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+footer {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  color: #111018;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  height: 190px;
+  margin: 20px 0 0 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html footer {
+  overflow-x: hidden;
+}
+/* line 176, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+footer ul.logo {
+  float: right;
+}
+/* line 179, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+footer ul.logo li {
+  border: 0;
+}
+/* line 182, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+footer ul li {
+  float: left;
+  border-left: 1px solid #111018;
+  margin: 0 10px 0 0;
+  padding: 10px;
+}
+
+/* line 191, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.input-text, aside .input {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+  background-color: #f0f0ea;
+  border: 0 none;
+  box-shadow: none;
+  height: 30px;
+  margin: 0 0 0 20px;
+  padding: 5px;
+}
+
+/* line 201, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.other_email {
+  display: none;
+}
+
+/* line 205, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.submit-button, aside .button, html.iniciativas .haz-comentario .comenta-content .submit, html.search_initiatives .haz-comentario .comenta-content .submit, html.temas .haz-comentario .comenta-content .submit, html.comisiones_iniciativas .haz-comentario .comenta-content .submit, #contacto article .submit, html.congresistas article .submit, html.comenta article .submit {
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #512561;
+  border: 0 none;
+  box-shadow: none;
+  height: 30px;
+}
+
+/* line 213, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+aside {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  background-color: #fefbf6;
+  padding-bottom: 10px;
+  min-height: 600px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html aside {
+  overflow-x: hidden;
+}
+/* line 219, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+aside .input {
+  margin-bottom: 10px;
+  width: 190px;
+}
+/* line 225, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+aside .button {
+  color: white;
+  margin: 5px 0 0 20px;
+  width: 200px;
+}
+/* line 233, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+aside ul.ul-aside {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin: 0 0 0 20px;
+}
+/* line 237, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+aside ul.ul-aside li {
+  display: block;
+  margin: 0 0 10px 0;
+}
+/* line 241, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+aside ul.ul-aside li a {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+/* line 246, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+aside textarea {
+  height: 100px !important;
+}
+
+/* line 251, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+article#content, html.iniciativas article.iniciativa, html.search_initiatives article.iniciativa, html.temas article.iniciativa, html.comisiones_iniciativas article.iniciativa, #contacto article, html.congresistas article, html.regiones article, html.search_representative article, html.partido_politico article, html.comisiones_congresistas article, html.comenta article {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -40px 1.5em 40px;
+  background-color: #fefbf6;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html article#content, * html.iniciativas article.iniciativa, * html.search_initiatives article.iniciativa, * html.temas article.iniciativa, * html.comisiones_iniciativas article.iniciativa, * html #contacto article, #contacto * html article, * html.congresistas article, * html.regiones article, * html.search_representative article, * html.partido_politico article, * html.comisiones_congresistas article, * html.comenta article {
+  overflow-x: hidden;
+}
+
+/* line 258, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.hide {
+  display: none;
+}
+
+/* line 259, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.show {
+  display: block;
+}
+
+/* line 260, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.fade {
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -ms-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  opacity: 0;
+}
+/* line 268, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.fade .in {
+  opacity: 1;
+}
+
+/* line 271, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.tweet {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  margin: 0 0 100px 20px;
+  overflow: hidden;
+  width: 200px;
+}
+/* line 278, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.tweet ul li {
+  border-bottom: 1px solid #c7c5c5;
+  margin: 10px 0 0 0;
+  min-height: 50px;
+  padding: 0 0 10px 0;
+}
+/* line 284, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.tweet ul li a {
+  font-size: 13px;
+  text-transform: none;
+}
+/* line 288, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/_base.css.scss */
+.tweet ul li a:hover {
+  color: #606060;
+}
+
+/* line 9, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas section.container, html.search_initiatives section.container, html.temas section.container, html.comisiones_iniciativas section.container {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 710px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas section.container, * html html.search_initiatives section.container, * html html.temas section.container, * html html.comisiones_iniciativas section.container {
+  overflow-x: hidden;
+}
+/* line 14, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas h5, html.search_initiatives h5, html.temas h5, html.comisiones_iniciativas h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 20, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas span.disclaimer, html.search_initiatives span.disclaimer, html.temas span.disclaimer, html.comisiones_iniciativas span.disclaimer {
+  color: #999999;
+  margin: 0 0 20px 40px;
+  padding: 0;
+}
+/* line 27, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .pagination, html.search_initiatives .pagination, html.temas .pagination, html.comisiones_iniciativas .pagination {
+  float: right;
+}
+/* line 29, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .pagination .active a, html.search_initiatives .pagination .active a, html.temas .pagination .active a, html.comisiones_iniciativas .pagination .active a {
+  background-color: #a6cdd1;
+}
+/* line 31, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .pagination a:hover, html.search_initiatives .pagination a:hover, html.temas .pagination a:hover, html.comisiones_iniciativas .pagination a:hover {
+  background-color: #f6e294;
+}
+/* line 35, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .first-child, html.iniciativas ul.votacion-local li:first-child, html.iniciativas html.search_initiatives ul.votacion-local li:first-child, html.search_initiatives ul.votacion-local html.iniciativas li:first-child, html.iniciativas html.temas ul.votacion-local li:first-child, html.temas ul.votacion-local html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas ul.votacion-local li:first-child, html.comisiones_iniciativas ul.votacion-local html.iniciativas li:first-child, html.iniciativas ul.votacion-local:first-child, html.iniciativas html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.iniciativas ul.votacion-local:first-child, html.iniciativas html.temas ul.votacion-local:first-child, html.temas html.iniciativas ul.votacion-local:first-child, html.iniciativas html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.iniciativas ul.votacion-local:first-child, html.iniciativas ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-logos li:first-child, html.iniciativas html.search_initiatives ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-detalles html.iniciativas li:first-child, html.iniciativas html.search_initiatives ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos html.iniciativas li:first-child, html.iniciativas html.temas ul.votaciones-detalles li:first-child, html.temas ul.votaciones-detalles html.iniciativas li:first-child, html.iniciativas html.temas ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-detalles html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos html.iniciativas li:first-child, html.iniciativas ul.votacion-pleno li:first-child, html.iniciativas html.search_initiatives ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno html.iniciativas li:first-child, html.iniciativas html.temas ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno html.iniciativas li:first-child, html.iniciativas ul.votacion-oficial li:first-child, html.iniciativas html.search_initiatives ul.votacion-oficial li:first-child, html.search_initiatives ul.votacion-oficial html.iniciativas li:first-child, html.iniciativas html.temas ul.votacion-oficial li:first-child, html.temas ul.votacion-oficial html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas ul.votacion-oficial li:first-child, html.comisiones_iniciativas ul.votacion-oficial html.iniciativas li:first-child, html.iniciativas article.iniciativa .content ul.estado li:first-child, html.iniciativas html.search_initiatives article.iniciativa .content ul.estado li:first-child, html.search_initiatives article.iniciativa .content ul.estado html.iniciativas li:first-child, html.iniciativas html.temas article.iniciativa .content ul.estado li:first-child, html.temas article.iniciativa .content ul.estado html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado html.iniciativas li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas html.search_initiatives article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial html.iniciativas li:first-child, html.iniciativas html.temas article.iniciativa .content ul.votacion-oficial li:first-child, html.temas article.iniciativa .content ul.votacion-oficial html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial html.iniciativas li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas html.search_initiatives article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local html.iniciativas li:first-child, html.iniciativas html.temas article.iniciativa .content ul.votacion-local li:first-child, html.temas article.iniciativa .content ul.votacion-local html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local html.iniciativas li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local:first-child, html.iniciativas html.search_initiatives article.iniciativa .content ul.votacion-local:first-child, html.search_initiatives article.iniciativa .content html.iniciativas ul.votacion-local:first-child, html.iniciativas html.temas article.iniciativa .content ul.votacion-local:first-child, html.temas article.iniciativa .content html.iniciativas ul.votacion-local:first-child, html.iniciativas html.comisiones_iniciativas article.iniciativa .content ul.votacion-local:first-child, html.comisiones_iniciativas article.iniciativa .content html.iniciativas ul.votacion-local:first-child, html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.iniciativas html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa html.iniciativas li:first-child, html.iniciativas html.temas article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa html.iniciativas li:first-child, html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.iniciativas html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos html.iniciativas li:first-child, html.iniciativas html.temas article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos html.iniciativas li:first-child, html.iniciativas html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos html.iniciativas li:first-child, html.search_initiatives .first-child, html.search_initiatives html.iniciativas ul.votacion-local li:first-child, html.iniciativas ul.votacion-local html.search_initiatives li:first-child, html.search_initiatives ul.votacion-local li:first-child, html.search_initiatives html.temas ul.votacion-local li:first-child, html.temas ul.votacion-local html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas ul.votacion-local li:first-child, html.comisiones_iniciativas ul.votacion-local html.search_initiatives li:first-child, html.search_initiatives html.iniciativas ul.votacion-local:first-child, html.iniciativas html.search_initiatives ul.votacion-local:first-child, html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.temas ul.votacion-local:first-child, html.temas html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.iniciativas ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-detalles html.search_initiatives li:first-child, html.search_initiatives html.iniciativas ul.votaciones-logos li:first-child, html.iniciativas ul.votaciones-logos html.search_initiatives li:first-child, html.search_initiatives ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-logos li:first-child, html.search_initiatives html.temas ul.votaciones-detalles li:first-child, html.temas ul.votaciones-detalles html.search_initiatives li:first-child, html.search_initiatives html.temas ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-detalles html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos html.search_initiatives li:first-child, html.search_initiatives html.iniciativas ul.votacion-pleno li:first-child, html.iniciativas ul.votacion-pleno html.search_initiatives li:first-child, html.search_initiatives ul.votacion-pleno li:first-child, html.search_initiatives html.temas ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno html.search_initiatives li:first-child, html.search_initiatives html.iniciativas ul.votacion-oficial li:first-child, html.iniciativas ul.votacion-oficial html.search_initiatives li:first-child, html.search_initiatives ul.votacion-oficial li:first-child, html.search_initiatives html.temas ul.votacion-oficial li:first-child, html.temas ul.votacion-oficial html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas ul.votacion-oficial li:first-child, html.comisiones_iniciativas ul.votacion-oficial html.search_initiatives li:first-child, html.search_initiatives html.iniciativas article.iniciativa .content ul.estado li:first-child, html.iniciativas article.iniciativa .content ul.estado html.search_initiatives li:first-child, html.search_initiatives article.iniciativa .content ul.estado li:first-child, html.search_initiatives html.temas article.iniciativa .content ul.estado li:first-child, html.temas article.iniciativa .content ul.estado html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado html.search_initiatives li:first-child, html.search_initiatives html.iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial html.search_initiatives li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives html.temas article.iniciativa .content ul.votacion-oficial li:first-child, html.temas article.iniciativa .content ul.votacion-oficial html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial html.search_initiatives li:first-child, html.search_initiatives html.iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local html.search_initiatives li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives html.temas article.iniciativa .content ul.votacion-local li:first-child, html.temas article.iniciativa .content ul.votacion-local html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local html.search_initiatives li:first-child, html.search_initiatives html.iniciativas article.iniciativa .content ul.votacion-local:first-child, html.iniciativas article.iniciativa .content html.search_initiatives ul.votacion-local:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local:first-child, html.search_initiatives html.temas article.iniciativa .content ul.votacion-local:first-child, html.temas article.iniciativa .content html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.comisiones_iniciativas article.iniciativa .content ul.votacion-local:first-child, html.comisiones_iniciativas article.iniciativa .content html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.iniciativas article.iniciativa .content ul.etapa html.search_initiatives li:first-child, html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.search_initiatives html.temas article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa html.search_initiatives li:first-child, html.search_initiatives html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.iniciativas article.iniciativa .content ul.recursos html.search_initiatives li:first-child, html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.search_initiatives html.temas article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos html.search_initiatives li:first-child, html.search_initiatives html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos html.search_initiatives li:first-child, html.temas .first-child, html.temas html.iniciativas ul.votacion-local li:first-child, html.iniciativas ul.votacion-local html.temas li:first-child, html.temas html.search_initiatives ul.votacion-local li:first-child, html.search_initiatives ul.votacion-local html.temas li:first-child, html.temas ul.votacion-local li:first-child, html.temas html.comisiones_iniciativas ul.votacion-local li:first-child, html.comisiones_iniciativas ul.votacion-local html.temas li:first-child, html.temas html.iniciativas ul.votacion-local:first-child, html.iniciativas html.temas ul.votacion-local:first-child, html.temas html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.temas ul.votacion-local:first-child, html.temas ul.votacion-local:first-child, html.temas html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.temas ul.votacion-local:first-child, html.temas html.iniciativas ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-detalles html.temas li:first-child, html.temas html.iniciativas ul.votaciones-logos li:first-child, html.iniciativas ul.votaciones-logos html.temas li:first-child, html.temas html.search_initiatives ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-detalles html.temas li:first-child, html.temas html.search_initiatives ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos html.temas li:first-child, html.temas ul.votaciones-detalles li:first-child, html.temas ul.votaciones-logos li:first-child, html.temas html.comisiones_iniciativas ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-detalles html.temas li:first-child, html.temas html.comisiones_iniciativas ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos html.temas li:first-child, html.temas html.iniciativas ul.votacion-pleno li:first-child, html.iniciativas ul.votacion-pleno html.temas li:first-child, html.temas html.search_initiatives ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno html.temas li:first-child, html.temas ul.votacion-pleno li:first-child, html.temas html.comisiones_iniciativas ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno html.temas li:first-child, html.temas html.iniciativas ul.votacion-oficial li:first-child, html.iniciativas ul.votacion-oficial html.temas li:first-child, html.temas html.search_initiatives ul.votacion-oficial li:first-child, html.search_initiatives ul.votacion-oficial html.temas li:first-child, html.temas ul.votacion-oficial li:first-child, html.temas html.comisiones_iniciativas ul.votacion-oficial li:first-child, html.comisiones_iniciativas ul.votacion-oficial html.temas li:first-child, html.temas html.iniciativas article.iniciativa .content ul.estado li:first-child, html.iniciativas article.iniciativa .content ul.estado html.temas li:first-child, html.temas html.search_initiatives article.iniciativa .content ul.estado li:first-child, html.search_initiatives article.iniciativa .content ul.estado html.temas li:first-child, html.temas article.iniciativa .content ul.estado li:first-child, html.temas html.comisiones_iniciativas article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado html.temas li:first-child, html.temas html.iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial html.temas li:first-child, html.temas html.search_initiatives article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial html.temas li:first-child, html.temas article.iniciativa .content ul.votacion-oficial li:first-child, html.temas html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial html.temas li:first-child, html.temas html.iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local html.temas li:first-child, html.temas html.search_initiatives article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local html.temas li:first-child, html.temas article.iniciativa .content ul.votacion-local li:first-child, html.temas html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local html.temas li:first-child, html.temas html.iniciativas article.iniciativa .content ul.votacion-local:first-child, html.iniciativas article.iniciativa .content html.temas ul.votacion-local:first-child, html.temas html.search_initiatives article.iniciativa .content ul.votacion-local:first-child, html.search_initiatives article.iniciativa .content html.temas ul.votacion-local:first-child, html.temas article.iniciativa .content ul.votacion-local:first-child, html.temas html.comisiones_iniciativas article.iniciativa .content ul.votacion-local:first-child, html.comisiones_iniciativas article.iniciativa .content html.temas ul.votacion-local:first-child, html.temas html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.iniciativas article.iniciativa .content ul.etapa html.temas li:first-child, html.temas html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa html.temas li:first-child, html.temas article.iniciativa .content ul.etapa li:first-child, html.temas html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa html.temas li:first-child, html.temas html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.iniciativas article.iniciativa .content ul.recursos html.temas li:first-child, html.temas html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos html.temas li:first-child, html.temas article.iniciativa .content ul.recursos li:first-child, html.temas html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos html.temas li:first-child, html.comisiones_iniciativas .first-child, html.comisiones_iniciativas html.iniciativas ul.votacion-local li:first-child, html.iniciativas ul.votacion-local html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives ul.votacion-local li:first-child, html.search_initiatives ul.votacion-local html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas ul.votacion-local li:first-child, html.temas ul.votacion-local html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas ul.votacion-local li:first-child, html.comisiones_iniciativas html.iniciativas ul.votacion-local:first-child, html.iniciativas html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.search_initiatives ul.votacion-local:first-child, html.search_initiatives html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.temas ul.votacion-local:first-child, html.temas html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.iniciativas ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-detalles html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.iniciativas ul.votaciones-logos li:first-child, html.iniciativas ul.votaciones-logos html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-detalles html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas ul.votaciones-detalles li:first-child, html.temas ul.votaciones-detalles html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-logos li:first-child, html.comisiones_iniciativas html.iniciativas ul.votacion-pleno li:first-child, html.iniciativas ul.votacion-pleno html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas ul.votacion-pleno li:first-child, html.comisiones_iniciativas html.iniciativas ul.votacion-oficial li:first-child, html.iniciativas ul.votacion-oficial html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives ul.votacion-oficial li:first-child, html.search_initiatives ul.votacion-oficial html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas ul.votacion-oficial li:first-child, html.temas ul.votacion-oficial html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas ul.votacion-oficial li:first-child, html.comisiones_iniciativas html.iniciativas article.iniciativa .content ul.estado li:first-child, html.iniciativas article.iniciativa .content ul.estado html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives article.iniciativa .content ul.estado li:first-child, html.search_initiatives article.iniciativa .content ul.estado html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas article.iniciativa .content ul.estado li:first-child, html.temas article.iniciativa .content ul.estado html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas html.iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas article.iniciativa .content ul.votacion-oficial li:first-child, html.temas article.iniciativa .content ul.votacion-oficial html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas html.iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas article.iniciativa .content ul.votacion-local li:first-child, html.temas article.iniciativa .content ul.votacion-local html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas html.iniciativas article.iniciativa .content ul.votacion-local:first-child, html.iniciativas article.iniciativa .content html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.search_initiatives article.iniciativa .content ul.votacion-local:first-child, html.search_initiatives article.iniciativa .content html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas html.temas article.iniciativa .content ul.votacion-local:first-child, html.temas article.iniciativa .content html.comisiones_iniciativas ul.votacion-local:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local:first-child, html.comisiones_iniciativas html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.iniciativas article.iniciativa .content ul.etapa html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.iniciativas article.iniciativa .content ul.recursos html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas html.temas article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos html.comisiones_iniciativas li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: 0;
+  padding-right: 5px;
+  text-align: right;
+  width: 120px;
+}
+/* line 43, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas #separator, html.search_initiatives #separator, html.temas #separator, html.comisiones_iniciativas #separator {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
+  background-color: #f6e294;
+  height: 20px;
+  margin: -12px 0 0 -30px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas #separator, * html html.search_initiatives #separator, * html html.temas #separator, * html html.comisiones_iniciativas #separator {
+  overflow-x: hidden;
+}
+/* line 50, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .votaciones, html.search_initiatives .votaciones, html.temas .votaciones, html.comisiones_iniciativas .votaciones {
+  display: inline;
+  float: left;
+  margin-right: 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas .votaciones, * html html.search_initiatives .votaciones, * html html.temas .votaciones, * html html.comisiones_iniciativas .votaciones {
+  overflow-x: hidden;
+}
+/* line 52, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .no-border, html.search_initiatives .no-border, html.temas .no-border, html.comisiones_iniciativas .no-border {
+  border: 0;
+}
+/* line 54, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario, html.search_initiatives .haz-comentario, html.temas .haz-comentario, html.comisiones_iniciativas .haz-comentario {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
+  background: url("/assets/front/h1-bg.png") repeat-x top, url("/assets/front/h1-bg.png") repeat-x bottom;
+  margin: 0 0 20px 40px;
+  padding: 12px 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas .haz-comentario, * html html.search_initiatives .haz-comentario, * html html.temas .haz-comentario, * html html.comisiones_iniciativas .haz-comentario {
+  overflow-x: hidden;
+}
+/* line 60, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content, html.search_initiatives .haz-comentario .comenta-content, html.temas .haz-comentario .comenta-content, html.comisiones_iniciativas .haz-comentario .comenta-content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
+  border-top: 1px solid #d6d1c5;
+  border-bottom: 1px solid #d6d1c5;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas .haz-comentario .comenta-content, * html html.search_initiatives .haz-comentario .comenta-content, * html html.temas .haz-comentario .comenta-content, * html html.comisiones_iniciativas .haz-comentario .comenta-content {
+  overflow-x: hidden;
+}
+/* line 65, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content form, html.search_initiatives .haz-comentario .comenta-content form, html.temas .haz-comentario .comenta-content form, html.comisiones_iniciativas .haz-comentario .comenta-content form {
+  float: left;
+  margin: 0 0 20px 20px;
+}
+/* line 70, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content .form-inputs, html.search_initiatives .haz-comentario .comenta-content .form-inputs, html.temas .haz-comentario .comenta-content .form-inputs, html.comisiones_iniciativas .haz-comentario .comenta-content .form-inputs {
+  display: inline;
+  float: left;
+  width: 400px;
+}
+/* line 75, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content .form-inputs label, html.search_initiatives .haz-comentario .comenta-content .form-inputs label, html.temas .haz-comentario .comenta-content .form-inputs label, html.comisiones_iniciativas .haz-comentario .comenta-content .form-inputs label {
+  float: none;
+}
+/* line 78, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content .form-inputs label.contra, html.search_initiatives .haz-comentario .comenta-content .form-inputs label.contra, html.temas .haz-comentario .comenta-content .form-inputs label.contra, html.comisiones_iniciativas .haz-comentario .comenta-content .form-inputs label.contra {
+  margin-left: 50px;
+}
+/* line 82, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content p, html.search_initiatives .haz-comentario .comenta-content p, html.temas .haz-comentario .comenta-content p, html.comisiones_iniciativas .haz-comentario .comenta-content p {
+  margin-bottom: 10px;
+}
+/* line 86, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content textarea, html.search_initiatives .haz-comentario .comenta-content textarea, html.temas .haz-comentario .comenta-content textarea, html.comisiones_iniciativas .haz-comentario .comenta-content textarea {
+  height: 150px;
+  margin: 10px 0 0;
+}
+/* line 91, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .haz-comentario .comenta-content .submit, html.search_initiatives .haz-comentario .comenta-content .submit, html.temas .haz-comentario .comenta-content .submit, html.comisiones_iniciativas .haz-comentario .comenta-content .submit {
+  color: white;
+  font-size: 24px;
+  height: 40px;
+  margin: 80px 0 0 15px;
+}
+/* line 102, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-local, html.search_initiatives ul.votacion-local, html.temas ul.votacion-local, html.comisiones_iniciativas ul.votacion-local {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  margin-top: 10px;
+  border-top: 1px solid #c7c5c5;
+  width: 610px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas ul.votacion-local, * html html.search_initiatives ul.votacion-local, * html html.temas ul.votacion-local, * html html.comisiones_iniciativas ul.votacion-local {
+  overflow-x: hidden;
+}
+/* line 108, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-local li, html.search_initiatives ul.votacion-local li, html.temas ul.votacion-local li, html.comisiones_iniciativas ul.votacion-local li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  float: left;
+  height: 24px;
+  padding-top: 6px;
+  text-align: center;
+}
+/* line 115, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-local li a, html.search_initiatives ul.votacion-local li a, html.temas ul.votacion-local li a, html.comisiones_iniciativas ul.votacion-local li a {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 118, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-local li a:hover, html.search_initiatives ul.votacion-local li a:hover, html.temas ul.votacion-local li a:hover, html.comisiones_iniciativas ul.votacion-local li a:hover {
+  color: #606060;
+}
+/* line 121, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-local li.a-favor, html.search_initiatives ul.votacion-local li.a-favor, html.temas ul.votacion-local li.a-favor, html.comisiones_iniciativas ul.votacion-local li.a-favor {
+  background-color: #d8e4be;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 127, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-local li.en-contra, html.search_initiatives ul.votacion-local li.en-contra, html.temas ul.votacion-local li.en-contra, html.comisiones_iniciativas ul.votacion-local li.en-contra {
+  color: #e18383;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 133, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-local li.no-votada, html.search_initiatives ul.votacion-local li.no-votada, html.temas ul.votacion-local li.no-votada, html.comisiones_iniciativas ul.votacion-local li.no-votada {
+  border: 1px solid #c7c5c5;
+  width: 190px;
+}
+/* line 144, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles, html.iniciativas ul.votaciones-logos, html.search_initiatives ul.votaciones-detalles, html.search_initiatives ul.votaciones-logos, html.temas ul.votaciones-detalles, html.temas ul.votaciones-logos, html.comisiones_iniciativas ul.votaciones-detalles, html.comisiones_iniciativas ul.votaciones-logos {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  margin-top: 10px;
+  border-bottom: 1px solid #c7c5c5;
+  border-top: 1px solid #c7c5c5;
+  width: 610px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas ul.votaciones-detalles, * html html.iniciativas ul.votaciones-logos, * html html.search_initiatives ul.votaciones-detalles, * html html.search_initiatives ul.votaciones-logos, * html html.temas ul.votaciones-detalles, * html html.temas ul.votaciones-logos, * html html.comisiones_iniciativas ul.votaciones-detalles, * html html.comisiones_iniciativas ul.votaciones-logos {
+  overflow-x: hidden;
+}
+/* line 151, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li, html.iniciativas ul.votaciones-logos li, html.search_initiatives ul.votaciones-detalles li, html.search_initiatives ul.votaciones-logos li, html.temas ul.votaciones-detalles li, html.temas ul.votaciones-logos li, html.comisiones_iniciativas ul.votaciones-detalles li, html.comisiones_iniciativas ul.votaciones-logos li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  float: left;
+  height: 77px;
+  padding-top: 6px;
+  text-align: center;
+  width: 65px;
+}
+/* line 159, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra, html.iniciativas ul.votaciones-logos li .barra, html.search_initiatives ul.votaciones-detalles li .barra, html.search_initiatives ul.votaciones-logos li .barra, html.temas ul.votaciones-detalles li .barra, html.temas ul.votaciones-logos li .barra, html.comisiones_iniciativas ul.votaciones-detalles li .barra, html.comisiones_iniciativas ul.votaciones-logos li .barra {
+  margin: 0 auto;
+  width: 45px;
+}
+/* line 163, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra.pan, html.iniciativas ul.votaciones-logos li .barra.pan, html.search_initiatives ul.votaciones-detalles li .barra.pan, html.search_initiatives ul.votaciones-logos li .barra.pan, html.temas ul.votaciones-detalles li .barra.pan, html.temas ul.votaciones-logos li .barra.pan, html.comisiones_iniciativas ul.votaciones-detalles li .barra.pan, html.comisiones_iniciativas ul.votaciones-logos li .barra.pan {
+  background-color: #182e94;
+}
+/* line 167, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra.pri, html.iniciativas ul.votaciones-logos li .barra.pri, html.search_initiatives ul.votaciones-detalles li .barra.pri, html.search_initiatives ul.votaciones-logos li .barra.pri, html.temas ul.votaciones-detalles li .barra.pri, html.temas ul.votaciones-logos li .barra.pri, html.comisiones_iniciativas ul.votaciones-detalles li .barra.pri, html.comisiones_iniciativas ul.votaciones-logos li .barra.pri {
+  background-color: #2e7235;
+}
+/* line 171, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra.pdlrd, html.iniciativas ul.votaciones-logos li .barra.pdlrd, html.search_initiatives ul.votaciones-detalles li .barra.pdlrd, html.search_initiatives ul.votaciones-logos li .barra.pdlrd, html.temas ul.votaciones-detalles li .barra.pdlrd, html.temas ul.votaciones-logos li .barra.pdlrd, html.comisiones_iniciativas ul.votaciones-detalles li .barra.pdlrd, html.comisiones_iniciativas ul.votaciones-logos li .barra.pdlrd {
+  background-color: #fdd100;
+}
+/* line 175, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra.pdt, html.iniciativas ul.votaciones-logos li .barra.pdt, html.search_initiatives ul.votaciones-detalles li .barra.pdt, html.search_initiatives ul.votaciones-logos li .barra.pdt, html.temas ul.votaciones-detalles li .barra.pdt, html.temas ul.votaciones-logos li .barra.pdt, html.comisiones_iniciativas ul.votaciones-detalles li .barra.pdt, html.comisiones_iniciativas ul.votaciones-logos li .barra.pdt {
+  background-color: #ff0f00;
+}
+/* line 179, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra.pvedm, html.iniciativas ul.votaciones-logos li .barra.pvedm, html.search_initiatives ul.votaciones-detalles li .barra.pvedm, html.search_initiatives ul.votaciones-logos li .barra.pvedm, html.temas ul.votaciones-detalles li .barra.pvedm, html.temas ul.votaciones-logos li .barra.pvedm, html.comisiones_iniciativas ul.votaciones-detalles li .barra.pvedm, html.comisiones_iniciativas ul.votaciones-logos li .barra.pvedm {
+  background-color: #a7ce01;
+}
+/* line 183, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra.pc, html.iniciativas ul.votaciones-logos li .barra.pc, html.search_initiatives ul.votaciones-detalles li .barra.pc, html.search_initiatives ul.votaciones-logos li .barra.pc, html.temas ul.votaciones-detalles li .barra.pc, html.temas ul.votaciones-logos li .barra.pc, html.comisiones_iniciativas ul.votaciones-detalles li .barra.pc, html.comisiones_iniciativas ul.votaciones-logos li .barra.pc {
+  background-color: #fd7400;
+}
+/* line 187, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-detalles li .barra.pna, html.iniciativas ul.votaciones-logos li .barra.pna, html.search_initiatives ul.votaciones-detalles li .barra.pna, html.search_initiatives ul.votaciones-logos li .barra.pna, html.temas ul.votaciones-detalles li .barra.pna, html.temas ul.votaciones-logos li .barra.pna, html.comisiones_iniciativas ul.votaciones-detalles li .barra.pna, html.comisiones_iniciativas ul.votaciones-logos li .barra.pna {
+  background-color: #059caf;
+}
+/* line 198, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-logos, html.search_initiatives ul.votaciones-logos, html.temas ul.votaciones-logos, html.comisiones_iniciativas ul.votaciones-logos {
+  border: 0;
+}
+/* line 201, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-logos li, html.search_initiatives ul.votaciones-logos li, html.temas ul.votaciones-logos li, html.comisiones_iniciativas ul.votaciones-logos li {
+  height: 35px;
+}
+/* line 204, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos li:first-child {
+  height: 35px;
+  text-transform: none;
+}
+/* line 211, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-pleno, html.search_initiatives ul.votacion-pleno, html.temas ul.votacion-pleno, html.comisiones_iniciativas ul.votacion-pleno {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  margin-top: 10px;
+  border-top: 1px solid #c7c5c5;
+  width: 610px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas ul.votacion-pleno, * html html.search_initiatives ul.votacion-pleno, * html html.temas ul.votacion-pleno, * html html.comisiones_iniciativas ul.votacion-pleno {
+  overflow-x: hidden;
+}
+/* line 217, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-pleno li, html.search_initiatives ul.votacion-pleno li, html.temas ul.votacion-pleno li, html.comisiones_iniciativas ul.votacion-pleno li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  float: left;
+  height: 24px;
+  padding-top: 6px;
+  text-align: center;
+}
+/* line 224, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-pleno li.favor, html.search_initiatives ul.votacion-pleno li.favor, html.temas ul.votacion-pleno li.favor, html.comisiones_iniciativas ul.votacion-pleno li.favor {
+  border-right: 1px solid #606060;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+/* line 230, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno li:first-child {
+  text-transform: uppercase;
+}
+/* line 238, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-oficial, html.search_initiatives ul.votacion-oficial, html.temas ul.votacion-oficial, html.comisiones_iniciativas ul.votacion-oficial {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  margin-top: 10px;
+  border-top: 1px solid #c7c5c5;
+  width: 610px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas ul.votacion-oficial, * html html.search_initiatives ul.votacion-oficial, * html html.temas ul.votacion-oficial, * html html.comisiones_iniciativas ul.votacion-oficial {
+  overflow-x: hidden;
+}
+/* line 244, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-oficial li, html.search_initiatives ul.votacion-oficial li, html.temas ul.votacion-oficial li, html.comisiones_iniciativas ul.votacion-oficial li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  float: left;
+  height: 24px;
+  padding-top: 6px;
+  text-align: center;
+}
+/* line 251, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-oficial li.a-favor, html.search_initiatives ul.votacion-oficial li.a-favor, html.temas ul.votacion-oficial li.a-favor, html.comisiones_iniciativas ul.votacion-oficial li.a-favor {
+  background-color: #9cbc5b;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 257, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-oficial li.en-contra, html.search_initiatives ul.votacion-oficial li.en-contra, html.temas ul.votacion-oficial li.en-contra, html.comisiones_iniciativas ul.votacion-oficial li.en-contra {
+  color: #e18383;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 263, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.votacion-oficial li.no-votada, html.search_initiatives ul.votacion-oficial li.no-votada, html.temas ul.votacion-oficial li.no-votada, html.comisiones_iniciativas ul.votacion-oficial li.no-votada {
+  border: 1px solid #c7c5c5;
+  width: 383px;
+}
+/* line 274, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones, html.search_initiatives ul.botones, html.temas ul.botones, html.comisiones_iniciativas ul.botones {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  margin-top: 10px;
+  margin: 30px 0 0 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas ul.botones, * html html.search_initiatives ul.botones, * html html.temas ul.botones, * html html.comisiones_iniciativas ul.botones {
+  overflow-x: hidden;
+}
+/* line 279, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones li, html.search_initiatives ul.botones li, html.temas ul.botones li, html.comisiones_iniciativas ul.botones li {
+  float: left;
+  height: 40px;
+  margin: 0 10px 0 0;
+  width: 200px;
+}
+/* line 285, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones li.first-child, html.iniciativas ul.botones ul.votacion-local li:first-child, html.iniciativas ul.votacion-local ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives ul.votacion-local li:first-child, html.search_initiatives ul.votacion-local html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas ul.votacion-local li:first-child, html.temas ul.votacion-local html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas ul.votacion-local li:first-child, html.comisiones_iniciativas ul.votacion-local html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-detalles ul.botones li:first-child, html.iniciativas ul.botones ul.votaciones-logos li:first-child, html.iniciativas ul.votaciones-logos ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-detalles html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas ul.votaciones-detalles li:first-child, html.temas ul.votaciones-detalles html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-detalles html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones ul.votacion-pleno li:first-child, html.iniciativas ul.votacion-pleno ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones ul.votacion-oficial li:first-child, html.iniciativas ul.votacion-oficial ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives ul.votacion-oficial li:first-child, html.search_initiatives ul.votacion-oficial html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas ul.votacion-oficial li:first-child, html.temas ul.votacion-oficial html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas ul.votacion-oficial li:first-child, html.comisiones_iniciativas ul.votacion-oficial html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones article.iniciativa .content ul.estado li:first-child, html.iniciativas article.iniciativa .content ul.estado ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.estado li:first-child, html.search_initiatives article.iniciativa .content ul.estado html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas article.iniciativa .content ul.estado li:first-child, html.temas article.iniciativa .content ul.estado html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas article.iniciativa .content ul.votacion-oficial li:first-child, html.temas article.iniciativa .content ul.votacion-oficial html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas article.iniciativa .content ul.votacion-local li:first-child, html.temas article.iniciativa .content ul.votacion-local html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones article.iniciativa .content ul.etapa li:first-child, html.iniciativas article.iniciativa .content ul.etapa ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones article.iniciativa .content ul.recursos li:first-child, html.iniciativas article.iniciativa .content ul.recursos ul.botones li:first-child, html.iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.temas article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos html.iniciativas ul.botones li:first-child, html.iniciativas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos html.iniciativas ul.botones li:first-child, html.search_initiatives ul.botones li.first-child, html.search_initiatives ul.botones html.iniciativas ul.votacion-local li:first-child, html.iniciativas ul.votacion-local html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones ul.votacion-local li:first-child, html.search_initiatives ul.votacion-local ul.botones li:first-child, html.search_initiatives ul.botones html.temas ul.votacion-local li:first-child, html.temas ul.votacion-local html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas ul.votacion-local li:first-child, html.comisiones_iniciativas ul.votacion-local html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-detalles html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas ul.votaciones-logos li:first-child, html.iniciativas ul.votaciones-logos html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-detalles ul.botones li:first-child, html.search_initiatives ul.botones ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos ul.botones li:first-child, html.search_initiatives ul.botones html.temas ul.votaciones-detalles li:first-child, html.temas ul.votaciones-detalles html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.temas ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-detalles html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas ul.votacion-pleno li:first-child, html.iniciativas ul.votacion-pleno html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno ul.botones li:first-child, html.search_initiatives ul.botones html.temas ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas ul.votacion-oficial li:first-child, html.iniciativas ul.votacion-oficial html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones ul.votacion-oficial li:first-child, html.search_initiatives ul.votacion-oficial ul.botones li:first-child, html.search_initiatives ul.botones html.temas ul.votacion-oficial li:first-child, html.temas ul.votacion-oficial html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas ul.votacion-oficial li:first-child, html.comisiones_iniciativas ul.votacion-oficial html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas article.iniciativa .content ul.estado li:first-child, html.iniciativas article.iniciativa .content ul.estado html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones article.iniciativa .content ul.estado li:first-child, html.search_initiatives article.iniciativa .content ul.estado ul.botones li:first-child, html.search_initiatives ul.botones html.temas article.iniciativa .content ul.estado li:first-child, html.temas article.iniciativa .content ul.estado html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial ul.botones li:first-child, html.search_initiatives ul.botones html.temas article.iniciativa .content ul.votacion-oficial li:first-child, html.temas article.iniciativa .content ul.votacion-oficial html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local ul.botones li:first-child, html.search_initiatives ul.botones html.temas article.iniciativa .content ul.votacion-local li:first-child, html.temas article.iniciativa .content ul.votacion-local html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.iniciativas article.iniciativa .content ul.etapa html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa ul.botones li:first-child, html.search_initiatives ul.botones html.temas article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.iniciativas article.iniciativa .content ul.recursos html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos ul.botones li:first-child, html.search_initiatives ul.botones html.temas article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos html.search_initiatives ul.botones li:first-child, html.search_initiatives ul.botones html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos html.search_initiatives ul.botones li:first-child, html.temas ul.botones li.first-child, html.temas ul.botones html.iniciativas ul.votacion-local li:first-child, html.iniciativas ul.votacion-local html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives ul.votacion-local li:first-child, html.search_initiatives ul.votacion-local html.temas ul.botones li:first-child, html.temas ul.botones ul.votacion-local li:first-child, html.temas ul.votacion-local ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas ul.votacion-local li:first-child, html.comisiones_iniciativas ul.votacion-local html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-detalles html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas ul.votaciones-logos li:first-child, html.iniciativas ul.votaciones-logos html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-detalles html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos html.temas ul.botones li:first-child, html.temas ul.botones ul.votaciones-detalles li:first-child, html.temas ul.votaciones-detalles ul.botones li:first-child, html.temas ul.botones ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-detalles html.temas ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas ul.votacion-pleno li:first-child, html.iniciativas ul.votacion-pleno html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno html.temas ul.botones li:first-child, html.temas ul.botones ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas ul.votacion-oficial li:first-child, html.iniciativas ul.votacion-oficial html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives ul.votacion-oficial li:first-child, html.search_initiatives ul.votacion-oficial html.temas ul.botones li:first-child, html.temas ul.botones ul.votacion-oficial li:first-child, html.temas ul.votacion-oficial ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas ul.votacion-oficial li:first-child, html.comisiones_iniciativas ul.votacion-oficial html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas article.iniciativa .content ul.estado li:first-child, html.iniciativas article.iniciativa .content ul.estado html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives article.iniciativa .content ul.estado li:first-child, html.search_initiatives article.iniciativa .content ul.estado html.temas ul.botones li:first-child, html.temas ul.botones article.iniciativa .content ul.estado li:first-child, html.temas article.iniciativa .content ul.estado ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial html.temas ul.botones li:first-child, html.temas ul.botones article.iniciativa .content ul.votacion-oficial li:first-child, html.temas article.iniciativa .content ul.votacion-oficial ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local html.temas ul.botones li:first-child, html.temas ul.botones article.iniciativa .content ul.votacion-local li:first-child, html.temas article.iniciativa .content ul.votacion-local ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.iniciativas article.iniciativa .content ul.etapa html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa html.temas ul.botones li:first-child, html.temas ul.botones article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa html.temas ul.botones li:first-child, html.temas ul.botones html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.iniciativas article.iniciativa .content ul.recursos html.temas ul.botones li:first-child, html.temas ul.botones html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos html.temas ul.botones li:first-child, html.temas ul.botones article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos ul.botones li:first-child, html.temas ul.botones html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos html.temas ul.botones li:first-child, html.comisiones_iniciativas ul.botones li.first-child, html.comisiones_iniciativas ul.botones html.iniciativas ul.votacion-local li:first-child, html.iniciativas ul.votacion-local html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives ul.votacion-local li:first-child, html.search_initiatives ul.votacion-local html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas ul.votacion-local li:first-child, html.temas ul.votacion-local html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones ul.votacion-local li:first-child, html.comisiones_iniciativas ul.votacion-local ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas ul.votaciones-detalles li:first-child, html.iniciativas ul.votaciones-detalles html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas ul.votaciones-logos li:first-child, html.iniciativas ul.votaciones-logos html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives ul.votaciones-detalles li:first-child, html.search_initiatives ul.votaciones-detalles html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives ul.votaciones-logos li:first-child, html.search_initiatives ul.votaciones-logos html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas ul.votaciones-detalles li:first-child, html.temas ul.votaciones-detalles html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas ul.votaciones-logos li:first-child, html.temas ul.votaciones-logos html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones ul.votaciones-detalles li:first-child, html.comisiones_iniciativas ul.votaciones-detalles ul.botones li:first-child, html.comisiones_iniciativas ul.botones ul.votaciones-logos li:first-child, html.comisiones_iniciativas ul.votaciones-logos ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas ul.votacion-pleno li:first-child, html.iniciativas ul.votacion-pleno html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives ul.votacion-pleno li:first-child, html.search_initiatives ul.votacion-pleno html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas ul.votacion-pleno li:first-child, html.temas ul.votacion-pleno html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones ul.votacion-pleno li:first-child, html.comisiones_iniciativas ul.votacion-pleno ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas ul.votacion-oficial li:first-child, html.iniciativas ul.votacion-oficial html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives ul.votacion-oficial li:first-child, html.search_initiatives ul.votacion-oficial html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas ul.votacion-oficial li:first-child, html.temas ul.votacion-oficial html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones ul.votacion-oficial li:first-child, html.comisiones_iniciativas ul.votacion-oficial ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas article.iniciativa .content ul.estado li:first-child, html.iniciativas article.iniciativa .content ul.estado html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.estado li:first-child, html.search_initiatives article.iniciativa .content ul.estado html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas article.iniciativa .content ul.estado li:first-child, html.temas article.iniciativa .content ul.estado html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones article.iniciativa .content ul.estado li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.estado ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas article.iniciativa .content ul.votacion-oficial li:first-child, html.iniciativas article.iniciativa .content ul.votacion-oficial html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.votacion-oficial li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-oficial html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas article.iniciativa .content ul.votacion-oficial li:first-child, html.temas article.iniciativa .content ul.votacion-oficial html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones article.iniciativa .content ul.votacion-oficial li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas article.iniciativa .content ul.votacion-local li:first-child, html.iniciativas article.iniciativa .content ul.votacion-local html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.votacion-local li:first-child, html.search_initiatives article.iniciativa .content ul.votacion-local html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas article.iniciativa .content ul.votacion-local li:first-child, html.temas article.iniciativa .content ul.votacion-local html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones article.iniciativa .content ul.votacion-local li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.iniciativas article.iniciativa .content ul.etapa html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.iniciativas article.iniciativa .content ul.recursos html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones html.temas article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos html.comisiones_iniciativas ul.botones li:first-child, html.comisiones_iniciativas ul.botones article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos ul.botones li:first-child {
+  margin-left: 20px;
+}
+/* line 287, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones li a, html.search_initiatives ul.botones li a, html.temas ul.botones li a, html.comisiones_iniciativas ul.botones li a {
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  height: 40px;
+  width: 200px;
+}
+/* line 292, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones li a:hover, html.search_initiatives ul.botones li a:hover, html.temas ul.botones li a:hover, html.comisiones_iniciativas ul.botones li a:hover {
+  color: white;
+}
+/* line 294, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones li a.favor, html.search_initiatives ul.botones li a.favor, html.temas ul.botones li a.favor, html.comisiones_iniciativas ul.botones li a.favor {
+  background: url("/assets/front/vote.png") no-repeat 34px 2px #9cbc5b;
+  padding: 13px 35px 13px 75px;
+}
+/* line 299, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones li a.contra, html.search_initiatives ul.botones li a.contra, html.temas ul.botones li a.contra, html.comisiones_iniciativas ul.botones li a.contra {
+  background: url("/assets/front/vote.png") no-repeat 34px 2px #e18383;
+  padding: 13px 20px 13px 75px;
+}
+/* line 304, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas ul.botones li a.comenta, html.search_initiatives ul.botones li a.comenta, html.temas ul.botones li a.comenta, html.comisiones_iniciativas ul.botones li a.comenta {
+  background: url("/assets/front/comenta-bg.png") no-repeat 40px 10px #594461;
+  padding: 13px 62px 13px 75px;
+}
+/* line 314, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa, html.search_initiatives article.iniciativa, html.temas article.iniciativa, html.comisiones_iniciativas article.iniciativa {
+  padding: 0 10px 30px 30px;
+}
+/* line 318, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .comments, html.search_initiatives article.iniciativa .comments, html.temas article.iniciativa .comments, html.comisiones_iniciativas article.iniciativa .comments {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 270px;
+  margin: 10px 10px 0 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .comments, * html html.search_initiatives article.iniciativa .comments, * html html.temas article.iniciativa .comments, * html html.comisiones_iniciativas article.iniciativa .comments {
+  overflow-x: hidden;
+}
+/* line 322, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .comments.push, html.search_initiatives article.iniciativa .comments.push, html.temas article.iniciativa .comments.push, html.comisiones_iniciativas article.iniciativa .comments.push {
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -40px 1.5em 40px;
+  margin-top: 10px;
+}
+/* line 324, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .comments h4, html.search_initiatives article.iniciativa .comments h4, html.temas article.iniciativa .comments h4, html.comisiones_iniciativas article.iniciativa .comments h4 {
+  border: 0;
+  color: white;
+  height: 20px;
+  padding: 7px 0 0 5px;
+  width: 200px;
+}
+/* line 331, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .comments h4.favor, html.search_initiatives article.iniciativa .comments h4.favor, html.temas article.iniciativa .comments h4.favor, html.comisiones_iniciativas article.iniciativa .comments h4.favor {
+  background-color: #9cbc5b;
+}
+/* line 335, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .comments h4.contra, html.search_initiatives article.iniciativa .comments h4.contra, html.temas article.iniciativa .comments h4.contra, html.comisiones_iniciativas article.iniciativa .comments h4.contra {
+  background-color: #e18383;
+}
+/* line 342, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa.main, html.search_initiatives article.iniciativa.main, html.temas article.iniciativa.main, html.comisiones_iniciativas article.iniciativa.main {
+  background-color: white;
+}
+/* line 347, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p a, html.search_initiatives article.iniciativa p a, html.temas article.iniciativa p a, html.comisiones_iniciativas article.iniciativa p a {
+  color: #512561;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px 0 0;
+}
+/* line 352, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p a:hover, html.search_initiatives article.iniciativa p a:hover, html.temas article.iniciativa p a:hover, html.comisiones_iniciativas article.iniciativa p a:hover {
+  color: #512561;
+}
+/* line 356, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .main, html.search_initiatives article.iniciativa .main, html.temas article.iniciativa .main, html.comisiones_iniciativas article.iniciativa .main {
+  display: inline;
+  float: left;
+  margin-right: 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .main, * html html.search_initiatives article.iniciativa .main, * html html.temas article.iniciativa .main, * html html.comisiones_iniciativas article.iniciativa .main {
+  overflow-x: hidden;
+}
+/* line 358, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content, html.search_initiatives article.iniciativa .content, html.temas article.iniciativa .content, html.comisiones_iniciativas article.iniciativa .content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 510px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .content, * html html.search_initiatives article.iniciativa .content, * html html.temas article.iniciativa .content, * html html.comisiones_iniciativas article.iniciativa .content {
+  overflow-x: hidden;
+}
+/* line 361, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content .iniciativa_icon, html.search_initiatives article.iniciativa .content .iniciativa_icon, html.temas article.iniciativa .content .iniciativa_icon, html.comisiones_iniciativas article.iniciativa .content .iniciativa_icon {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+  margin: 30px 0 0 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .content .iniciativa_icon, * html html.search_initiatives article.iniciativa .content .iniciativa_icon, * html html.temas article.iniciativa .content .iniciativa_icon, * html html.comisiones_iniciativas article.iniciativa .content .iniciativa_icon {
+  overflow-x: hidden;
+}
+/* line 366, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content .iniciativa_info, html.search_initiatives article.iniciativa .content .iniciativa_info, html.temas article.iniciativa .content .iniciativa_info, html.comisiones_iniciativas article.iniciativa .content .iniciativa_info {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 430px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .content .iniciativa_info, * html html.search_initiatives article.iniciativa .content .iniciativa_info, * html html.temas article.iniciativa .content .iniciativa_info, * html html.comisiones_iniciativas article.iniciativa .content .iniciativa_info {
+  overflow-x: hidden;
+}
+/* line 371, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul, html.search_initiatives article.iniciativa .content ul, html.temas article.iniciativa .content ul, html.comisiones_iniciativas article.iniciativa .content ul {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 510px;
+  margin-bottom: 10px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .content ul, * html html.search_initiatives article.iniciativa .content ul, * html html.temas article.iniciativa .content ul, * html html.comisiones_iniciativas article.iniciativa .content ul {
+  overflow-x: hidden;
+}
+/* line 375, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.temas, html.search_initiatives article.iniciativa .content ul.temas, html.temas article.iniciativa .content ul.temas, html.comisiones_iniciativas article.iniciativa .content ul.temas {
+  color: #a89eab;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+/* line 379, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.temas li, html.search_initiatives article.iniciativa .content ul.temas li, html.temas article.iniciativa .content ul.temas li, html.comisiones_iniciativas article.iniciativa .content ul.temas li {
+  border-left: 1px solid #a89eab;
+  float: left;
+  padding: 0 10px;
+}
+/* line 384, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.temas li a, html.search_initiatives article.iniciativa .content ul.temas li a, html.temas article.iniciativa .content ul.temas li a, html.comisiones_iniciativas article.iniciativa .content ul.temas li a {
+  color: #a89eab;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 387, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.temas li a:hover, html.search_initiatives article.iniciativa .content ul.temas li a:hover, html.temas article.iniciativa .content ul.temas li a:hover, html.comisiones_iniciativas article.iniciativa .content ul.temas li a:hover {
+  color: #a89eab;
+}
+/* line 390, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.temas li:last-child, html.search_initiatives article.iniciativa .content ul.temas li:last-child, html.temas article.iniciativa .content ul.temas li:last-child, html.comisiones_iniciativas article.iniciativa .content ul.temas li:last-child {
+  border-right: 1px solid #99cccc;
+}
+/* line 396, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.estado, html.search_initiatives article.iniciativa .content ul.estado, html.temas article.iniciativa .content ul.estado, html.comisiones_iniciativas article.iniciativa .content ul.estado {
+  border-top: 1px solid #c7c5c5;
+}
+/* line 399, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.estado li, html.search_initiatives article.iniciativa .content ul.estado li, html.temas article.iniciativa .content ul.estado li, html.comisiones_iniciativas article.iniciativa .content ul.estado li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: 1px solid #c7c5c5;
+  float: left;
+  height: 24px;
+  margin-left: 1px;
+  padding-top: 6px;
+  text-align: center;
+  width: 93px;
+}
+/* line 409, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.estado li.presentation, html.search_initiatives article.iniciativa .content ul.estado li.presentation, html.temas article.iniciativa .content ul.estado li.presentation, html.comisiones_iniciativas article.iniciativa .content ul.estado li.presentation {
+  background-color: #a196a5;
+  color: white;
+}
+/* line 410, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.estado li.commission, html.search_initiatives article.iniciativa .content ul.estado li.commission, html.temas article.iniciativa .content ul.estado li.commission, html.comisiones_iniciativas article.iniciativa .content ul.estado li.commission {
+  background-color: #827387;
+  color: white;
+}
+/* line 411, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.estado li.plenary, html.search_initiatives article.iniciativa .content ul.estado li.plenary, html.temas article.iniciativa .content ul.estado li.plenary, html.comisiones_iniciativas article.iniciativa .content ul.estado li.plenary {
+  background-color: #5b4763;
+  color: white;
+}
+/* line 412, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.estado li.project, html.search_initiatives article.iniciativa .content ul.estado li.project, html.temas article.iniciativa .content ul.estado li.project, html.comisiones_iniciativas article.iniciativa .content ul.estado li.project {
+  background-color: #34193e;
+  color: white;
+}
+/* line 420, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-oficial, html.search_initiatives article.iniciativa .content ul.votacion-oficial, html.temas article.iniciativa .content ul.votacion-oficial, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial {
+  border-top: 1px solid #c7c5c5;
+}
+/* line 423, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-oficial li, html.search_initiatives article.iniciativa .content ul.votacion-oficial li, html.temas article.iniciativa .content ul.votacion-oficial li, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  float: left;
+  height: 24px;
+  padding-top: 6px;
+  text-align: center;
+}
+/* line 430, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-oficial li.a-favor, html.search_initiatives article.iniciativa .content ul.votacion-oficial li.a-favor, html.temas article.iniciativa .content ul.votacion-oficial li.a-favor, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li.a-favor {
+  background-color: #9cbc5b;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 436, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-oficial li.en-contra, html.search_initiatives article.iniciativa .content ul.votacion-oficial li.en-contra, html.temas article.iniciativa .content ul.votacion-oficial li.en-contra, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li.en-contra {
+  color: #e18383;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 442, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-oficial li.no-votada, html.search_initiatives article.iniciativa .content ul.votacion-oficial li.no-votada, html.temas article.iniciativa .content ul.votacion-oficial li.no-votada, html.comisiones_iniciativas article.iniciativa .content ul.votacion-oficial li.no-votada {
+  border: 1px solid #c7c5c5;
+  width: 383px;
+}
+/* line 453, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-local, html.search_initiatives article.iniciativa .content ul.votacion-local, html.temas article.iniciativa .content ul.votacion-local, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local {
+  border-top: 1px solid #c7c5c5;
+}
+/* line 456, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-local li, html.search_initiatives article.iniciativa .content ul.votacion-local li, html.temas article.iniciativa .content ul.votacion-local li, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  float: left;
+  height: 24px;
+  padding-top: 6px;
+  text-align: center;
+}
+/* line 463, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-local li a, html.search_initiatives article.iniciativa .content ul.votacion-local li a, html.temas article.iniciativa .content ul.votacion-local li a, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li a {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 466, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-local li a:hover, html.search_initiatives article.iniciativa .content ul.votacion-local li a:hover, html.temas article.iniciativa .content ul.votacion-local li a:hover, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li a:hover {
+  color: #606060;
+}
+/* line 469, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-local li.a-favor, html.search_initiatives article.iniciativa .content ul.votacion-local li.a-favor, html.temas article.iniciativa .content ul.votacion-local li.a-favor, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li.a-favor {
+  background-color: #d8e4be;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 475, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-local li.en-contra, html.search_initiatives article.iniciativa .content ul.votacion-local li.en-contra, html.temas article.iniciativa .content ul.votacion-local li.en-contra, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li.en-contra {
+  color: #e18383;
+  min-width: 57px;
+  max-width: 327px;
+}
+/* line 481, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.votacion-local li.no-votada, html.search_initiatives article.iniciativa .content ul.votacion-local li.no-votada, html.temas article.iniciativa .content ul.votacion-local li.no-votada, html.comisiones_iniciativas article.iniciativa .content ul.votacion-local li.no-votada {
+  border: 1px solid #c7c5c5;
+  width: 190px;
+}
+/* line 493, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.etapa li, html.search_initiatives article.iniciativa .content ul.etapa li, html.temas article.iniciativa .content ul.etapa li, html.comisiones_iniciativas article.iniciativa .content ul.etapa li {
+  color: #606060;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-left: 1px solid #c7c5c5;
+  float: left;
+  height: auto;
+  padding-top: 6px;
+  padding-left: 5px;
+  text-align: left;
+  width: 370px;
+}
+/* line 503, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.etapa li:first-child, html.search_initiatives article.iniciativa .content ul.etapa li:first-child, html.temas article.iniciativa .content ul.etapa li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.etapa li:first-child {
+  border: 0;
+}
+/* line 508, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.recursos li, html.search_initiatives article.iniciativa .content ul.recursos li, html.temas article.iniciativa .content ul.recursos li, html.comisiones_iniciativas article.iniciativa .content ul.recursos li {
+  border-left: 1px solid #c7c5c5;
+  float: left;
+  padding-left: 5px;
+}
+/* line 513, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.recursos li:first-child, html.search_initiatives article.iniciativa .content ul.recursos li:first-child, html.temas article.iniciativa .content ul.recursos li:first-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos li:first-child {
+  border: 0;
+}
+/* line 515, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .content ul.recursos li:last-child, html.search_initiatives article.iniciativa .content ul.recursos li:last-child, html.temas article.iniciativa .content ul.recursos li:last-child, html.comisiones_iniciativas article.iniciativa .content ul.recursos li:last-child {
+  width: 350px;
+}
+/* line 521, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside, html.search_initiatives article.iniciativa .aside, html.temas article.iniciativa .aside, html.comisiones_iniciativas article.iniciativa .aside {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 110px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .aside, * html html.search_initiatives article.iniciativa .aside, * html html.temas article.iniciativa .aside, * html html.comisiones_iniciativas article.iniciativa .aside {
+  overflow-x: hidden;
+}
+/* line 524, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul, html.search_initiatives article.iniciativa .aside ul, html.temas article.iniciativa .aside ul, html.comisiones_iniciativas article.iniciativa .aside ul {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  text-align: right;
+  margin: 0 0 0 30px;
+  width: 90px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.iniciativas article.iniciativa .aside ul, * html html.search_initiatives article.iniciativa .aside ul, * html html.temas article.iniciativa .aside ul, * html html.comisiones_iniciativas article.iniciativa .aside ul {
+  overflow-x: hidden;
+}
+/* line 530, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li, html.search_initiatives article.iniciativa .aside ul li, html.temas article.iniciativa .aside ul li, html.comisiones_iniciativas article.iniciativa .aside ul li {
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding: 0 5px 0 0;
+}
+/* line 535, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li a, html.search_initiatives article.iniciativa .aside ul li a, html.temas article.iniciativa .aside ul li a, html.comisiones_iniciativas article.iniciativa .aside ul li a {
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 539, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li span, html.search_initiatives article.iniciativa .aside ul li span, html.temas article.iniciativa .aside ul li span, html.comisiones_iniciativas article.iniciativa .aside ul li span {
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: none;
+  display: block;
+}
+/* line 544, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li.comenta, html.search_initiatives article.iniciativa .aside ul li.comenta, html.temas article.iniciativa .aside ul li.comenta, html.comisiones_iniciativas article.iniciativa .aside ul li.comenta {
+  background: url("/assets/front/comenta-bg.png") no-repeat scroll 2px 10px #e2a04a;
+  height: 35px;
+  padding-top: 5px;
+}
+/* line 550, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li.votos, html.search_initiatives article.iniciativa .aside ul li.votos, html.temas article.iniciativa .aside ul li.votos, html.comisiones_iniciativas article.iniciativa .aside ul li.votos {
+  background-color: #f6e294;
+  height: 75px;
+}
+/* line 555, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li.comentarios, html.search_initiatives article.iniciativa .aside ul li.comentarios, html.temas article.iniciativa .aside ul li.comentarios, html.comisiones_iniciativas article.iniciativa .aside ul li.comentarios {
+  background-color: #a6cdd1;
+  height: 75px;
+}
+/* line 560, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li.numero_iniciativa, html.search_initiatives article.iniciativa .aside ul li.numero_iniciativa, html.temas article.iniciativa .aside ul li.numero_iniciativa, html.comisiones_iniciativas article.iniciativa .aside ul li.numero_iniciativa {
+  background-color: #c7c5c5;
+  height: 90px;
+}
+/* line 568, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li.share .share-fb span, html.search_initiatives article.iniciativa .aside ul li.share .share-fb span, html.temas article.iniciativa .aside ul li.share .share-fb span, html.comisiones_iniciativas article.iniciativa .aside ul li.share .share-fb span {
+  font-size: 12px;
+}
+/* line 573, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li.share .share-fb iframe, html.search_initiatives article.iniciativa .aside ul li.share .share-fb iframe, html.temas article.iniciativa .aside ul li.share .share-fb iframe, html.comisiones_iniciativas article.iniciativa .aside ul li.share .share-fb iframe {
+  display: block;
+}
+/* line 577, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa .aside ul li.share .share-tw, html.search_initiatives article.iniciativa .aside ul li.share .share-tw, html.temas article.iniciativa .aside ul li.share .share-tw, html.comisiones_iniciativas article.iniciativa .aside ul li.share .share-tw {
+  margin-top: 5px;
+}
+/* line 585, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p, html.search_initiatives article.iniciativa p, html.temas article.iniciativa p, html.comisiones_iniciativas article.iniciativa p {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+/* line 589, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p.info, html.search_initiatives article.iniciativa p.info, html.temas article.iniciativa p.info, html.comisiones_iniciativas article.iniciativa p.info {
+  padding: 30px 0 0 0;
+}
+/* line 591, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p.info span a, html.search_initiatives article.iniciativa p.info span a, html.temas article.iniciativa p.info span a, html.comisiones_iniciativas article.iniciativa p.info span a {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #512561;
+  display: inline;
+}
+/* line 598, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p.comment, html.search_initiatives article.iniciativa p.comment, html.temas article.iniciativa p.comment, html.comisiones_iniciativas article.iniciativa p.comment {
+  border-bottom: 1px solid #c7c5c5;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* line 603, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p.comment span, html.search_initiatives article.iniciativa p.comment span, html.temas article.iniciativa p.comment span, html.comisiones_iniciativas article.iniciativa p.comment span {
+  color: #512561;
+  font-family: Arial, san-serif;
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: url("/assets/front/mensaje.png") no-repeat;
+  display: block;
+  font-weight: bold;
+  height: 30px;
+  padding: 5px 0 0 30px;
+}
+/* line 613, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p.description, html.search_initiatives article.iniciativa p.description, html.temas article.iniciativa p.description, html.comisiones_iniciativas article.iniciativa p.description {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  color: #111018;
+  margin-bottom: 40px;
+}
+/* line 617, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p.description a, html.search_initiatives article.iniciativa p.description a, html.temas article.iniciativa p.description a, html.comisiones_iniciativas article.iniciativa p.description a {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 620, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas article.iniciativa p.description a:hover, html.search_initiatives article.iniciativa p.description a:hover, html.temas article.iniciativa p.description a:hover, html.comisiones_iniciativas article.iniciativa p.description a:hover {
+  color: #606060;
+}
+/* line 628, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/iniciativas.css.scss */
+html.iniciativas .modal textarea, html.search_initiatives .modal textarea, html.temas .modal textarea, html.comisiones_iniciativas .modal textarea {
+  height: 150px;
+}
+
+/* line 6, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/contacto.css.scss */
+#contacto article {
+  padding: 0 10px 15px 30px;
+}
+/* line 10, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/contacto.css.scss */
+#contacto article p {
+  margin-bottom: 10px;
+}
+/* line 14, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/contacto.css.scss */
+#contacto article textarea {
+  height: 150px;
+}
+/* line 18, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/contacto.css.scss */
+#contacto article .submit {
+  color: white;
+  margin: 0 0 0 20px;
+}
+/* line 24, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/contacto.css.scss */
+#contacto aside {
+  background: url("/assets/images/tweet-bird.png") no-repeat white;
+}
+
+/* line 8, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas .congresista_content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas .congresista_content {
+  overflow-x: hidden;
+}
+/* line 12, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-right: 0;
+  width: 660px;
+}
+/* line 19, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .comment {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c7c5c5;
+}
+/* line 23, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .comment p {
+  padding-bottom: 10px;
+  margin: 10px 10px 10px 0;
+}
+/* line 27, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .comment p span {
+  color: #512561;
+  font-family: Arial, san-serif;
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: url("/assets/front/mensaje.png") no-repeat;
+  display: block;
+  font-weight: bold;
+  height: 30px;
+  padding: 5px 0 0 30px;
+}
+/* line 36, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .comment p.reply {
+  margin-left: 20px;
+}
+/* line 39, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .comment p.reply span {
+  background: url("/assets/front/reply.png") no-repeat;
+}
+/* line 46, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .form-inputs {
+  display: inline;
+  float: left;
+  width: 400px;
+}
+/* line 52, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article textarea {
+  height: 150px;
+  margin: 10px 0 0;
+}
+/* line 57, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .submit {
+  color: white;
+  font-size: 24px;
+  height: 40px;
+  margin: 80px 0 0 15px;
+}
+/* line 65, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
+  background-color: white;
+  padding: 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas article.representante {
+  overflow-x: hidden;
+}
+/* line 70, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante .bottom {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
+  background-color: #f6e294;
+  height: 15px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas article.representante .bottom {
+  overflow-x: hidden;
+}
+/* line 76, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul {
+  display: inline;
+  float: left;
+  margin-right: 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas article.representante ul {
+  overflow-x: hidden;
+}
+/* line 79, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos {
+  margin: 5px;
+}
+/* line 82, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: none;
+  border-right: 1px dashed #999999;
+  float: left;
+  height: 50px;
+  padding: 10px;
+  width: 370px;
+}
+/* line 90, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li a {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 93, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li a:hover {
+  color: #606060;
+}
+/* line 95, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li a.region_link {
+  font-size: 12px;
+}
+/* line 98, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li:first-child {
+  width: 45px;
+}
+/* line 101, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li:first-child img {
+  margin: 10px 5px 0;
+}
+/* line 104, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li:last-child {
+  border: 0;
+  font-size: 12px;
+  padding: 10px 0 10px 10px;
+  width: 190px;
+}
+/* line 111, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li span {
+  color: #512561;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: block;
+}
+/* line 116, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li .photo {
+  padding: 0 10px 0 0;
+}
+/* line 118, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.datos li .photo, html.congresistas article.representante ul.datos li .name {
+  float: left;
+}
+/* line 125, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.contadores li {
+  color: #999999;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-top: 1px solid #f1eee9;
+  float: left;
+  height: 27px;
+  padding: 18px 5px 0 0;
+  text-align: right;
+  width: 272px;
+}
+/* line 134, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.contadores li:first-child {
+  font-size: 18px;
+  padding: 13px 2px 0;
+  text-align: left;
+}
+/* line 139, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.contadores li:first-child img {
+  width: 28px;
+  margin: 0 0 0 20px;
+}
+/* line 144, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.contadores li:first-child span {
+  color: black;
+  font-size: 24px;
+  margin: 0;
+}
+/* line 151, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article.representante ul.contadores li:last-child {
+  background-color: #f6e294;
+  border-top: 1px solid #f6e294;
+  color: white;
+  font-size: 30px;
+  height: 35px;
+  padding: 10px 0 0 10px;
+  text-align: left;
+  width: 107px;
+}
+/* line 166, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .primera-columna {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+  padding-right: 40px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas article .primera-columna {
+  overflow-x: hidden;
+}
+/* line 171, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .segunda-columna {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 350px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas article .segunda-columna {
+  overflow-x: hidden;
+}
+/* line 175, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .comentarios {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+  border-top: 1px solid #c7c5c5;
+  border-bottom: 1px solid #c7c5c5;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas article .comentarios {
+  overflow-x: hidden;
+}
+/* line 180, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas article .comentarios p {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  border-top: 1px solid #c7c5c5;
+  padding-top: 10px;
+}
+/* line 188, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas section {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
+  padding: 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas section {
+  overflow-x: hidden;
+}
+/* line 192, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas section.entidades {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
+  background: url("/assets/front/h1-bg.png") repeat-x top, url("/assets/front/h1-bg.png") repeat-x bottom;
+  padding: 12px 0;
+  margin: 0 0 20px 40px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas section.entidades {
+  overflow-x: hidden;
+}
+/* line 198, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas section.entidades section {
+  border-top: 1px solid #d6d1c5;
+  border-bottom: 1px solid #d6d1c5;
+  padding: 10px 0;
+}
+/* line 203, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas section.entidades section ul.column {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  border-left: 1px dashed #999999;
+  height: 365px;
+  padding: 0 0 0 15px;
+  width: 130px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.congresistas section.entidades section ul.column {
+  overflow-x: hidden;
+}
+/* line 210, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas section.entidades section ul.column:first-child {
+  width: 215px;
+  border: 0;
+}
+/* line 212, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas section.entidades section ul.column li {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+/* line 216, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas section.entidades section ul.column li img {
+  width: 15px;
+  margin: 0 5px 0 0;
+}
+/* line 226, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas aside {
+  min-height: 0;
+}
+/* line 230, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas p {
+  margin-bottom: 10px;
+}
+/* line 233, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas p span {
+  display: block;
+  color: #99cccc;
+  text-transform: uppercase;
+}
+/* line 238, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas p span.nombre {
+  font-size: 18px;
+  color: #606060;
+}
+/* line 243, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas ul.iniciativas {
+  list-style: none;
+}
+/* line 246, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/congresistas.css.scss */
+html.congresistas ul.iniciativas li {
+  border-bottom: 1px solid #c7c5c5;
+  margin: 0 0 5px;
+  padding: 0 0 5px;
+}
+
+/* line 7, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones table, html.search_representative table, html.partido_politico table, html.comisiones_congresistas table {
+  border: 1px solid #dddddd;
+  color: #99cccc;
+  margin-top: 10px;
+}
+/* line 12, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones table a, html.regiones table a:hover, html.search_representative table a, html.search_representative table a:hover, html.partido_politico table a, html.partido_politico table a:hover, html.comisiones_congresistas table a, html.comisiones_congresistas table a:hover {
+  color: #99cccc;
+}
+/* line 17, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones table tr td, html.regiones table tr th, html.search_representative table tr td, html.search_representative table tr th, html.partido_politico table tr td, html.partido_politico table tr th, html.comisiones_congresistas table tr td, html.comisiones_congresistas table tr th {
+  border-left: 0;
+}
+/* line 21, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones table tr:hover td, html.search_representative table tr:hover td, html.partido_politico table tr:hover td, html.comisiones_congresistas table tr:hover td {
+  background-color: #f5fafa;
+}
+/* line 25, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones table tr.last, html.search_representative table tr.last, html.partido_politico table tr.last, html.comisiones_congresistas table tr.last {
+  border-bottom: 1px solid #333;
+}
+/* line 30, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article, html.search_representative article, html.partido_politico article, html.comisiones_congresistas article {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  margin: 10px 0;
+  padding: 10px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.regiones article, * html html.search_representative article, * html html.partido_politico article, * html html.comisiones_congresistas article {
+  overflow-x: hidden;
+}
+/* line 36, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article a.volver, html.search_representative article a.volver, html.partido_politico article a.volver, html.comisiones_congresistas article a.volver {
+  color: #512561;
+  text-transform: uppercase;
+}
+/* line 41, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .logo, html.search_representative article .logo, html.partido_politico article .logo, html.comisiones_congresistas article .logo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  text-align: center;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.regiones article .logo, * html html.search_representative article .logo, * html html.partido_politico article .logo, * html html.comisiones_congresistas article .logo {
+  overflow-x: hidden;
+}
+/* line 45, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .logo span, html.search_representative article .logo span, html.partido_politico article .logo span, html.comisiones_congresistas article .logo span {
+  color: #999999;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: block;
+}
+/* line 51, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .congresistas, html.search_representative article .congresistas, html.partido_politico article .congresistas, html.comisiones_congresistas article .congresistas {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  border-left: 1px dashed #999999;
+  padding: 0 0 0 10px;
+  width: 735px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.regiones article .congresistas, * html html.search_representative article .congresistas, * html html.partido_politico article .congresistas, * html html.comisiones_congresistas article .congresistas {
+  overflow-x: hidden;
+}
+/* line 57, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .congresistas .congresista, html.search_representative article .congresistas .congresista, html.partido_politico article .congresistas .congresista, html.comisiones_congresistas article .congresistas .congresista {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  border-bottom: 1px solid #f1eee9;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  width: 735px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.regiones article .congresistas .congresista, * html html.search_representative article .congresistas .congresista, * html html.partido_politico article .congresistas .congresista, * html html.comisiones_congresistas article .congresistas .congresista {
+  overflow-x: hidden;
+}
+/* line 64, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .congresistas .congresista span, html.search_representative article .congresistas .congresista span, html.partido_politico article .congresistas .congresista span, html.comisiones_congresistas article .congresistas .congresista span {
+  color: #512561;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 67, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .congresistas .congresista span.position, html.search_representative article .congresistas .congresista span.position, html.partido_politico article .congresistas .congresista span.position, html.comisiones_congresistas article .congresistas .congresista span.position {
+  font-size: 13px;
+  font-style: italic;
+}
+/* line 71, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .congresistas .congresista ul li, html.search_representative article .congresistas .congresista ul li, html.partido_politico article .congresistas .congresista ul li, html.comisiones_congresistas article .congresistas .congresista ul li {
+  color: #999999;
+  font-family: Arial, san-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: none;
+  float: left;
+  height: 50px;
+  margin: 0 20px 0 0;
+}
+/* line 77, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .congresistas .congresista ul li:last-child, html.search_representative article .congresistas .congresista ul li:last-child, html.partido_politico article .congresistas .congresista ul li:last-child, html.comisiones_congresistas article .congresistas .congresista ul li:last-child {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  border-left: 1px dashed #999999;
+  font-size: 13px;
+  font-style: italic;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.regiones article .congresistas .congresista ul li:last-child, * html html.search_representative article .congresistas .congresista ul li:last-child, * html html.partido_politico article .congresistas .congresista ul li:last-child, * html html.comisiones_congresistas article .congresistas .congresista ul li:last-child {
+  overflow-x: hidden;
+}
+/* line 86, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article .congresistas .congresista ul li.nombre, html.search_representative article .congresistas .congresista ul li.nombre, html.partido_politico article .congresistas .congresista ul li.nombre, html.comisiones_congresistas article .congresistas .congresista ul li.nombre {
+  width: 300px;
+}
+/* line 92, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/regiones.css.scss */
+html.regiones article p, html.search_representative article p, html.partido_politico article p, html.comisiones_congresistas article p {
+  margin-bottom: 10px;
+}
+
+/* line 2, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home {
+  background: url("/assets/front/footer-bg.png") 0 bottom repeat-x, url("/assets/front/top-home-bg.png") repeat-x, url("/assets/front/main-bg.png");
+}
+/* line 5, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .input, html.home .input-button {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  margin: 0 0 0 25px;
+  width: 220px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .input, * html html.home .input-button {
+  overflow-x: hidden;
+}
+/* line 11, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .input-button {
+  width: 150px;
+}
+/* line 13, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home h1 {
+  background: none;
+  border-bottom: 1px solid #999999;
+  font-size: 30px;
+  margin: 10px;
+  padding: 0;
+}
+/* line 21, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home h2 {
+  color: #464646;
+}
+/* line 23, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home hr {
+  background: url("/assets/front/h1-bg.png") repeat-x;
+  float: left;
+  height: 20px;
+  margin: 20px 0 50px;
+  width: 950px;
+}
+/* line 31, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .entiende {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  background-color: #efeae4;
+  margin: 10px 0;
+  padding: 0 0 10px 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .entiende {
+  overflow-x: hidden;
+}
+/* line 37, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .entiende p {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13;
+  font-weight: normal;
+  text-transform: none;
+  border-bottom: 1px solid #c7c5c5;
+  margin: 10px;
+  padding: 0 0 20px 0;
+}
+/* line 44, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .entiende section {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 25px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .entiende section {
+  overflow-x: hidden;
+}
+/* line 49, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .entiende section.left {
+  margin-left: 25px;
+}
+/* line 51, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .entiende section h4 {
+  color: black;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  height: 25px;
+}
+/* line 59, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .entiende .push {
+  margin-right: 40px;
+}
+/* line 62, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  background: url("/assets/front/h1-bg.png") repeat-x top, url("/assets/front/h1-bg.png") repeat-x bottom;
+  padding: 12px 0;
+  margin: 10px 0 20px 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .integrantes {
+  overflow-x: hidden;
+}
+/* line 68, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes .integrantes-content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  border-top: 1px solid #d6d1c5;
+  border-bottom: 1px solid #d6d1c5;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .integrantes .integrantes-content {
+  overflow-x: hidden;
+}
+/* line 73, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes .integrantes-content h1 {
+  margin: 20px 10px 10px 0;
+}
+/* line 75, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes .integrantes-content label {
+  color: #333333;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+  width: 160px;
+}
+/* line 81, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes .integrantes-content input, html.home .integrantes .integrantes-content select {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin: 10px 0 20px;
+}
+/* line 86, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes .integrantes-content input {
+  height: 25px;
+}
+/* line 87, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes .integrantes-content select {
+  height: 35px;
+}
+/* line 89, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .integrantes .integrantes-content .button {
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  background-color: #512561;
+  height: 35px;
+  margin-top: 28px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .integrantes .integrantes-content .button {
+  overflow-x: hidden;
+}
+/* line 99, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .twitter {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  background: url("/assets/front/twitter.png") no-repeat 0 center, url("/assets/front/h1-bg.png") repeat-x top, url("/assets/front/h1-bg.png") repeat-x bottom;
+  padding: 12px 0;
+  margin: 20px 0 10px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .twitter {
+  overflow-x: hidden;
+}
+/* line 105, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .twitter .twitter-content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  border-top: 1px solid #d6d1c5;
+  border-bottom: 1px solid #d6d1c5;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .twitter .twitter-content {
+  overflow-x: hidden;
+}
+/* line 111, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .twitter .tweet {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 870px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -80px 1.5em 80px;
+  color: #999999;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .twitter .tweet {
+  overflow-x: hidden;
+}
+/* line 117, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .twitter .tweet ul li {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 270px;
+  border-left: 1px dashed #c7c5c5;
+  border-bottom: 0;
+  float: left;
+  padding-left: 8px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .twitter .tweet ul li {
+  overflow-x: hidden;
+}
+/* line 124, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .twitter .tweet ul li:first-child {
+  border: 0;
+}
+/* line 131, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  background-color: #fefbf6;
+  padding: 0 0 20px;
+  margin: 20px 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home {
+  overflow-x: hidden;
+}
+/* line 137, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativas {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 670px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home .iniciativas {
+  overflow-x: hidden;
+}
+/* line 142, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home h1 {
+  background: transparent;
+  margin: 10px;
+}
+/* line 147, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .buscar {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -40px 1.5em 40px;
+  margin-bottom: 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home .buscar {
+  overflow-x: hidden;
+}
+/* line 152, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .buscar h1 {
+  margin: 10px 0 10px 0;
+}
+/* line 156, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home p {
+  color: #999999;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #999999;
+  margin: 10px;
+  padding: 10px 0 20px;
+}
+/* line 163, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home .iniciativa {
+  overflow-x: hidden;
+}
+/* line 166, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa .iniciativa_icon {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 70px;
+  margin-left: 20px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home .iniciativa .iniciativa_icon {
+  overflow-x: hidden;
+}
+/* line 170, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa .iniciativa_icon img {
+  margin: 0 auto;
+}
+/* line 175, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa .iniciativa_info {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 220px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home .iniciativa .iniciativa_info {
+  overflow-x: hidden;
+}
+/* line 180, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa p {
+  color: #606060;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  margin: 0 0 10px 20px;
+}
+/* line 184, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa p.info {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 189, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa p.info span {
+  color: #a89eab;
+}
+/* line 192, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa p.info span.presented_by {
+  color: #242424;
+}
+/* line 196, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa p.description {
+  color: #111018;
+  border-bottom: 1px solid #999999;
+  height: 65px;
+  margin: 0 5px 5px 20px;
+  padding-bottom: 20px;
+}
+/* line 203, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa p.description a {
+  color: #512561;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px 0 0;
+}
+/* line 208, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa p.description a:hover {
+  color: #512561;
+}
+/* line 215, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.info {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  font-size: 11px;
+  width: 185px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home .iniciativa ul.info {
+  overflow-x: hidden;
+}
+/* line 220, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.info li {
+  color: #a89eab;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #999999;
+  padding: 11.5px 0;
+}
+/* line 225, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.info li span {
+  color: #232222;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: capitalize;
+  display: block;
+}
+/* line 232, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  text-align: right;
+  width: 115px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home .iniciativa ul.colores {
+  overflow-x: hidden;
+}
+/* line 237, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li {
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding: 0 5px 0 0;
+}
+/* line 242, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li a {
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 246, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li.comenta {
+  background: url("/assets/front/comenta-bg.png") no-repeat scroll 3px 10px #512561;
+  height: 35px;
+  margin-left: 20px;
+  padding-top: 5px;
+}
+/* line 253, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li.ver_iniciativa {
+  background-color: #e2a04a;
+  height: 35px;
+  margin-left: 20px;
+  padding-top: 5px;
+}
+/* line 260, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li.votos {
+  background-color: #f6e294;
+  height: 75px;
+  margin-left: 20px;
+}
+/* line 265, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li.votos span {
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 0 -10px;
+}
+/* line 272, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li.comentarios {
+  background-color: #a6cdd1;
+  height: 20px;
+  margin-left: 20px;
+  padding: 10px 5px 0 0;
+}
+/* line 278, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .iniciativa ul.colores li.comentarios span {
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 288, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .no-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 290, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home .margin-left-30 {
+  margin-left: 30px;
+}
+/* line 294, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home form {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 350px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home form {
+  overflow-x: hidden;
+}
+/* line 297, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home form input, html.home article#home form select {
+  color: #616161;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-color: #f0f0ea;
+  border: 0;
+  height: 35px;
+  margin: 8px 0;
+  padding-top: 8px;
+  width: 210px;
+}
+/* line 308, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home form .button {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  background-color: #512561;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  height: 35px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home article#home form .button {
+  overflow-x: hidden;
+}
+/* line 319, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home article#home h2 {
+  margin: 17px 10px 10px;
+}
+/* line 325, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .main-banner {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  background-color: white;
+  margin: 20px 0 20px 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.home .main-banner {
+  overflow-x: hidden;
+}
+/* line 330, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/home.css.scss */
+html.home .main-banner img {
+  margin-left: 15px;
+}
+
+/* line 8, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende .tabs, html.abc_legislativo .tabs, html.proceso_legislativo .tabs, html.funciona_congreso .tabs {
+  padding: 0 10px;
+  width: 97%;
+}
+/* line 13, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende article, html.abc_legislativo article, html.proceso_legislativo article, html.funciona_congreso article {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  background-color: #fefbf6;
+  padding-bottom: 15px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.entiende article, * html html.abc_legislativo article, * html html.proceso_legislativo article, * html html.funciona_congreso article {
+  overflow-x: hidden;
+}
+/* line 18, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende article iframe, html.abc_legislativo article iframe, html.proceso_legislativo article iframe, html.funciona_congreso article iframe {
+  margin: 10px 92px;
+}
+/* line 22, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende article .descripcion, html.abc_legislativo article .descripcion, html.proceso_legislativo article .descripcion, html.funciona_congreso article .descripcion {
+  color: black;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 10px;
+}
+/* line 28, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende aside, html.abc_legislativo aside, html.proceso_legislativo aside, html.funciona_congreso aside {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  background: url("/assets/front/h1-bg.png") repeat-x top, url("/assets/front/h1-bg.png") repeat-x bottom;
+  background-color: transparent;
+  padding: 12px 0;
+  margin: 0 0 20px;
+  min-height: 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.entiende aside, * html html.abc_legislativo aside, * html html.proceso_legislativo aside, * html html.funciona_congreso aside {
+  overflow-x: hidden;
+}
+/* line 36, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende aside ul, html.abc_legislativo aside ul, html.proceso_legislativo aside ul, html.funciona_congreso aside ul {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  border-top: 1px solid #d6d1c5;
+  border-bottom: 1px solid #d6d1c5;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.entiende aside ul, * html html.abc_legislativo aside ul, * html html.proceso_legislativo aside ul, * html html.funciona_congreso aside ul {
+  overflow-x: hidden;
+}
+/* line 41, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende aside ul li, html.abc_legislativo aside ul li, html.proceso_legislativo aside ul li, html.funciona_congreso aside ul li {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  height: 230px;
+  padding: 15px 20px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.entiende aside ul li, * html html.abc_legislativo aside ul li, * html html.proceso_legislativo aside ul li, * html html.funciona_congreso aside ul li {
+  overflow-x: hidden;
+}
+/* line 46, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende aside ul li h4, html.abc_legislativo aside ul li h4, html.proceso_legislativo aside ul li h4, html.funciona_congreso aside ul li h4 {
+  color: black;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+/* line 51, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende aside ul li.selected, html.abc_legislativo aside ul li.selected, html.proceso_legislativo aside ul li.selected, html.funciona_congreso aside ul li.selected {
+  background-color: white;
+}
+/* line 55, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende aside ul li:last-child, html.abc_legislativo aside ul li:last-child, html.proceso_legislativo aside ul li:last-child, html.funciona_congreso aside ul li:last-child {
+  margin-right: 0;
+}
+/* line 64, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende ul.tabs li a, html.abc_legislativo ul.tabs li a, html.proceso_legislativo ul.tabs li a, html.funciona_congreso ul.tabs li a {
+  text-transform: capitalize;
+}
+/* line 71, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende .comisiones, html.entiende .trabajo_legislativo, html.entiende .poder_legislativo, html.abc_legislativo .comisiones, html.abc_legislativo .trabajo_legislativo, html.abc_legislativo .poder_legislativo, html.proceso_legislativo .comisiones, html.proceso_legislativo .trabajo_legislativo, html.proceso_legislativo .poder_legislativo, html.funciona_congreso .comisiones, html.funciona_congreso .trabajo_legislativo, html.funciona_congreso .poder_legislativo {
+  width: 780px;
+  padding: 10px;
+  margin: 10px 92px;
+}
+/* line 76, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende .comisiones p, html.entiende .trabajo_legislativo p, html.entiende .poder_legislativo p, html.abc_legislativo .comisiones p, html.abc_legislativo .trabajo_legislativo p, html.abc_legislativo .poder_legislativo p, html.proceso_legislativo .comisiones p, html.proceso_legislativo .trabajo_legislativo p, html.proceso_legislativo .poder_legislativo p, html.funciona_congreso .comisiones p, html.funciona_congreso .trabajo_legislativo p, html.funciona_congreso .poder_legislativo p {
+  margin: 10px 0;
+}
+/* line 81, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+html.entiende .comisiones, html.entiende .trabajo_legislativo, html.abc_legislativo .comisiones, html.abc_legislativo .trabajo_legislativo, html.proceso_legislativo .comisiones, html.proceso_legislativo .trabajo_legislativo, html.funciona_congreso .comisiones, html.funciona_congreso .trabajo_legislativo {
+  display: none;
+}
+
+/* line 89, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+#entiende-horizontal .comisiones, #entiende-horizontal .trabajo_legislativo, #entiende-horizontal .poder_legislativo {
+  padding: 10px;
+}
+/* line 93, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/entiende.css.scss */
+#entiende-horizontal .comisiones, #entiende-horizontal .trabajo_legislativo {
+  display: none;
+}
+
+/* line 8, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .comenta-content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -40px 1.5em 40px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.comenta .comenta-content {
+  overflow-x: hidden;
+}
+/* line 10, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .representative {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px 10px 20px 30px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.comenta .representative {
+  overflow-x: hidden;
+}
+/* line 16, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .representative .header {
+  color: #a89eab;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  background: url("/assets/front/comentario.png") no-repeat 0 0;
+  height: 20px;
+  padding: 3px 0 0 30px;
+}
+/* line 22, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .representative .header.comenta {
+  background: url("/assets/front/mensaje.png") no-repeat 0 0;
+}
+/* line 25, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .representative .header span.author {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 26, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .representative .header span.representante {
+  color: #512561;
+  text-transform: uppercase;
+}
+/* line 30, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .representative p {
+  color: #512561;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  border-bottom: 1px solid #512561;
+  padding: 10px 0;
+}
+/* line 37, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  background: url("/assets/front/h1-bg.png") repeat-x 0 top, url("/assets/front/h1-bg.png") repeat-x 0 bottom;
+  background-color: transparent;
+  margin: 10px 0;
+  width: 670px;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.comenta .initiative {
+  overflow-x: hidden;
+}
+/* line 44, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content {
+  color: #a89eab;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  border-top: 1px solid #d6d1c5;
+  border-bottom: 1px solid #d6d1c5;
+  margin: 13px 0;
+  padding: 10px 10px 10px 30px;
+}
+/* line 51, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content .header {
+  color: #a89eab;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  background: url("/assets/front/mensaje.png") no-repeat 0 0;
+  height: 20px;
+  padding: 4px 0 0 30px;
+}
+/* line 58, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content .header span.author {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 59, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content .header span.representante {
+  color: #512561;
+  text-transform: uppercase;
+}
+/* line 63, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content .representante_foto {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+  margin: 10px 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.comenta .initiative .content .representante_foto {
+  overflow-x: hidden;
+}
+/* line 64, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content .iniciativa_resumen {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 550px;
+  color: #999999;
+  margin: 10px 0;
+}
+/* line 147, /Users/jparbros/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.alpha.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html html.comenta .initiative .content .iniciativa_resumen {
+  overflow-x: hidden;
+}
+/* line 69, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content .iniciativa_resumen span {
+  color: #512561;
+  display: block;
+  text-transform: uppercase;
+}
+/* line 76, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta .initiative .content p {
+  color: #512561;
+  font-family: Arial, san-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 10px 0;
+}
+/* line 83, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta article {
+  margin-left: 0;
+  padding: 0 10px 15px 30px;
+}
+/* line 88, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta article .form-inputs {
+  display: inline;
+  float: left;
+  width: 400px;
+}
+/* line 94, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta article p {
+  margin-bottom: 10px;
+}
+/* line 98, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta article textarea {
+  height: 150px;
+  margin: 10px 0 0;
+}
+/* line 103, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta article .submit {
+  color: white;
+  font-size: 24px;
+  height: 40px;
+  margin: 80px 0 0 15px;
+}
+/* line 111, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta aside {
+  background: url("/assets/front/tweet-bird.png") no-repeat 181px 19px, url("/assets/front/h1-bg.png") repeat-x 0 top, url("/assets/front/h1-bg.png") repeat-x 0 bottom;
+  background-color: transparent;
+  min-height: 200px;
+}
+/* line 116, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta aside h2 {
+  margin: 20px 0 10px 0;
+}
+/* line 117, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta aside .content {
+  border-top: 1px solid #d6d1c5;
+  border-bottom: 1px solid #d6d1c5;
+  margin: 13px 0 3px;
+}
+/* line 123, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta aside .tweet {
+  margin: 0;
+  width: 230px;
+}
+/* line 129, /Users/jparbros/repositories/curul/app/assets/stylesheets/front/comenta.css.scss */
+html.comenta aside .tweet ul li:last-child {
+  border: 0;
+}
+
+/* line 22, /Users/jparbros/repositories/curul/app/assets/stylesheets/front.css.scss */
+a {
+  text-decoration: none;
+}

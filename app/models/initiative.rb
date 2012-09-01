@@ -12,6 +12,7 @@ class Initiative < ActiveRecord::Base
   has_and_belongs_to_many :topics
   belongs_to :representative
   belongs_to :political_party
+  belongs_to :legislature
 
   #
   # Nested Attributes
@@ -28,6 +29,7 @@ class Initiative < ActiveRecord::Base
   # Scope
   #
   scope :main, where(:main => true)
+  scope :actual_legislature, where(:legislature_id => Legislature.active.id)
 
   #
   # Pagination

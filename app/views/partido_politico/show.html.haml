@@ -11,7 +11,7 @@
       %span
         = @political_party.name
     .congresistas
-      - @political_party.representatives.each do |representante|
+      - @political_party.representatives.actual_legislature.each do |representante|
         .congresista
           %ul
             %li= image_tag(representante.photo(:thumb))
@@ -28,5 +28,5 @@
               =representante.phone
               %span twitter
               =representante.twitter
-              
-              
+
+

@@ -77,10 +77,10 @@ window.GoogleMaps = {
     ]
   },
 
-  colors: ['#80adcc','#99cccc','#b7e1e1','#d6d1c5','#512561','#f6e294','#a6cdd1','#a89eab',
-           '#ffcc33','#efeae4','#e2a04a','#9cbc5b','#d8e4be','#e18383','#80adcc','#99cccc',
-           '#b7e1e1','#d6d1c5','#512561','#f6e294','#a6cdd1','#a89eab','#ffcc33','#efeae4',
-           '#e2a04a','#9cbc5b','#d8e4be','#e18383','#80adcc','#99cccc','#b7e1e1','#d6d1c5']
+  colors: ['#d8e4be','#d6d1c5','#b7e1e1','#2a04a','#512561','#f6e294','#a6cdd1','#a89eab',
+           '#ffcc33','#80adcc','#e2a04a','#9cbc5b','#ed6d1c5','#e18383','#ffcc33','#99cccc',
+           '#b7e1e1','#99cccc','#512561','#f6e294','#d8e4be','#a89eab','#80adcc','#efeae4',
+           '#9cbc5b','#b7e1e1','#efeae4','#e18383','#a6cdd1','#80adcc','#99cccc','#d6d1c5']
 
   myLatlng: ->
     new google.maps.LatLng(@center[1], @center[0])

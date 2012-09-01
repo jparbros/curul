@@ -6,6 +6,7 @@ class Representative < ActiveRecord::Base
   belongs_to :region
   belongs_to :province
   belongs_to :political_party
+  belongs_to :legislature
   has_and_belongs_to_many :commissions
   has_many :initiatives
   has_many :comments, :as => :commentable, :dependent => :destroy
@@ -27,6 +28,7 @@ class Representative < ActiveRecord::Base
   scope :by_commission, lambda {|commission_id| joins(:commissions).where('commissions_representatives.commission_id = ?', commission_id)}
   scope :most_commented, order('comments_count DESC')
   scope :political_parties, where('political_party_id NOT IN (8,9)')
+  scope :actual_legislature, where(:legislature_id => Legislature.active.id)
 
   #
   # Delegates
@@ -38,7 +40,7 @@ class Representative < ActiveRecord::Base
   end
 
   def photo(size = nil)
-    return self.avatar.url(size) unless self.avatar.url.include? 'txt'
+    return self.avatar.url(size) unless self.avatar.url.nil? || self.avatar.url.include?('txt')
     unless size
       'front/missing.png'
     else
@@ -47,7 +49,7 @@ class Representative < ActiveRecord::Base
   end
 
   def as_json(options)
-    options.merge!({include: [:region, :political_party]})
+    options.merge!({include: [:region, :political_party], methods: [:photo]})
     super
   end
 end

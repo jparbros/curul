@@ -4,6 +4,7 @@ class Comment < ActiveRecord::Base
   # Associations
   #
   belongs_to :commentable, :polymorphic => true, :counter_cache => true
+  belongs_to :legislature
 
 
   #
@@ -12,6 +13,7 @@ class Comment < ActiveRecord::Base
   scope :approved, where(:approved => true)
   scope :favor, where(:tendency => 1)
   scope :against, where(:tendency => -1)
+  scope :actual_legislature, where(:legislature_id => Legislature.active.id)
 
   #
   # Validations
@@ -23,6 +25,7 @@ class Comment < ActiveRecord::Base
   # Callbacks
   #
   after_create :send_email
+  before_create :assign_legislature
 
   #
   # Pagination
@@ -44,5 +47,9 @@ class Comment < ActiveRecord::Base
 
   def replies
     Comment.where("reply_to IS NOT NULL AND reply_to = ?", id)
+  end
+
+  def assign_legislature
+    self.legislature_id = Legislature.active.id
   end
 end
