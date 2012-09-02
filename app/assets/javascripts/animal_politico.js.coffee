@@ -136,14 +136,9 @@ window.GoogleMaps = {
     $('#error-message').fadeIn('slow')
 
   loadGeo: (state)->
-    klass = @
-    $.ajax({
-        url: "/maps_coords/#{state}.js",
-        dataType: 'json',
-        success: (data)->
-          klass.setData data
-          klass.render()
-    })
+    data = window.states[state]
+    @setData data
+    @render()
 
   fitBbox: ->
     latLng1 = new google.maps.LatLng(@bbox[1], @bbox[0])
