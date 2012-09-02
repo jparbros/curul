@@ -34,6 +34,7 @@
 //= require animal_politico
 
 $(document).ready(function() {
-  GoogleMaps.initialize()
-  GoogleMaps.renderNational()
+  GoogleMaps.initialize();
+  GoogleMaps.renderNational();
+  $('#ajax-loader').ajaxStart(function() { $(this).show(); }).ajaxStop( function() { $(this).hide(); })
 });

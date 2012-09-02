@@ -23,6 +23,24 @@ body { margin: 0; padding: 0;}
     float: right;
   }
 
+  #ajax-loader {
+    background-color: white;
+    display: none;
+    height: 600px;
+    opacity: .5;
+    position: absolute;
+    width: 950px;
+    z-index: 1200;
+
+    img {
+      left: 50%;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      z-index: 1250;
+    }
+  }
+
   #how-do {
     background-color: #512561;
     -webkit-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
@@ -140,6 +158,9 @@ body { margin: 0; padding: 0;}
   }
 
   #error-message {
+    background-image: url('/assets/front/error.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
     background-color: #F2DEDE;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -169,8 +190,8 @@ body { margin: 0; padding: 0;}
 
     #content {
       float: left;
-      margin: 15px 0 15px 15px;
-      width: 90%;
+      margin: 15px 0 15px 30px;
+      width: 85%;
     }
   }
 

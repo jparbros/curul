@@ -158,6 +158,9 @@ window.GoogleMaps = {
             _.each(data, (rep) ->
               klass.renderRep rep
             )
+        error: ->
+            klass.renderError('Ocurrió un error al buscar el diputado.')
+
     })
 
   polygonzo: ->
