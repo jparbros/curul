@@ -26,6 +26,7 @@ gem 'ruby-gmail', :require => 'gmail'
 gem 'mail'
 gem 'typhoeus'
 gem "recaptcha", :require => "recaptcha/rails"
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
@@ -44,5 +45,4 @@ group :development do
   gem 'taps'
   gem 'net-ssh','2.2.2'
   gem 'sequel'
-  gem 'newrelic_rpm'
 end
