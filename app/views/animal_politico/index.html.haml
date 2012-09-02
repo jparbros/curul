@@ -17,6 +17,12 @@
       #back-link
         = link_to '<< Regresar', '#'
       #show-profile
+      #how-do
+        %span#how-national
+          Selecciona el estado que quieras consultar.
+        %br
+        %span#how-state
+          Y después selecciona un distrito para ver su diputado.
       #error-message
         #content
         #close
@@ -27,68 +33,104 @@
   = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js'
   = javascript_include_tag 'polygonzo','bootstrap-twipsy','bootstrap-alert','bootstrap-popover'
   = javascript_include_tag '//maps.google.com/maps/api/js?sensor=true&key=AIzaSyBJAXhLpxM-_qcJVWzVL03m-Y1b2b8Hpps'
+  %script
+    if(_.isUndefined(window.states))
+    window.states = {};
 
-  = javascript_include_tag 'animal_politico'
+  = javascript_include_tag 'widget','animal_politico'
 
-<script type="text/html" id="representative-template">
-<h2><%= name %></h2>
-<div id="close"><a href="#">x</a></div>
-<div class="left-column">
-<img src="assets/<%= photo %>">
-<p class="location">
-representante de <%= region.name %>
-</p>
-<p>
-<span>partido politico</span>
-<img  src="<%= political_party.logo.thumb.url %>"><%= political_party.name %>
-</p>
+  <script type="text/html" id="representative-template">
+  <h2><%= name %></h2>
+  <div id="close"><a href="#">x</a></div>
+  <div class="left-column">
+  <img src="assets/<%= photo %>">
+  <p class="location">
+  representante de <%= region.name %>
+  </p>
+  <p>
+  <span>partido politico</span>
+  <img  src="<%= political_party.logo.thumb.url %>"><%= political_party.name %>
+  </p>
 
-</div>
-<div class="right-column">
-<div class='container'>
-<div class='left'>
-<p>
-<span>distrito</span>
-<%= district %>
-</p>
-</div>
-<div class='left'>
-<p>
-<span>circunscripción</span>
-<%= circumscription %>
-</p>
-</div>
-</div>
-<p>
-<span>email</span>
-<%= email %>
-</p>
-<p>
-<span>telefono</span>
-<%= phone %>
-</p>
-<p>
-<span>twitter</span>
-<%= twitter %>
-</p>
-<p>
-<span>suplente</span>
-<%= substitute %>
-</p>
-<p>
-<span>fecha de nacimiento</span>
-<%= biography %>
-</p>
-<p>
-<span>comisiones</span>
-</p>
-<p>
-<span>biografia</span>
-<%= biography %>
-</p>
-</div>
+  </div>
+  <div class="right-column">
+  <div class='container'>
+  <div class='left'>
+  <p>
+  <span>distrito</span>
+  <% if(_.isNull(district)) { %>
+  El distrito no esta disponible.
+  <% } else{ %>
+  <%= district %>
+  <% } %>
+  </p>
+  </div>
+  <div class='left'>
+  <p>
+  <span>circunscripción</span>
+  <% if(_.isNull(circumscription)) { %>
+  La circunscripción no esta disponible.
+  <% } else{ %>
+  <%= circumscription %>
+  <% } %>
+  </p>
+  </div>
+  </div>
+  <p>
+  <span>email</span>
+  <% if(_.isNull(email)) {%>
+  El email no esta disponible.
+  <% } else { %>
+  <%= email %>
+  <% } %>
+  </p>
+  <p>
+  <span>telefono</span>
+  <% if(_.isNull(phone) || phone == ' EXT. ') {%>
+  El telefono no esta disponible.
+  <% } else { %>
+  <%= phone %>
+  <% } %>
+  </p>
+  <p>
+  <span>twitter</span>
+  <% if(_.isNull(twitter)) {%>
+  La cuenta de twitter no esta disponible.
+  <% } else { %>
+  <a href="http://www.twitter.com/<%= twitter %>" target="_blank"><%= twitter %></a>
+  <% } %>
+  </p>
+  <p>
+  <span>suplente</span>
+  <% if(_.isNull(substitute) || (substitute == " ")) {%>
+  No se encontro al suplente.
+  <% } else { %>
+  <%= substitute %>
+  <% } %>
+  </p>
+  <p>
+  <span>fecha de nacimiento</span>
+  <% if(_.isNull(birthday)) { %>
+  La fecha de nacimineto no esta disponible.
+  <% } else { %>
+  <%= birthday %>
+  <% } %>
+  </p>
+  <p>
+  <span>comisiones</span>
+  No hay comisiones disponibles.
+  </p>
+  <p>
+  <span>biografia</span>
+  <% if(_.isNull(biography)) { %>
+  La biografia no esta disponible.
+  <% } else { %>
+  <%= biography %>
+  <% } %>
+  </p>
+  </div>
 
-</script>
+  </script>
 
 %script
   GoogleMaps.initialize()

@@ -23,6 +23,26 @@ body { margin: 0; padding: 0;}
     float: right;
   }
 
+  #how-do {
+    background-color: #512561;
+    -webkit-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+
+    &.national span#how-national { font-weight: bold; font-size: 20px;}
+    &.state span#how-state { font-weight: bold; font-size: 20px;}
+  }
+
   #logo-curul {
     background-color: white;
     border: 1px solid #888;

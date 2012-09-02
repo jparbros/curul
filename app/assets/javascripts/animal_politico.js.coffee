@@ -3,6 +3,7 @@ window.GoogleMaps = {
     @map = new google.maps.Map(document.getElementById('map_canvas'))
     @widget = $('#widget')
     @repTemplate = $('#representative-template')
+    @howdo = $('#how-do')
     klass = @
     $('#back-link a').click( (event) ->
       event.preventDefault()
@@ -88,10 +89,12 @@ window.GoogleMaps = {
   renderNational: ->
     $('#back-link, #state-name').hide()
     @loadGeo('nacional')
+    @howdo.removeClass('state').addClass('national')
 
   renderState: (state)->
     $('#back-link, #state-name').show()
     @loadGeo(state)
+    @howdo.removeClass('national').addClass('state')
 
   setOptions: ->
     # @map.setCenter(@myLatlng())
@@ -107,7 +110,6 @@ window.GoogleMaps = {
       feature.strokeWidth = 1;
       feature.distric = klass.district
       feature.distric_id = feature.id if klass.district
-      console.log(feature.name)
     )
 
   setData: (data) ->
@@ -124,9 +126,7 @@ window.GoogleMaps = {
     @polygonzo()
 
   renderRep: (rep) ->
-    console.log(@repTemplate)
     templateHtml = @repTemplate.html()
-    console.log(templateHtml)
     template = _.template(templateHtml)
     html = template(rep)
     $('#show-profile').html(html).show()
