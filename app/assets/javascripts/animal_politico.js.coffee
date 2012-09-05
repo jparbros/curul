@@ -5,6 +5,13 @@ window.GoogleMaps = {
     @repTemplate = $('#representative-template')
     @howdo = $('#how-do')
     klass = @
+    @startMessage = $('#start-message')
+    @startMessage.fadeIn(700)
+    @startMessage.find('#close a').live('click', (event) ->
+      event.preventDefault()
+      klass.startMessage.fadeOut(700)
+      klass.howdo.fadeIn(300)
+    )
     $('#back-link a').click( (event) ->
       event.preventDefault()
       klass.renderNational()
@@ -12,22 +19,20 @@ window.GoogleMaps = {
     $('#show-profile #close').live('click', (event) ->
       event.preventDefault();
       $('#show-profile').fadeOut('slow').html('');
+      $('#back-link').show()
     )
     $('#error-message #close').live('click', (event) ->
       event.preventDefault();
       $('#error-message').fadeOut('slow').find('#content').html('');
     )
 
-  fullScreen: ->
-    @widget.removeClass('mix')
-
-  mixScreen: ->
-    @widget.addClass('mix')
-
   defaults: {
     zoom: 5,
     panControl: false,
-    zoomControl: false,
+    zoomControl: true,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.SMALL
+    }
     scaleControl: false,
     mapTypeControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -97,7 +102,7 @@ window.GoogleMaps = {
     @howdo.removeClass('national').addClass('state')
 
   setOptions: ->
-    # @map.setCenter(@myLatlng())
+    @map.setCenter(@myLatlng())
     @map.setOptions(@defaults)
 
   paintChildren: ->
@@ -121,7 +126,9 @@ window.GoogleMaps = {
 
   render: ->
     @fitBbox()
-    @gonzo.setMap(null) if @gonzo
+    if @gonzo
+      @gonzo.setMap(null)
+      delete @gonzo
     @paintChildren()
     @polygonzo()
 
@@ -129,6 +136,7 @@ window.GoogleMaps = {
     templateHtml = @repTemplate.html()
     template = _.template(templateHtml)
     html = template(rep)
+    $('#back-link').hide()
     $('#show-profile').html(html).show()
 
   renderError: (errorMessage) ->
@@ -163,6 +171,11 @@ window.GoogleMaps = {
 
     })
 
+  pausecomp: (millis) ->
+    date = new Date();
+    curDate = null;
+    curDate = new Date() while(curDate-date < millis);
+
   polygonzo: ->
     klass = @
     @gonzo = new PolyGonzo.PgOverlay({map: @map, geo: @geo, events: {
@@ -171,6 +184,16 @@ window.GoogleMaps = {
                                               return if( feature == mouseFeature )
                                               mouseFeature = feature;
                                               klass.map.setOptions({ draggableCursor: if feature then 'pointer' else null });
+                                              # if where == null
+                                              #   $('#popup').hide()
+                                              # else
+                                              #   $('#popup-content').html(where.feature.name)
+                                              #   $('#popup').show()
+                                              #   top = event.clientY - parseInt($('#popup').css('height')) - 10
+                                              #   left = event.clientX - parseInt($('#popup').css('height'))
+                                              #   $('#popup').css('top', top)
+                                              #   $('#popup').css('left', left)
+                                              
 
                                             click: (event, where) ->
                                               name = where.feature.name.toLowerCase()

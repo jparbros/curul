@@ -8,7 +8,8 @@
   %body
     #widget
       #map_canvas
-      = image_tag('front/logo.png', id: 'logo-curul')
+      %a{href: 'http://www.curul501.org', id: 'logo-curul', target: '_blank'}
+        = image_tag('front/logo.png')
       #popup
         #popup-content
           Texto de prueba
@@ -28,6 +29,14 @@
         #close
           %a{href: '#'}
             x
+      #start-message
+        #close
+          %a{href: '#'}
+            x
+        Con este mapa podrás encontrar fácilmente quién es el o la representante de tu distrito electoral. Busca a tu diputada/o y entra a 
+        %a{href: 'http://www.curul501.org', target: '_blank'}
+          curul501.org
+        para enviarle comentarios y preguntas sobre su trabajo en la Cámara de Diputados y para avisarle de las necesidades que hay en el lugar en donde vives.
       #ajax-loader
         = image_tag 'front/ajax-loader.gif', class: ''
 
@@ -130,6 +139,9 @@
   <% } else { %>
   <%= biography %>
   <% } %>
+  </p>
+  <p>
+  <a href="http://www.curul501.org/congresistas/<%= id %>" target="_blank">Ver perfil en Curul 501 >></a>
   </p>
   </div>
 

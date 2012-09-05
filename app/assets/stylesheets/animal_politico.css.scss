@@ -40,6 +40,39 @@ body { margin: 0; padding: 0;}
       z-index: 1250;
     }
   }
+  
+  #start-message {
+    font-size: 28px;
+    background-color: white;
+    display: none;
+    width: 550px;
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    color: #512561;
+    padding: 100px;
+    -webkit-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    box-shadow: 3px 1px 3px rgba(50, 50, 50, 0.5);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+    #close {
+      float: right;
+      margin-top: -50px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      border: 1px solid #512561;
+      padding: 0px 10px;
+      margin-right: -50px;
+      
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
 
   #how-do {
     background-color: #512561;
@@ -49,6 +82,7 @@ body { margin: 0; padding: 0;}
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    display: none;
     color: white;
     font-size: 16px;
     width: 300px;
@@ -86,7 +120,7 @@ body { margin: 0; padding: 0;}
     color: #512561;
     display: none;
     font-size: 22px;
-    left: 10px;
+    left: 35px;
     padding: 5px 10px;
     position: absolute;
     text-transform: capitalize;
