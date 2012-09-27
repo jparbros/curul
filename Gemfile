@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.3'
+gem 'rails', '3.2.6'
 
 gem "airbrake"
 gem 'bitly'
@@ -20,7 +20,6 @@ gem 'resque'
 gem 'resque-scheduler', require: 'resque_scheduler'
 gem 'state_machine'
 gem 'twitter_oauth'
-gem 'unicorn'
 gem 'mime'
 gem 'ruby-gmail', :require => 'gmail'
 gem 'mail'
@@ -29,20 +28,21 @@ gem "recaptcha", :require => "recaptcha/rails"
 gem 'newrelic_rpm'
 
 group :assets do
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'compass', '~> 0.12.alpha'
-  gem 'sass-rails',   '~> 3.1.4'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'bootstrap-sass'
+  gem 'sass-rails'
+  gem 'sass', '3.1.20'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'
 
 group :development do
   gem 'annotate'
-  gem 'ruby-debug19'
-  gem 'vagrant','0.9.3'
   gem 'heroku'
   gem 'taps'
-  gem 'net-ssh','2.2.2'
-  gem 'sequel'
+end
+
+group :production do
+  gem 'unicorn'
 end

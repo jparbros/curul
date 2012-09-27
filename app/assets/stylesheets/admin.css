@@ -3,10 +3,10 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
+ *= require twitter-bootstrap
  *= require token-input-facebook
+ *= require admin/imperio
  *= require_tree ./admin
 */
-
-body > .container, .container-fluid { padding-top: 50px !important}
 
 .bottom-margin-20 { margin-bottom: 20px;}

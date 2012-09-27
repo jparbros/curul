@@ -6,8 +6,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-alert
 //= require jquery.tokeninput
+//= require bootstrap
 //= require_tree ./admin
 
 $(document).ready(function(){
