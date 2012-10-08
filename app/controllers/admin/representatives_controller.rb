@@ -41,7 +41,10 @@ class Admin::RepresentativesController < Admin::BaseController
   def update
     @representative = Representative.find(params[:id])
     if @representative.update_attributes(params[:representative])
-      redirect_to admin_representatives_url, :notice => "Representante editado exitosamente"
+      respond_to do |format|
+        format.html { redirect_to(admin_representatives_url, :notice => "Representante editado exitosamente") }
+        format.json { render json: @representative}
+      end
     else
       render :edit
     end
@@ -51,14 +54,6 @@ class Admin::RepresentativesController < Admin::BaseController
     @representative = Representative.find(params[:id])
     @representative.destroy
     redirect_to admin_representatives_url, :notice => "Representante eliminado exitosamente"
-  end
-
-  def bulk
-    @representatives = if params[:search]
-      RepresentativeSearch.new(params[:search], 'none').representatives
-    else
-      Representative.all
-    end
   end
 
   def bulk_update

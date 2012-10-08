@@ -1,0 +1,44 @@
+!!! 5
+%html
+  %head
+    %title
+      Administracion
+    = stylesheet_link_tag    "admin", :media => "all"
+    = javascript_include_tag "admin"
+    = csrf_meta_tags
+    = yield(:header)
+    
+  %body
+    #loader
+      = image_tag '/assets/admin/ajax-loader.gif'
+    .container-fluid.nopadding
+      .row-fluid
+        .span12
+          #header
+            %a
+              PP Peru
+            .hright
+              .column#userinfo
+                %a{class: 'userinfo dropown-toggle', 'data-toggle' => 'dropdown'}
+                  %span
+                    %strong
+                      Admin
+                %ul.dropdown-menu
+                  %li
+                    %a
+                      Edit Profile
+                  %li.divider
+                  %li=# link_for_user_login_or_logout
+
+    .container-fluid#container
+      .row-fluid
+        #content.span12
+          - flash.each do |name, msg|
+            %div{:class =>"alert alert-#{name == :notice ? 'success' : 'error'}"}
+              %a{:class => 'close', 'data-dismiss' => 'alert'}x
+              = msg
+
+          = yield
+
+%script{type: 'text/javascript'}
+  = yield(:javascript)

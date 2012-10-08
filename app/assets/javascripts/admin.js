@@ -6,8 +6,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-alert
 //= require jquery.tokeninput
 //= require bootstrap
+//= require jquery-ui.custom
+//= require underscore
 //= require_tree ./admin
 
 $(document).ready(function(){
@@ -38,4 +41,6 @@ $(document).ready(function(){
       prePopulate: $("#initiative_commission_tokens").data("pre"),
       crossDomain: false
   });
+  
+  $('#loader').ajaxStart(function() { $(this).show(); }).ajaxStop( function() { $(this).hide(); })
 });

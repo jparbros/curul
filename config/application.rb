@@ -35,7 +35,7 @@ module Congresspedia
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = 'es-MX'
     
-    config.assets.precompile += ['admin.js', 'admin.css', 'front.css','admin.css']
+    config.assets.precompile += ['admin.js', 'admin.css', 'front.css']
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

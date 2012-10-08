@@ -1,4 +1,6 @@
 Congresspedia::Application.routes.draw do
+  devise_for :admins
+
   devise_for :admins, :controllers => { :sessions => "admin/sessions" }
 
   namespace :admin do
@@ -7,8 +9,8 @@ Congresspedia::Application.routes.draw do
     end
     resources :topics
     resources :political_parties
-    match "representatives/bulk", :to => "representatives#bulk"
-    match "representatives/bulk_update", :to => "representatives#bulk_update", :via => :post
+    match "representatives/bulk_update", :to => "bulk_update_representatives#edit"
+    match "representatives/bulk_update", :to => "bulk_update_representatives#update", :via => :post
     resources :representatives
     resources :commissions
     resources :admins

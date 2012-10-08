@@ -7,11 +7,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.tweet
-//= require bootstrap-twipsy
-//= require bootstrap-modal
-//= require bootstrap-popover
-//= require jquery.jcarousel.min
-//= require jquery.trimtext
 //= require entiende
 
 

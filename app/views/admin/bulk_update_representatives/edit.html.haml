@@ -1,0 +1,268 @@
+#data-filter.row-fluid
+  .span12.well
+    %h4 Filtros
+    .row-fluid
+      .span3
+        %label
+          Nombre
+        %input#representative-search{type: 'text', name:'name', 'data-field' => 'name'}
+      .span3
+        %label
+          Substituto
+        %input#substitute-search{type: 'text', name:'substitute', 'data-field' => 'substitute'}
+      .span3
+        %label
+          Distrito
+        %input#district-search{type: 'text', name:'district', 'data-field' => 'district'}
+      .span3
+        %label
+          Circunscripcion
+        %input#circumscription-search{type: 'text', name:'circumscription', 'data-field' => 'circumscription'}
+    .row-fluid
+      .span3
+        %label
+          Estado
+        = select_tag :region_id, options_for_select(Region.all.collect {|region| [region.name, region.id]}), {include_blank: true, 'data-field' => 'region_id'}
+      .span3
+        %label
+          Partido Politico
+        = select_tag :political_party_id, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), {include_blank: true, 'data-field' => 'political_party_id'}
+      .span3
+        %label
+          Twitter
+        %input#twitter-search{type: 'text', name:'twitter', 'data-field' => 'twitter'}
+      .span3
+        %label
+          Facebook
+        %input#facebook-search{type: 'text', name:'facebook', 'data-field' => 'facebook'}
+
+#myGrid
+
+- content_for :header do
+  = stylesheet_link_tag 'slickgrid/slick.grid', 'jquery-ui.custom'
+  :css
+    .ui-datepicker-trigger {
+      margin: 0;
+    }
+    
+    .slick-cell.editable .editor-text {
+      width: 100%;
+      height: 100%;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+
+  = javascript_include_tag 'jquery.event.drag','slickgrid/slick.core','slickgrid/slick.grid','slickgrid/slick.editors.js','slickgrid/slick.dataview.js','admin/editors.js'
+
+- content_for :javascript do
+  var grid;
+  columns = [
+  {id: "name", name: "Nombre", field: "name", editor: Slick.Editors.Text, sortable: true},
+  {id: "district", name: "Distrito", field: "district", editor: Slick.Editors.Text, sortable: true},
+  {id: "circumscription", name: "Circunscripcion", field: "circumscription", editor: Slick.Editors.Text, sortable: true},
+  {id: "region_id", name: "Estado", field: "region_id", editor: Curul.Editors.SelectStates, formatter: StateFormatter, sortable: true},
+  {id: "political_party_id", name: "Partido Politico", field: "political_party_id", editor: Curul.Editors.SelectPoliticalParty, formatter: PoliticalPartyFormatter, sortable: true},
+  {id: "email", name: "Email", field: "email", editor: Slick.Editors.Text},
+  {id: "phone", name: "Telefono", field: "phone", editor: Slick.Editors.Text},
+  {id: "substitute", name: "Substituto", field: "substitute", editor: Slick.Editors.Text, sortable: true},
+  {id: "election_type", name: "Tipo de eleccion", field: "election_type", editor: Curul.Editors.SelectElectionType, sortable: true},
+  {id: "biography", name: "Biografia", field: "biography", editor: Slick.Editors.LongText},
+  {id: "birthday", name: "Fecha de nacimiento", field: "birthday", editor: Curul.Editors.Date, sortable: true},
+  {id: "twitter", name: "Twitter", field: "twitter", editor: Slick.Editors.Text, sortable: true},
+  {id: "facebook", name: "Facebook", field: "facebook", editor: Slick.Editors.Text, sortable: true},
+  ];
+  
+  var options = {
+  enableCellNavigation: true,
+  autoHeight: true,
+  forceFitColumns: true,
+  editable: true,
+  asyncEditorLoading: false,
+  multiColumnSort: true,
+  topPanelHeight: 25
+  };
+  
+  function StateFormatter(row, cell, value, columnDef, dataContext) {
+  currentState = _.find(Curul.Editors.states, function(state) {
+  return state.id == value
+  });
+  if (currentState) {
+  return currentState.name;
+  } else {
+  return ""
+  }
+  }
+  
+  function PoliticalPartyFormatter(row, cell, value, columnDef, dataContext) {
+  currentParty = _.find(Curul.Editors.political_parties, function(political_party){
+  return political_party.id == value
+  });
+  if(currentParty) {
+  return (currentParty.name || "")
+  } else {
+  return ""
+  }
+  }
+
+  Curul.Editors.states = #{Region.all.map {|state| {name: state.name, id: state.id}}.to_json.html_safe};
+  Curul.Editors.political_parties = #{PoliticalParty.all.map {|political_party| {name: political_party.name, id: political_party.id}}.to_json.html_safe};
+  var data = #{Representative.all.to_json.html_safe};
+  
+  dataView = new Slick.Data.DataView({ inlineFilters: true });
+  dataView.setItems(data);
+  grid = new Slick.Grid("#myGrid", dataView, columns, options);
+  
+  
+  
+  
+  function comparer(a, b) {
+  var x = a[sortcol], y = b[sortcol];
+  return (x == y ? 0 : (x > y ? 1 : -1));
+  }
+  
+  var sortcol = "title";
+  var sortdir = 1;
+  var percentCompleteThreshold = 0;
+  var searchObject = [];
+
+  function requiredFieldValidator(value) {
+  if (value == null || value == undefined || !value.length) {
+  return {valid: false, msg: "This is a required field"};
+  }
+  else {
+  return {valid: true, msg: null};
+  }
+  }
+
+  function myFilter(item, args) {
+  var returnResult = true;
+
+  _.each(args.searchObject, function(filter) {
+  value = "" + (item[filter.field] || "");
+  if(filter.field == 'region_id') {
+  if((value != filter.value)) {
+  
+  returnResult = false;
+  }
+  } else {
+  if((value.indexOf(filter.value) == -1)) {
+  returnResult = false;
+  }
+  }
+  });
+
+  return returnResult;
+  }
+  
+
+  
+  function toggleFilterRow() {
+  grid.setTopPanelVisibility(!grid.getOptions().showTopPanel);
+  }
+  
+  grid.onSort.subscribe(function (e, args) {
+  sortdir = args.sortCols[0].sortAsc ? 1 : -1;
+  sortcol = args.sortCols[0].sortCol.field;
+
+  if ($.browser.msie && $.browser.version <= 8) {
+  // using temporary Object.prototype.toString override
+  // more limited and does lexicographic sort only by default, but can be much faster
+
+  var percentCompleteValueFn = function () {
+  var val = this["percentComplete"];
+  if (val < 10) {
+  return "00" + val;
+  } else if (val < 100) {
+  return "0" + val;
+  } else {
+  return val;
+  }
+  };
+
+  // use numeric sort of % and lexicographic for everything else
+  dataView.fastSort((sortcol == "percentComplete") ? percentCompleteValueFn : sortcol, args.sortAsc);
+  } else {
+  // using native sort with comparer
+  // preferred method but can be very slow in IE with huge datasets
+  
+  dataView.sort(comparer, args.sortCols[0].sortAsc);
+  }
+  });
+  
+  dataView.onRowCountChanged.subscribe(function (e, args) {
+  grid.updateRowCount();
+  grid.render();
+  });
+  
+  dataView.onRowsChanged.subscribe(function (e, args) {
+  grid.invalidateRows(args.rows);
+  grid.render();
+  });
+  
+  dataView.beginUpdate();
+  dataView.setFilterArgs({
+  searchObject: searchObject
+  });
+  dataView.setFilter(myFilter);
+  dataView.endUpdate();
+  
+  $("#data-filter input").keyup(function (e) {
+  Slick.GlobalEditorLock.cancelCurrentEdit();
+
+  // clear on Esc
+  if (e.which == 27) {
+  this.value = "";
+  }
+  updateFilter();
+  });
+
+
+  $("#data-filter select").change(function() {
+  updateFilter();
+  });
+
+  function updateFilter() {
+  filters();
+  dataView.setFilterArgs({
+  searchObject: searchObject
+  });
+  dataView.refresh();
+  }
+  
+  function filters() {
+  searchObject = [];
+  _.each($('#data-filter input, #data-filter select'), function(element) {
+  if(!_.isEmpty(element.value)) {
+  filterValue = {value: element.value, field: $(element).data('field')};
+  searchObject.push(filterValue);
+  }
+  });
+  }
+  
+  
+  grid.onCellChange.subscribe(function (e,args) {
+  dataView.updateItem(args.item.id, args.item);
+  item = args.item;
+  data = {representative: {
+  name: item.name, 
+  district: item.district, 
+  circumscription: item.circumscription, 
+  region_id: item.region_id,
+  political_party_id: item.political_party_id,
+  email: item.email,
+  phone: item.phone,
+  substitute: item.substitute,
+  election_type: item.election_type,
+  biography: item.biography,
+  birthday: item.birthday,
+  twitter: item.twitter,
+  facebook: item.facebook
+  }}
+  
+  $.ajax({
+  url: '/admin/representatives/' + item.id + '.json',
+  type: 'PUT',
+  data: data
+  }); 
+  });

@@ -48,8 +48,12 @@ class Representative < ActiveRecord::Base
     end
   end
 
-  def as_json(options)
-    options.merge!({include: [:region, :political_party], methods: [:photo]}) if options
-    super(options)
+  # def as_json(options)
+  #   options.merge!({include: [:region, :political_party], methods: [:photo]}) if options
+  #   super(options)
+  # end
+  
+  def to_json_for_bulk_update
+    #.map {||}
   end
 end

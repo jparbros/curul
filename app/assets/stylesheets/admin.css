@@ -10,3 +10,21 @@
 */
 
 .bottom-margin-20 { margin-bottom: 20px;}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1010;
+  opacity: .4;
+}
+    
+#loader img {
+  position: relative;
+  top: 30%;
+  left: 35%;
+}
