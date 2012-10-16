@@ -1,4 +1,6 @@
 class Admin::PoliticalPartiesController < Admin::BaseController
+  load_and_authorize_resource
+  
   def index
     @political_parties = PoliticalParty.page(params[:page])
   end

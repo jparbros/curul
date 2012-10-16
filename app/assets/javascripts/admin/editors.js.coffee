@@ -189,4 +189,85 @@ window.Curul.Editors = {
 
     @init();
     return @
+    
+  SelectGenereType: (args) ->
+    scope = this;
+    
+    @init = ->
+      scope.input = $("<select/>").addClass('editor-text')
+      scope.input.appendTo(args.container)
+      scope.input.append($('<option/>').val('f').html('Femenino'))
+      scope.input.append($('<option/>').val('m').html('Masculino'))
+      scope.input.focus().select()
+
+    @destroy = ->
+      scope.input.remove()
+
+    @focus = ->
+      scope.input.focus();
+
+    @loadValue = (item) ->
+      scope.defaultValue = item[args.column.field];
+      scope.input.find("option[value='#{scope.defaultValue }']").attr('selected','selected')
+      
+
+    @serializeValue = ->
+      return scope.input.val();
+
+    @applyValue = (item, state) ->
+      item[args.column.field] = state;
+
+    @isValueChanged = ->
+      return (!(scope.input.val() == "" && scope.defaultValue == null)) && (scope.input.val() != scope.defaultValue);
+
+    @validate = ->
+      return {
+        valid: true,
+        msg: null
+      };
+
+    @init();
+    return @    
+
+    
+  SelectLegislature: (args) ->
+    scope = this;
+    
+    @init = ->
+      scope.input = $("<select/>").addClass('editor-text')
+      scope.input.appendTo(args.container)
+      _.each(Curul.Editors.legislatures, (legislature) ->
+        option = $('<option/>').val(legislature.id).html(legislature.name)
+        scope.input.append(option);
+      );
+      scope.input.focus().select()
+
+    @destroy = ->
+      scope.input.remove()
+
+    @focus = ->
+      scope.input.focus();
+
+    @loadValue = (item) ->
+      scope.defaultValue = item[args.column.field];
+      scope.input.find("option[value='#{scope.defaultValue }']").attr('selected','selected')
+      
+
+    @serializeValue = ->
+      return scope.input.val();
+
+    @applyValue = (item, state) ->
+      item[args.column.field] = state;
+
+    @isValueChanged = ->
+      return (!(scope.input.val() == "" && scope.defaultValue == null)) && (scope.input.val() != scope.defaultValue);
+
+    @validate = ->
+      return {
+        valid: true,
+        msg: null
+      };
+
+    @init();
+    return @
 }

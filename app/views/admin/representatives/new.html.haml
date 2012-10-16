@@ -1,9 +1,10 @@
-.page-header
-  %h2 Nuevo Representante
-= form_for [:admin, @representative], :html => {:multipart => true} do |form|
-  = render "admin/shared/error_messages", :target => @representative
-  %fieldset
-    = render :partial => 'form', :locals => {:form => form}
-    .actions
-      = form.submit 'Crear Representante', :class => 'btn primary'
-      %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}
+.box
+  .box-title
+    %h2 Nuevo Representante
+  .box-content
+    = form_for [:admin, @representative], :html => {:multipart => true, class: 'form-horizontal'} do |form|
+      = render "admin/shared/error_messages", :target => @representative
+      = render :partial => 'form', :locals => {:form => form}
+      .form-actions
+        = form.submit 'Crear Representante', :class => 'btn btn-primary'
+        %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

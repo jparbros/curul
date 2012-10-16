@@ -126,3 +126,45 @@ namespace :commission do
     
   end
 end
+
+namespace :seeds do
+  desc "Task description"
+  task :permissions => [:environment] do
+    Permission.create(subject_class: Comment.name, action: :read) unless Permission.find_by_subject_class_and_action('Comment','read')
+    Permission.create(subject_class: Comment.name, action: :manage) unless Permission.find_by_subject_class_and_action('Comment','manage')
+    Permission.create(subject_class: Comment.name, action: :destroy) unless Permission.find_by_subject_class_and_action('Comment','destroy')
+    
+    Permission.create(subject_class: Commission.name, action: :read) unless Permission.find_by_subject_class_and_action('Commission','read')
+    Permission.create(subject_class: Commission.name, action: :manage) unless Permission.find_by_subject_class_and_action('Commission','manage')
+    Permission.create(subject_class: Commission.name, action: :destroy) unless Permission.find_by_subject_class_and_action('Commission','destroy')
+    
+    Permission.create(subject_class: Initiative.name, action: :read) unless Permission.find_by_subject_class_and_action('Initiative','read')
+    Permission.create(subject_class: Initiative.name, action: :manage) unless Permission.find_by_subject_class_and_action('Initiative','manage')
+    Permission.create(subject_class: Initiative.name, action: :destroy) unless Permission.find_by_subject_class_and_action('Initiative','destroy')
+    
+    Permission.create(subject_class: Legislature.name, action: :read) unless Permission.find_by_subject_class_and_action('Legislature','read')
+    Permission.create(subject_class: Legislature.name, action: :manage) unless Permission.find_by_subject_class_and_action('Legislature','manage')
+    Permission.create(subject_class: Legislature.name, action: :destroy) unless Permission.find_by_subject_class_and_action('Legislature','destroy')
+
+    Permission.create(subject_class: PoliticalParty.name, action: :read) unless Permission.find_by_subject_class_and_action('PoliticalParty','read')
+    Permission.create(subject_class: PoliticalParty.name, action: :manage) unless Permission.find_by_subject_class_and_action('PoliticalParty','manage')
+    Permission.create(subject_class: PoliticalParty.name, action: :destroy) unless Permission.find_by_subject_class_and_action('PoliticalParty','destroy')
+
+    Permission.create(subject_class: Region.name, action: :read) unless Permission.find_by_subject_class_and_action('Region','read')
+    Permission.create(subject_class: Region.name, action: :manage) unless Permission.find_by_subject_class_and_action('Region','manage')
+    Permission.create(subject_class: Region.name, action: :destroy) unless Permission.find_by_subject_class_and_action('Region','destroy')
+
+    Permission.create(subject_class: Representative.name, action: :read) unless Permission.find_by_subject_class_and_action('Representative','read')
+    Permission.create(subject_class: Representative.name, action: :manage) unless Permission.find_by_subject_class_and_action('Representative','manage')
+    Permission.create(subject_class: Representative.name, action: :destroy) unless Permission.find_by_subject_class_and_action('Representative','destroy')
+
+    Permission.create(subject_class: Topic.name, action: :read) unless Permission.find_by_subject_class_and_action('Topic','read')
+    Permission.create(subject_class: Topic.name, action: :manage) unless Permission.find_by_subject_class_and_action('Topic','manage')
+    Permission.create(subject_class: Topic.name, action: :destroy) unless Permission.find_by_subject_class_and_action('Topic','destroy')
+    
+    Permission.create(subject_class: User.name, action: :read) unless Permission.find_by_subject_class_and_action('User','read')
+    Permission.create(subject_class: User.name, action: :manage) unless Permission.find_by_subject_class_and_action('User','manage')
+    Permission.create(subject_class: User.name, action: :destroy) unless Permission.find_by_subject_class_and_action('User','destroy')
+
+  end
+end

@@ -6,6 +6,7 @@
  *= require twitter-bootstrap
  *= require token-input-facebook
  *= require admin/imperio
+ *= require admin/datepicker
  *= require_tree ./admin
 */
 
@@ -27,4 +28,17 @@
   position: relative;
   top: 30%;
   left: 35%;
+}
+
+.tinymce {
+  height: 300px;
+  width: 500px;
+}
+
+.box-content form .token-input-list-facebook {
+  width: 215px;
+}
+
+.center {
+  text-align: center;
 }

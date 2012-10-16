@@ -1,0 +1,12 @@
+.box
+  .box-title
+    %h2 Editar Legislatura
+
+  .box-content
+    = form_for [:admin, @legislature], :html => {:multipart => true, class: 'form-horizontal'} do |form|
+      = render "admin/shared/error_messages", :target => @legislature
+      %fieldset
+        = render :partial => 'form', :locals => {:form => form}
+        .form-actions
+          = form.submit 'Editar Legislatura', :class => 'btn btn-primary'
+          %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

@@ -29,12 +29,17 @@ class Initiative < ActiveRecord::Base
   # Scope
   #
   scope :main, where(:main => true)
-  scope :actual_legislature, where(:legislature_id => Legislature.active.id)
+  scope :actual_legislature, where(:legislature_id => (Legislature.active ? Legislature.active.id : nil))
 
   #
   # Pagination
   #
-  paginates_per 5
+  # paginates_per 5
+  
+  #
+  # Extensions
+  #
+  include SolrSearch::Initiatives
 
   #
   # States
@@ -48,6 +53,11 @@ class Initiative < ActiveRecord::Base
     :rejected_by_commission => 'desechada en comision',
     :rejected_by_board => 'desechada por la mesa directiva'
   }
+
+  #
+  # Delegates
+  #
+  delegate :name, to: :representative, prefix: true, allow_nil: true
 
   #
   # States Machine

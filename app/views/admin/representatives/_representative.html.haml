@@ -1,4 +1,8 @@
 %tr
-  %td= representative.name if representative
-  %td= link_to 'Editar', edit_admin_representative_path(representative)
-  %td= link_to 'Borrar', admin_representative_path(representative), :method => :delete, :confirm => '¿Esta seguro que desea eliminar la iniciativa?'
+  %td= link_to representative.name, admin_representative_path(representative) if representative
+  %td= representative.political_party_name if representative
+  %td= representative.region_name if representative
+  %td
+    = link_to 'Edicion rapida', '#', class: 'btn btn-primary btn-mini quick-edition', 'data-representative-id' => representative.id
+    = link_to 'Editar', edit_admin_representative_path(representative), class: 'btn btn-primary btn-mini'
+    = link_to 'Borrar', admin_representative_path(representative), :method => :delete, :confirm => '¿Esta seguro que desea eliminar la iniciativa?', class: 'btn btn-danger btn-mini'

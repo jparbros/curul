@@ -5,8 +5,9 @@
       Administracion
     = stylesheet_link_tag    "admin", :media => "all"
     = javascript_include_tag "admin"
-    =# tinymce_assets
+    = tinymce_assets
     = csrf_meta_tags
+    = yield(:header)
 
   %body
     #loader
@@ -15,9 +16,16 @@
       .row-fluid
         .span12
           #header
-            %a
-              PP Peru
+            = link_to 'Congresspedia', root_path
             .hright
+              .column#search
+                .search
+                  = form_tag admin_representatives_path, method: :get do
+                    = text_field_tag 'search[name]', nil, placeholder: 'Buscar representantes'
+              .column#search
+                .search
+                  = form_tag admin_initiatives_path, method: :get do
+                    = text_field_tag 'search[keywords]', nil, placeholder: 'Buscar iniciativa'
               .column#userinfo
                 %a{class: 'userinfo dropown-toggle', 'data-toggle' => 'dropdown'}
                   %span
@@ -28,7 +36,8 @@
                     %a
                       Edit Profile
                   %li.divider
-                  %li=# link_for_user_login_or_logout
+                  %li
+                    = link_to 'Logout', destroy_user_session_path, method: :delete
 
     .container-fluid#container
       .row-fluid
@@ -46,30 +55,42 @@
                   %i.icon-home
                 %span.text Iniciativas
             %li
-              = link_to admin_topics_path do
-                %span.ico
-                  %i.icon-file
-                %span.text Temas
-            %li
-              = link_to admin_political_parties_path do
-                %span.ico
-                  %i.icon-file
-                %span.text Partidos Politicos
-            %li
               = link_to admin_representatives_path do
                 %span.ico
                   %i.icon-file
                 %span.text Representantes
             %li
-              = link_to admin_commissions_path do
-                %span.ico
-                  %i.icon-file
-                %span.text Comisiones
-            %li
-              = link_to admin_admins_path do
+              = link_to admin_users_path do
                 %span.ico
                   %i.icon-file
                 %span.text Usuarios
+
+            %li
+              = link_to '#' do
+                %span.ico
+                  %i.icon-file
+                %span.text Catalogos
+              %ul
+                %li
+                  = link_to admin_topics_path do
+                    %span.ico
+                      %i.icon-file
+                    %span.text Temas
+                %li
+                  = link_to admin_political_parties_path do
+                    %span.ico
+                      %i.icon-file
+                    %span.text Partidos Politicos
+                %li
+                  = link_to admin_commissions_path do
+                    %span.ico
+                      %i.icon-file
+                    %span.text Comisiones
+                %li
+                  = link_to admin_legislatures_path do
+                    %span.ico
+                      %i.icon-file
+                    %span.text Legislaturas
 
 
         #content.span9
@@ -80,4 +101,7 @@
 
           = yield
 
-=# tinymce
+%script{type: 'text/javascript'}
+  = yield(:javascript)
+
+= tinymce :theme => "simple", :language => "es", :plugins => ["inlinepopups", "paste"]

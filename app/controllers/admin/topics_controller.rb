@@ -1,9 +1,14 @@
 class Admin::TopicsController < Admin::BaseController
+  load_and_authorize_resource
   def index
     @topics = if params[:q]
       Topic.where("name like ?", "%#{params[:q]}%")
     else
-      Topic.page(params[:page])
+      if params[:search]
+        Topic.where("topics.name @@ ?", params[:search][:name]).page(params[:page])
+      else
+        Topic.page(params[:page])
+      end
     end
     respond_to do |format|
       format.html

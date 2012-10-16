@@ -11,7 +11,35 @@
 //= require bootstrap
 //= require jquery-ui.custom
 //= require underscore
+//= require tinymce-jquery
+//= require admin/bootstrap-datepicker
+//= require admin/jquery.flot.min
+//= require admin/jquery.flot.time
 //= require_tree ./admin
+
+$(document).ready(function() {
+  $('.leftmenu a').click(function(e){
+      if($(this).siblings('ul').size() == 1){
+        e.preventDefault();
+          var submenu = $(this).siblings('ul');
+          if($(this).hasClass('open')) {
+              if($(this).parents('.leftmenu').hasClass('lefticon')) {
+                  submenu.fadeOut();
+              } else {
+                  submenu.slideUp('fast');
+              }
+              $(this).removeClass('open');
+          } else {
+              if($(this).parents('.leftmenu').hasClass('lefticon')) {
+                  submenu.fadeIn();
+              } else {
+                  submenu.slideDown('fast');
+              }
+              $(this).addClass('open');
+          }
+      }
+  })
+});
 
 $(document).ready(function(){
   $(".alert-message .close").click(function(){
@@ -39,6 +67,11 @@ $(document).ready(function(){
   $("#initiative_commission_tokens").tokenInput("/admin/commissions.json", {
       theme: "facebook",
       prePopulate: $("#initiative_commission_tokens").data("pre"),
+      crossDomain: false
+  });
+  
+  $("#search_commission_ids").tokenInput("/admin/commissions.json", {
+      theme: "facebook",
       crossDomain: false
   });
   

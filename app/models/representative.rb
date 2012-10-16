@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Representative < ActiveRecord::Base
 
   #
@@ -28,12 +29,29 @@ class Representative < ActiveRecord::Base
   scope :by_commission, lambda {|commission_id| joins(:commissions).where('commissions_representatives.commission_id = ?', commission_id)}
   scope :most_commented, order('comments_count DESC')
   scope :political_parties, where('political_party_id NOT IN (8,9)')
-  scope :actual_legislature, where(:legislature_id => Legislature.active.id)
+  scope :actual_legislature, where(:legislature_id => (Legislature.active ? Legislature.active.id : nil))
 
   #
   # Delegates
   #
-  delegate :name, :to => :region, :prefix => true
+  delegate :name, to: :region, prefix: true, allow_nil: true
+  delegate :name, to: :political_party, prefix: true, allow_nil: true
+  
+  #
+  # Constants
+  #
+  ELECTION_TYPE = [['Mayoría Relativa','Mayoría Relativa'],['Representación proporcional','Representación proporcional']]
+  POSITION = [['Diputado','Diputado'],['Senado','Senado'],['Ejecutivo','Ejecutivo']]
+  
+  #
+  # Extensions
+  #
+  include SolrSearch::Representatives
+  
+  
+  def name
+    "#{first_name} #{last_name}"
+  end
 
   def commission_tokens=(ids)
     self.commission_ids = ids.split(',')

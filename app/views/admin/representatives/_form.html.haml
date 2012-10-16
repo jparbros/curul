@@ -1,86 +1,110 @@
-.clearfix
-  = form.label :nombre
-  .input
-    = form.text_field :name, :class => 'xxlarge'
+%fieldeset
+  %legend Informacion personal
+  .control-group
+    = form.label :nombres, class: 'control-label'
+    .controls
+      = form.text_field :first_name, :class => 'xxlarge'
 
-.clearfix
-  = form.label :posicion
-  .input
-    = form.text_field :position, :class => 'xxlarge'
-    
-.clearfix
-  = form.label :distrito
-  .input
-    = form.text_field :district, :class => 'xxlarge'
+  .control-group
+    = form.label :apellidos, class: 'control-label'
+    .controls
+      = form.text_field :last_name, :class => 'xxlarge'
 
-.clearfix
-  = form.label :circunscripcion
-  .input
-    = form.text_field :circumscription, :class => 'xxlarge'
     
+  .control-group
+    = form.label :region, class: 'control-label'
+    .controls
+      = form.select :region_id, @regions, { :include_blank => true }
     
-.clearfix
-  = form.label :region
-  .input
-    = form.select :region_id, @regions, { :include_blank => true }
-    
-.clearfix
-  = form.label :provincia
-  .input
-    = form.select :province_id, @provinces, { :include_blank => true}
-    
-.clearfix
-  = form.label :partido_politico
-  .input
-    = form.select :political_party_id, @political_parties, { :include_blank => true}
-    
-.clearfix
-  = form.label :email
-  .input
-    = form.text_field :email, :class => 'xxlarge'
+  / .control-group
+  /   = form.label :provincia, class: 'control-label'
+  /   .controls
+  /     = form.select :province_id, @provinces, { :include_blank => true}
 
-.clearfix
-  = form.label :telefono
-  .input
-    = form.text_field :phone, :class => 'xxlarge'
-
-.clearfix
-  = form.label :substituto
-  .input
-    = form.text_field :substitute, :class => 'xxlarge'
-
-.clearfix
-  = form.label :tipo_de_eleccion
-  .input
-    = form.text_field :election_type, :class => 'xxlarge'
-
-.clearfix
-  = form.label :comisiones
-  .input
-    = form.text_field :commission_tokens, "data-pre" => @representative.commissions.map(&:attributes).to_json
-
-.clearfix
-  = form.label :avatar
-  .input
-    = form.file_field :avatar, :class => 'xxlarge'
-    = form.hidden_field :avatar_cache
+  .control-group
+    = form.label :avatar, class: 'control-label'
+    .controls
+      = form.file_field :avatar, :class => 'xxlarge'
+      = form.hidden_field :avatar_cache
     
-.clearfix
-  = form.label :biografia
-  .input
-    = form.text_area :biography, :class => 'xxlarge'
+  .control-group
+    = form.label :biografia, class: 'control-label'
+    .controls
+      = form.text_area :biography, :class => 'tinymce'
     
-.clearfix
-  = form.label :fecha_de_nacimiento
-  .input
-    = form.text_field :birthday, :class => 'xxlarge'
-    
-.clearfix
-  = form.label :twitter
-  .input
-    = form.text_field :twitter, :class => 'xxlarge'
+  .control-group
+    = form.label :fecha_de_nacimiento, class: 'control-label'
+    .controls
+      #birthday.input-append.date{'data-date' => "#{@representative.try(:birthday) || Time.now.strftime('%Y-%m-%d')}", 'data-date-format' => 'yyyy-mm-dd'}
+        = form.text_field :birthday
+        %span.add-on
+          %i.icon-calendar
 
-.clearfix
-  = form.label :facebook
-  .input
-    = form.text_field :facebook, :class => 'xxlarge'
+  .control-group
+    = form.label :genero, class: 'control-label'
+    .controls
+      = form.select :sex, [['Femenino','f'],['Masculino','m']], { :include_blank => true}
+
+%fieldeset
+  %legend Informacion de contacto
+  
+  .control-group
+    = form.label :email, class: 'control-label'
+    .controls
+      = form.text_field :email, :class => 'xxlarge'
+
+  .control-group
+    = form.label :telefono, class: 'control-label'
+    .controls
+      = form.text_field :phone, :class => 'xxlarge'
+
+  .control-group
+    = form.label :twitter, class: 'control-label'
+    .controls
+      = form.text_field :twitter, :class => 'xxlarge'
+
+  .control-group
+    = form.label :facebook, class: 'control-label'
+    .controls
+      = form.text_field :facebook, :class => 'xxlarge'
+
+%fieldeset
+  %legend Informacion politica
+  
+  .control-group
+    = form.label :partido_politico, class: 'control-label'
+    .controls
+      = form.select :political_party_id, @political_parties, { :include_blank => true}
+
+  .control-group
+    = form.label :substituto, class: 'control-label'
+    .controls
+      = form.text_field :substitute, :class => 'xxlarge'
+
+  .control-group
+    = form.label :tipo_de_eleccion, class: 'control-label'
+    .controls
+      = form.select :election_type, options_for_select(Representative::ELECTION_TYPE, selected: @representative.election_type), {:include_blank => true}
+
+  .control-group
+    = form.label :comisiones, class: 'control-label'
+    .controls
+      = form.text_field :commission_tokens, "data-pre" => @representative.commissions.map(&:attributes).to_json
+
+  .control-group
+    = form.label :posicion, class: 'control-label'
+    .controls
+      = form.select :position, options_for_select(Representative::POSITION, selected: @representative.position)
+    
+  .control-group
+    = form.label :distrito, class: 'control-label'
+    .controls
+      = form.text_field :district, :class => 'xxlarge'
+
+  .control-group
+    = form.label :circunscripcion, class: 'control-label'
+    .controls
+      = form.text_field :circumscription, :class => 'xxlarge'
+      
+- content_for :javascript do
+  $('#birthday').datepicker();

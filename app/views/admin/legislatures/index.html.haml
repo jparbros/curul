@@ -1,0 +1,27 @@
+.box
+  .box-title
+    %h2 Legislaturas
+
+  .box-content
+    #datatable_wrapper.dataTables_wrapper{role: 'grid'}
+      #datatable_length.dataTables_length
+        = link_to 'Nueva Legislatura', new_admin_legislature_path  , :class => [:btn, 'btn-primary']
+
+        %table.table.table-striped.table-bordered.dataTable
+          %thead
+            %tr
+              %th Legislatura
+              %th Actual
+              %th
+
+          %tbody
+            = render @legislatures
+
+          %tfoot
+            %tr
+              %th Legislatura
+              %th Actual
+              %th
+
+      #datatable_paginate.dataTables_paginate.paging_full_numbers
+        = paginate @legislatures

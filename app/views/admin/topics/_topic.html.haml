@@ -1,4 +1,5 @@
 %tr
   %td= topic.name
-  %td= link_to 'Editar', edit_admin_topic_path(topic)
-  %td= link_to 'Borrar', admin_topic_path(topic), :method => :delete, :confirm => '¿Esta seguro que desea eliminar el tema?'
+  %td
+    = link_to 'Editar', edit_admin_topic_path(topic), class: 'btn btn-primary btn-mini'
+    = link_to 'Borrar', admin_topic_path(topic), :method => :delete, :confirm => '¿Esta seguro que desea eliminar el tema?', class: 'btn btn-danger btn-mini'

@@ -1,18 +1,36 @@
-.page-header
-  %h2 Iniciativas
+.box
+  .box-title
+    %h2 Comisiones
 
-= link_to 'Nueva Comision', new_admin_commission_path, :class => [:btn, :primary]
-%br
-%br
+  .box-content    
+    = form_tag admin_commissions_path, :method => :get do
+      .row-fluid
+        .span4
+          = label_tag :comision
+          .input
+            = text_field_tag 'search[name]'
+            
+      .row-fluid
+        .span4
+          = submit_tag 'Buscar', :class => [:btn, :primary]
 
-%table.zebra-striped
-  %thead
-    %tr
-      %th Comision
-      %th
-      %th
+    #datatable_wrapper.dataTables_wrapper{role: 'grid'}
+      #datatable_length.dataTables_length
+        = link_to 'Nueva Comision', new_admin_commission_path  , :class => [:btn, 'btn-primary']
 
-  %tbody
-    = render @commisions
+      %table.table.table-striped.table-bordered.dataTable
+        %thead
+          %tr
+            %th Comision
+            %th
 
-= paginate @commisions
+        %tbody
+          = render @commisions
+
+        %tfoot
+          %tr
+            %th Comision
+            %th
+
+    #datatable_paginate.dataTables_paginate.paging_full_numbers
+      = paginate @commisions

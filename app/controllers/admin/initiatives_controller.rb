@@ -1,10 +1,20 @@
 class Admin::InitiativesController < Admin::BaseController
+  load_and_authorize_resource
+  
   def index
-    @initiatives = Initiative.page(params[:page])
+    @initiatives = if params[:search]
+            Initiative.filters(params[:search]).results
+          else
+            Initiative.page(params[:page])
+          end
   end
 
   def show
     @initiative = Initiative.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json { render :json => @initiative.attributes }
+    end
   end
 
   def new

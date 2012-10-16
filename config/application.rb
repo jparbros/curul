@@ -19,6 +19,9 @@ module Congresspedia
     # config.autoload_paths += %W(#{config.root}/extras)
     config.autoload_paths += %W(#{config.root}/lib)
     config.autoload_paths += %W(#{config.root}/lib/jobs)
+    config.autoload_paths += %W(#{config.root}/lib/core_ext)
+    config.autoload_paths += %W(#{config.root}/lib/solr_search)
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
     
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -50,3 +53,4 @@ module Congresspedia
     config.assets.version = '1.0'
   end
 end
+require 'core_ext/string'

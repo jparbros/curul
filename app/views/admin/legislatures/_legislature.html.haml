@@ -1,0 +1,7 @@
+%tr
+  %td= legislature.name
+  %td.center= image_tag is_admin_image legislature.active
+  %td
+    = link_to 'Editar', edit_admin_legislature_path(legislature), class: 'btn btn-primary btn-mini'
+    = link_to 'Borrar', admin_legislature_path(legislature), :method => :delete, :confirm => '¿Esta seguro que desea eliminar la legislatura?', class: 'btn btn-danger btn-mini'
+    = link_to 'Hacer Actual', admin_legislature_actual_path(legislature), method: :post, confirm: '¿Esta seguro que desea marcar como actual la legislatura?', class: 'btn btn-warning btn-mini'

@@ -1,9 +1,12 @@
-.page-header
-  %h2 Editar Iniciativa ##{@initiative.number}
-= form_for [:admin, @initiative], :html => {:multipart => true} do |form|
-  = render "admin/shared/error_messages", :target => @initiative
-  %fieldset
-    = render :partial => 'form', :locals => {:form => form}
-    .actions
-      = form.submit 'Actualizar Iniciativa', :class => 'btn primary'
-      %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}
+.box
+  .box-title
+    %h2 Editar Iniciativa ##{@initiative.number}
+  
+  .box-content
+    = form_for [:admin, @initiative], :html => {:multipart => true, class: 'form-horizontal'} do |form|
+      = render "admin/shared/error_messages", :target => @initiative
+      %fieldset
+        = render :partial => 'form', :locals => {:form => form}
+        .actions
+          = form.submit 'Actualizar Iniciativa', :class => 'btn primary'
+          %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

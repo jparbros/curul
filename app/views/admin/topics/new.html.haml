@@ -1,9 +1,12 @@
-.page-header
-  %h2 Nuevo Tema
-= form_for [:admin, @topic], :html => {:multipart => true} do |form|
-  = render "admin/shared/error_messages", :target => @topic
-  %fieldset
-    = render :partial => 'form', :locals => {:form => form}
-    .actions
-      = form.submit 'Crear Tema', :class => 'btn primary'
-      %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}
+.box
+  .box-title
+    %h2 Nuevo Tema
+
+  .box-content  
+    = form_for [:admin, @topic], :html => {:multipart => true, class: 'form-horizontal'} do |form|
+      = render "admin/shared/error_messages", :target => @topic
+      %fieldset
+        = render :partial => 'form', :locals => {:form => form}
+        .form-actions
+          = form.submit 'Crear Tema', :class => 'btn btn-primary'
+          %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

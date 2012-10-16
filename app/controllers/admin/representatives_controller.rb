@@ -1,10 +1,12 @@
 class Admin::RepresentativesController < Admin::BaseController
+  load_and_authorize_resource
+  
   def index
     @representatives =   if params[:q]
         Representative.where("name ilike ?", "%#{params[:q]}%")
       else
         if params[:search]
-          RepresentativeSearch.new(params[:search], params[:page]).representatives
+          Representative.filters(params[:search]).results
         else
           Representative.page(params[:page])
         end
@@ -12,6 +14,15 @@ class Admin::RepresentativesController < Admin::BaseController
     respond_to do |format|
       format.html
       format.json { render :json => @representatives.map(&:attributes) }
+    end
+  end
+  
+  def show
+    @representative = Representative.find(params[:id])
+    @comments = @representative.comments.page(params[:page]).per(5).order('created_at DESC')
+    respond_to do |format|
+      format.html
+      format.json { render :json => @representative }
     end
   end
 
@@ -54,17 +65,5 @@ class Admin::RepresentativesController < Admin::BaseController
     @representative = Representative.find(params[:id])
     @representative.destroy
     redirect_to admin_representatives_url, :notice => "Representante eliminado exitosamente"
-  end
-
-  def bulk_update
-    params[:representatives].each do |representative|
-      representante = Representative.find(representative[:id])
-      representante.political_party = PoliticalParty.find(representative[:political_party])
-      representante.region = Region.find(representative[:region])
-      representative.delete(:political_party)
-      representative.delete(:region)
-      representante.update_attributes(representative)
-    end
-    redirect_to action: :index
   end
 end

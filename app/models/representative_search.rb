@@ -13,6 +13,8 @@ class RepresentativeSearch
       find_by_state conditions[:state] if conditions[:state] && !conditions[:state].blank?
       find_by_political_party conditions[:political_party] if conditions[:political_party] && !conditions[:political_party].blank?
       find_by_commision(conditions[:commision]) if conditions[:commision] && !conditions[:commision].blank?
+      find_by_email(conditions[:email]) if conditions[:email] && conditions[:email].present?
+      find_by_twitter(conditions[:twitter]) if conditions[:twitter] && conditions[:twitter].present?
     end
     (current_page == 'none')? @representative_search : @representative_search.page(current_page)
   end
@@ -33,6 +35,14 @@ class RepresentativeSearch
 
   def find_by_commision(commision_name)
     @representative_search = @representative_search.joins(:commissions).where('commissions.name = ?', commision_name) if commision_name
+  end
+  
+  def find_by_email(email)
+    @representative_search = @representative_search.where('representatives.email iLIKE ?', "%#{email}%") if email
+  end
+  
+  def find_by_twitter(twitter)
+    @representative_search = @representative_search.where('representatives.twitter iLIKE ?', "%#{twitter}%") if twitter
   end
 
 end

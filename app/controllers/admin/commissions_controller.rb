@@ -1,10 +1,15 @@
 class Admin::CommissionsController < Admin::BaseController
+  load_and_authorize_resource
 
   def index
     @commisions =   if params[:q]
         Commission.where("name ilike ?", "%#{params[:q]}%")
       else
-        Commission.page(params[:page])
+        if params[:search]
+          Commission.where("commissions.name @@ ?", params[:search][:name]).page(params[:page])
+        else
+          Commission.page(params[:page])
+        end
       end
     respond_to do |format|
       format.html

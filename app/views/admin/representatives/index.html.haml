@@ -1,46 +1,148 @@
-.page-header
-  %h2 Representantes
+.box
+  .box-title
+    %h2 Representantes
 
-.well.row
-  = form_tag admin_representatives_path, :method => :get do
-    .span16.bottom-margin-20
-      .span7
-        = label_tag :nombre
-        .input
-          = text_field_tag 'search[name]'
-      .span7
-        = label_tag :estado
-        .input
-          = select_tag 'search[state]', options_from_collection_for_select(Region.all,'id','name'), {:include_blank => true}
-    .span16.bottom-margin-20
-      .span7
-        = label_tag :partido_politico
-        .input
-          = select_tag 'search[political_party]', options_from_collection_for_select(PoliticalParty.all,'id','name'), {:include_blank => true}
-      .span7
-        = label_tag :comision
-        .input
-          = text_field_tag 'search[commision]'
+  .box-content
+    = form_tag admin_representatives_path, :method => :get do
+      .row-fluid
+        .span4
+          = label_tag :nombre
+          .input
+            = text_field_tag 'search[name]'
+        .span4
+          = label_tag :estado
+          .input
+            = select_tag 'search[region_name]', options_from_collection_for_select(Region.all,'id','name'), {:include_blank => true}
+        .span4
+          = label_tag :partido_politico
+          .input
+            = select_tag 'search[political_party_name]', options_from_collection_for_select(PoliticalParty.all,'id','name'), {:include_blank => true}
+      .row-fluid
+        .span4
+          = label_tag :comision
+          .input
+            = text_field_tag 'search[commission_ids]'
+        .span4
+          = label_tag :email
+          .input
+            = text_field_tag 'search[email]'
+        .span4
+          = label_tag :twitter
+          .input
+            = text_field_tag 'search[twitter]'
 
-    .span16.bottom-margin-20
-      .span7
-        = submit_tag 'Buscar', :class => [:btn, :primary]
+      .row-fluid
+        .span4
+          = submit_tag 'Buscar', :class => [:btn, :primary]
+    #datatable_wrapper.dataTables_wrapper{role: 'grid'}
+      #datatable_length.dataTables_length
+        = link_to 'Nuevo Representante', new_admin_representative_path  , :class => [:btn, 'btn-primary']
+
+        = link_to 'Bulk Update', admin_representatives_bulk_update_path  , :class => [:btn, 'btn-primary']
+
+      %table.table.table-striped.table-bordered.dataTable
+        %thead
+          %tr
+            %th Nombre
+            %th Partido politico
+            %th Estado
+            %th Acciones
+
+        %tbody
+          = render @representatives
+          
+        %tfoot
+          %tr
+            %th Nombre
+            %th Partido politico
+            %th Estado
+            %th Acciones
+
+      #datatable_paginate.dataTables_paginate.paging_full_numbers
+        = paginate @representatives
+
+#quick-edition-modal.modal.hide.fade
+  .modal-header
+    %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
+    %h3 Edicion rapida
+  .modal-body
+    = form_tag '', method: :put, class: 'form-horizontal' do
+      .control-group
+        = label_tag 'representative[first_name]', 'Nombre', class: 'control-label'
+        .controls
+          = text_field_tag 'representative[first_name]'
+
+      .control-group
+        = label_tag 'representative[last_name]', 'Nombre', class: 'control-label'
+        .controls
+          = text_field_tag 'representative[last_name]'
 
 
-= link_to 'Nuevo Representante', new_admin_representative_path  , :class => [:btn, :primary]
+      .control-group
+        = label_tag 'representative[district]', 'Distrito', class: 'control-label'
+        .controls
+          = text_field_tag 'representative[district]'
 
-= link_to 'Bulk Update', 'representatives/bulk'  , :class => [:btn, :primary]
-%br
-%br
+      .control-group
+        = label_tag 'representative[circumscription]', 'Circumscripcion', class: 'control-label'
+        .controls
+          = text_field_tag 'representative[circumscription]'
 
-%table.zebra-striped
-  %thead
-    %tr
-      %th Nombre
-      %th
-      %th
+      .control-group
+        = label_tag 'representative[political_party_id]', 'Partido politico', class: 'control-label'
+        .controls
+          = select_tag 'representative[political_party_id]', options_from_collection_for_select(PoliticalParty.all, :id, :name)
 
-  %tbody
-    = render @representatives
+      .control-group
+        = label_tag 'representative[email]', 'Email', class: 'control-label'
+        .controls
+          = text_field_tag 'representative[email]'
 
-= paginate @representatives
+      .control-group
+        = label_tag 'representative[phone]', 'Telefono', class: 'control-label'
+        .controls
+          = text_field_tag 'representative[phone]'
+
+      .control-group
+        = label_tag 'representative[twitter]', 'Twitter', class: 'control-label'
+        .controls
+          = text_field_tag 'representative[twitter]'
+
+  .modal-footer
+    %a#close-modal.btn{href: "#"} Cerrar
+    %a#quick-edition-submit.btn.btn-primary{href: "#"} Guardar cambios
+    
+- content_for :javascript do
+  $('.quick-edition').click(function(event){
+  event.preventDefault();
+  form = $('#quick-edition-modal form');
+  $.getJSON('representatives/' + $(this).data('representative-id') +'.json', function(data){
+  form.attr('action','/admin/representatives/' + data.id)
+  form.find('#representative_first_name').val(data.first_name);
+  form.find('#representative_last_name').val(data.last_name);
+  form.find('#representative_district').val(data.district);
+  form.find('#representative_circumscription').val(data.circumscription);
+  form.find('#representative_email').val(data.email);
+  form.find('#representative_phone').val(data.phone);
+  form.find('#representative_twitter').val(data.twitter);
+  form.find('select option[value=' + data.political_party_id + ']').attr('selected','selected');
+  });
+
+  $('#quick-edition-modal').modal();
+  });
+
+  $('#quick-edition-modal').on('hide', function() {
+  form = $('#quick-edition-modal form');
+  form.find('input').val('');
+  form.find('option:selected').removeAttr('selected');
+  });
+  
+  $('#close-modal').click(function(event){
+  event.preventDefault();
+  $('#quick-edition-modal').modal('hide');
+  });
+  
+  $('#quick-edition-submit').click(function(event) {
+  event.preventDefault();
+  $('#quick-edition-modal form').submit();
+  });

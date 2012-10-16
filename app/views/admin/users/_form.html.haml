@@ -1,0 +1,156 @@
+%fieldeset
+  %legend Informacion del usuario  
+  .control-group
+    = form.label :email, class: 'control-label'
+    .controls
+      = form.text_field :email, :class => 'xxlarge'
+
+  .control-group
+    = form.label :admin, class: 'control-label'
+    .controls
+      = form.check_box :admin
+  
+%fieldeset
+  %legend Permisos
+  
+  %table#table-permissions.table.table-striped.table-bordered.dataTable
+    %thead
+      %tr
+        %th
+        %th
+          Comentarios
+        %th
+          Comisiones
+        %th
+          Iniciativas
+        %th
+          Legislaturas
+        %th
+          Partidos politicos
+        %th
+          Estados/Regiones
+        %th
+          Representantes
+        %th
+          Temas
+        %th
+          Usuarios
+    %tbody
+      %tr
+        %td
+          Leer
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Comment','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Commission','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Initiative','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Legislature','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('PoliticalParty','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Region','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Representative','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Topic','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('User','read')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+      %tr
+        %td
+          Administrar
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Comment','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Commission','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Initiative','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Legislature','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('PoliticalParty','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Region','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Representative','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Topic','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('User','manage')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+
+      %tr
+        %td
+          Borrar
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Comment','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Commission','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Initiative','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Legislature','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('PoliticalParty','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Region','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Representative','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('Topic','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)
+        %td
+          - permission = Permission.find_by_subject_class_and_action('User','destroy')
+          %label
+            = check_box_tag 'user[permission_ids][]', permission.id, @user.permissions.include?(permission)

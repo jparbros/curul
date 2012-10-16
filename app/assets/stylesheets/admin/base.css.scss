@@ -1,3 +1,12 @@
 // Place all the styles related to the admin/base controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header > a {
+  font-size: 48px;
+  line-height: 1;
+  color: white;
+  margin: 20px;
+}
+
+td {max-width: 500px;}

@@ -1,0 +1,5 @@
+%tr
+  %td= comment.comment
+  %td= comment.author
+  %td
+    = link_to comment_action_link_name(comment), comment_action_link_url(comment), method: :post, class: [:btn, comment_action_link_class(comment)]

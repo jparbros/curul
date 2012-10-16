@@ -1,18 +1,28 @@
-.page-header
-  %h2 Partidos Politicos
+.box
+  .box-title
+    %h2 Partidos Politicos
 
-= link_to 'Nuev Partido Politico', new_admin_political_party_path  , :class => [:btn, :primary]
-%br
-%br
+  .box-content
+    #datatable_wrapper.dataTables_wrapper{role: 'grid'}
+      #datatable_length.dataTables_length
+        = link_to 'Nuevo Partido Politico', new_admin_political_party_path  , :class => [:btn, 'btn-primary']
 
-%table.zebra-striped
-  %thead
-    %tr
-      %th Nombre
-      %th
-      %th
+        %table.table.table-striped.table-bordered.dataTable
+          %thead
+            %tr
+              %th Nombre
+              %th Logotipo
+              %th
 
-  %tbody
-    = render @political_parties
+          %tbody
+            = render @political_parties
 
-= paginate @political_parties
+          %tfoot
+            %tr
+              %th Nombre
+              %th Logotipo
+              %th
+
+
+      #datatable_paginate.dataTables_paginate.paging_full_numbers
+        = paginate @political_parties

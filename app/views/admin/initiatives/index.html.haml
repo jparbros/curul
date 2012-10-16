@@ -1,22 +1,113 @@
-.page-header
-  %h2 Iniciativas
+.box
+  .box-title
+    %h2 Iniciativas
 
-= link_to 'Nueva Iniciativa', new_admin_initiative_path  , :class => [:btn, :primary]
-%br
-%br
+  .box-content
+    = form_tag admin_initiatives_path, :method => :get do
+      .row-fluid
+        .span4
+          = label_tag :titulo
+          .input
+            = text_field_tag 'search[title]'
+        .span4
+          = label_tag :description
+          .input
+            = text_field_tag 'search[description]'
+        .span4
+          = label_tag :status
+          .input
+            = select_tag 'search[state]', options_for_select(Initiative::STATES.map( &:reverse)), {:include_blank => true}
+      .row-fluid
+        .span4
+          = label_tag :comision
+          .input
+            = text_field_tag 'search[commission_ids]'
+        .span4
+          = label_tag :presentado_por
+          .input
+            = text_field_tag 'search[representative_name]'
 
-%table.zebra-striped
-  %thead
-    %tr
-      %th #
-      %th Titulo
-      %th Presentado por
-      %th Presentado el
-      %th
-      %th
-      %th
+      .row-fluid
+        .span4
+          = submit_tag 'Buscar', :class => [:btn, :primary]
+    
+    #datatable_wrapper.dataTables_wrapper{role: 'grid'}
+      #datatable_length.dataTables_length
+        = link_to 'Nueva Iniciativa', new_admin_initiative_path  , :class => [:btn, 'btn-primary']
 
-  %tbody
-    = render @initiatives
+      %table.table.table-striped.table-bordered.dataTable
+        %thead
+          %tr
+            %th #
+            %th Titulo
+            %th Presentado por
+            %th Presentado el
+            %th
 
-= paginate @initiatives
+        %tbody
+          = render @initiatives
+
+        %tfoot
+          %tr
+            %th #
+            %th Titulo
+            %th Presentado por
+            %th Presentado el
+            %th
+      #datatable_paginate.dataTables_paginate.paging_full_numbers
+        = paginate @initiatives
+
+#quick-edition-modal.modal.hide.fade
+  .modal-header
+    %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
+    %h3 Edicion rapida
+  .modal-body
+    = form_tag '', method: :put, class: 'form-horizontal' do
+      .control-group
+        = label_tag 'initiative[title]', 'Titulo', class: 'control-label'
+        .controls
+          = text_field_tag 'initiative[title]'
+
+      .control-group
+        = label_tag 'initiative[description]', 'Descripcion', class: 'control-label'
+        .controls
+          = text_area_tag 'initiative[description]', '', class: 'tinymce'
+
+      .control-group
+        = label_tag 'initiative[state]', 'Estado', class: 'control-label'
+        .controls
+          = select_tag 'initiative[state]', options_for_select(Initiative::STATES.to_a.each {|t| t.reverse!})
+
+  .modal-footer
+    %a#close-modal.btn{href: "#"} Cerrar
+    %a#quick-edition-submit.btn.btn-primary{href: "#"} Guardar cambios
+
+- content_for :javascript do
+  $('.quick-edition').click(function(event){
+  event.preventDefault();
+  form = $('#quick-edition-modal form');
+  $.getJSON('initiatives/' + $(this).data('initiative-id') +'.json', function(data){
+  form.attr('action','/admin/initiatives/' + data.id)
+  form.find('#initiative_title').val(data.title);
+  tinyMCE.get('initiative_description').setContent(data.description)
+  form.find('select option[value=' + data.state + ']').attr('selected','selected');
+  });
+
+  $('#quick-edition-modal').modal();
+  });
+
+  $('#quick-edition-modal').on('hide', function() {
+  form = $('#quick-edition-modal form');
+  form.find('input').val('');
+  form.find('option:selected').removeAttr('selected');
+  });
+  
+  $('#close-modal').click(function(event){
+  event.preventDefault();
+  $('#quick-edition-modal').modal('hide');
+  });
+  
+  $('#quick-edition-submit').click(function(event) {
+  event.preventDefault();
+  $('#quick-edition-modal form').submit();
+  });

@@ -1,0 +1,27 @@
+.box
+  .box-title
+    %h2 Usuraios
+
+  .box-content
+    #datatable_wrapper.dataTables_wrapper{role: 'grid'}
+      #datatable_length.dataTables_length
+        = link_to 'Nuevo Representante', new_admin_user_path  , :class => [:btn, 'btn-primary']
+
+      %table.table.table-striped.table-bordered.dataTable
+        %thead
+          %tr
+            %th Nombre
+            %th Administrador
+            %th Acciones
+
+        %tbody
+          = render @users
+          
+        %tfoot
+          %tr
+            %th Nombre
+            %th Administrador
+            %th Acciones
+
+      #datatable_paginate.dataTables_paginate.paging_full_numbers
+        = paginate @users

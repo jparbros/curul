@@ -5,7 +5,11 @@
       .span3
         %label
           Nombre
-        %input#representative-search{type: 'text', name:'name', 'data-field' => 'name'}
+        %input#representative-search{type: 'text', name:'first_name', 'data-field' => 'first_name'}
+      .span3
+        %label
+          Apellido
+        %input#representative-search{type: 'text', name:'last_name', 'data-field' => 'last_name'}
       .span3
         %label
           Substituto
@@ -14,19 +18,15 @@
         %label
           Distrito
         %input#district-search{type: 'text', name:'district', 'data-field' => 'district'}
+    .row-fluid
       .span3
         %label
           Circunscripcion
         %input#circumscription-search{type: 'text', name:'circumscription', 'data-field' => 'circumscription'}
-    .row-fluid
       .span3
         %label
           Estado
         = select_tag :region_id, options_for_select(Region.all.collect {|region| [region.name, region.id]}), {include_blank: true, 'data-field' => 'region_id'}
-      .span3
-        %label
-          Partido Politico
-        = select_tag :political_party_id, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), {include_blank: true, 'data-field' => 'political_party_id'}
       .span3
         %label
           Twitter
@@ -35,6 +35,19 @@
         %label
           Facebook
         %input#facebook-search{type: 'text', name:'facebook', 'data-field' => 'facebook'}
+    .row-fluid
+      .span3
+        %label
+          Partido Politico
+        = select_tag :political_party_id, options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), {include_blank: true, 'data-field' => 'political_party_id'}
+      .span3
+        %label
+          Legislatura
+        = select_tag :legislature_id, options_for_select(Legislature.all.collect {|legislature| [legislature.name, legislature.id]}), {include_blank: true, 'data-field' => 'legislature_id'}
+      .span3
+        %label
+          Genero
+        = select_tag :legislature_id, options_for_select([['Femenino','f'],['Masculino','m']]), {include_blank: true, 'data-field' => 'sex'}
 
 #myGrid
 
@@ -58,9 +71,12 @@
 - content_for :javascript do
   var grid;
   columns = [
-  {id: "name", name: "Nombre", field: "name", editor: Slick.Editors.Text, sortable: true},
+  {id: "first_name", name: "Nombres", field: "first_name", editor: Slick.Editors.Text, sortable: true},
+  {id: "last_name", name: "Apellidos", field: "last_name", editor: Slick.Editors.Text, sortable: true},
+  {id: "sex", name: "Genero", field: "sex", editor: Curul.Editors.SelectGenereType, sortable: true, formatter: GenereFormatter},
   {id: "district", name: "Distrito", field: "district", editor: Slick.Editors.Text, sortable: true},
   {id: "circumscription", name: "Circunscripcion", field: "circumscription", editor: Slick.Editors.Text, sortable: true},
+  {id: "legislature", name: "Legislatura", field: "legislature_id", editor: Curul.Editors.SelectLegislature, formatter: legislatureFormatter, sortable: true},
   {id: "region_id", name: "Estado", field: "region_id", editor: Curul.Editors.SelectStates, formatter: StateFormatter, sortable: true},
   {id: "political_party_id", name: "Partido Politico", field: "political_party_id", editor: Curul.Editors.SelectPoliticalParty, formatter: PoliticalPartyFormatter, sortable: true},
   {id: "email", name: "Email", field: "email", editor: Slick.Editors.Text},
@@ -94,6 +110,17 @@
   }
   }
   
+  function legislatureFormatter(row, cell, value, columnDef, dataContext) {
+  currentLegislature = _.find(Curul.Editors.legislatures, function(legislature) {
+  return legislature.id == value;
+  });
+  if (currentLegislature) {
+  return currentLegislature.name;
+  } else {
+  return "";
+  }
+  }
+  
   function PoliticalPartyFormatter(row, cell, value, columnDef, dataContext) {
   currentParty = _.find(Curul.Editors.political_parties, function(political_party){
   return political_party.id == value
@@ -104,9 +131,20 @@
   return ""
   }
   }
+  
+  function GenereFormatter(row, cell, value, columnDef, dataContext) {
+  if( value == 'f') {
+  return 'Femenino';
+  } else if (value == 'm') {
+  return 'Masculino';
+  } else {
+  return "";
+  }
+  }
 
   Curul.Editors.states = #{Region.all.map {|state| {name: state.name, id: state.id}}.to_json.html_safe};
   Curul.Editors.political_parties = #{PoliticalParty.all.map {|political_party| {name: political_party.name, id: political_party.id}}.to_json.html_safe};
+  Curul.Editors.legislatures = #{Legislature.all.map {|legislature| {name: legislature.name, id: legislature.id}}.to_json.html_safe};
   var data = #{Representative.all.to_json.html_safe};
   
   dataView = new Slick.Data.DataView({ inlineFilters: true });
@@ -138,6 +176,7 @@
   function myFilter(item, args) {
   var returnResult = true;
 
+  console.log(args.searchObject);
   _.each(args.searchObject, function(filter) {
   value = "" + (item[filter.field] || "");
   if(filter.field == 'region_id') {
@@ -245,7 +284,9 @@
   dataView.updateItem(args.item.id, args.item);
   item = args.item;
   data = {representative: {
-  name: item.name, 
+  firt_name: item.firt_name,
+  last_name: item.last_name,
+  sex: item.sex,
   district: item.district, 
   circumscription: item.circumscription, 
   region_id: item.region_id,

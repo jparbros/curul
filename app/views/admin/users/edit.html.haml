@@ -1,0 +1,11 @@
+.box
+  .box-title
+    %h2 Editar Usuario
+
+  .box-content  
+    = form_for [:admin, @user], :html => {:multipart => true, class: 'form-horizontal'} do |form|
+      = render "admin/shared/error_messages", :target => @user
+      = render :partial => 'form', :locals => {:form => form}
+      .form-actions
+        = form.submit 'Editar Usuario', :class => 'btn btn-primary'
+        %input{:type => 'reset', :class => 'btn', :value => 'Limpiar'}

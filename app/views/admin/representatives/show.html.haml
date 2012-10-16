@@ -1,0 +1,73 @@
+.box
+  .box-title
+    %h2= @representative.name
+
+.row-fluid
+  .span12
+    .box
+      .box-title
+        Visitas Recientes
+      .box-content.nopadding
+        #views-chart
+        
+.row-fluid
+  .span6
+    .box
+      .box-title
+        Comentarios Recientes
+      .box-content
+        %table.table.table-striped.table-bordered.dataTable
+          %thead
+            %tr
+              %th Comentario
+              %th Autor
+              %th Acciones
+          %tbody
+            = render partial: 'comment', collection: @comments
+        
+        #datatable_paginate.dataTables_paginate.paging_full_numbers
+          = paginate @comments
+
+  .span6
+    .box
+      .box-title
+        Comentarios Recientes
+      .box-content.nopadding
+        #comments-chart
+
+- content_for :javascript do
+  $('a[rel=popover]').popover({placement: 'bottom'});
+  
+  var view_plot = $.plot($("#views-chart"),
+  [{ data: #{@representative.comments.last_10_days_count.to_s.html_safe}, label: "Vistas", color: "#000000"}], {
+  series: {
+  lines: { show: true, fill: true, fillColor: { colors: [ { opacity: 0.05 }, { opacity: 0.15 } ] } },
+  points: { show: true }
+  },
+  legend: { position: 'nw'},
+  grid: { hoverable: true, clickable: true, borderColor: '#ccc', borderWidth: 1, labelMargin: 10 },
+  yaxis: { min: 0, max: 15 },
+  xaxis: {
+  mode: "time",
+  min: (new Date('#{10.day.ago.strftime("%m/%d")}')).getTime(),
+  max: (new Date('#{1.day.ago.strftime("%m/%d")}')).getTime(),
+  timeformat: "%m/%d"
+  }
+  });
+  
+  var plot = $.plot($("#comments-chart"),
+  [{ data: #{@representative.comments.last_10_days_count.to_s.html_safe}, label: "Comentarios", color: "#0B689F"}], {
+  series: {
+  lines: { show: true, fill: true, fillColor: { colors: [ { opacity: 0.05 }, { opacity: 0.15 } ] } },
+  points: { show: true }
+  },
+  legend: { position: 'nw'},
+  grid: { hoverable: true, clickable: true, borderColor: '#ccc', borderWidth: 1, labelMargin: 10 },
+  yaxis: { min: 0, max: 15 },
+  xaxis: {
+  mode: "time",
+  min: (new Date('#{10.day.ago.strftime("%m/%d")}')).getTime(),
+  max: (new Date('#{1.day.ago.strftime("%m/%d")}')).getTime(),
+  timeformat: "%m/%d"
+  }
+  });

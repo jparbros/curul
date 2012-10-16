@@ -26,6 +26,10 @@ gem 'mail'
 gem 'typhoeus'
 gem "recaptcha", :require => "recaptcha/rails"
 gem 'newrelic_rpm'
+gem 'tinymce-rails'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+gem 'cancan'
 
 group :assets do
   gem 'bootstrap-sass'
@@ -46,3 +50,5 @@ end
 group :production do
   gem 'unicorn'
 end
+
+gem 'pg'
