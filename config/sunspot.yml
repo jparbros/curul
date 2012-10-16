@@ -1,8 +1,8 @@
 production:
   solr:
-    hostname: 127.0.0.1 #108.59.252.197
+    hostname: 108.59.252.197
     port: 8180
-    path: /solr
+    path: /solr/curul
     log_level: WARNING
 
 development:
