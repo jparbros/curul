@@ -30,9 +30,9 @@ gem 'tinymce-rails'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'cancan'
+gem 'bootstrap-sass'
 
 group :assets do
-  gem 'bootstrap-sass'
   gem 'sass-rails'
   gem 'sass', '3.1.20'
   gem 'coffee-rails'
