@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106140819) do
+ActiveRecord::Schema.define(:version => 20121106153515) do
 
   create_table "comments", :force => true do |t|
     t.text     "comment"
@@ -164,6 +164,7 @@ ActiveRecord::Schema.define(:version => 20121106140819) do
     t.string   "locale"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "subdomain"
   end
 
   create_table "topics", :force => true do |t|
