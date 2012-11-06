@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121012135249) do
+ActiveRecord::Schema.define(:version => 20121106140819) do
 
   create_table "comments", :force => true do |t|
     t.text     "comment"
@@ -25,12 +25,14 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.integer  "tendency"
     t.integer  "reply_to"
     t.integer  "legislature_id"
+    t.integer  "site_id"
   end
 
   create_table "commissions", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "site_id"
   end
 
   create_table "commissions_initiatives", :id => false, :force => true do |t|
@@ -63,6 +65,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.integer  "comments_count",            :default => 0
     t.string   "number"
     t.integer  "legislature_id"
+    t.integer  "site_id"
   end
 
   create_table "initiatives_topics", :id => false, :force => true do |t|
@@ -75,6 +78,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.boolean  "active",     :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "site_id"
   end
 
   create_table "official_votes", :force => true do |t|
@@ -83,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.integer  "initiative_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "site_id"
   end
 
   create_table "permissions", :force => true do |t|
@@ -90,6 +95,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.string   "subject_class"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.integer  "site_id"
   end
 
   create_table "political_parties", :force => true do |t|
@@ -97,6 +103,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.string   "logo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "site_id"
   end
 
   create_table "provinces", :force => true do |t|
@@ -111,6 +118,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
+    t.integer  "site_id"
   end
 
   create_table "representatives", :force => true do |t|
@@ -137,6 +145,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.string   "sex"
     t.string   "first_name"
     t.string   "last_name"
+    t.integer  "site_id"
   end
 
   create_table "resources", :force => true do |t|
@@ -145,6 +154,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.integer  "initiative_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "site_id"
   end
 
   create_table "sites", :force => true do |t|
@@ -160,6 +170,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "site_id"
   end
 
   create_table "user_permissions", :force => true do |t|
@@ -184,6 +195,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.boolean  "super_admin"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.integer  "site_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
@@ -194,6 +206,7 @@ ActiveRecord::Schema.define(:version => 20121012135249) do
     t.integer  "initiative_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "site_id"
   end
 
 end
