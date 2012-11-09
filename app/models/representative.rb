@@ -30,6 +30,7 @@ class Representative < ActiveRecord::Base
   scope :most_commented, order('comments_count DESC')
   scope :political_parties, where('political_party_id NOT IN (8,9)')
   scope :actual_legislature, where(:legislature_id => (Legislature.active ? Legislature.active.id : nil))
+  default_scope {where(site_id: Site.current_id)}
 
   #
   # Delegates
