@@ -31,12 +31,13 @@ gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'cancan'
 gem 'bootstrap-sass'
-
+gem 'liquid'
 group :assets do
   gem 'sass-rails'
   gem 'sass', '3.1.20'
   gem 'coffee-rails'
   gem 'uglifier'
+	gem 'compass', '~> 0.12.alpha'
 end
 
 gem 'jquery-rails'
