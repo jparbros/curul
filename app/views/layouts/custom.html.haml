@@ -1,1 +1,1 @@
-=raw Liquid::Template.parse(current_site.custom_layout_content).render('page_content' => yield, 'page_title' => yield(:title))
+= Liquid::Template.parse(current_site.custom_layout_content).render('page_content' =>  yield, 'page_title' => yield(:title), 'csrf_meta_tag' => csrf_meta_tag, 'class_by_controller' => params[:controller].gsub('/','_'), 'modals' => yield(:modals), 'javascript_onload' => yield(:javascript_onload)).html_safe
