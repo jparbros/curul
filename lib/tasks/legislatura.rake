@@ -49,23 +49,54 @@ namespace :legislatura do
     Representative.transaction do
       legislatura = Legislature.find_by_name('Legislatura LXII')
       CSV.foreach('doc/legislatura_LXII.csv', :headers => true) do |diputado|
-        region = Region.find_by_name(diputado['Entidad'])
-        partido = PoliticalParty.find_by_name(diputado['Partido'])
+        region = Region.find_by_name(diputado['entidad'])
+        partido = PoliticalParty.find_by_name(diputado['partido'])
         rep = Representative.create(
-          name: "#{diputado['Nombre']} #{diputado['Apellidos']}",
+          name: "#{diputado['nombre']} #{diputado['apellidos']}",
           position: 'Diputado',
-          region: region,
-          biography: diputado['Bio'],
-          twitter: diputado['Twitter'],
-          political_party: partido,
-          district: diputado['Distrito'],
-          phone: "#{diputado['Teléfono']} EXT. #{diputado['Extensión']}",
-          email: diputado['Correo electrónico'],
-          substitute: "#{diputado['Suplente Nombre']} #{diputado['Suplente Apellido']}",
-          election_type: diputado['Tipo de elección'],
-          circumscription: diputado['Circunscripción'],
+          region_id: region.id,
+          biography: diputado['bio'],
+          twitter: diputado['twitter'],
+          political_party_id: partido.id,
+          district: diputado['distrito'],
+          phone: "#{diputado['telefono']} EXT. #{diputado['extension']}",
+          email: diputado['correo_electronico'],
+          substitute: "#{diputado['suplente_nombre']} #{diputado['suplente_apellido']}",
+          election_type: diputado['tipo_de_eleccion'],
+          circumscription: diputado['circunscripcion'],
           legislature: legislatura
         )
+      end
+    end
+  end
+  
+  desc "Legislatura LXII"
+  task :update => [:environment] do
+    Representative.transaction do
+      legislatura = Legislature.find_by_name('Legislatura LXII')
+      CSV.foreach('doc/diputados-27-sep.csv', :headers => true) do |diputado|
+        region = Region.find_by_name(diputado['entidad'])
+        partido = PoliticalParty.find_by_name(diputado['partido'])
+        rep = Representative.find_by_name("#{diputado['nombre']} #{diputado['apellidos']}")
+        puts "#{diputado.inspect}"
+        if rep
+          rep.update_attributes({
+            position: 'Diputado',
+            region: region,
+            biography: diputado['bio'],
+            twitter: diputado['twitter'],
+            political_party: partido,
+            district: diputado['distrito'],
+            phone: "#{diputado['telefono']} EXT. #{diputado['extension']}",
+            email: diputado['correo_electronico'],
+            substitute: "#{diputado['suplente_nombre']} #{diputado['suplente_apellido']}",
+            election_type: diputado['tipo_de_eleccion'],
+            circumscription: diputado['circunscripcion'],
+          }) 
+          puts "REPRESENTANTE ACTUALIZADO #{diputado['nombre']} #{diputado['apellidos']} - #{diputado['correo_electronico']}"
+        else
+          puts "REPRESENTANTE NO ACTUALIZADO #{diputado['nombre']} #{diputado['apellidos']}"
+        end
       end
     end
   end

@@ -25,7 +25,10 @@
             = link_to image_tag('front/iniciativa.png'), iniciativa_path(@iniciativa)
           .iniciativa_info
             %p.info
-              = I18n.localize(@iniciativa.presented_at, :format => :month_year).capitalize
+              - if @iniciativa.presented_at
+                = I18n.localize(@iniciativa.presented_at, :format => :month_year).capitalize
+              - else
+                No presentada todavía.
               %br
               Propuesta por:
               %span

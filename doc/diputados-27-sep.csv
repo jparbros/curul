@@ -1,0 +1,501 @@
+sexo,nombre,apellidos,partido,tipo_de_eleccion,entidad,distrito,circunscripcion,telefono,extension,correo_electronico,twitter,comisiones,bio,suplente,estado_actual,suplente_nombre,suplente_apellido
+M,Rubén,Camarillo Ortega,Partido Acción Nacional,Representación proporcional,Aguascalientes,,2,,,ruben.camarillo@congreso.gob.mx,@Ruben_Camarillo,,,,,Yatziri,Mendoza Jiménez
+M,Antonio,Cuéllar Steffan,Partido Verde Ecologista de México,Representación proporcional,Aguascalientes,,2,,,antonio.cuellar@congreso.gob.mx,@Cuellar_Steffan,Trabajo y Previsión Social,,,,Marisol,Cano López
+F,Mónica,García de la Fuente,Partido Verde Ecologista de México,Representación proporcional,Aguascalientes,,2,,,monica.garcia@congreso.gob.mx,NA,,,,,Felipe,Pérez Ramírez
+F,Pilar,Moreno Montoya,Partido Revolucionario Institucional,Mayoría Relativa,Aguascalientes,1,,,,pilar.moreno@congreso.gob.mx,@Jpilarmoreno,,,,,,
+F,María Teresa,Jiménez Esquivel,Partido Acción Nacional,Mayoría relativa,Aguascalientes,2,,,,mteresa.jiemenez@congreso.gob.mx,@TereJimenezE ,,Politóloga y doctorante en Derecho.,,,Micaela,Rodríguez Zamora
+M,Raudel,López López,Partido Acción Nacional,Representación proporcional,Aguascalientes,,2,,,raudel.lopez@congreso.gob.mx,NA,,,,,Maximino,Tapia Flores
+M,José Ángel ,González Serna,Partido Acción Nacional,Mayoría Relativa,Aguascalientes,3,,,,jangel.gonzalez@congreso.gob.mx,@Diputado_Paquin,,,,,Irma,Solís Tepepa
+F,María Elvia,Amaya Araujo,Partido Revolucionario Institucional,Representación proporcional,Baja California,,1,,,elvia.amaya@congreso.gob.mx,NA,,,,Baja,Carla Ibeth ,Pedrero Espinoza
+M,Jaime,Bonilla Valdez ,Partido del Trabajo,Representación proporcional,Baja California,,1,,,jaime.bonilla@congreso.gob.mx,NA,,,,,Diana Paulina,Osorio Moreno
+M,Benjamín ,Castillo Valdez,Partido Revolucionario Institucional,Mayoría Relativa,Baja California,1,,,,benjamin.castillo@congreso.gob.mx,NA,,,,,Alicia Asunción,Grande Olguín
+F,María Fernanda ,Schroeder Verdugo,Partido Revolucionario Institucional,Mayoría Relativa,Baja California,2,,,,maria.schroeder@congreso.gob.mx,@FernandaSchVer,,Cirujana Dentista,,,,
+M,Fernando Jorge,Castro Trenti,Partido Revolucionario Institucional,Representación proporcional,Baja California,,1,,,fernando.castro@congreso.gob.mx,@SenCastroTrenti ,,,,,Erika,Gómez Lozada
+M,Andrés ,de la Rosa Anaya,Partido Acción Nacional,Representación proporcional,Baja California,,1,,,andres.delarosa@congreso.gob.mx,NA,,,,,Ana María,Roth González
+F,Ana Lilia,Garza Cadena,Partido Verde Ecologista de México,Representación proporcional,Baja California,,1,,,ana.garza@congreso.gob.mx,NA,,,,,Orlando Omar,Pérez Ortega
+M,Gilberto Antonio ,Hirata Chico,Partido Revolucionario Institucional,Mayoría Relativa,Baja California,3,,,,gilberto.hirata@congreso.gob.mx,@gilbertohiratac,,,,,Fernando,Camacho Ochoa
+F,María Elia ,Cabañas Aparicio ,Partido Revolucionario Institucional,Mayoría Relativa,Baja California,4,,,,maria.cabanas@congreso.gob.mx,NA,,,,,Matilde Alejandra ,Rosas Escobar
+M,Juan Manuel ,Gastélum Buenrostro,Partido Acción Nacional,Mayoría Relativa,Baja California,5,,,,jose.gastelum@congreso.gob.mx,@JmGastelumB ,,,,,Alejandro Martín,Palacios Ochoa
+M,Jaime Chris,López Alvarado,Partido Revolucionario Institucional,Mayoría Relativa,Baja California,6,,,,jaime.lopez@congreso.gob.mx,@ChrisLopezBC,,,,,Elida,Segura Sifuentes
+M,David ,Pérez Tejada Padilla,Partido Verde Ecologista de México,Mayoría Relativa,Baja California,7,,,,david.pereztejada@congreso.gob.mx,@davidptp07,,,,,,
+F,Mayra Karina ,Robles Aguirre,Partido Revolucionario Institucional,Mayoría Relativa,Baja California,8,,,,mayra.robles@congreso.gob.mx,@MayraRoblesA,,,,,,
+M,Francisco,Pelayo Covarrubias,Partido Acción Nacional,Mayoría Relativa,Baja California Sur,1,,,,francisco.pelayo@congreso.gob.mx,,,,,,Mayra,Moreno Benítez
+M,Arturo ,De La Rosa Escalante,Partido Acción Nacional,Mayoría Relativa,Baja California Sur,2,,,,arturo.delarosa@congreso.gob.mx,@arturodelarosa_ ,,,,,Leticia,García Mejía
+M,Alfredo,Zamora García  ,Partido Acción Nacional,Representación proporcional,Baja California Sur,,1,,,alfredo.zamora@congreso.gob.mx,,Trabajo y Previsión Social,,,,,
+F,Landy Margarita ,Berzunza Novelo,Partido Revolucionario Institucional,Mayoría relativa,Campeche,1,,,,landy.berzunza@congreso.gob.mx,@LandyBerzunza,,,,,Nury Delia,Ruiz Ovando
+F,Rocío Adriana ,Abreu Artiñano,Partido Verde Ecologista de México,Mayoría relativa,Campeche,2,,,,rocio.abreu@congreso.gob.mx,@RAbreuA,,,,,Laura Patricia,Romo Castorena
+M,José Angelino,Caamal Mena ,Nueva Alianza,Representación proporcional,Campeche,,3,,,jose.caamal@congreso.gob.mx,@JoseACaamal,Trabajo y Previsión Social (secretario),,,,Melania,Reynoso Navarro
+M,Rafael Alejandro,Moreno Cárdenas,Partido Revolucionario Institucional,Representación proporcional,Campeche,,3,,,rafael.moreno@congreso.gob.mx,@alitomorenoc,,,,,María de los Ángeles,Ibarra Celaya
+F,Elvia María,Pérez Escalante,Partido Revolucionario Institucional,Representación proporcional,Campeche,,3,,,elvia.perez@congreso.gob.mx,@perezelviam ,,,,,Ana Paola,López Birlain
+M,Jorge,Rosiñol Abreu,Partido Acción Nacional,Representación proporcional,Campeche,,3,,,jorge.rosinol@congreso.gob.mx,@Jorgerosinol,,,,,,
+M,Juan Jesús ,Aquino Calvo,Partido Acción Nacional,Representación proporcional,Chiapas,,3,,,juan.aquino@congreso.gob.mx,@Juan_Aquino_,,,,,Jesús,Aguilar Bueno
+F,Lourdes Adriana ,López Moreno,Partido Verde Ecologista de México,Mayoría Relativa,Chiapas,1,,,,adriana.lopez@congreso.gob.mx,NA,,Abogada,,,Samuel Filiberto,Cortés Pérez
+M,Pedro ,Gómez Gómez,Partido Revolucionario Institucional,Mayoría relativa,Chiapas,2,,,,pgomez.gomez@congreso.gob.mx,NA,,,,,Alma Delia,Gómez Ignacio
+M,Amilcar Augusto,Villafuerte Trujillo,Partido Verde Ecologista de México,Mayoría Relativa,Chiapas,3,,,,amilcar.villafuerte@congreso.gob.mx,,,,,,,
+M,Harvey ,Gutiérrez Álvarez,Partido Revolucionario Institucional,Mayoría Relativa,Chiapas,4,,,,harvey.gutierrez@congreso.gob.mx,@HarveyGutierrez,,,,,Mildrett Karina,Verde Avendaño
+M,Luis ,Gómez Gómez,Partido Revolucionario Institucional,Mayoría relativa,Chiapas,5,,,,lgomez.gomez@congreso.gob.mx,NA,,,,,Lucio,García Enríquez
+M,Williams Oswaldo,Ochoa Gallegos,Partido Revolucionario Institucional,Mayoría Relativa,Chiapas,6,,,,williams.ochoa@congreso.gob.mx,@WillyOchoaG,,,,,,
+M,Raciel,López Salazar,Partido Verde Ecologista de México,Representación proporcional,Chiapas,,3,,,raciel.lopez@congreso.gob.mx,NA,,,Propietario,Licencia,José Roberto,Arenas Martínez
+F,Arely,Madrid Tovilla,Partido Revolucionario Institucional,Representación proporcional,Chiapas,,3,,,arely.madrid@congreso.gob.mx,@Arely_Madrid,,,,,Francisco,Ceballos Capistrán
+M,Francisco,Grajales Palacios,Partido Revolucionario Institucional,Mayoría Relativa,Chiapas,7,,,,francisco.grajales@congreso.gob.mx,@pacograjales,Trabajo y Previsión Social,,,,Ana María,Vega Fernández
+M,Oscar Eduardo ,Ramírez Aguilar,Partido Verde Ecologista de México,Mayoría relativa,Chiapas,8,,,,eduardo.ramirez@congreso.gob.mx,,,,,,Ofelia,Limón Robles
+F,María Del Rosario De Fátima ,Pariente Gavito,Partido Verde Ecologista de México,Mayoría Relativa,Chiapas,9,,,,maria.pariente@congreso.gob.mx,@RosarioPariente,,,,,,
+M,Héctor ,Narcia Álvarez,Partido Verde Ecologista de México,Mayoría Relativa,Chiapas,10,,,,hector.narcia@congreso.gob.mx,@NarciaHector ,,,,,,
+M,Hugo Mauricio ,Pérez Anzueto,Partido Revolucionario Institucional,Mayoría Relativa,Chiapas,11,,,,hugo.perez@congreso.gob.mx,@AnzuetoDiputado ,,,,,Diana de Carmen,Vera Ávila
+F,Sonia,Rincón Chanona ,Nueva Alianza,Representación proporcional,Chiapas,,3,,,sonia.rincon@congreso.gob.mx,,,,,,,
+M,Héctor Hugo,Roblero Gordillo ,Partido del Trabajo,Representación proporcional,Chiapas,,3,,,hector.roblero@congreso.gob.mx,,,,,,José Arturo,López Candido
+M,Simón,Valanci Buzali,Partido Revolucionario Institucional,Representación proporcional,Chiapas,,3,,,simon.valanci@congreso.gob.mx,,,,,,,
+M,Antonio De Jesús ,Díaz Athié,Partido Revolucionario Institucional,Mayoría relativa,Chiapas,12,,,,antonio.diaz@congreso.gob.mx,@aDiazAthie ,,,,,Magdalena,Saavedra Villagrán
+F,Martha Edith,Vital Vera,Partido Verde Ecologista de México,Representación proporcional,Chiapas,,3,,,martha.vital@congreso.gob.mx,,,,,,,
+M,Rubén,Acosta Montoya ,Partido Verde Ecologista de México,Representación proporcional,Chihuahua,,1,,,ruben.acosta@congreso.gob.mx,NA,,,,,Miguel Alfonso ,Vildosola Lacarra
+F,Lilia ,Aguilar Gil,Partido del Trabajo,Representación proporcional,Chihuahua,,1,,,laguilar.gil@congreso.gob.mx,@liliaguilarz,,,,,Martín ,Plascencia Ávila
+F,Adriana,Fuentes Téllez,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,1,,,,afuentes.tellez@congreso.gob.mx,NA,,,,,Luis,Tapia Hernández
+M,José Ignacio ,Duarte Murillo,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,2,,,,ignacio.duarte@congreso.gob.mx,@Nacho_Duarte_,,,,,Minerva Marisol,Sánchez Hernández
+M,Carlos Fernando,Angulo Parra,Partido Acción Nacional,Mayoría Relativa,Chihuahua,3,,,,carlos.angulo@congreso.gob.mx,@CarlosAnguloP ,,,,,José Antonio,Badia San Martín
+F,Martha Beatriz,Córdova Bernal ,Movimiento Ciudadano,Representación proporcional,Chihuahua,,1,,,,NA,,,,,Álvaro,Martínez García
+M,Luis Alfredo ,Murguía Lardizabal,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,4,,,,luis.murguia@congreso.gob.mx,@Luis_Murguia04,,,,,,
+M,Abraham,Montes Alvarado,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,5,,,,abraham.montes@congreso.gob.mx,@AbrahamMontesD5,Trabajo y Previsión Social,,,,,
+F,Minerva,Castillo Rodríguez,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,6,,,,minerva.castillo@congreso.gob.mx,@MinervaCR1,,,,,Rocío,Ruiz de la Barrera
+M,Kamel,Athie Flores,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,7,,,,kamel.athie@congreso.gob.mx,@KamelAthie,,,,,Teodoro,Arguijo Hernández
+M,Pedro Ignacio ,Domínguez Zepeda,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,8,,,,pedro.dominguez@congreso.gob.mx,@Pedro_Dgz,,,,,Karina,Kelly Sánchez
+F,Rocío Esmeralda,Reza Gallegos,Partido Acción Nacional,Representación proporcional,Chihuahua,,1,,,rocio.reza@congreso.gob.mx,@Rocio_Reza,,,,,,
+F,Crystal ,Tovar Aragón,Partido de la Revolución Democrática,Representación proporcional,Chihuahua,,1,,,crystal.tovar@congreso.gob.mx,@CrystalTovar,,"Lic. en Mercadotecnia, maestría en Población, desarrollo y Políticas Públicas. ",,,,
+F,Diana Karina,Velázquez Ramírez,Partido Revolucionario Institucional,Mayoría relativa,Chihuahua,9,,,,diana.velazquez@congreso.gob.mx,@DianaKarinaVR,,,,,,
+M,José Guillermo,Anaya Llamas,Partido Acción Nacional,Representación proporcional,Coahuila,,2,,,jose.anaya@congreso.gob.mx,@jguillermoanaya,,,,,Lisbeth,Alonso Carreón
+F,Miriam,Cárdenas Cantú,Partido Revolucionario Institucional,Representación proporcional,Coahuila,,2,,,miriam.cardenas@congreso.gob.mx,@MiriamCardenasC,,,,,Arturo,López Sugia
+F,Irma ,Elizondo Ramírez,Partido Revolucionario Institucional,Mayoría relativa,Coahuila,1,,,,irma.elizondo@congreso.gob.mx,@PRImeroIRMA,,,,,María Gabriela,Bardales Hernández
+M,José Luis,Flores Méndez,Partido Revolucionario Institucional,Mayoría relativa,Coahuila,2,,,,jluis.flores@congreso.gob.mx,@FloresMendezJL,,,,,Leazly Laura,Villar Gómez
+M,Mario Alberto,Dávila Delgado,Partido Acción Nacional,Mayoría relativa,Coahuila,3,,,,mario.davila@congreso.gob.mx,@mario_dipancoah,,,,,Marisol,Morales Fernández
+M,Fernando Donato,de las Fuentes Hernández,Partido Revolucionario Institucional,Mayoría relativa,Coahuila,4,,,,fernando.delasfuentes@congreso.gob.mx,NA,,,,,María Guadalupe,Ayala Bravo
+F,Alfa Eliana,González Magallanes,Partido de la Revolución Democrática,Representación proporcional,Coahuila,,2,,,alfa.gonzalez@congreso.gob.mx,NA,,,,,Jorge Alfonso,Ruiz Romero
+M,Juan Marcos,Issa Salomón,Partido Revolucionario Institucional,Mayoría relativa,Coahuila,5,,,,salomon.marcos@congreso.gob.mx,@salomonjm,,,,,Ana María,Gutiérrez Coronado
+M,Marcelo de Jesús,Torres Cofiño,Partido Acción Nacional,Mayoría relativa,Coahuila,6,,,,marcelo.torres@congreso.gob.mx,@marcelotorresc,Trabajo y Previsión Social,,,,,
+F,Esther ,Quintana Salinas,Partido Acción Nacional,Mayoría relativa,Coahuila,7,,,,esther.quintana@congreso.gob.mx,@estherquintanas ,Trabajo y Previsión Social,,,,,
+F,Beatríz Eugenia,Yamamoto Cázares,Partido Acción Nacional,Representación proporcional,Guanajuato,,2,,,beatriz.yamamoto@congreso.gob.mx,@BettyYamamoto,,,,,,
+M,Miguel Ángel,Aguayo López,Partido Revolucionario Institucional,Mayoría Relativa,Colima,1,,,,miguel.aguayo@congreso.gob.mx,@MiguelAguayoMx,,,,,Virginia Victoria ,Martínez Gutiérrez
+F,Patricia ,Lugo Barriga,Partido Acción Nacional,Representación proporcional,Colima,,5,,,patricia.lugo@congreso.gob.mx,@Patricia_LugoB,,,,,Adelaida,Ramagnoli Cagnant
+M,Arnoldo,Ochoa González,Partido Revolucionario Institucional,Representación proporcional,Colima,,5,,,arnoldo.ochoa@congreso.gob.mx,@ArnoldoOchoa_,,,,,,
+M,Nabor,Ochoa López,Partido Verde Ecologista de México,Representación proporcional,Colima,,5,,,nabor.ochoa@congreso.gob.mx,@NaborOchoaLopez,,,,,,
+F,Martha Leticia,Sosa Govea,Partido Acción Nacional,Representación proporcional,Colima,,5,,,martha.sosa@congreso.gob.mx,@martha_sosa1,,,,,,
+M,Francisco Alberto ,Zepeda González,Partido Revolucionario Institucional,Mayoría relativa,Colima,2,,,,francisco.zepeda@congreso.gob.mx,@PicoZepeda,,,,,,
+M,Carlos Humberto,Aceves del Olmo,Partido Revolucionario Institucional,Representación proporcional,Distrito Federal,,4,,,carlos.aceves@congreso.gob.mx,NA,Trabajo y Previsión Social (Presidente),,,,Mónica,Becerra Moreno
+F,Lizbeth Eugenia,Rosas Montero,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,1,,,,lizbeth.rosas@congreso.gob.mx,,,,,,,
+M,Manuel Rafael ,Huerta Ladrón de Guevara,Partido del Trabajo,Mayoría Relativa,Distrito Federal,2,,,,manuel.huerta@congreso.gob.mx,NA,,,,,José Elías,Muñoz Vega
+F,Luisa María,Alcalde Luján ,Movimiento Ciudadano,Representación proporcional,Distrito Federal,,4,,,luisa.alcalde@congreso.gob.mx,@LuisaAlcalde,Trabajo y Previsión Social (secretario),,,,Luisa Del Carmen,Zapata Barredo
+M,Fernando ,Cuellar Reyes,Partido de la Revolución Democrática,Mayoría Relativa ,Distrito Federal,3,,,,fernando.cuellar@congreso.gob.mx,@dipfercuellarr,,,,,Marisol,González Torres
+M,Luis Manuel,Arias Pallares,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,luis.arias@congreso.gob.mx,NA,,,,,Rosalba,Loya García
+M,José Angel,Ávila Pérez,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,jose.avila@congreso.gob.mx,@JoseAngel_Avila,,,,,Luis Fernando ,Mancilla Fuentes
+M,Carlos Augusto,Morales López,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,4,,,,caugusto.morales@congreso.gob.mx,@carlosaugusto24,,,,,Bernardeth,Ruiz Romero
+M,Martí,Batres Guadarrama ,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,marti.batres@congreso.gob.mx,@martibatres,Trabajo y Previsión Social (secretario),,,,Erwin Francisco,Arriola Doroteo
+M,Fernando,Belaunzarán Méndez ,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,fernando.belaunzaran@congreso.gob.mx,@ferbelaunzaran,,,,,Juan Martín,Martínez Cuevas
+M,José Antonio,Hurtado Gallegos,Movimiento Ciudadano,Mayoría Relativa,Distrito Federal,5,,,,jose.hurtado@congreso.gob.mx,@DIP_JOSEANTONIO,,,,,Mirna,Velázquez López
+M,Jhonatan,Jardines Fraire,Partido de la Revolución Democrática,Mayoría relativa,Distrito Federal,6,,,,jhonatan.jardines@congreso.gob.mx,@jhonjardines,,,,,Maribel,Enríquez Ramírez
+F,Claudia Elena,Águila Torres,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,7,,,,claudia.aguila@congreso.gob.mx,NA,,,,,Juan Andrés,Sollano García
+M,Alejandro ,Carbajal González,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,8,,,,alejandro.carbajal@congreso.gob.mx,NA,Trabajo y Previsión Social,,,,José,Adán Abellaneda
+M,Gerardo Maximiliano,Cortázar Lara,Partido Acción Nacional,Representación proporcional,Distrito Federal,,4,,,gerardo.cortazar@congreso.gob.mx,@maxcortazarl,,,,,Luis Armando,Córdova Díaz
+M,Israel,Moreno Rivera,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,9,,,,imoreno.rivera@congreso.gob.mx,@julioc_moreno,,,,,,
+M,Arturo,Escobar y Vega,Partido Verde Ecologista de México,Representación proporcional,Distrito Federal,,4,,,arturo.escobar@congreso.gob.mx,@arturoesc,,,,,Elizabeth,Vázquez Hernández
+M,Agustín,Barrios Gómez Segues,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,10,,,,agustin.barriosgomez@congreso.gob.mx,NA,,,,,Rafael,Guerrero Domínguez
+M,Luis Ángel Xariel,Espinosa Cházaro,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,11,,,,luis.espinosa@congreso.gob.mx,NA,,,,,Francisco Antonio Eduardo,Mora Molina
+M,René Ricardo,Fujiwara Montelongo ,Nueva Alianza,Representación proporcional,Distrito Federal,,4,,,rene.fujiwara@congreso.gob.mx,@renefuji,,,,,Doroteo,Macías Contreras
+F,Amalia Dolores,García Medina ,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,amalia.garcia@congreso.gob.mx,NA,,,,,Erick Gerardo,Treviño Lozano
+M,José Luis,Muñoz Soria,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,12,,,,jose.munoz@congreso.gob.mx,,,,,,,
+M,Roberto Carlos,Reyez Gámiz,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,13,,,,roberto.reyes@congreso.gob.mx,,,,,,José Dolores,González Ortiz
+F,Martha Lucía ,Mícher Camarena,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,14,,,,malu.micher@congreso.gob.mx,@malumicher,,,,,,
+M,Jorge Francisco,Sotomayor Chávez,Partido Acción Nacional,Mayoría Relativa,Distrito Federal,15,,,,jorge.sotomayor@congreso.gob.mx,@Jorge_Sotomayor,,,,,,
+M,Mario Miguel,Carrillo Huerta,Partido de la Revolución Democrática,Mayoría relativa,Distrito Federal,16,,,,mario.carrillo@congreso.gob.mx,@mariocarrillomx,,,,,José Luis,González León
+F,Laura Ximena,Martel Cantú,Partido Verde Ecologista de México,Representación proporcional,Distrito Federal,,4,,,laura.martel@congreso.gob.mx,@XimenaMartelC,,,,,Adanery,Medina Guerrero
+M,Fernando,Zárate Salgado,Partido de la Revolución Democrática,Mayoría Relativa ,Distrito Federal,17,,,,fernando.zarate@congreso.gob.mx,@FernandoZarateS,,,,,,
+M,Ricardo,Monreal Ávila ,Movimiento Ciudadano,Representación proporcional,Distrito Federal,,4,,,ricardo.monreal@congreso.gob.mx,@RicardoMonrealA,,,,,,
+F,Karen,Quiroga Anguiano,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,18,,,,karen.quiroga@congreso.gob.mx,@KarenQuirogaA,,,,,,
+M,Trinidad Secundino,Morales Vargas,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,trinidad.morales@congreso.gob.mx,@TrinidadMorale2,,,,,,
+M,Julio César,Moreno Rivera,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,julio.moreno@congreso.gob.mx,,,,,,,
+F,Aleida,Alavez Ruiz,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,19,,,,aleida.alavez@congreso.gob.mx,@ALEIDAALAVEZ,,,,,Martha Guadalupe ,Villarreal Rangel
+M,Felipe de Jesús,Muñoz Kapamas,Partido Revolucionario Institucional,Representación proporcional,Distrito Federal,,4,,,felipe.munoz@congreso.gob.mx,,,,,,,
+M,José Alberto,Benavides Castañeda,Partido del Trabajo,Mayoría Relativa,Distrito Federal,20,,,,jose.benavides@congreso.gob.mx,NA,,,,,Rebeca ,Peralta León
+F,Yesenia,Nolasco Ramírez ,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,yesenia.nolasco@congreso.gob.mx,,,,,,,
+F,Cristina,Olvera Barrios ,Nueva Alianza,Representación proporcional,Distrito Federal,,4,,,cristina.olvera@congreso.gob.mx,,,,,,,
+M,Adolfo,Orive Bellinger ,Partido del Trabajo,Representación proporcional,Distrito Federal,,4,,,adolfo.orive@congreso.gob.mx,@Adolfo_OriveB,Trabajo y Previsión Social (secretario),,,,Abraham,Correa Acevedo
+F,Loretta,Ortiz Ahlf,Partido del Trabajo,Representación proporcional,Distrito Federal,,4,,,loretta.ortiz@congreso.gob.mx,,,,,,,
+F,Flor de María ,Pedraza Aguilera,Partido Acción Nacional,Representación proporcional,Distrito Federal,,4,,,flor.pedraza@congreso.gob.mx,@FlorPedraza,,,,,,
+M,Alejandro,Sánchez Camacho,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,21,,,,alejandro.sanchez@congreso.gob.mx,,,,Propietario,Licencia,,
+F,Purificación,Carpinteyro Calderón,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,22,,,,purificacion.carpinteyro@congreso.gob.mx,@Puri2010,,,,,,
+M,Fernando ,Rodríguez Doval,Partido Acción Nacional,Representación proporcional,Distrito Federal,,4,,,,@ferdoval,,,,,,
+M,José Valentín,Maldonado Salgado,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,23,,,,jose.maldonado@congreso.gob.mx,,,,,,Ramiro,Hernández Lozano
+F,Margarita,Saldaña Hernández,Partido Acción Nacional,Representación proporcional,Distrito Federal,,4,,,margarita.saldana@congreso.gob.mx,@MargaretSaldana,,,,,,
+M,Gerardo,Villanueva Albarrán,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,24,,,,gerardo.villanueva@congreso.gob.mx,,,,,,,
+M,Guillermo,Sánchez Torres ,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,guillermo.sanchez@congreso.gob.mx,,,,,,,
+F,María de Lourdes,Amaya Reyes,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,25,,,,maria.amaya@congreso.gob.mx,NA,,,,,Esperanza ,Avendaño López
+F,Margarita Elena,Tapia Fonllem ,Partido de la Revolución Democrática,Representación proporcional,Distrito Federal,,4,,,margarita.tapia@congreso.gob.mx,,Trabajo y Previsión Social,,,,,
+M,José Arturo,López Cándido,Partido del Trabajo,Mayoría relativa,Distrito Federal,26,,,,arturo.lopez@congreso.gob.mx,@jalopezcandido,,,,,Belén,Rosales Puente
+F,María de la Paloma,Villaseñor Vargas,Partido Revolucionario Institucional,Representación proporcional,Distrito Federal,,4,,,maria.villasenor@congreso.gob.mx,,,,,,María del Carmen,Pérez Jiménez
+F,Guadalupe Socorro,Flores Salazar,Partido de la Revolución Democrática,Mayoría Relativa,Distrito Federal,27,,,,"guadalupe.flores@congreso.gob.mx, gusalazarsigloxx1@yahoo.com.mx",NA,,,,,Lucía,Sandoval Rentería
+F,Ruth ,Zavaleta Salgado,Partido Verde Ecologista de México,Representación proporcional,Distrito Federal,,4,,,,,,,,,,
+M,Rodolfo ,Dorador Pérez Gavilán,Partido Acción Nacional,Representación proporcional,Durango,,1,,,rodolfo.dorador@congreso.gob.mx,@Dorador1 ,,,,,María Luilia,Rebollo Cuéllar
+F,Sonia Catalina,Mercado Gallegos,Partido Revolucionario Institucional,Mayoría relativa,Durango,1,,,,sonia.mercado@congreso.gob.mx,@katy_mercado,,,,,,
+F,Alma Marina,Vitela Rodríguez,Partido Revolucionario Institucional,Mayoría relativa,Durango,2,,,,alma.vitela@congreso.gob.mx,@Marina_Vitela,,,,,,
+M,José Rubén ,Escajeda Jiménez,Partido Revolucionario Institucional,Mayoría relativa,Durango,3,,,,jose.escajeda@congreso.gob.mx,@ruben_escajeda,,,,,Rodrigo,Rosas Esparza
+M,Ricardo Fidel,Pacheco Rodríguez,Partido Revolucionario Institucional,Representación proporcional,Durango,,1,,,ricardo.pacheco@congreso.gob.mx,,Trabajo y Previsión Social (secretario),,,,Cindy Abril,Arvizu Hernández
+F,Lourdes Eulalia,Quiñones Canales,Partido Revolucionario Institucional,Representación proporcional,Durango,,1,,,lourdes.quinones@congreso.gob.mx,@lourdesquinones,,,,,,
+M,Jorge,Herrera Delgado,Partido Revolucionario Institucional,Mayoría relativa,Durango,4,,,,jherrera.delgado@congreso.gob.mx,@jherreradelgado,,,,,Samira Guadalupe,Yamuni Robles
+M,Brasil Alberto,Acosta Peña,Partido Revolucionario Institucional,Representación proporcional,México,,5,,,brasil.acosta@congreso.gob.mx,NA,,,,,Beatriz Ariana ,Flores Alvarado
+F,Juana,Bonilla Jaime,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,juana.bonilla@congreso.gob.mx,NA,,,,,Gerardo David,Rodríguez López
+M,Agustín Miguel,Alonso Raya,Partido de la Revolución Democrática,Representación proporcional,Guanajuato,,2,,,agustin.alonso@congreso.gob.mx,@AlonsoRaya_,,,,,Adriana,Fonseca García
+M,Francisco Agustín,Arroyo Vieyra,Partido Revolucionario Institucional,Representación proporcional,Guanajuato,,2,,,francisco.arroyo@congreso.gob.mx,@farroyov,,,,,Karina Yanet ,Ríos Ornelas
+F,Petra ,Barrera Barrera,Partido Revolucionario Institucional,Mayoría Relativa,Guanajuato,1,,,,petra.barrera@congreso.gob.mx,NA,,,,,Ricardo Janecarlo,Lozano Reynoso
+M,Fernando,Bribiesca Sahagún ,Nueva Alianza,Representación proporcional,Guanajuato,,2,,,fernando.bribiesca@congreso.gob.mx,@Ferbribiesca,,,,,Eduardo ,Solís Nogueira
+M,Ricardo ,Villarreal García,Partido Acción Nacional,Mayoría Relativa,Guanajuato,2,,,,ricardo.villarreal@congreso.gob.mx,@VillarrealRic,,,,,,
+F,María Elena,Cano Ayala,Partido Revolucionario Institucional,Representación proporcional,Guanajuato,,2,,,elena.cano@congreso.gob.mx,NA,,,,,Fernando ,Olivares Ramos
+F,Elizabeth ,Vargas Martín del Campo,Partido Acción Nacional,Mayoría Relativa,Guanajuato,3,,,,elizabeth.vargas@congreso.gob.mx,,,,,,,
+F,María Esther,Garza Moreno,Partido Revolucionario Institucional,Mayoría Relativa,Guanajuato,4,,,,maria.garza@congreso.gob.mx,NA,,,,,Simón,Lomelí Cervantes
+M,Diego Sinhué,Rodríguez Vallejo,Partido Acción Nacional,Mayoría Relativa,Guanajuato,5,,,,fernando.rodriguez@congreso.gob.mx,@diegosinhue,,,,,,
+M,Juan Carlos ,Muñoz Márquez,Partido Acción Nacional,Representación proporcional,Guanajuato,,2,,,juan.munoz@congreso.gob.mx,@jcmunozmarquez,,,,,María Guadalupe,Orozco Rivera
+F,Rosa Elba,Pérez Hernández,Partido Verde Ecologista de México,Mayoría Relativa,Guanajuato,6,,,,rosaelba.perez@congreso.gob.mx,,,,,,Rocío,Baca Bonifaz
+F,María Guadalupe,Velázquez Díaz,Partido Revolucionario Institucional,Mayoría Relativa,Guanajuato,7,,,,maria.velazquez@congreso.gob.mx,,,,,,,
+M,Genaro,Carreño Muro,Partido Acción Nacional,Mayoría Relativa,Guanajuato,8,,,,genaro.carreno@congreso.gob.mx,@Genaro_Carreno,,,,,Manuel Francisco,Tapia Bustos
+M,Alejandro ,Rangel Segovia,Partido Revolucionario Institucional,Mayoría Relativa,Guanajuato,9,,,,alejandro.rangel@congreso.gob.mx,@conalexrangel,,,,,,
+M,Raúl,Gómez Ramírez,Partido Acción Nacional,Mayoría Relativa,Guanajuato,10,,,,raul.gomez@congreso.gob.mx,NA,,,,,María Luisa,Matus Fuentes
+F,Ma. Concepción,Navarrete Vital,Partido Revolucionario Institucional,Mayoría Relativa,Guanajuato,11,,,,concepcion.navarrete@congreso.gob.mx,,,,,,Carlos Humberto,Castaños Valenzuela
+M,Felipe Arturo,Camarena García,Partido Verde Ecologista de México,Mayoría Relativa,Guanajuato,12,,,,felipe.camarena@congreso.gob.mx,@FelipeACamarena,,,,,Ma. Patricia,Alonso Mata
+M,J. Jesús ,Oviedo Herrera,Partido Acción Nacional,Mayoría Relativa,Guanajuato,13,,,,jesus.oviedo@congreso.gob.mx,@JesusOviedoH,,,,,,
+M,Luis Alberto,Villareal García,Partido Acción Nacional,Representación proporcional,Guanajuato,,2,,,luis.villareal@congreso.gob.mx,,,,,,,
+M,José Luis,Oliveros Usabiaga,Partido Acción Nacional,Mayoría Relativa,Guanajuato,14,,,,jose.oliveros@congreso.gob.mx,@chelisoliveros,,,,,,
+F,Elizabeth Oswelia,Yáñez Robles,Partido Acción Nacional,Representación proporcional,Guanajuato,,2,,,elizabeth.yanez@congreso.gob.mx,,,,,,,
+M,Manuel,Añorve Baños,Partido Revolucionario Institucional,Representación proporcional,Guerrero,,4,,,manuel.anorve@congreso.gob.mx,@manuelanorve,,,,,María Esther ,Martínez Rivera
+M,Catalino,Duarte Ortuño,Partido de la Revolución Democrática,Mayoría relativa,Guerrero,1,,,,catalino.duarte@congreso.gob.mx,@catalino_duarte,,,,,Shantall,Zepeda Escobar
+M,Marino,Miranda Salgado,Partido del Trabajo,Mayoría relativa,Guerrero,2,,,,marino.miranda@congreso.gob.mx,@MarinoMiranda,,,,,,
+M,Silvano,Blanco de Aquino,Partido de la Revolución Democrática,Mayoría Relativa,Guerrero,3,,,,silvano.blanco@congreso.gob.mx,@SilvanoBlanco,Trabajo y Previsión Social,,,,Fidel,Bazán Tenorio
+M,Víctor Manuel,Jorrin Lozano,Movimiento Ciudadano,Mayoría Relativa ,Guerrero,4,,,,victor.jorrin@congreso.gob.mx,@Vjorrin,,,,,Francisca Rosario,Arana Lugo
+M,Vicario,Portillo Martínez,Partido de la Revolución Democrática,Mayoría relativa,Guerrero,5,,,,vicario.portillo@congreso.gob.mx,,,,,,Ofelia,Zumaya Ahumada
+M,Ricardo Sóstenes,Mejía Berdeja,Movimiento Ciudadano,Representación proporcional,Guerrero,,4,,,ricardo.mejia@congreso.gob.mx,@Ricardomeb,,,,,Alberto Leónides,Escamilla Cerón
+M,Carlos,de Jesús Alejandro,Partido de la Revolución Democrática,Mayoría relativa,Guerrero,6,,,,carlos.dejesus@congreso.gob.mx,NA,,,,,Humberto,González Gaistardo
+M,Jorge,Salgado Parra,Partido de la Revolución Democrática,Mayoría relativa,Guerrero,7,,,,jorge.salgado@congreso.gob.mx,@jorgesalgado10,,,,,,
+F,Teresa de Jesús,Mojica Morga,Partido de la Revolución Democrática,Representación proporcional,Guerrero,,4,,,teresa.mojica@congreso.gob.mx,,,,,,,
+M,Sebastián Alfonso,de la Rosa Pelaéz,Partido de la Revolución Democrática,Mayoría Relativa,Guerrero,8,,,,sebastian.delarosa@congreso.gob.mx,@Delarosapelaez,,,,,Lucía Cristal,Santiago Martínez
+F,María del Rosario,Merlín García,Partido de la Revolución Democrática,Mayoría relativa,Guerrero,9,,,,maria.merlin@congreso.gob.mx,@RosarioMerlin,,,,,,
+M,Darío,Badillo Ramírez,Partido Revolucionario Institucional,Mayoría relativa,Hidalgo,1,,,,dario.badillo@congreso.gob.mx,NA,,,,,Juan de Jesús,Hernández Ramírez
+F,Dulce María,Muñiz Martínez,Partido Revolucionario Institucional,Mayoría relativa,Hidalgo,2,,,,dulce.muniz@congreso.gob.mx,@Dulce_Muniz,,,,,,
+F,Emilse,Miranda Munive,Partido Revolucionario Institucional,Mayoría relativa,Hidalgo,4,,,,emilse.miranda@congreso.gob.mx,@EmilseMiranda1,,,,,,
+F,Nuvia Magdalena,Mayorga Delgado,Partido Revolucionario Institucional,Representación proporcional,Hidalgo,,5,,,nuvia.mayorga@congreso.gob.mx,@Nuvia_Mayorga,,,,,Lucia Guadalupe,Canto Lara
+M,Francisco,González Vargas,Partido Revolucionario Institucional,Mayoría relativa,Hidalgo,7,,,,francisco.gonzalez@congreso.gob.mx,@Paco_GlezV,,,,,Esther,Méndez Medel
+M,José Antonio,Rojo García de Alba,Partido Revolucionario Institucional,Mayoría relativa,Hidalgo,5,,,,jose.rojo@congreso.gob.mx,@Joseantoniorojo,,,,,,
+M,Jesús ,Murillo Karam,Partido Revolucionario Institucional,Representación proporcional,Hidalgo,,5,,,jesus.murillo@congreso.gob.mx,,,,,,,
+M,Erick Marte,Rivera Villanueva,Partido Acción Nacional,Representación proporcional,Hidalgo,,5,,,erick.rivera@congreso.gob.mx,,,,,,,
+F,Myrna Esmeralda,Hernández Morales,Partido Revolucionario Institucional,Mayoría relativa,Hidalgo,6,,,,mirna.hernandez@congreso.gob.mx,@mirnahermo,,,,,María Merced,León Andablo
+M,Víctor Hugo,Velasco Orozco,Partido Revolucionario Institucional,Mayoría relativa,Hidalgo,3,,,,victor.velasco@congreso.gob.mx,@VictorVelascoO,,,,,,
+M,Cesáreo,Padilla Navarro,Partido Revolucionario Institucional,Mayoría Relativa,Jalisco,1,,,,cesario.padilla@congreso.gob.mx,,,,,,María Antonia,García Sanjines
+M,José Noel,Pérez de Alba,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,2,,,,jose.perez@congreso.gob.mx,,,,,,,
+F,Cecilia,González Gómez,Partido Verde Ecologista de México,Mayoría Relativa,Jalisco,3,,,,cecilia.gonzalez@congreso.gob.mx,NA,,,,,Lucía,Cruz Arroyo
+M,Salvador,Arellano Guzmán,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,4,,,,salvador.arellano@congreso.gob.mx,NA,,,,,Sigifredo,Galaz Varela
+M,Rafael,González Reséndiz,Partido Revolucionario Institucional,Mayoría Relativa,Jalisco,5,,,,rafael.gonzalez@congreso.gob.mx,@rafaelgresendiz,,,,,Liliana,Castillo Terreros
+M,Abel Octavio,Salgado Peña,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,6,,,,abel.salgado@congreso.gob.mx,@SalgadoAbel,,,,,,
+M,Sergio,Chávez Dávalos,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,7,,,,sergio.chavez@congreso.gob.mx,@SergioChavez_D,,,,,Gildardo,Sánchez González
+M,Leobardo,Alcalá Padilla,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,8,,,,leobardo.alcala@congreso.gob.mx,@Leobardo_Alcala,,,,,Álvaro,Martínez García
+F,María del Rocío,Corona Nakamura,Partido Revolucionario Institucional,Representación proporcional,Jalisco,,1,,,maria.corona@congreso.gob.mx,@RocioCoronaNkm,,,,,Norma Elizabeth,Chávez Arias
+M,Isaías,Cortés Berumen,Partido Acción Nacional,Representación proporcional,Jalisco,,1,,,isaias.cortes@congreso.gob.mx,@Isaias_Cortes,,,,,Liliana Guadalupe,Morones Vargas
+F,María Leticia,Mendoza Curiel,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,9,,,,leticia.mendoza@congreso.gob.mx,@siconlety,Trabajo y Previsión Social,,,,,
+M,Patricio,Flores Sandoval,Partido Revolucionario Institucional,Representación proporcional,Jalisco,,1,,,patricio.flores@congreso.gob.mx,NA,Trabajo y Previsión Social,,,,Mario César,Gaona García
+M,Omar Antonio,Borboa Becerra,Partido Acción Nacional,Mayoría Relativa,Jalisco,10,,,,omar.borboa@congreso.gob.mx,@OMARBORBOA10,,,,,Alicia Guadalupe,Gamboa Martínez
+F,Claudia,Delgadillo González,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,11,,,,claudia.delgadillo@congreso.gob.mx,@ClauDelgadillo1,,,,,Víctor,Sánchez Guerrero
+F,Merilyn,Gómez Pozos,Movimiento Ciudadano,Representación proporcional,Jalisco,,1,,,merlyn.gomez@congreso.gob.mx,NA,,,,,Luz,Gómez Solano
+F,Celia Isabel,Gauna Ruíz de León,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,12,,,,celia.gauna@congreso.gob.mx,@celiagauna,,,,,Carlos Humberto,González García
+M,Marco Antonio,Barba Mariscal,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,13,,,,marco.barba@congreso.gob.mx,@marco_barba,Trabajo y Previsión Social,,,,Pedro,González Hinojosa
+F,Verónica Beatriz,Juárez Piña,Partido de la Revolución Democrática,Representación proporcional,Jalisco,,1,,,veronica.juarez@congreso.gob.mx,@juarezvero,,,,,Estela,Núñez Álvarez
+F,Margarita,Licea González,Partido Acción Nacional,Representación proporcional,Jalisco,,1,,,margarita.licea@congreso.gob.mx,@MargaritaLicea,,Licenciatura y maestría en derecho. Fue abogada para varias empresas. ,,,Sebastián,Deya Becerril
+M,Roberto,López González,Partido de la Revolución Democrática,Representación proporcional,Jalisco,,1,,,roberto.lopez@congreso.gob.mx,NA,,,,,Juana María,Sánchez Astello
+M,Enrique,Aubry de Castro Palomino,Partido Verde Ecologista de México,Mayoría Relativa,Jalisco,14,,,,enrique.decastro@congreso.gob.mx,@EnriqueAubry,,,,,Rocío ,Vázquez Hernández
+M,Ossiel Omar,Niáves López,Partido Revolucionario Institucional,Mayoría Relativa,Jalisco,15,,,,ossiel.niaves@congreso.gob.mx,,,,,,Raquel,Mota Rodríguez
+M,Luis Armando,Córdova Díaz,Partido Revolucionario Institucional,Mayoría relativa,Jalisco,16,,,,luis.cordova@congreso.gob.mx,NA,,,,,Lucía,Reynoso Castellanos
+F,María Angélica,Magaña Zepeda,Partido Revolucionario Institucional,Mayoría Relativa,Jalisco,17,,,,maria.magana@congreso.gob.mx,,,,,,Patricia Guadalupe,Peña Recio
+F,Carmen Lucia,Pérez Camarena,Partido Acción Nacional,Representación proporcional,Jalisco,,1,,,carmen.perez@congreso.gob.mx,@Lucyperez2012,,,,,,
+M,Gabriel,Gómez Michel,Partido Verde Ecologista de México,Mayoría Relativa,Jalisco,18,,,,gabriel.gomez@congreso.gob.mx,NA,,,,,Leticia,González Yescas
+F,Patricia Elena,Retamoza Vega,Partido Revolucionario Institucional,Representación proporcional,Jalisco,,1,,,patricia.retamoza@congreso.gob.mx,@pattyretamoza,,,,,Fernando,Galván Martínez
+M,Salvador,Barajas del Toro,Partido Revolucionario Institucional,Mayoría Relativa,Jalisco,19,,,,salvador.barajas@congreso.gob.mx,@Chava_Barajas_T,,,,,José Fred ,Guerrero Balanzar
+M,José Luis,Valle Magaña,Movimiento Ciudadano,Representación proporcional,Jalisco,,1,,,jose.valle@congreso.gob.mx,,,,,,,
+F,Leticia,Calderón Ramírez,Partido Revolucionario Institucional,Representación proporcional,México,,5,,,lcalderon.ramirez@congreso.gob.mx,@LetiCalderonR,,,,,,
+M,José Miguel,Sámano Peralta,Partido Verde Ecologista de México,Mayoría relativa,México,1,,,,miguel.samano@congreso.gob.mx,@Miguelsamanop,,,,,,
+M,Gerardo,Liceaga Arteaga,Partido Revolucionario Institucional,Mayoría relativa,México,2,,,,gerardo.liceaga@congreso.gob.mx,@GerardoLiceaga,,,,,Verónica,Morales Huerta
+M,José,Rangel Espinosa,Partido Revolucionario Institucional,Mayoría relativa,México,3,,,,jose.rangel@congreso.gob.mx,,,,,,Yadira Asucena,Salas Aguilar
+F,Angelina,Carreño Mijares,Partido Revolucionario Institucional,Mayoría relativa,México,4,,,,angelina.carreno@congreso.gob.mx,@AngelinaCM_,,,,,Víctor Efigenio,Martín Cristóbal
+M,Darío,Zacarías Capuchino,Partido Revolucionario Institucional,Mayoría relativa,México,5,,,,dario.zacarias@congreso.gob.mx,@DARIODIPUTADO,,,,,,
+M,Roberto,Ruiz Moronatti,Partido Revolucionario Institucional,Mayoría relativa,México,6,,,,rruiz.moronatti@congreso.gob.mx,,,,,,,
+M,Ricardo,Cantú Garza ,Partido del Trabajo,Representación proporcional,México,,5,,,ricardo.cantu@congreso.gob.mx,NA,,,,,Maribel,Serrano Domínguez
+M,Ángel,Cedillo Hernández ,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,angel.cedillo@congreso.gob.mx,NA,,,,,Lázaro,Vera Jiménez
+F,Paulina Alejandra,del Moral Vega,Partido Revolucionario Institucional,Mayoría relativa,México,7,,,,alejandra.delmoral@congreso.gob.mx,@AlejandraDMV,,,,,María del Carmen,Guzmán Urban
+F,Maricruz,Cruz Morales,Partido Revolucionario Institucional,Representación proporcional,México,,5,,,maricruz.cruz@congreso.gob.mx,NA,,,,,Ignacio,Mestas Gallardo
+M,Marco Antonio,Calzada Arroyo,Partido Revolucionario Institucional,Mayoría relativa,México,8,,,,marco.calzada@congreso.gob.mx,@Marco_Calzada,,,,,Verónica,González Gómez
+M,José Sergio,Manzur Quiroga,Partido Revolucionario Institucional,Mayoría relativa,México,9,,,,jose.manzur@congreso.gob.mx,@Manzur_Jose,,,,,Juan Isidro,del Bosque Márquez
+F,Erika Yolanda,Funes Velázquez,Partido Revolucionario Institucional,Representación proporcional,México,,5,,,erika.funes@congreso.gob.mx,@erifunes,,,,,Genaro,Hernández Sánchez
+F,Lucila,Garfias Gutiérrez,Nueva Alianza,Representación proporcional,México,,5,,,lucila.garfias@congreso.gob.mx,@DipLGarfias,,,,,Jesús María,Sena Buenrostro
+M,José Luis Cruz,Flores Gómez,Partido Revolucionario Institucional,Mayoría relativa,México,10,,,,joseluis.flores@congreso.gob.mx,@JL_FloresG,,,,,Lizbeth,González Pérez
+F,Brenda María Izontli,Alvarado Sánchez,Partido Revolucionario Institucional,Mayoría relativa,México,11,,,,brenda.alvarado@congreso.gob.mx,@Bren_Alvarado,,,,,Silvia ,Torreblanca Alfaro
+M,César Reynaldo,Navarro de Alba,Partido Revolucionario Institucional,Mayoría relativa,México,12,,,,cesar.navarro@congreso.gob.mx,@reynaldoixt12,,,,,,
+M,José Isidro,Moreno Árcega,Partido Revolucionario Institucional,Mayoría relativa,México,13,,,,jose.moreno@congreso.gob.mx,@ConIsidroMoreno,,,,,,
+F,Silvia,Márquez Velasco,Partido Revolucionario Institucional,Mayoría relativa,México,14,,,,silvia.marquez@congreso.gob.mx,@SilviaMarquezVe,,,,,José Manuel,Díaz Rodríguez
+M,Alberto,Díaz Trujillo,Partido Acción Nacional,Mayoría Relativa,México,15,,,,alberto.diaz@congreso.gob.mx,@betodiazt ,,,,,Silvana,Ortíz Ortega
+F,Norma,Ponce Orozco,Partido Revolucionario Institucional,Mayoría relativa,México,16,,,,norma.ponce@congreso.gob.mx,@NormaPonceO,,,,,,
+F,Adriana,González Carrillo,Partido Acción Nacional,Representación proporcional,México,,5,,,adriana.gonzalez@congreso.gob.mx,@AdriGlezCar,,,,,Yolanda,Segbe Sanen
+M,Luis Antonio,González Roldán ,Nueva Alianza,Representación proporcional,México,,5,,,luisantonio.gonzalez@congreso.gob.mx,@LuisRoldan_NA,,,,,Amparo,Acuña Figueroa
+F,Jessica,Salazar Trejo,Partido de la Revolución Democrática,Mayoría relativa,México,17,,,,jessica.salazar@congreso.gob.mx,@jessica91398273,,,,,,
+M,Fernando Alfredo,Maldonado Hernández,Partido Revolucionario Institucional,Mayoría relativa,México,18,,,,fernando.maldonado@congreso.gob.mx,@FerMaldonadoDip,,,,,Damaris,Osorno Malpica
+F,Karina,Labastida Sotelo,Partido Acción Nacional,Representación proporcional,México,,5,,,karina.labastida@congreso.gob.mx,NA,Trabajo y Previsión Social,,,,María Bárbara,López Castañeda
+F,Aurora Denisse,Ugalde Alegría,Partido Revolucionario Institucional,Mayoría relativa,México,19,,,,aurora.ugalde@congreso.gob.mx,@denisse_ugalde,,,,,,
+F,Joaquina,Navarrete Contreras,Partido de la Revolución Democrática,Mayoría relativa,México,20,,,,joaquina.navarrete@congreso.gob.mx,@JoaquinaNC,,,,,,
+M,Raúl,Macías Sandoval,Partido Revolucionario Institucional,Representación proporcional,México,,5,,,raul.macias@congreso.gob.mx,NA,,,,,Ángel Abel,Mavil Soto
+F,Cristina,Ruiz Sandoval,Partido Revolucionario Institucional,Mayoría relativa,México,21,,,,cristina.ruiz@congreso.gob.mx,@CristinaRuiz_S,,,,,,
+F,Rosalba,Gualito Castañeda,Partido Revolucionario Institucional,Mayoría relativa,México,22,,,,rosalba.gualito@congreso.gob.mx,@RosalbaGualito,,,,,María Leticia,Bernal Rosales
+F,Julisa,Mejía Guardado ,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,julisa.mejia@congreso.gob.mx,,,,,,Erica del Carmen,Velázquez Vacio
+F,Blanca Esthela,Gómez Carmona,Partido Revolucionario Institucional,Mayoría relativa,México,23,,,,blanca.gomez@congreso.gob.mx,@blancaegomez23,,,,,Adriana,Martínez Soto
+F,María Guadalupe ,Mondragón González,Partido Acción Nacional,Representación proporcional,México,,5,,,guadalupe.mondragon@congreso.gob.mx,@Lupita_Mondrag,,,,,Claudia Rocío,Villa Oñate
+F,Irazema,González Martínez,Partido Revolucionario Institucional,Mayoría relativa,México,24,,,,irazema.gonzalezmartinez@congreso.gob.mx,@Irazema_G,,,,,María Teresa,Ramos Cervantes
+M,Jesús Tolentino,Román Bojórquez,Partido Revolucionario Institucional,Mayoría relativa,México,25,,,,jesus.roman@congreso.gob.mx,,,,,,,
+M,Fernando,Zamora Morales,Partido Revolucionario Institucional,Mayoría relativa,México,26,,,,fernando.zamora@congreso.gob.mx,@Fernando_Zamora,,,,,,
+M,Ramón,Montalvo Hernández ,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,ramon.montalvo@congreso.gob.mx,,,,,,,
+M,Javier,Orozco Gómez,Partido Verde Ecologista de México,Representación proporcional,México,,5,,,javier.orozco@congreso.gob.mx,,,,,,,
+F,Carla Alicia,Padilla Ramos,Partido Verde Ecologista de México,Representación proporcional,México,,5,,,carla.padilla@congreso.gob.mx,,,,,,,
+F,Laura,Barrera Fortoul,Partido Revolucionario Institucional,Mayoría relativa,México,27,,,,laura.barrera@congreso.gob.mx,@LauraBarreraF,,,,,José Cruz,Picazo Sánchez
+F,Sue Ellen,Bernal Bolnik,Partido Revolucionario Institucional,Mayoría Relativa,México,28,,,,sue.bernal@congreso.gob.mx,@Sue_Bernal ,,,,,Rebeca ,Peralta León
+M,Valentín,González Bautista,Partido de la Revolución Democrática,Mayoría relativa,México,29,,,,valentin.gonzalez@congreso.gob.mx,NA,Trabajo y Previsión Social,,,,Yuridia,Sánchez Soriano
+F,Alliet Mariana,Bautista Bravo,Partido de la Revolución Democrática,Mayoría relativa,México,30,,,,alliet.bautista@congreso.gob.mx,@Allietcandidata,,,,,Agustín,Palizada Valencia
+M,Pedro,Porras Pérez ,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,pedro.porras@congreso.gob.mx,,,,,,Genaro,Rodríguez Teniente
+M,Domitilo,Posadas Hernández ,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,domitilo.posadas@congreso.gob.mx,@domposadas,,,,,,
+M,Víctor Manuel,Bautista López,Partido de la Revolución Democrática,Mayoría relativa,México,31,,,,victor.bautista@congreso.gob.mx,NA,,,,,Ana,Torres Landa Hernández
+M,Arturo,Cruz Ramírez,Partido de la Revolución Democrática,Mayoría relativa,México,32,,,,arturo.cruz@congreso.gob.mx,NA,,,,,Juan Manuel,Rubio Pérez
+F,Carla Guadalupe,Reyes Montiel,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,carla.reyes@congreso.gob.mx,,,,,,,
+M,Alfredo,Rivadeneyra Hernández,Partido Acción Nacional,Representación proporcional,México,,5,,,arivadeneyra.hernandez@congreso.gob.mx,@arivadeneyrah,,,,,,
+M,Juan Manuel,Carbajal Hernández,Partido Revolucionario Institucional,Mayoría relativa,México,33,,,,juan.carbajal@congreso.gob.mx,@JMCarbajalH,,,,,Eduardo Enrique,Domínguez Maganda
+M,Alberto,Curi Naime,Partido Revolucionario Institucional,Mayoría relativa,México,34,,,,alberto.curi@congreso.gob.mx,@AlbertoCuri,,,,,Elizabeth,Flores Vázquez
+F,Tania,Rellstab Carreto,Partido Revolucionario Institucional,Mayoría relativa,México,35,,,,tanya.rellstab@congreso.gob.mx,,,,,,Elsa Yolanda,Borrego Cedillo
+M,Noé,Barrueta Barrón,Partido Revolucionario Institucional,Mayoría relativa,México,36,,,,noe.barrueta@congreso.gob.mx,@noe_barrueta,,,,,Santos,Hinojosa López
+M,Fernando,Salgado Delgado,Partido Revolucionario Institucional,Representación proporcional,México,,5,,,fernando.salgado@congreso.gob.mx,@CentroInforCTM,Trabajo y Previsión Social (secretario),,,,,
+M,Javier,Salinas Narváez ,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,javier.salinas@congreso.gob.mx,,,,,,,
+F,Josefina,Salinas Pérez ,Partido de la Revolución Democrática,Representación proporcional,México,,5,,,josefina.salinas@congreso.gob.mx,,,,,,,
+M,Francisco Javier,Fernández Clamont,Partido Revolucionario Institucional,Mayoría relativa,México,37,,,,francisco.fernandez@congreso.gob.mx,NA,,,,,Alicia,Hernández Monroy
+M,Juan Ignacio,Samperio Montaño,Movimiento Ciudadano,Representación proporcional,México,,5,,,juan.samperio@congreso.gob.mx,,,,,,,
+M,Jorge Federico,de la Vega Membrillo,Movimiento Ciudadano,Mayoría relativa,México,38,,,,jorge.delavega@congreso.gob.mx,NA,,,,,Irere,Sánchez Balderas
+M,Juan Carlos ,Uribe Padilla,Partido Acción Nacional,Representación proporcional,México,,5,,,juan.uribe@congreso.gob.mx,,,,,,,
+F,Cristina,González Cruz,Partido Revolucionario Institucional,Mayoría relativa,México,39,,,,cristina.gonzalez@congreso.gob.mx,@cristinaglez39,,,,,Abraham,Islas Pozos
+M,Gerardo Xavier,Hernández Tapia,Partido Revolucionario Institucional,Mayoría relativa,México,40,,,,xavier.hernandez@congreso.gob.mx,@Gerardo_Hdez_T,,,,,Flor Esther,Gastélum Vértiz
+F,Martha Berenice,Álvarez Tovar,Partido Acción Nacional,Representación proporcional,Michoacán,,5,,,berenice.alvarez@congreso.gob.mx,@BereAlvarezT,,,,,Mario Francisco ,Guillén Guillén
+M,Alfredo,Anaya Gudiño,Partido Revolucionario Institucional,Representación proporcional,Michoacán,,5,,,alfredo.anaya@congreso.gob.mx,@Anaya_Alfredo,,,,,Lydia Del Carmen,Abarca Pinzón
+M,Rodimiro,Barrera Estrada,Partido Revolucionario Institucional,Mayoría Relativa,Michoacán,1,,,,rodimiro.barrera@congreso.gob.mx,NA,,,,,Mónica Patricia,Rojas Hernández
+M,Armando,Contreras Ceballos,Partido de la Revolución Democrática,Mayoría Relativa ,Michoacán,2,,,,armando.contreras@congreso.gob.mx,NA,,,,,Sharon,Rodríguez de la Cruz
+M,Silvano,Aureoles Conejo,Partido de la Revolución Democrática,Mayoría Relativa,Michoacán,3,,,,silvano.aureoles@congreso.gob.mx,@SILVANO_A,,,,,Angela,Anchondo Rivera
+M,Salvador,Romero Valencia,Partido Revolucionario Institucional,Mayoría relativa,Michoacán,4,,,,salvador.romero@congreso.gob.mx,@ChavoRomero,,,,,,
+F,Adriana,Hernández Íñiguez,Partido Revolucionario Institucional,Mayoría Relativa,Michoacán,5,,,,adriana.hernandez@congreso.gob.mx,@Adriana_hi,,,,,José Luis,Contreras Rojo
+F,Verónica,García Reyes ,Partido de la Revolución Democrática,Representación proporcional,Michoacán,,5,,,veronica.garcia@congreso.gob.mx,NA,,,,,Ricardo,Flores Suárez
+M,Luis,Olvera Correa,Partido Revolucionario Institucional,Mayoría Relativa ,Michoacán,6,,,,luis.olvera@congreso.gob.mx,@LuisOlveraPri ,,,,,María Lucrecia,Arzola Godínez
+M,José,González Morfín,Partido Acción Nacional,Representación proporcional,Michoacán,,5,,,jgmorfin@congreso.gob.mx,@jglezmorfin,,,,,Genoveva,Huerta Villegas
+M,José Luis,Esquivel Zalpa,Partido de la Revolución Democrática,Mayoría Relativa,Michoacán,7,,,,jose.esquivel@congreso.gob.mx,@JOSELUISESQUIV9,,,,,Jorge Luis,Núñez Sabino
+M,Víctor Manuel,Manríquez González ,Partido de la Revolución Democrática,Representación proporcional,Michoacán,,5,,,victor.manriquez@congreso.gob.mx,,,,,,Gloria,Ochoa Rueda
+F,María del Carmen,Martínez Santillán,Partido del Trabajo,Representación proporcional,Michoacán,,5,,,carmen.martinez@congreso.gob.mx,,,,,,Mario Alberto,González González
+M,Eligio Cuitláhuac,González Farías,Partido Revolucionario Institucional,Mayoría Relativa,Michoacán,8,,,,eligio.gonzalez@congreso.gob.mx,@G_ELIGIO8,,,,,María del Carmen,Saavedra Fernández
+F,Socorro de la Luz,Quintana León,Partido Revolucionario Institucional,Mayoría Relativa,Michoacán,9,,,,socorro.quintana@congreso.gob.mx,@SocorroQuintan,,,,,,
+M,Ernesto,Núñez Aguilar,Partido Verde Ecologista de México,Mayoría Relativa,Michoacán,10,,,,ernesto.nunez@congreso.gob.mx,,,,,,,
+M,Antonio,García Conejo,Partido de la Revolución Democrática,Mayoría Relativa,Michoacán,11,,,,agarcia.conejo@congreso.gob.mx,NA,,,,,Jorge,Evangelista Acosta
+M,Salvador,Ortíz García,Partido Revolucionario Institucional,Mayoría Relativa ,Michoacán,12,,,,salvador.ortiz@congreso.gob.mx,,,,,,,
+F,Blanca María,Villaseñor Gudiño,Partido Revolucionario Institucional,Representación proporcional,Michoacán,,5,,,blanca.villasenor@congreso.gob.mx,,,,,,,
+M,Juan Pablo,Adame Alemán,Partido Acción Nacional,Representación proporcional,Morelos,,4,,,juan.adame@congreso.gob.mx,@JuanPabloAdame,,,,,Ricardo ,Medina Fierro
+M,José Francisco,Coronato Rodríguez,Movimiento Ciudadano,Mayoría relativa,Morelos,1,,,,jose.coronato@congreso.gob.mx,@f_coronato,,,,,Jeanette,Velázquez Sedano
+M,Javier,Orihuela García,Partido del Trabajo,Mayoría relativa,Morelos,2,,,,javier.orihuela@congreso.gob.mx,,,,,,Ana Sofía,Méndez Noriega
+F,Gisela Raquel,Mota Ocampo,Partido de la Revolución Democrática,Representación proporcional,Morelos,,4,,,gisela.mota@congreso.gob.mx,,,,,,,
+M,Francisco Tomás,Rodríguez Montero,Partido de la Revolución Democrática,Mayoría relativa,Morelos,3,,,,francisco.rodriguez@congreso.gob.mx,,,,,,,
+M,Andrés Eloy,Martínez Rojas,Partido de la Revolución Democrática,Mayoría relativa,Morelos,4,,,,andres.martinez@congreso.gob.mx,@eloycam2012,,,,,Isela,González Domínguez
+M,Luis Miguel,Ramírez Romero,Partido Acción Nacional,Representación proporcional,Morelos,,4,,,luis.ramirez@congreso.gob.mx,,,,,,Susana,Muñoz García
+M,Víctor Reymundo,Nájera Medina,Partido de la Revolución Democrática,Mayoría relativa,Morelos,5,,,,victor.najera@congreso.gob.mx,,,,,,,
+F,Maricela,Velázquez Sánchez,Partido Revolucionario Institucional,Representación proporcional,Morelos,,4,,,maricela.velazquez@congreso.gob.mx,@MaricelaMVS,,,,,,
+M,Juan Manuel,Rocha Piedad,Partido Revolucionario Institucional,Mayoría relativa,Nayarit,1,,,,juan.rocha@congreso.gob.mx,,,,,,,
+M,Rodrigo,González Barrios,Partido de la Revolución Democrática,Representación proporcional,Nayarit,,1,,,rodrigo.gonzalez@congreso.gob.mx,NA,,,,,Jacinta,Aragón Ramírez
+M,Roy Argel,Gómez Olguín,Partido Revolucionario Institucional,Mayoría Relativa,Nayarit,2,,,,roy.gomez@congreso.gob.mx,@RoyGomezOlguin,,,,,Sergio,Villalobos Marcial
+F,Gloria Elizabeth,Núñez Sánchez,Partido Revolucionario Institucional,Mayoría Relativa,Nayarit,3,,,,gloria.nunez@congreso.gob.mx,,,,,,,
+F,María Celia,Urciel Castañeda,Partido Acción Nacional,Representación proporcional,Nayarit,,1,,,maria.urciel@congreso.gob.mx,,,,,,,
+M,Alberto,Anaya Gutiérrez,Partido del Trabajo,Representación proporcional,Nuevo León,,2,,,alberto.anaya@congreso.gob.mx,NA,,,,,Priscila María,Acosta Villalpando
+F,Consuelo,Argüelles Loya,Partido Acción Nacional,Representación proporcional,Nuevo León,,2,,,consuelo.arguelles@congreso.gob.mx,@CArguellesA,,,,,Ricardo ,Peña Parra
+M,Homero Ricardo,Niño de Rivera Vela,Partido Acción Nacional,Mayoría Relativa,Nuevo León,1,,,,homero.ninoderivera@congreso.gob.mx,@HomeroNR,,,,,,
+M,Eloy,Cantú Segovia,Partido Revolucionario Institucional,Representación proporcional,Nuevo León,,2,,,eloy.cantu@congreso.gob.mx,@EloyCantuS,,,,,Ignacio ,Ramírez Juárez
+F,María Sanjuana,Cerda Franco ,Nueva Alianza,Representación proporcional,Nuevo León,,2,,,maria.cerda@congreso.gob.mx,@DipMaSanjuanana,,,,,José de Jesús,González Curiel
+F,María del Socorro,Ceseñas Chapa,Partido de la Revolución Democrática,Representación proporcional,Nuevo León,,2,,,maria.cesenas@congreso.gob.mx,@socorrocesenas,Trabajo y Previsión Social,,,,José,Soto González
+M,Benito,Caballero Garza,Partido Revolucionario Institucional,Mayoría relativa,Nuevo León,2,,,,benito.caballero@congreso.gob.mx,@benitocaballero,,,,,Virgina ,Barajas Monjarás
+M,Abel,Guerra Garza,Partido Revolucionario Institucional,Mayoría relativa,Nuevo León,3,,,,abel.guerra@congreso.gob.mx,@AbelGuerraG,,,,,Elda Yolanda,Hernández Salcido
+M,Víctor Osvaldo,Fuentes Solís,Partido Acción Nacional,Mayoría Relativa,Nuevo León,4,,,,victor.fuentes@congreso.gob.mx,@victorfuentesmx ,,,,,Alejandra,García Gutiérrez
+M,Marcelo,Garza Ruvalcaba ,Partido de la Revolución Democrática,Representación proporcional,Nuevo León,,2,,,marcelo.garza@congreso.gob.mx,NA,,,,,Humberto,García Sosa
+M,Héctor Humberto,Gutiérrez de la Garza,Partido Revolucionario Institucional,Mayoría relativa,Nuevo León,5,,,,hector.gutierrez@congreso.gob.mx,@HectorHGutierre,Trabajo y Previsión Social,,,,Hermelinda,Martínez Martínez
+M,Alberto,Coronado Quintanilla,Partido Acción Nacional,Mayoría Relativa,Nuevo León,6,,,,alberto.coronado@congreso.gob.mx,@Coronadomx,,,,,Mariana Guadalupe,Flores Álvarez
+M,José Martín,López Cisneros,Partido Acción Nacional,Mayoría relativa,Nuevo León,7,,,,jose.lopez@congreso.gob.mx,NA,,,,,Blanca Aurelia,Anzaldua Nájera
+F,María de Jesús,Huerta Rea,Partido Revolucionario Institucional,Representación proporcional,Nuevo León,,2,,,maria.huerta@congreso.gob.mx,@maryhuertarea,,,,,Norma Lucía,Ley Zevada
+M,Ernesto Alfonso,Robledo Leal,Partido Acción Nacional,Mayoría relativa,Nuevo León,8,,,,ernesto.robledo@congreso.gob.mx,@Alfonso_Robledo,,,,,,
+M,Marco Antonio,González Valdez,Partido Revolucionario Institucional,Mayoría relativa,Nuevo León,9,,,,marco.gonzalez@congreso.gob.mx,@marcoprinl,,,,,Cutberto,Cantorán Espinoza
+M,Jorge,Mendoza Garza,Partido Revolucionario Institucional,Representación proporcional,Nuevo León,,2,,,jmendoza.garza@congreso.gob.mx,,,,,,Norma Esther,Almeida García
+M,Fernando,Larrazábal Bretón,Partido Acción Nacional,Mayoría Relativa,Nuevo León,10,,,,fernando.larrazabal@congreso.gob.mx,@FerLarrazabal,,,,,Christian Manuel,Narváez Romero
+M,Héctor,García García,Partido Revolucionario Institucional,Mayoría relativa,Nuevo León,11,,,,hgarcia.garcia@congreso.gob.mx,@LicHectorGarcia,,,,,Diego Cristóbal,Calderón Estrada
+F,Verónica,Sada Pérez,Partido Acción Nacional,Representación proporcional,Nuevo León,,2,,,veronica.sada@congreso.gob.mx,,,,,,,
+M,José Arturo,Salinas Garza,Partido Acción Nacional,Representación proporcional,Nuevo León,,2,,,jose.salinas@congreso.gob.mx,@jarturosalinas,,,,,,
+M,Javier,Treviño Cantú,Partido Revolucionario Institucional,Representación proporcional,Nuevo León,,2,,,javier.trevino@congreso.gob.mx,@javier_trevino,,,,,,
+M,Pedro Pablo,Treviño Villarreal,Partido Revolucionario Institucional,Mayoría relativa,Nuevo León,12,,,,pedro.trevino@congreso.gob.mx,,,,,,,
+M,José,Soto Martínez,Movimiento Ciudadano,Mayoría relativa,Oaxaca,1,,,,jsoto.martinez@congreso.gob.mx,@JOSESOMA,,,,,,
+M,Juan Luis,Martínez Martínez,Movimiento Ciudadano,Mayoría relativa,Oaxaca,2,,,,juan.martinez@congreso.gob.mx,@JLMartinez6,,,,,Blanca,López Domínguez
+F,Eufrosina ,Cruz Mendoza,Partido Acción Nacional,Representación proporcional,Oaxaca,,3,,,eufrosina.cruz@congreso.gob.mx,NA,,,,,Rosana Guadalupe,Salcedo Díaz
+F,Gloria,Bautista Cuevas,Partido de la Revolución Democrática,Mayoría relativa,Oaxaca,3,,,,gloria.bautista@congreso.gob.mx,@gloriabautista7,,,,,Martha Ofelia ,Zamarripa Rivas
+F,María de las Nieves,García Fernández,Partido Revolucionario Institucional,Representación proporcional,Oaxaca,,3,,,mariadelasnieves.garcia@congreso.gob.mx,NA,,,,,Hipólito,Galarza Urzúa
+M,Víctor Rafael ,González Manriquez,Partido Acción Nacional,Representación proporcional,Oaxaca,,3,,,victor.gonzalez@congreso.gob.mx,@VictorGoman,,,,,Arturo,Norato Jiménez
+F,Eva,Diego Cruz,Partido del Trabajo,Mayoría relativa,Oaxaca,4,,,,eva.diego@congreso.gob.mx,@evdiec,,,,,Nadya de Jesús,Cruz Serrano
+M,Antonio,Altamirano Carol,Partido de la Revolución Democrática,Mayoría relativa,Oaxaca,5,,,,carol.antonio@congreso.gob.mx,@CarolAntonioA,,,,,Levi Miroslava,Martínez Cruz
+F,Rosa Elia,Romero Guzmán,Partido del Trabajo,Mayoría relativa,Oaxaca,6,,,,rosa.romero@congreso.gob.mx,,,,,,,
+M,Gabriel,López Rosado ,Partido de la Revolución Democrática,Representación proporcional,Oaxaca,,3,,,glopez.rosado@congreso.gob.mx,NA,,,,,Marianela,Salazar Carrillo
+M,Samuel,Gurrión Matías,Partido Revolucionario Institucional,Mayoría relativa,Oaxaca,7,,,,samuel.gurrion@congreso.gob.mx,@samygurrion,,,,,Medina Díaz,Maritzza Aracely
+F,Angélica Rocío,Melchor Vásquez ,Partido de la Revolución Democrática,Representación proporcional,Oaxaca,,3,,,angelica.melchor@congreso.gob.mx,,,,,,Pablo Manuel Alejandro,Torres Corpus
+M,Hugo,Jarquín,Partido de la Revolución Democrática,Mayoría relativa,Oaxaca,8,,,,hugo.jarquin@congreso.gob.mx,@hugo_jarquin,,,,,Sandra Luz,Fimbres Escalantes
+M,Mario Rafael,Méndez Martínez,Partido de la Revolución Democrática,Mayoría relativa,Oaxaca,9,,,,mario.mendez@congreso.gob.mx,@MarioRafaelprd,,,,,Edna Olivia,Castañeda Guerra
+M,Rosendo,Serrano Toledo ,Partido de la Revolución Democrática,Representación proporcional,Oaxaca,,3,,,rosendo.serrano@congreso.gob.mx,@RosendoSerranoT,,,,,,
+F,Aída Fabiola,Valencia Ramírez,Movimiento Ciudadano,Mayoría relativa,Oaxaca,10,,,,aida.valencia@congreso.gob.mx,@aidavalencialox,,,,,,
+F,Delfina Elizabeth,Guzmán Díaz,Partido de la Revolución Democrática,Mayoría relativa,Oaxaca,11,,,,delfina.guzman@congreso.gob.mx,@GuzmanDelfina,,,,,María Estela,Moreno Alvarado
+M,Martín de Jesús,Vásquez Villanueva,Partido Revolucionario Institucional,Representación proporcional,Oaxaca,,3,,,martin.vasquez@congreso.gob.mx,,,,,,,
+F,Laura Guadalupe,Vargas Vargas,Partido Revolucionario Institucional,Mayoría relativa,Puebla,1,,,,laura.vargas@congreso.gob.mx,@gpe_vargas1,,,,,,
+M,José Luis,Márquez Martínez,Partido Revolucionario Institucional,Mayoría relativa,Puebla,2,,,,jose.marquez@congreso.gob.mx,@ppmarquez12,,,,,María Cristina,Meneses García
+F,Frine Soraya,Córdova Morán,Partido Revolucionario Institucional,Representación proporcional,Puebla,,4,,,frine.cordova@congreso.gob.mx,NA,,,,,Carlos Bernardo,Guzmán Cervantes
+M,Víctor Emanuel,Díaz Palacios,Partido Revolucionario Institucional,Mayoría relativa,Puebla,3,,,,victor.diaz@congreso.gob.mx,@victordoficial,,,,,Eufemia,Guzmán García
+F,Josefina,García Hernández,Partido Revolucionario Institucional,Mayoría relativa,Puebla,4,,,,josefina.garcia@congreso.gob.mx,NA,,,,,Mónica Selene,Saldaña Tapia
+M,Carlos,Sánchez Romero,Partido Revolucionario Institucional,Mayoría relativa,Puebla,5,,,,csanchez.romero@congreso.gob.mx,@CandidatoCarlos ,,,,,,
+M,José Enrique,Doger Guerrero,Partido Revolucionario Institucional,Mayoría relativa,Puebla,6,,,,jose.doger@congreso.gob.mx,@EnriqueDogerPue,,,,,Maribel,Martínez Altamirano
+M,Jesús,Morales Flores,Partido Revolucionario Institucional,Mayoría relativa,Puebla,7,,,,jmorales.flores@congreso.gob.mx,,,,,,Elsa,Rodríguez García
+F,Ana Isabel,Allende Cano,Partido Revolucionario Institucional,Mayoría relativa,Puebla,8,,,,ana.allende@congreso.gob.mx,@anitzaisa,,,,,,
+F,Blanca,Jiménez Castillo,Partido Acción Nacional,Mayoría relativa,Puebla,9,,,,bjimenez.castillo@congreso.gob.mx,@BlancaJC,,,,,Blanca Aurora,Camacho Sosa
+F,Zuleyma,Huidobro González ,Movimiento Ciudadano,Representación proporcional,Puebla,,4,,,zuleyma.huidobro@congreso.gob.mx,@ZuleymaHuidobro,,,,,Ana Alicia,Tiznado Lizárraga
+M,Julio César,Lorenzini Rangel,Partido Acción Nacional,Mayoría relativa,Puebla,10,,,,julio.lorenzini@congreso.gob.mx,@J_Lorenzini,,,,,Mariela,Tovar Lorenzo
+M,Javier,López Zavala,Partido Revolucionario Institucional,Representación proporcional,Puebla,,4,,,javier.lopez@congreso.gob.mx,@JavierLZavala,,,,,Michelle,Gustin Cárdenas
+F,María Isabel,Ortíz Mantilla,Partido Acción Nacional,Mayoría Relativa,Puebla,11,,,,maria.ortiz@congreso.gob.mx,@marisa_o_m,,,,,Israel,Soto Peña
+F,Roxana,Luna Porquillo ,Partido de la Revolución Democrática,Representación proporcional,Puebla,,4,,,roxana.luna@congreso.gob.mx,@RoxanaLunaP,,,,,Zazil,Reyes Contreras
+M,Néstor Octavio,Gordillo Castillo,Partido Acción Nacional,Mayoría relativa,Puebla,12,,,,nestor.gordillo@congreso.gob.mx,@NestorGordillo,,,,,Irma,Martínez Vargas
+M,Rafael Alejandro,Micalco Méndez,Partido Acción Nacional,Representación proporcional,Puebla,,4,,,rafael.micalco@congreso.gob.mx,@rafamicalco,Trabajo y Previsión Social (secretario),,,,,
+F,María del Rocío,García Olmedo,Partido Revolucionario Institucional,Mayoría relativa,Puebla,13,,,,mariadelrocio.garcia@congreso.gob.mx,@rgolmedo,,,,,Ana Rosa,Hernández Cantú
+M,Javier Filiberto,Guevara González,Partido Revolucionario Institucional,Mayoría relativa,Puebla,14,,,,javier.guevara@congreso.gob.mx,@filiguevaraglez,,,,,Martín,de la Cruz Gómez
+F,María del Carmen,García de la Cadena Romero,Partido Revolucionario Institucional,Mayoría relativa,Puebla,15,,,,maria.garciadelacadena@congreso.gob.mx,@MariCarmenTehua,,,,,José Anselmo Vicente ,Muñoz Bisoso
+M,Lisando Arístides,Campos Córdova,Partido Revolucionario Institucional,Mayoría relativa,Puebla,16,,,,lisandro.campos@congreso.gob.mx,NA,,,,,Concepción,Flores Pérez
+F,Delvim Fabiola,Bárcenas Nieves,Partido Revolucionario Institucional,Mayoría Relativa,Querétaro,1,,,,delvim.barcenas@congreso.gob.mx,@delvimdiputada,,,,,Joel,Miranda Martínez
+M,Ricardo,Anaya Cortés,Partido Acción Nacional,Representación proporcional,Querétaro,,2,,,ricardo.anaya@congreso.gob.mx,@RicardoAnayaC,,,,,Ramón,García Matus
+M,Ricardo,Astudillo Suárez,Partido Verde Ecologista de México,Mayoría Relativa,Querétaro,2,,,,rastudillo.suarez@congreso.gob.mx,@rastudillo2012,,,,,Alfio,Vega de la Peña
+M,Marcos,Aguilar Vega,Partido Acción Nacional,Mayoría relativa,Querétaro,3,,,,marcos.aguilar@congreso.gob.mx,@MarcosAguilar ,,,,,Alejandra,Herrera Soto
+M,José Alfredo,Botello Montes,Partido Acción Nacional,Representación proporcional,Querétaro,,2,,,,NA,Trabajo y Previsión Social,,,,Luis Alfredo ,Valles Mendoza
+M,José Guadalupe,García Ramírez,Partido Acción Nacional,Mayoría relativa,Querétaro,4,,,,jguadalupe.garcia@congreso.gob.mx,@LupeGarcia_PAN,,,,,María Lilyana,Hernández Martínez
+F,Raquel,Jiménez Cerillo,Partido Acción Nacional,Representación proporcional,Querétaro,,2,,,raquel.jimenez@congreso.gob.mx,NA,,,,,Lorena,Gutiérrez Landavazo
+F,Lizbeth Loy,Gamboa Song,Partido Revolucionario Institucional,Representación proporcional,Quintana Roo,,3,,,lizbeth.gamboa@congreso.gob.mx,@Liz_Gamboa,,,,,René,Valencia Reyes
+M,Eduardo Román,Quian Alcocer,Partido Revolucionario Institucional,Mayoría relativa,Quintana Roo,1,,,,eduardo.quian@congreso.gob.mx,,,,,,,
+F,Gabriela,Medrano Galindo,Partido Verde Ecologista de México,Representación proporcional,Quintana Roo,,3,,,gabriela.medrano@congreso.gob.mx,,,,,,Imelda Noemy,Pacheco González
+F,Graciela,Saldaña Fraire,Partido de la Revolución Democrática,Mayoría relativa,Quintana Roo,3,,,,graciela.saldana@congreso.gob.mx,@GracielaSaldana ,,,,,,
+F,Alicia Concepción,Ricalde Magaña,Partido Acción Nacional,Representación proporcional,Quintana Roo,,3,,,alicia.ricalde@congreso.gob.mx,@AliciaRicaldeOf,,,,,Rosalinda,Camacho Esquivel
+M,Raymundo,King de la Rosa,Partido Revolucionario Institucional,Mayoría relativa,Quintana Roo,2,,,,raymundo.king@congreso.gob.mx,@raymundoking,,,,,Querubín,Sandoval Fernández
+M,José Everardo,Nava Gómez,Partido Revolucionario Institucional,Mayoría Relativa,San Luis Potosí,1,,,,jeverardo.nava@congreso.gob.mx,,,,,,,
+F,Esther Angélica,Martínez Cárdenas,Partido Revolucionario Institucional,Mayoría Relativa,San Luis Potosí,2,,,,esther.martinez@congreso.gob.mx,@EstherAngelicaM,,,,,María Teresa de Jesús,Moreno Gómez
+M,Óscar,Bautista Villegas,Partido Revolucionario Institucional,Mayoría Relativa,San Luis Potosí,3,,,,oscar.bautista@congreso.gob.mx,@OscarBV3,,,,,Armando Tiófanes,Coutiño Núñez
+M,Enrique Alejandro,Flores Flores,Partido Acción Nacional,Representación proporcional,San Luis Potosí,,2,,,eflores.flores@congreso.gob.mx,@enriqueflores21,,,,,Adrián,Hernández Romero
+M,Jorge,Terán Juárez,Partido Revolucionario Institucional,Mayoría relativa,San Luis Potosí,4,,,,jorge.teran@congreso.gob.mx,,,,,,,
+M,Xavier,Azuara Zúñiga,Partido Acción Nacional,Mayoría Relativa,San Luis Potosí,5,,,,xavier.azuara@congreso.gob.mx,@XavierAzuaraSLP,,,,,Carmen Alicia,Vera Juárez
+F,María Concepción,Ramírez Diez Gutiérrez,Partido Acción Nacional,Representación proporcional,San Luis Potosí,,2,,,concepcion.ramirez@congreso.gob.mx,@conchitadiez,,,,,Aydmé Adriana,Ortiz Rodríguez
+M,Felipe de Jesús,Almaguer Torres,Partido Acción Nacional,Mayoría Relativa,San Luis Potosí,6,,,,felipe.almaguer@congreso.gob.mx,@felipedejesusal ,,,,,Ángel ,Domínguez Gutiérrez
+F,María Rebeca,Terán Guevara,Partido Revolucionario Institucional,Mayoría relativa,San Luis Potosí,7,,,,rebeca.teran@congreso.gob.mx,,,,,,,
+M,Carlos Humberto,Castaños Valenzuela,Partido Acción Nacional,Representación proporcional,Sinaloa,,1,,,carlos.castanos@congreso.gob.mx,@carloscastanos,,,,,Rosa Guadalupe,Chávez Acosta
+M,Román Alfredo,Padilla Fierro,Partido Revolucionario Institucional,Mayoría relativa,Sinaloa,1,,,,roman.padilla@congreso.gob.mx,,,,,,,
+M,Rubén Benjamín,Félix Hays ,Nueva Alianza,Representación proporcional,Sinaloa,,1,,,ruben.felix@congreso.gob.mx,@renovatiomx,,,,,Verónica,González Vera
+M,Heriberto Manuel,Galindo Quiñones,Partido Revolucionario Institucional,Representación proporcional,Sinaloa,,1,,,heriberto.galindo@congreso.gob.mx,@HGalindoQ,,,,,Jonathán,Sanata González
+M,Raúl Santos,Galván Villanueva,Partido Revolucionario Institucional,Representación proporcional,Sinaloa,,1,,,raul.galvan@congreso.gob.mx,@RSGV44,,,,,Araceli,Saucedo Reyes
+M,Gerardo,Peña Avilés,Partido Acción Nacional,Mayoría relativa,Sinaloa,2,,,,gerardo.pena@congreso.gob.mx,@GerardoElArquiP,,,,,,
+M,Alfonso,Inzunza Montoya,Partido Revolucionario Institucional,Mayoría relativa,Sinaloa,3,,,,alfonso.inzunza@congreso.gob.mx,@Ponchin_Inzunza,,,,,Refugio,Gastélum Rojo
+F,Tania Margarita ,Morgan Navarrete,Partido Acción Nacional,Representación proporcional,Sinaloa,,1,,,tania.morgan@congreso.gob.mx,@taniammorgan,,,,,,
+M,Blas Ramón,Rubio Lara,Partido Revolucionario Institucional,Mayoría relativa,Sinaloa,4,,,,blas.rubio@congreso.gob.mx,,,,,,,
+M,Jesús Antonio,Valdés Palazuelos,Partido Revolucionario Institucional,Mayoría relativa,Sinaloa,5,,,,jesus.valdes@congreso.gob.mx,@chuyvaldesp,,,,,,
+F,Francisca Elena,Corrales Corrales,Partido Revolucionario Institucional,Mayoría relativa,Sinaloa,6,,,,francisca.corrales@congreso.gob.mx,@paquiscorrales,,,,,Alonso,Barajas Ortíz
+M,Sergio,Torres Félix,Partido Revolucionario Institucional,Mayoría relativa,Sinaloa,7,,,,sergio.torres@congreso.gob.mx,@SergioTorres7mo,,,,,,
+M,Martín Alonso,Heredia Lizárraga,Partido Acción Nacional,Mayoría relativa,Sinaloa,8,,,,martin.heredia@congreso.gob.mx,@herediamazatlan,,,,,José Luis,Martínez Meléndez
+M,Jorge Iván,Villalobos Seañez,Partido Acción Nacional,Representación proporcional,Sinaloa,,1,,,jorge.villalobos@congreso.gob.mx,,,,,,,
+M,José Enrique,Reina Lizárraga,Partido Acción Nacional,Mayoría Relativa,Sonora,1,,,,jose.reina@congreso.gob.mx,@EnriqueRL,,,,,,
+F,Flor de Rosa,Ayala Robles Linares,Partido Revolucionario Institucional,Representación proporcional,Sonora,,1,,,flor.ayala@congreso.gob.mx,@florayalar,,,,,Dunia Eliane,de la Vega Preciado
+M,Manlio Fabio,Beltrones Rivera,Partido Revolucionario Institucional,Representación proporcional,Sonora,,1,,,manlio.beltrones@congreso.gob.mx,@MFBeltrones,,,,,Erica,Hernández Cabrera
+M,Francisco Alfonso,Durazo Montaño ,Movimiento Ciudadano,Representación proporcional,Sonora,,1,,,francisco.durazo@congreso.gob.mx,@faduraz,,,,,Lizeth Marlenne,Sandoval Colindres
+M,David Cuauhtémoc,Galindo Delgado,Partido Acción Nacional,Mayoría relativa,Sonora,2,,,,david.galindo@congreso.gob.mx,@TemoGalindo,,,,,Miroslava,Meza Virrueta
+F,Alejandra,López Noriega,Partido Acción Nacional,Mayoría relativa,Sonora,3,,,,alejandra.lopez@congreso.gob.mx,@alejandralopesn,,,,,María del Carmen,Antonio Nicanor
+M,Antonio Francisco,Astiazarán Gutiérrez,Partido Revolucionario Institucional,Mayoría relativa,Sonora,4,,,,antonio.astiazaran@congreso.gob.mx, @tonoastiazaran,,,,,Amparo ,Villanueva Cruz
+M,Heberto ,Neblina Vega,Partido Acción Nacional,Representación proporcional,Sonora,,1,,,heberto.neblina@congreso.gob.mx,,,,,,Vianey,Melendrez López
+M,Damián,Zepeda Vidales,Partido Acción Nacional,Mayoría relativa,Sonora,5,,,,damian.zepeda@congreso.gob.mx,@damianzepeda,,,,,,
+F,Leslie,Pantoja Hernández,Partido Acción Nacional,Representación proporcional,Sonora,,1,,,leslie.pantoja@congreso.gob.mx,@lesliepantoja,,,,,,
+M,Faustino Francisco,Félix Chávez,Partido Revolucionario Institucional,Mayoría relativa,Sonora,6,,,,faustino.felix@congreso.gob.mx, @FaustinoFelix,,,,,Maricruz,Reyes Galicia
+M,Mario,Sánchez Ruiz,Partido Acción Nacional,Representación proporcional,Sonora,,1,,,mario.sanchez@congreso.gob.mx,@mariosanchez_m,,,,,,
+F,Dora María Guadalupe,Talamante Lemas ,Nueva Alianza,Representación proporcional,Sonora,,1,,,dora.talamante@congreso.gob.mx,@Dora_Talamante,,,,,,
+F,Lorenia Iveth,Valles Sampedro,Partido de la Revolución Democrática,Representación proporcional,sonora,,1,,,lorenia.valles@congreso.gob.mx,,,,,,,
+M,Máximo,Othón Zayas,Partido Acción Nacional,Mayoría relativa,Sonora,7,,,,maximo.othon@congreso.gob.mx,@MaximoOthon,,,,,,
+F,Claudia Elizabeth,Bojórquez Javier,Partido de la Revolución Democrática,Mayoría relativa,Tabasco,1,,,,claudia.bojorquez@congreso.gob.mx,@ClaudiaBojorque,,,,,Miguel Ángel ,Hernández Hernández
+M,Tomás,Brito Lara,Partido de la Revolución Democrática,Mayoría relativa,Tabasco,2,,,,tomas.brito@congreso.gob.mx,@Tomas_BritoL,,,,,Ma. Matilde,Martínez Orta
+M,Juan Francisco,Cáceres de la Fuente,Partido Acción Nacional,Representación proporcional,Tabasco,,3,,,juan.caceres@congreso.gob.mx,@jf_caceres,,,,,Norma Elena ,Rangel Pacheco
+M,Juan Manuel,Focil Pérez,Partido de la Revolución Democrática,Representación proporcional,Tabasco,,3,,,juan.focil@congreso.gob.mx,@jmfocil,,,,,Jesús Antonio,Mora González
+F,Lorena,Méndez Denis,Partido de la Revolución Democrática,Mayoría Relativa,Tabasco,3,,,,lorena.mendez@congreso.gob.mx,@loremendezd ,,,,,Ana Marianela,Hernández Peña
+M,Gerardo,Gaudiano Rovirosa,Partido de la Revolución Democrática,Mayoría Relativa,Tabasco,4,,,,gerardo.gaudiano@congreso.gob.mx,@gerardogaudiano,,,,,Rafael,Reyes Montemayor
+M,Marcos Rosendo,Medina Filigrana,Partido de la Revolución Democrática,Mayoría relativa,Tabasco,5,,,,marcos.medina@congreso.gob.mx,@Marcos_Rosendo,,,,,Carlos Manuel,Carrillo Paredes
+F,María Fernanda,Romero Lozano ,Partido de la Revolución Democrática,Representación proporcional,Tabasco,,3,,,maria.romero@congreso.gob.mx,,,,,,,
+M,Antonio,Sansores Sastre,Partido de la Revolución Democrática,Mayoría relativa,Tabasco,6,,,,antonio.sansores@congreso.gob.mx,@AntonioSansores,,,,,,
+F,Nelly del Carmen,Vargas Pérez ,Movimiento Ciudadano,Representación proporcional,Tabasco,,3,,,nelly.vargas@congreso.gob.mx,@Nelly_Vargas,,,,,,
+F,Elsa Patricia,Araujo de la Torre,Partido Revolucionario Institucional,Representación proporcional,Tamaulipas,,2,,,patricia.araujo@congreso.gob.mx,NA,Trabajo y Previsión Social,,,,Mariam Carolina,Abdo Fierro
+M,Andrés Marco Antonio,Bernal Gutierrez,Partido Revolucionario Institucional,Representación proporcional,Tamaulipas,,2,,,marco.bernal@congreso.gob.mx,@MarcoBernalG,,,,,Hugo,Sandoval Martínez
+M,Glafiro,Salinas Mendiola,Partido Acción Nacional,Mayoría relativa,Tamaulipas,1,,,,glafiro.salinas@congreso.gob.mx,,,,,,,
+M,Humberto Armando,Prieto Herrera,Partido Acción Nacional,Mayoría relativa,Tamaulipas,2,,,,humberto.prieto@congreso.gob.mx,@Betoprietoh,,,,,,
+M,José Alejandro,Llanas Alba,Partido Acción Nacional,Mayoría relativa,Tamaulipas,3,,,,jose.llanas@congreso.gob.mx,@AlexLlanasAlba,,,,,Marisol,Santes Ramos
+F,Amira Gricelda,Gómez Tueme,Partido Revolucionario Institucional,Representación proporcional,Tamaulipas,,2,,,amira.gomez@congreso.gob.mx,NA,,,,,Ricardo,Coronado Sangines
+F,Lázara Nelly,González Aguilar,Partido Acción Nacional,Representación proporcional,Tamaulipas,,2,,,lazara.gonzalez@congreso.gob.mx,@nellysenadora ,,,,,Eli Eduardo,Vazquez Ramírez
+M,Carlos Alberto,García González,Partido Acción Nacional,Mayoría relativa,Tamaulipas,4,,,,calberto.garcia@congreso.gob.mx,@carlosagglz,,,,,Ángel Alain,Aldrete Lamas
+M,Enrique,Cárdenas del Avellano,Partido Revolucionario Institucional,Mayoría relativa,Tamaulipas,5,,,,enrique.cardenas@congreso.gob.mx,@cardenasenrique,,,,,Roberto,Cabrera Solís
+F,Rosalba,de la Cruz Requena,Partido Revolucionario Institucional,Mayoría relativa,Tamaulipas,6,,,,rosalba.delacruz@congreso.gob.mx,@Rosalbasextodis,,,,,Gloria María del Carmen,Valencia González
+M,Marcelino,Orta Coronado,Partido Acción Nacional,Mayoría relativa,Tamaulipas,7,,,,marcelina.orta@congreso.gob.mx,,,,,,,
+M,Germán,Pacheco Díaz,Partido Acción Nacional,Mayoría relativa,Tamaulipas,8,,,,german.pacheco@congreso.gob.mx,@GermanPachecoDi,,,,,,
+M,Ramón Antonio,Sampayo Ortiz,Partido Acción Nacional,Representación proporcional,Tamaulipas,,2,,,ramon.sampayo@congreso.gob.mx,@rasampayo,,,,,,
+F,Aurora de la Luz,Aguilar Rodríguez,Partido Acción Nacional,Representación proporcional,Tlaxcala,,4,,,aurora.aguilar@congreso.gob.mx,@AuroraAguilarR,,,,,Fausto,Gallardo García
+F,María Guadalupe,Sánchez Santiago,Partido Revolucionario Institucional,Mayoría Relativa,Tlaxcala,1,,,,mariaguadalupe.sanchez@congreso.gob.mx,@lupita_snchez,,,,,,
+F,Leonor,Romero Sevilla,Partido Acción Nacional,Representación proporcional,Tlaxcala,,4,,,leonor.romero@congreso.gob.mx,@LeonorAzul,,,,,,
+M,José Humberto,Vega Vázquez,Partido del Trabajo,Mayoría Relativa,Tlaxcala,2,,,,jose.vega@congreso.gob.mx,,,,,,,
+M,Edilberto,Algredo Jaramillo,Partido de la Revolución Democrática,Mayoría relativa,Tlaxcala,3,,,,edilberto.algredo@congreso.gob.mx,@AlgredoDip,,,,,Leticia P,Pérez Gusman
+F,Zita Beatriz,Pazzi Maza,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,1,,,,zita.pazzi@congreso.gob.mx,@ZitaPazzi ,,,,,,
+M,Luis Ricardo,Aldana Prieto,Partido Revolucionario Institucional,Representación proporcional,Veracruz,,3,,,luis.aldana@congreso.gob.mx,NA,Trabajo y Previsión Social,,,,Erika Del Carmen ,Ramagnoli Sosa
+M,Leopoldo,Sánchez Cruz,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,2,,,,leopoldo.sanchez@congreso.gob.mx,@leopoldopri ,,,,,,
+M,Genaro,Ruiz Arriaga,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,3,,,,genaro.ruiz@congreso.gob.mx,@GenaroRuizA,,,,,,
+M,Juan,Bueno Torio,Partido Acción Nacional,Representación proporcional,Veracruz,,3,,,juan.bueno@congreso.gob.mx,@juanbuenot,Trabajo y Previsión Social,,,,Brisa Esmeralda,Céspedes Ramos
+M,Humberto,Alonso Morelli,Partido Acción Nacional,Mayoría relativa,Veracruz,4,,,,halonso.morelli@congreso.gob.mx,@MorelliBoca,,,,,Eliseo ,Maheda López
+M,Gaudencio,Hernández Burgos,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,5,,,,gaudencio.hernandez@congreso.gob.mx,@GauHernandez,,,,,Antolinne,Etieene Rivera
+F,Alma Jeany,Arroyo Ruiz,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,6,,,,alma.arroyo@congreso.gob.mx,@Jeanny_arroyo,,,,,María de Lourdes ,Flores Treviño
+F,Verónica,Carreón Cervantes,Partido Verde Ecologista de México,Mayoría Relativa,Veracruz,7,,,,sin,NA,,,,,Amanda,García García
+F,Yazmín de los Angeles,Copete Zapot,Partido de la Revolución Democrática,Representación proporcional,Veracruz,,3,,,yazmin.copete@congreso.gob.mx,NA,,,,,María Esther,Gutiérrez Olivares
+M,Jorge,del Angel Acosta,Partido Revolucionario Institucional,Representación proporcional,Veracruz,,3,,,jorge.delangel@congreso.gob.mx,NA,Trabajo y Previsión Social,,,,Giuliana Guadalupe,Quiroz Ávila
+M,José Alejandro,Montano Guzmán,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,8,,,,jose.montano@congreso.gob.mx,@lejandromontano,,,,,,
+M,Fernando,Charleston Hernández,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,9,,,,fernando.charleston@congreso.gob.mx,@fercharleston,,,,,José Daniel,Ochoa Casillas
+M,Uriel,Flores Aguayo,Partido de la Revolución Democrática,Mayoría relativa,Veracruz,10,,,,uriel.flores@congreso.gob.mx,@FloresUrielA,,,,,Teresita de Jesús,Ramírez Hernández
+F,Mariana Dunyaska ,García Rojas,Partido Acción Nacional,Representación proporcional,Veracruz,,3,,,dunyaska.garcia@congreso.gob.mx,@MarianaDunyaska,,,,,Luis Fernando,Domínguez Martín del Campo
+M,Federico José,González Luna Bueno,Partido Verde Ecologista de México,Representación proporcional,Veracruz,,3,,,federico.gonzalezluna@congreso.gob.mx,NA,,,,,José Juan Trinidad,Morales Morales
+M,Joaquín,Caballero Rosiñol,Partido Verde Ecologista de México,Mayoría Relativa,Veracruz,11,,,,joaquin.caballero@congreso.gob.mx,@Joaquin_Coatza ,,,,,Viridiana Lizette,Espino Cano
+M,Rafael,Acosta Croda,Partido Acción Nacional,Mayoría relativa,Veracruz,12,,,,rafael.acosta@congreso.gob.mx,@RafaelAcostaMx ,,,,,Héctor Eduardo ,Anaya Pérez
+M,José Antonio,León Mendívil,Partido de la Revolución Democrática,Representación proporcional,Veracruz,,3,,,antonio.leon@congreso.gob.mx,NA,,,,,Edi,Olive López
+M,Víctor,Serralde Martínez,Partido Acción Nacional,Mayoría relativa,Veracruz,13,,,,victor.serralde@congreso.gob.mx,@VSerralde13,,,,,,
+M,Noé,Hernández González,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,14,,,,noe.hernandez@congreso.gob.mx,@NoeHdez_2012,,,,,Jorge,Pérez Covarrubias
+F,María Guadalupe,Moctezuma Oviedo ,Partido de la Revolución Democrática,Representación proporcional,Veracruz,,3,,,maria.moctezuma@congreso.gob.mx,,,,,,,
+M,Juan Manuel,Diez Francos,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,15,,,,noe.hernandez@congreso.gob.mx,@juanmanuel10f,,,,,Alejandra,Gutu Deskens
+F,Leticia,López Landero,Partido Acción Nacional,Mayoría relativa,Veracruz,16,,,,llopez.landero@congreso.gob.mx,@LetyLopez_2012,,,,,Angélica,Morales Salazar
+M,Gabriel,Cárdenas Guízar,Partido Acción Nacional,Mayoría relativa,Veracruz,17,,,,gabriel.cardenas@congreso.gob.mx,@CardenasGabriel,,,,,José,Higuera Fuentes
+M,Tomás,López Landero,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,18,,,,tomas.lopez@congreso.gob.mx,@LetyLopez_2012,,,,,Lamberto,González de la Maza
+F,Marina,Garay Cabada,Partido Revolucionario Institucional,Mayoría Relativa,Veracruz,19,,,,marina.garay@congreso.gob.mx,@MarinaCercaDeTi,,,,,Eduardo,Morán Izaguirre
+F,Araceli,Torres Flores ,Partido del Trabajo,Representación proporcional,Veracruz,,3,,,araceli.torres@congreso.gob.mx,,,,,,,
+F,Regina,Vázquez Saut,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,20,,,,regina.vazquez@congreso.gob.mx,@Regina_Vazquez,,,,,,
+M,Ponciano,Vázquez Parissi,Partido Revolucionario Institucional,Mayoría relativa,Veracruz,21,,,,ponciano.vazquez@congreso.gob.mx,@PoncianoVP,,,,,,
+F,Teresita de Jesús,Borges Pasos ,Partido de la Revolución Democrática,Representación proporcional,Yucatán,,3,,,teresita.borges@congreso.gob.mx,@tereborgespasos,,,,,Jaqueline ,del Río López
+M,Sergio Augusto ,Chan Lugo,Partido Acción Nacional,Representación proporcional,Yucatán,,3,,,sergio.chan@congreso.gob.mx,NA,,,,,Lisandra,Ruiz Torres
+M,Mario Alejandro,Cuevas Mena,Partido de la Revolución Democrática,Representación proporcional,Yucatán,,3,,,mario.cuevas@congreso.gob.mx,NA,,,,,Ana María,Chimal Velasco
+M,William Renán,Sosa Altamira,Partido Revolucionario Institucional,Mayoría Relativa,Yucatán,1,,,,william.sosa@congreso.gob.mx,,,,,,,
+F,Guadalupe Socorro,Ortega Pacheco,Partido Revolucionario Institucional,Representación proporcional,Yucatán,,3,,,guadalupe.ortega@congreso.gob.mx,,,,,,Claudia Janneth,Gámez Gutiérrez
+F,María del Carmen,Ordaz Martínez,Partido Revolucionario Institucional,Mayoría relativa,Yucatán,2,,,,maria.ordaz@congreso.gob.mx,@OrdazMaricarmen,,,,,,
+M,Mauricio,Sahui Rivero,Partido Revolucionario Institucional,Mayoría relativa,Yucatán,3,,,,mauricio.sahui@congreso.gob.mx,,,,,,,
+M,Raúl,Paz Alonso,Partido Acción Nacional,Mayoría relativa,Yucatán,4,,,,raul.paz@congreso.gob.mx,@RaulPaz_IV,,,,,Martha Miriam,Rodríguez Tiscareño
+F,Cynthia Noemí ,Valladares Couoh,Partido Acción Nacional,Representación proporcional,Yucatán,,3,,,cinthya.valladares@congreso.gob.mx,@Cinthyavalladar,,,,,,
+M,Marco Alonso,Vela Reyes,Partido Revolucionario Institucional,Mayoría relativa,Yucatán,5,,,,marco.vela@congreso.gob.mx,@MarcoVelaR,,,,,,
+F,María Beatriz,Zavala Peniche,Partido Acción Nacional,Representación proporcional,Yucatán,,3,,,maria.zavala@congreso.gob.mx,,,,,,,
+M,Adolfo,Bonilla Gómez,Partido Revolucionario Institucional,Mayoría Relativa,Zacatecas,1,,,,adolfo.bonilla@congreso.gob.mx,@fitobonilla,,,,,Sandra Areli ,Barrón Martínez
+M,Julio César,Flemate Ramírez,Partido Revolucionario Institucional,Mayoría Relativa,Zacatecas,2,,,,julio.flemate@congreso.gob.mx,@JFlemate,,,,,María Guadalupe,Jaramillo Villa
+F,Judith Magdalena,Guerrero López,Partido Verde Ecologista de México,Mayoría Relativa ,Zacatecas,3,,,,judit.guerrero@congreso.gob.mx,@JuditGuerrero3,,,,,Claudia,Melgoza Juárez
+M,Roberto,López Suárez,Partido de la Revolución Democrática,Representación proporcional,Zacatecas,,2,,,rlopez.suarez@congreso.gob.mx,NA,,,,,Luis Hernán,Pasos Paredes
+F,Magdalena del Socorro,Núñez Monreal ,Partido del Trabajo,Representación proporcional,Zacatecas,,2,,,magdalena.nunez@congreso.gob.mx,,,,,,Gisela Edith,Marín Delgado
+F,Bárbara Gabriela,Romo Fonseca,Partido Verde Ecologista de México,Mayoría Relativa,Zacatecas,4,,,,barbara.romo@congreso.gob.mx,@barbararomo,,,,,,
+M,Tomás,Torres Mercado,Partido Verde Ecologista de México,Representación proporcional,Zacatecas,,2,,,tomas.torres@congreso.gob.mx,@Tomas_Torres,Trabajo y Previsión Social (secretario),,,,,
+M,José Isabel ,Trejo Reyes,Partido Acción Nacional,Representación proporcional,Zacatecas,,2,,,jose.trejo@congreso.gob.mx,,,,,,,
