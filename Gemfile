@@ -47,6 +47,7 @@ group :development do
   gem 'annotate'
   gem 'heroku'
   gem 'taps'
+  gem 'ruby-debug19'
 end
 
 group :production do

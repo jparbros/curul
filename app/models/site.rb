@@ -5,6 +5,10 @@ class Site < ActiveRecord::Base
   has_many :assets
   cattr_accessor :current_id
 
+  def self.find_site(domain, subdomain)
+    where('host @@ :domain OR subdomain @@ :subdomain', subdomain: subdomain, domain: domain).first
+  end
+
   def assets_js
     assets.by_type('js')
   end
@@ -16,4 +20,5 @@ class Site < ActiveRecord::Base
   def custom_layout?
     custom_layout
   end
+  
 end

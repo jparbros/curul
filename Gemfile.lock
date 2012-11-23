@@ -34,6 +34,7 @@ GEM
       girl_friday
     annotate (2.5.0)
       rake
+    archive-tar-minitar (0.5.2)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     bitly (0.8.0)
@@ -54,6 +55,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
+    columnize (0.3.6)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -119,6 +121,8 @@ GEM
       multi_json (~> 1.3)
     launchy (2.1.2)
       addressable (~> 2.3)
+    linecache19 (0.5.12)
+      ruby_core_source (>= 0.1.4)
     liquid (2.4.1)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -194,10 +198,20 @@ GEM
       mime-types (>= 1.16)
     rsolr (1.0.8)
       builder (>= 2.1.2)
+    ruby-debug-base19 (0.11.25)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      ruby_core_source (>= 0.1.4)
+    ruby-debug19 (0.11.6)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      ruby-debug-base19 (>= 0.11.19)
     ruby-gmail (0.2.1)
       mail (>= 2.2.1)
       shared-mime-info
     ruby-hmac (0.4.0)
+    ruby_core_source (0.1.5)
+      archive-tar-minitar (>= 0.5.2)
     rubyzip (0.9.9)
     rufus-scheduler (2.0.17)
       tzinfo (>= 0.3.23)
@@ -288,6 +302,7 @@ DEPENDENCIES
   recaptcha
   resque
   resque-scheduler
+  ruby-debug19
   ruby-gmail
   sass (= 3.1.20)
   sass-rails

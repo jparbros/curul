@@ -177,6 +177,14 @@ ActiveRecord::Schema.define(:version => 20121115163333) do
     t.text     "custom_layout_content"
   end
 
+  create_table "states", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "site_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "topics", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
