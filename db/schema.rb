@@ -11,12 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115163333) do
+ActiveRecord::Schema.define(:version => 20121212195822) do
 
   create_table "assets", :force => true do |t|
     t.string   "name"
     t.string   "type_a"
     t.integer  "site_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "authentications", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.integer  "user_id"
+    t.string   "secret"
+    t.string   "token"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -74,6 +84,7 @@ ActiveRecord::Schema.define(:version => 20121115163333) do
     t.string   "number"
     t.integer  "legislature_id"
     t.integer  "site_id"
+    t.integer  "state_id"
   end
 
   create_table "initiatives_topics", :id => false, :force => true do |t|

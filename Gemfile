@@ -32,6 +32,9 @@ gem 'sunspot_solr'
 gem 'cancan'
 gem 'bootstrap-sass'
 gem 'liquid'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook','1.4.0'
 
 group :assets do
   gem 'sass-rails'
