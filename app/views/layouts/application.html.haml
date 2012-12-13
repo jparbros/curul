@@ -25,8 +25,8 @@
           %div
             %nav
               %ul
-                %li= link_to 'iniciativas', iniciativas_path
-                %li= link_to 'integrantes de la camara', congresistas_path
+                %li= link_to 'iniciativas', iniciativas_path if Configurable.initiatives? 
+                %li= link_to 'integrantes de la camara', congresistas_path if Configurable.representatives?
                 %li= link_to 'entiende tu congreso', entiende_tu_congreso_path
                 %li= link_to 'comenta', comenta_path
                 %li= link_to 'blog', 'http://curul-501.tumblr.com', :target => '_blank'

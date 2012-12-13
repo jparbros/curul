@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115163333) do
+ActiveRecord::Schema.define(:version => 20121204234443) do
 
   create_table "assets", :force => true do |t|
     t.string   "name"
@@ -53,6 +53,16 @@ ActiveRecord::Schema.define(:version => 20121115163333) do
     t.integer "representative_id"
   end
 
+  create_table "configurables", :force => true do |t|
+    t.string   "name"
+    t.string   "value"
+    t.integer  "site_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "configurables", ["name"], :name => "index_configurables_on_name"
+
   create_table "initiatives", :force => true do |t|
     t.datetime "presented_at"
     t.text     "description"
@@ -74,6 +84,7 @@ ActiveRecord::Schema.define(:version => 20121115163333) do
     t.string   "number"
     t.integer  "legislature_id"
     t.integer  "site_id"
+    t.integer  "state_id"
   end
 
   create_table "initiatives_topics", :id => false, :force => true do |t|

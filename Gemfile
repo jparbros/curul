@@ -32,6 +32,7 @@ gem 'sunspot_solr'
 gem 'cancan'
 gem 'bootstrap-sass'
 gem 'liquid'
+gem 'configurable_engine'
 
 group :assets do
   gem 'sass-rails'

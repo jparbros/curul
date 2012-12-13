@@ -1,0 +1,188 @@
+%article#home 
+  %h1
+    = link_to 'iniciativas', iniciativas_path
+
+  %p Encuentra y entiende las iniciativas de ley sobre los temas que te interesan. Etapa en la que se encuentran, votación oficial, y la opinión ciudadana. Vota y comenta.
+
+  .iniciativas
+    %h2 las iniciativas m&aacute;s vistas
+    .iniciativa
+      - if @iniciativas.first
+        .iniciativa_icon
+          = link_to image_tag('front/iniciativa.png'), iniciativa_path(@iniciativas.first)
+        .iniciativa_info
+          %p.info
+            = I18n.localize(@iniciativas.first.presented_at, :format => :month_year).capitalize
+            %br
+            %span Propuesta por:
+            %span.presented_by
+              = link_to @iniciativas.first.representative.name, congresista_path(@iniciativas.first.representative) if @iniciativas.first.representative
+
+          %p.description
+            = @iniciativas.first.description
+
+        %ul.colores
+          %a{:href => iniciativa_path(@iniciativas.first)}
+            %li.ver_iniciativa
+              >> ver
+              %br
+              iniciativa
+          %li.votos
+            %span
+              = @iniciativas.first.total_votes
+            %br
+            votos
+          %li.comentarios
+            %span
+              = @iniciativas.first.comments.count
+            comentarios
+
+        %ul.info
+          %li
+            estado de la iniciativa
+            %span= @iniciativas.first.state_formated
+          %li
+            votacion oficial
+            %span
+              a favor:
+              = "#{@iniciativas.first.official_percentage_up}%"
+            %span
+              en contra:
+              = "#{@iniciativas.first.official_percentage_down}%"
+          %li
+            votacion en curul 501
+            %span
+              a favor:
+              = "#{@iniciativas.first.percentage_votes_up}%"
+            %span
+              en contra:
+              = "#{@iniciativas.first.percentage_votes_down}%"
+
+    .iniciativa.margin-left-30
+      - if @iniciativas.last
+        .iniciativa_icon
+          = link_to image_tag('front/iniciativa.png'), iniciativa_path(@iniciativas.last)
+        .iniciativa_info
+          %p.info
+            = I18n.localize(@iniciativas.first.presented_at, :format => :month_year).capitalize
+            %br
+            %span Propuesta por:
+            %span.presented_by
+              = link_to @iniciativas.last.representative.name, congresista_path(@iniciativas.last.representative) if @iniciativas.last.representative
+
+          %p.description
+            = @iniciativas.last.description
+
+        %ul.colores
+          %a{:href => iniciativa_path(@iniciativas.first)}
+            %li.ver_iniciativa
+              >> ver
+              %br
+              iniciativa
+          %li.votos
+            %span
+              = @iniciativas.last.total_votes
+            %br
+            votos
+          %li.comentarios
+            %span
+              = @iniciativas.last.comments.count
+            comentarios
+
+        %ul.info
+          %li
+            estado de la iniciativa
+            %span= @iniciativas.last.state_formated
+          %li
+            votacion oficial
+            %span
+              a favor:
+              = "#{@iniciativas.last.official_percentage_up}%"
+            %span
+              en contra:
+              = "#{@iniciativas.last.official_percentage_down}%"
+          %li
+            votacion en curul 501
+            %span
+              a favor:
+              = "#{@iniciativas.last.percentage_votes_up}%"
+            %span
+              en contra:
+              = "#{@iniciativas.last.percentage_votes_down}%"
+
+
+  .buscar
+    %h1 buscar iniciativa
+    = form_tag search_initiatives_path, :method => :post do |form|
+      = text_field_tag 'search[keywords]', '', :placeholder => 'escribir palabras claves'
+      = select_tag 'search[estado]', options_for_select(Region.all.collect {|region| [region.name, region.name]}), :prompt => 'estado', :include_blank => true
+      = select_tag 'search[political_party]', options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.name]}), :prompt => 'partido politico', :include_blank => true
+      = select_month(Date.today, :include_blank => true, :field_name => 'mes')
+      = select_year(Date.today, :include_blank => true, :field_name => 'ano')
+      = submit_tag 'Buscar', :class => 'button'
+  %span.disclaimer
+    <b>Nota:</b> Sólo aparecen las iniciativas que se presentaron a partir de febrero de 2011 y sobre los temas de seguridad, transparencia y presupuesto. Si consideras que hay que agregar alguna iniciativa, contáctanos.
+
+.integrantes
+  .integrantes-content
+    %h1
+      = link_to 'integrantes de la camara', congresistas_path
+    = form_tag search_representative_path, :method => :post do |form|
+      .input
+        = label_tag :buscar_por_nombre
+        %br
+        = text_field_tag 'search[name]'
+      .input
+        = label_tag :entidad
+        %br
+        = select_tag 'search[state]', options_for_select(Region.all.collect {|region| [region.name, region.id]}), :include_blank => true
+      .input
+        = label_tag :partido
+        %br
+        = select_tag 'search[political_party]', options_for_select(PoliticalParty.all.collect {|political_party| [political_party.name, political_party.id]}), :include_blank => true, :placeholder => 'partido politico'
+      .input-button
+        = submit_tag 'Buscar', :class => 'button'
+
+.entiende
+  %h1
+    = link_to 'entiende tu congreso', entiende_tu_congreso_path
+  %p Conoce el proceso legislativo, la estructura de la Cámara de Diputados, y el lenguaje legislativo desde una perspectiva ciudadana.
+  %a{:href => "#{entiende_tu_congreso_path}"}
+    %section.push.left
+      %ul
+        %li
+          = image_tag 'front/como_curul.png'
+        %li
+          %h4 ¿como funciona curul 501?
+
+  %a{:href => "#{proceso_legislativo_path}"}
+    %section.push
+      %ul
+        %li
+          = image_tag 'front/proceso_legislativo.png'
+        %li
+          %h4
+            ¿como funciona el proceso
+            %br
+            legislativo?
+
+  %a{:href => "#{como_funciona_congreso_path}"}
+    %section.push
+      %ul
+        %li
+          = image_tag 'front/como_funciona.png'
+        %li
+          %h4
+            ¿como funciona el
+            %br
+            congreso?
+
+  %a{:href => "#{abc_legislativo_path}"}
+    %section.no-margin
+      %ul
+        %li
+          = image_tag 'front/abc.png'
+        %li
+          %h4 abc legislativo
+
+%hr
