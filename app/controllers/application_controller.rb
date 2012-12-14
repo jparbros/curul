@@ -6,14 +6,12 @@ class ApplicationController < ActionController::Base
 #  check_authorization :unless => :devise_controller?
   
   def current_site
-    @current_site ||= Site.find_site domain, subdomain
+    @current_site ||= Site.first
   end  
   helper_method :current_site
   
   def scope_current_site
     Site.current_id = current_site.try(:id)
-    puts Site.current_id
-    puts current_site.try(:custom_layout?) 
     self.class.layout 'custom' if current_site.try(:custom_layout?) 
   end
   
