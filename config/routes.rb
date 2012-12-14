@@ -1,5 +1,6 @@
 Congresspedia::Application.routes.draw do
-  devise_for :users, :controllers => { :sessions => "admin/sessions" }
+  
+  devise_for :users
   
   namespace :api do
     resources :comments, :only => [:create]
@@ -33,7 +34,9 @@ Congresspedia::Application.routes.draw do
    resource :iniciativa_comenta, :only => [:create], :controller => :iniciativa_comenta
    resources :temas, :only => [:show], :controller => :temas
    resources :partido_politico, :only => [:show], :controller => :partido_politico 
-   
+
+   match '/auth/:provider/callback' => 'authentications#create'
+
    match "/animal_politico", :to => 'animal_politico#index'
    match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :post, :as => "search_initiatives"
    match "busqueda/iniciativas", :to => "search_initiatives#create", :via => :get, :as => "search_initiatives" 

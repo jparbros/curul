@@ -15,3 +15,8 @@ BITLY_CREDENTIALS = {
   :username => 'jparbros',
   :api_key => 'R_159f99efa9e55225fc9f0b1f6966f517'
 }
+
+Rails.application.config.middleware.use OmniAuth::Builder do
+    provider :twitter, 'XVfIiHQBp9MngeiaC30HHQ', 'sX40NyOLJfCNuXRB0jQX4DoCdTH0qbcDszBabFQICcU'
+    provider :facebook, '287374454607456', '043c565d98f4dceef9700aeaaf18c3da'
+end
