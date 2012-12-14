@@ -1,1 +1,74 @@
-= Liquid::Template.parse(current_site.custom_layout_content).render('page_content' =>  yield, 'page_title' => yield(:title), 'csrf_meta_tag' => csrf_meta_tag, 'class_by_controller' => params[:controller].gsub('/','_'), 'modals' => yield(:modals), 'javascript_onload' => yield(:javascript_onload), 'assets_css' => current_site.assets_css, 'assets_js' => current_site.assets_js, 'initiatives' => Configurable.initiatives?, 'representatives' => Configurable.representatives?, 'commissions' => Configurable.commissions?).html_safe
+!!! 5
+%html{:class => params[:controller].gsub('/','_')}
+  %head
+    %title
+      Curul 501
+      =h yield(:title)
+    %link{:href => 'http://fonts.googleapis.com/css?family=Cuprum', :rel => 'stylesheet', :type => 'text/css'}
+    = stylesheet_link_tag 'front'
+    = javascript_include_tag 'application'
+    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'
+    = csrf_meta_tag
+
+
+  %body
+    #container
+      %header
+        .logo
+          = link_to image_tag('front/logo.png'), root_path
+        .navigation
+          %div
+            %ul.follow
+              %li síguenos en
+              %li= link_to image_tag('front/twitter-bg.png'), 'http://www.twitter.com/curul501', :target => '_blank'
+              %li= link_to image_tag('front/facebook-bg.png'), 'https://www.facebook.com/apps/application.php?id=194102837300485', :target => '_blank'
+          %div
+            %nav
+              %ul
+                %li= link_to 'iniciativas', iniciativas_path if Configurable.initiatives? 
+                %li= link_to 'integrantes de la camara', congresistas_path if Configurable.representatives?
+                %li= link_to 'entiende tu congreso', entiende_tu_congreso_path
+                %li= link_to 'comenta', comenta_path
+                %li= link_to 'blog', 'http://curul-501.tumblr.com', :target => '_blank'
+
+      %section#main-content
+        = yield
+      %footer
+        %ul
+          %li= link_to 'iniciativas', iniciativas_path
+          %li= link_to 'integrantes de la camara', congresistas_path
+          %li= link_to 'entiende tu congreso', entiende_tu_congreso_path
+          %li= link_to 'comenta', comenta_path
+          %li= link_to 'blog', 'http://curul-501.tumblr.com', :target => '_blank'
+        %ul.logo
+          %li= link_to image_tag('front/fundar-logo.png'), 'http://www.fundar.org.mx', :target => '_blank'
+          %li= link_to image_tag('front/citivox-logo.png'), 'http://www.citivox.com', :target => '_blank'
+      = yield :modals
+      %script{:type => 'text/javascript'}
+        $(function(){
+        = yield :javascript_onload
+        })
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=287374454607456";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22378058-4']);
+_gaq.push(['_setDomainName', '.curul501.org']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
