@@ -1,4 +1,5 @@
 class CreateAssets < ActiveRecord::Migration
+=begin
   def change
     create_table :assets do |t|
       t.string :name
@@ -7,4 +8,5 @@ class CreateAssets < ActiveRecord::Migration
       t.timestamps
     end
   end
+=end
 end
