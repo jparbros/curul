@@ -22,7 +22,7 @@ class RepresentativeSearch
   private
 
   def find_by_name(name)
-    @representative_search = @representative_search.where('representatives.name iLIKE ?',"%#{name}%") if name
+    @representative_search = @representative_search.where('representatives.first_name iLIKE ? OR representatives.last_name iLIKE ?',"%#{name}%", "%#{name}%") if name
   end
 
   def find_by_state state
