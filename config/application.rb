@@ -39,6 +39,7 @@ module Congresspedia
     config.i18n.default_locale = 'es-MX'
     
     config.assets.precompile += ['admin.js', 'admin.css', 'front.css']
+    config.assets.paths << Rails.root.join("app", "assets", "flash")
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
