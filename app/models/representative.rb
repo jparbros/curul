@@ -68,7 +68,7 @@ class Representative < ActiveRecord::Base
   end
 
   def as_json(options)
-    options.merge!({include: [:region, :political_party], methods: [:photo]}) if options
+    options.merge!({include: [:region, :political_party], methods: [:photo, :name]}) if options
     super(options)
   end
   

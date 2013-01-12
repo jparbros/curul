@@ -37,7 +37,7 @@ class InitiativeSearch
   end
 
   def find_by_representative representative_name
-    @initiative_search = @initiative_search.joins(:representative).where('representatives.name iLIKE ?',"%#{representative_name}%") if representative_name
+    @initiative_search = @initiative_search.joins(:representative).where('representatives.first_name iLIKE ? OR representatives.last_name iLIKE ?',"%#{representative_name}%", "%#{representative_name}%") if representative_name
   end
 
   def find_by_keywords keywords
