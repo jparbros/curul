@@ -9,7 +9,10 @@
 
   = form_tag search_initiatives_path, :method => :post do |form|
 
-    = text_field_tag 'search[keywords]', '', :placeholder => 'palabras clave', :class => 'input'
+    = text_field_tag 'search[keywords]', '', :placeholder => 'Palabras clave', :class => 'input'
+    = select_tag 'search[state]', options_for_select(Initiative::STATES.collect {|state| [state.last.humanize, state.first]}), :class => :input, 'data-placeholder' => 'Estado de la iniciativa', multiple: true
+    
+    
 
     = submit_tag :buscar, :class => 'button'
 
@@ -26,4 +29,8 @@
 
   = render :partial => 'iniciativas/iniciativa', :collection => @iniciativas, :locals => { :show => false }
 
-  = paginate @iniciativas, window: 2
+  = paginate @iniciativas_response.hits, window: 2
+
+
+%script
+  $('#search_state').chosen()

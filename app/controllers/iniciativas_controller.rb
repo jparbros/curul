@@ -1,7 +1,9 @@
 class IniciativasController < ApplicationController
 
   def index
-    @iniciativas = Initiative.page(params[:page])
+    @query = {}.merge(params[:page] || {})
+    @iniciativas_response = Initiative.filters(@query)
+    @iniciativas = @iniciativas_response.results
     @temas = Topic.all
   end
 

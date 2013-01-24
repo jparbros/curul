@@ -36,13 +36,13 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook','1.4.0'
 gem 'configurable_engine'
+gem 'sass-rails',   '~> 3.2.5'
+gem 'compass'
+gem 'compass-rails'
 
 group :assets do
-  gem 'sass-rails'
-  gem 'sass', '3.1.20'
   gem 'coffee-rails'
   gem 'uglifier'
-	gem 'compass', '~> 0.12.alpha'
 end
 
 gem 'jquery-rails'

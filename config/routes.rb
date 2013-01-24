@@ -4,6 +4,7 @@ Congresspedia::Application.routes.draw do
   
   namespace :api do
     resources :comments, :only => [:create]
+    resources :initiatives
     match "representative/:region_name/:district", :to => 'representatives#show'
   end
   
