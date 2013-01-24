@@ -65,9 +65,8 @@
             %li recursos adicionales
             %li
               - @iniciativa.resources.each do |resource|
-                = link_to resource.try(:name), resource.try(:url)
-
-                |
+                = link_to resource.try(:name), resource.try(:url), target: '_blank', class: 'aditional-resource'
+                %br
         .aside
           %ul
             %li.votos
