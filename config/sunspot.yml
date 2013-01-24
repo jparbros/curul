@@ -1,15 +1,15 @@
 production:
   solr:
-    hostname: 50.57.172.178
+    hostname: solr.parbros.com
     port: 8080
-    path: /solr/curul
+    path: /solr/congracy
     log_level: WARNING
 
 development:
   solr:
-    hostname: 50.57.172.178
+    hostname: solr.parbros.com
     port: 8080
-    path: /solr/curul
+    path: /solr/congracy
     log_level: INFO
 
 test:
