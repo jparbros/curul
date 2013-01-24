@@ -26,7 +26,7 @@ module SolrSearch
           
           string  :political_party_name, stored: true
           string  :region_id,            stored: true do
-            region.try(:id) || 0
+            region_id || 0
           end
           integer :commission_ids,       multiple: true
           string  :email,                stored: true

@@ -1,6 +1,13 @@
 %h2 buscar integrantes
 
 = form_tag search_representative_path, :method => :post do |form|
-  = text_field_tag 'search[name]', '', :class => :input, :placeholder => 'buscar por nombre'
-  = select_tag 'search[political_party]', options_from_collection_for_select(PoliticalParty.all, :id, :name), :include_blank => true, :class => :input
+  = text_field_tag 'search[name]', '', :class => :input, :placeholder => 'Nombre del representante'
+  = text_field_tag 'search[twitter]','', :class => :input, :placeholder => 'Twitter del representante'
+  = select_tag 'search[political_party_name]', options_from_collection_for_select(PoliticalParty.all, :name, :name), :class => :input, "data-placeholder" => 'Partido politico', multiple: true
+  = select_tag 'search[region_name]', options_from_collection_for_select(Region.all, :id, :name), :class => :input, 'data-placeholder' => 'Estado', multiple: true
+  = select_tag 'search[commission_ids]', options_from_collection_for_select(Commission.all, :id, :name), :class => :input, 'data-placeholder' => 'Comisiones', multiple: true
+  
   = submit_tag :buscar, :class => :button
+
+- content_for :javascript_onload do
+  $('#search_political_party_name, #search_region_name, #search_commission_ids').chosen();
