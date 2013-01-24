@@ -12,6 +12,18 @@ module SolrSearch
           string  :last_name,            stored: true do
             last_name.try(:removeaccents).try(:downcase)
           end
+          
+          text  :name,                 stored: true do
+            name.try(:removeaccents).try(:downcase)
+          end
+          text  :first_name,           stored: true do
+            first_name.try(:removeaccents).try(:downcase)
+          end
+          text  :last_name,            stored: true do
+            last_name.try(:removeaccents).try(:downcase)
+          end
+          
+          
           string  :political_party_name, stored: true
           string  :region_id,            stored: true do
             region.try(:id) || 0
@@ -25,11 +37,10 @@ module SolrSearch
           (search do
             paginate :page => filters[:page], :per_page => filters[:per_page] || 25
             
-            any_of do
-              with(:first_name).starting_with(filters['name'].removeaccents.downcase) if filters['name'].present?
-              with(:last_name).starting_with(filters['name'].removeaccents.downcase) if filters['name'].present?
-              with(:name).starting_with(filters['name'].removeaccents.downcase) if filters['name'].present?
-            end
+            fulltext(filters['search']) if filters['search']
+            
+            fulltext(filters['name'], fields: [:name, :first_name, :last_name]) if filters['name'].present?
+            
             with(:political_party_name, filters['political_party_name']) if filters['political_party_name'].present?
             with(:region_id, filters['region_name']) if filters['region_name'].present?
             with(:email, filters['email']) if filters['email'].present?

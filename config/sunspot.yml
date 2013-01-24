@@ -9,7 +9,7 @@ development:
   solr:
     hostname: solr.parbros.com
     port: 8080
-    path: /solr/congracy
+    path: /solr/congracy-dev
     log_level: INFO
 
 test:
