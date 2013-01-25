@@ -29,7 +29,7 @@ class Representative < ActiveRecord::Base
   scope :by_commission, lambda {|commission_id| joins(:commissions).where('commissions_representatives.commission_id = ?', commission_id)}
   scope :most_commented, order('comments_count DESC')
   scope :political_parties, where('political_party_id NOT IN (8,9)')
-  scope :actual_legislature, where(:legislature_id => (Legislature.active ? Legislature.active.id : nil))
+  scope :actual_legislature, lambda {where(:legislature_id => (Legislature.active ? Legislature.active.id : nil))}
   if ENV['REINDEX'].blank?
     default_scope {where(site_id: Site.current_id)}
   end
