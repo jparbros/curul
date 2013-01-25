@@ -14,7 +14,10 @@ class PoliticalParty < ActiveRecord::Base
   # Scope
   #
   scope :political_parties, where('id NOT IN (8,9)')
-  default_scope {where(site_id: Site.current_id)}
+  if ENV['REINDEX'].blank?
+    default_scope {where(site_id: Site.current_id)}
+  end
+  
   
 
   def initials

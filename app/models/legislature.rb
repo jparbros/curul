@@ -10,7 +10,10 @@ class Legislature < ActiveRecord::Base
   #
   # Scope
   #
-  default_scope {where(site_id: Site.current_id) if Site.current_id}
+  if ENV['REINDEX'].blank?
+    default_scope {where(site_id: Site.current_id)}
+  end
+  
   
   def self.active
     where(:active => true).last

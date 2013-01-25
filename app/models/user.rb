@@ -16,6 +16,9 @@ class User < ActiveRecord::Base
   #
   # Scope
   #
+  if ENV['REINDEX'].blank?
+    default_scope {where(site_id: Site.current_id)}
+  end
   
   def apply_authorization
     if new_record?

@@ -8,5 +8,8 @@ class Region < ActiveRecord::Base
   #
   # Scopes
   #
-  default_scope {where(site_id: Site.current_id)}
+  if ENV['REINDEX'].blank?
+    default_scope {where(site_id: Site.current_id)}
+  end
+  
 end

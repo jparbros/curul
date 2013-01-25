@@ -10,7 +10,10 @@ class Vote < ActiveRecord::Base
   #
   scope :votes_up, where(:vote => 1)
   scope :votes_down, where(:vote => -1)
-  default_scope {where(site_id: Site.current_id)}
+  if ENV['REINDEX'].blank?
+    default_scope {where(site_id: Site.current_id)}
+  end
+  
   
   def self.vote_up
     create(:vote => 1)
