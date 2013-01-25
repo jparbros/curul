@@ -14,6 +14,8 @@ class ApplicationController < ActionController::Base
     Site.current_id = current_site.try(:id)
     self.class.layout 'custom' if current_site.try(:custom_layout?) 
     Rails.logger.info "SITE CURRENT ID => #{Site.current_id}"
+    Rails.logger.info "DOMAIN => #{domain}"
+    Rails.logger.info "SUBDOMAIN => #{subdomain}"
   end
   
   def domain
