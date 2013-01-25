@@ -10,8 +10,8 @@ module SolrSearch
           string  :representative_name, stored: true do
             representative_name.try(:removeaccents).try(:downcase)
           end
-          integer :commission_ids,      multiple: true
-          string  :topic_ids,           multiple: true
+          integer :commission_ids,      stored: true, multiple: true
+          string  :topic_ids,           stored: true, multiple: true
         end
         
         def self.filters(filters)

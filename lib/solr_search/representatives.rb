@@ -28,7 +28,7 @@ module SolrSearch
           string  :region_id,            stored: true do
             region_id || 0
           end
-          integer :commission_ids,       multiple: true
+          integer :commission_ids,       stored: true, multiple: true
           string  :email,                stored: true
           string  :twitter,              stored: true
         end
