@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
   def scope_current_site
     Site.current_id = current_site.try(:id)
     self.class.layout 'custom' if current_site.try(:custom_layout?) 
+    Rails.logger.info "SITE CURRENT ID => #{Site.current_id}"
   end
   
   def domain

@@ -4,6 +4,7 @@ class CongresistasController < ApplicationController
     @regiones = Region.all
     @partidos_politicos = PoliticalParty.political_parties
     @representantes = Representative.actual_legislature.most_commented.limit(5)
+    Rails.logger.info " ACTUAL LEGISLATURE #{Legislature.active.id}"
   end
 
   def show

@@ -29,7 +29,7 @@ module SolrSearch
 
             with(:state, filters[:state]) if filters[:state].present?
             with(:commission_ids).any_of(filters['commission_ids'].split(',')) if filters['commission_ids'].present?
-            
+            with(:topic_ids).any_of(filters['topic_ids'].split(',').flatten) if filters['topic_ids'].present?
           end)
         end
       end
