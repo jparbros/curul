@@ -38,7 +38,7 @@
               = @iniciativa.title
 
             %p.description
-              = @iniciativa.description
+              = @iniciativa.description.html_safe
 
           - temas(@iniciativa)
 
